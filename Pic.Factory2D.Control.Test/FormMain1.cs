@@ -652,7 +652,7 @@ namespace Pic.Factory2D.Control.Test
             y1 = 296.131 + hr + b1 + H - ep + b1;
             offset = -8.7301;
             entities.Add(60, factory.AddCotation(PicCotation.CotType.COT_DISTANCE,
-                5, 1, x0, y0, x1, y1, offset, ""));
+                5, 1, x0, y0, x1, y1, offset, "", 1));
 
             // 61: Pt0 = ( 856.89, 556.131) Pt1 = ( 856.89, 356.131) offset = -21.0876
             x0 = 425.844 + lp + b2 + l2 - 58.9536;
@@ -661,7 +661,7 @@ namespace Pic.Factory2D.Control.Test
             y1 = 296.131 + hr;
             offset = -21.0876;
             entities.Add(61, factory.AddCotation(PicCotation.CotType.COT_DISTANCE,
-                1, 1, x0, y0, x1, y1, offset, ""));
+                1, 1, x0, y0, x1, y1, offset, "", 1));
 
             // 62: Pt0 = ( 669.711, 1256.13) Pt1 = ( 669.711, 856.131) offset = -48.2816
             x0 = 425.844 + lp + b2 + 53.8672;
@@ -670,7 +670,7 @@ namespace Pic.Factory2D.Control.Test
             y1 = 296.131 + hr + b1 + H;
             offset = -48.2816;
             entities.Add(62, factory.AddCotation(PicCotation.CotType.COT_DISTANCE,
-                1, 1, x0, y0, x1, y1, offset, ""));
+                1, 1, x0, y0, x1, y1, offset, "", 1));
 
             // 93: Pt0 = ( 465.844, 593.295) Pt1 = ( 1065.84, 593.295) offset = 2.71844
             x0 = 425.844 + lp;
@@ -679,7 +679,7 @@ namespace Pic.Factory2D.Control.Test
             y1 = 296.131 + hr + b1 + 37.1644;
             offset = 2.71844;
             entities.Add(93, factory.AddCotation(PicCotation.CotType.COT_DISTANCE,
-                1, 1, x0, y0, x1, y1, offset, ""));
+                1, 1, x0, y0, x1, y1, offset, "", 1));
 
             // 94: Pt0 = ( 1065.84, 598.732) Pt1 = ( 1465.84, 598.732) offset = -2.71851
             x0 = 425.844 + lp + L;
@@ -688,7 +688,7 @@ namespace Pic.Factory2D.Control.Test
             y1 = 296.131 + hr + b1 + 42.6013;
             offset = -2.71851;
             entities.Add(94, factory.AddCotation(PicCotation.CotType.COT_DISTANCE,
-                1, 1, x0, y0, x1, y1, offset, ""));
+                1, 1, x0, y0, x1, y1, offset, "", 1));
 
             // 95: Pt0 = ( 1465.84, 590.577) Pt1 = ( 2065.84, 590.577) offset = 2.71851
             x0 = 425.844 + lp + L + B;
@@ -697,7 +697,7 @@ namespace Pic.Factory2D.Control.Test
             y1 = 296.131 + hr + b1 + 34.4459;
             offset = 2.71851;
             entities.Add(95, factory.AddCotation(PicCotation.CotType.COT_DISTANCE,
-                1, 1, x0, y0, x1, y1, offset, ""));
+                1, 1, x0, y0, x1, y1, offset, "", 1));
 
             // 96: Pt0 = ( 2065.84, 596.014) Pt1 = ( 2465.84, 596.014) offset = 0
             x0 = 425.844 + lp + L + B + L;
@@ -706,7 +706,7 @@ namespace Pic.Factory2D.Control.Test
             y1 = 296.131 + hr + b1 + 39.8828;
             offset = 0;
             entities.Add(96, factory.AddCotation(PicCotation.CotType.COT_DISTANCE,
-                1, 1, x0, y0, x1, y1, offset, ""));
+                1, 1, x0, y0, x1, y1, offset, "", 1));
 
             // 97: Pt0 = ( 628.84, 856.131) Pt1 = ( 628.84, 556.131) offset = -3.36783
             x0 = 425.844 + lp + b2 + 12.996;
@@ -715,7 +715,7 @@ namespace Pic.Factory2D.Control.Test
             y1 = 296.131 + hr + b1;
             offset = -3.36783;
             entities.Add(97, factory.AddCotation(PicCotation.CotType.COT_DISTANCE,
-                1, 1, x0, y0, x1, y1, offset, ""));
+                1, 1, x0, y0, x1, y1, offset, "", 1));
         }
         #endregion
     }

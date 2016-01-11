@@ -1118,6 +1118,7 @@
         {
             if (null == profile)
                 throw new ExceptionDAL("Profile is null reference!");
+
             // retrieve component from ID
             Component comp = db.Components.Single(c => c.ID == componentId);
             // find nearest set

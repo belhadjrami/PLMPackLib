@@ -35,12 +35,12 @@ namespace Pic.Factory2D.Test
 
                 // instantiate factory1
                 PicFactory factory0 = new PicFactory();
-                factory0.AddPoint(PicGraphics.LT.LT_CUT, new Vector2D(0.0, 0.0));
-                factory0.AddSegment(PicGraphics.LT.LT_CUT, new Vector2D(50.0, 50.0), new Vector2D(100.0, 100.0));
-                factory0.AddSegment(PicGraphics.LT.LT_CUT, new Vector2D(-100.0, 100.0), new Vector2D(100.0, -100.0));
-                factory0.AddArc(PicGraphics.LT.LT_CUT, new Vector2D(50.0, 50.0), 50.0 * Math.Sqrt(2.0), 0.0, 360.0);
-                factory0.AddArc(PicGraphics.LT.LT_CUT, new Vector2D(75.0, 75.0), 25.0 * Math.Sqrt(2.0), 0.0, 360.0);
-                factory0.AddNurb(PicGraphics.LT.LT_CUT);
+                factory0.AddPoint(PicGraphics.LT.LT_CUT, 0, 0, new Vector2D(0.0, 0.0));
+                factory0.AddSegment(PicGraphics.LT.LT_CUT, 0, 0, new Vector2D(50.0, 50.0), new Vector2D(100.0, 100.0));
+                factory0.AddSegment(PicGraphics.LT.LT_CUT, 0, 0, new Vector2D(-100.0, 100.0), new Vector2D(100.0, -100.0));
+                factory0.AddArc(PicGraphics.LT.LT_CUT, 0, 0, new Vector2D(50.0, 50.0), 50.0 * Math.Sqrt(2.0), 0.0, 360.0);
+                factory0.AddArc(PicGraphics.LT.LT_CUT, 0, 0, new Vector2D(75.0, 75.0), 25.0 * Math.Sqrt(2.0), 0.0, 360.0);
+                factory0.AddNurb(PicGraphics.LT.LT_CUT, 0, 0);
                 _log.Debug(factory0.ToString());
 
                 // get bounding box + draw
@@ -121,10 +121,10 @@ namespace Pic.Factory2D.Test
 
                 // compute area
                 PicFactory factory3 = new PicFactory();
-                factory3.AddSegment(PicGraphics.LT.LT_CUT, new Vector2D(-100.0, -100.0), new Vector2D(100.0, -100.0));
-                factory3.AddSegment(PicGraphics.LT.LT_CUT, new Vector2D(100.0, -100.0), new Vector2D(100.0, 100.0));
-                factory3.AddSegment(PicGraphics.LT.LT_CUT, new Vector2D(100.0, 100.0), new Vector2D(-100.0, 100.0));
-                factory3.AddSegment(PicGraphics.LT.LT_CUT, new Vector2D(-100.0, 100.0), new Vector2D(-100.0, -100.0));
+                factory3.AddSegment(PicGraphics.LT.LT_CUT, 0, 0, new Vector2D(-100.0, -100.0), new Vector2D(100.0, -100.0));
+                factory3.AddSegment(PicGraphics.LT.LT_CUT, 0, 0, new Vector2D(100.0, -100.0), new Vector2D(100.0, 100.0));
+                factory3.AddSegment(PicGraphics.LT.LT_CUT, 0, 0, new Vector2D(100.0, 100.0), new Vector2D(-100.0, 100.0));
+                factory3.AddSegment(PicGraphics.LT.LT_CUT, 0, 0, new Vector2D(-100.0, 100.0), new Vector2D(-100.0, -100.0));
 
                 PicToolArea picToolArea = new PicToolArea();
                 factory3.ProcessTool(picToolArea);

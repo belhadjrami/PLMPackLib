@@ -58,10 +58,10 @@ namespace Pic.Factory2D.TestImposition
 
                     PicFactory factoryOut = new PicFactory();
                     chosenSolution.CreateEntities(factoryOut);
-                    factoryOut.AddSegment(ltCut, new Vector2D(0.0, 0.0), new Vector2D(width, 0.0));
-                    factoryOut.AddSegment(ltCut, new Vector2D(width, 0.0), new Vector2D(width, height));
-                    factoryOut.AddSegment(ltCut, new Vector2D(width, height), new Vector2D(0.0, height));
-                    factoryOut.AddSegment(ltCut, new Vector2D(0.0, height), new Vector2D(0.0, 0.0));
+                    factoryOut.AddSegment(ltCut, 0, 0, new Vector2D(0.0, 0.0), new Vector2D(width, 0.0));
+                    factoryOut.AddSegment(ltCut, 0, 0, new Vector2D(width, 0.0), new Vector2D(width, height));
+                    factoryOut.AddSegment(ltCut, 0, 0, new Vector2D(width, height), new Vector2D(0.0, height));
+                    factoryOut.AddSegment(ltCut, 0, 0, new Vector2D(0.0, height), new Vector2D(0.0, 0.0));
 
                     // get bounding box
                     Box2D box = new Box2D();
