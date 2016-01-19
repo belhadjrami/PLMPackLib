@@ -597,6 +597,9 @@ namespace PicParam
                 else if (sender == toolStripButtonZUND)
                 {
                 }
+                else if (sender == toolStripButtonSUMMA)
+                { 
+                }
                 // set default file path
                 string filePath = Path.Combine(Settings.Default.FileExportDirectory, DocumentName);
                 filePath = Path.ChangeExtension(filePath, "ai");
@@ -1023,6 +1026,7 @@ namespace PicParam
                 toolStripButtonDXF.Enabled = buttonsEnabled;
                 toolStripButtonAI.Enabled = buttonsEnabled;
                 toolStripButtonCFF2.Enabled = buttonsEnabled;
+                toolStripButtonSUMMA.Enabled = buttonsEnabled;
                 // "File" menu items
                 exportToolStripMenuItem.Enabled = buttonsEnabled;
                 toolStripMenuItemPicGEOM.Enabled = buttonsEnabled && ApplicationAvailabilityChecker.IsAvailable("PicGEOM");
@@ -1280,6 +1284,7 @@ namespace PicParam
                 toolStripButtonOceProCut.Available = Properties.Settings.Default.TSButtonAvailableOceProCut;
                 toolStripButtonARISTO.Available = Properties.Settings.Default.TSButtonAvailableARISTO;
                 toolStripButtonZUND.Available = Properties.Settings.Default.TSButtonAvailableZUND;
+                toolStripButtonSUMMA.Available = Properties.Settings.Default.TSButtonAvailableSUMMA;
 
                 // construct tree
                 // this line was moved here from the treeview contructor

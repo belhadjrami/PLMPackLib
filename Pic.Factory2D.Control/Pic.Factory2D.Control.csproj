@@ -264,6 +264,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\CursorPan.cur" />
+    <Content Include="Resources\Summa.png" />
     <None Include="packages.config" />
     <None Include="Resources\ProCut.png" />
     <None Include="Resources\ExportDXF.png" />

@@ -35,11 +35,15 @@ namespace PicParam
                     b = PicParam.Properties.Resources.splash_aristo;
                 else if (string.Equals(rebrandedVersion, "ZUND", StringComparison.CurrentCultureIgnoreCase))
                     b = PicParam.Properties.Resources.splash_zund;
+                else if (string.Equals(rebrandedVersion, "SUMMA", StringComparison.CurrentCultureIgnoreCase))
+                    b = PicParam.Properties.Resources.splash_summa;
                 else
                     b = PicParam.Properties.Resources.splashpic;
                 // make lower right pixel color transparent
                 if (Transparent)
                     b.MakeTransparent(b.GetPixel(1, 1));
+                else
+                    AllowTransparency = false;
                 this.BackgroundImage = b;
             }
 

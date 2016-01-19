@@ -12,6 +12,7 @@ namespace Pic.Factory2D
     {
         #region Private fields
         private BaseExporter _exporter;
+        private string _authoringTool = "PLMPackLib";
         #endregion
 
         #region Public constructor
@@ -43,6 +44,7 @@ namespace Pic.Factory2D
         public override void Initialize(PicFactory factory)
         {
             _exporter.Initialize();
+            _exporter.AuthoringTool = _authoringTool;
             // 
             PicVisitorBoundingBox visitor = new PicVisitorBoundingBox();
             factory.ProcessVisitor(visitor);
