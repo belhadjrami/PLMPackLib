@@ -191,4 +191,37 @@ namespace Pic.Factory2D
         }
         private static double _epsilon = 0.1;
     }
+
+    public class PicFilterTypedDrawable
+        : PicFilter
+    {
+        public PicFilterTypedDrawable()
+        { 
+        }
+        public override bool Accept(PicEntity entity)
+        {
+            return entity is PicTypedDrawable;
+        }
+    }
+
+    public class PicFilterLineType
+        : PicFilter
+    {
+        // constructor
+        public PicFilterLineType(PicGraphics.LT lt)
+        {
+            _lt = lt;
+        }
+        // override PicFilter
+        public override bool Accept(PicEntity entity)
+        {
+            PicTypedDrawable drawable = entity as PicTypedDrawable;
+            if (null == drawable)
+                return false;
+            else
+                return drawable.LineType == _lt;
+        }
+        // data members
+        private PicGraphics.LT _lt;
+    }
 }

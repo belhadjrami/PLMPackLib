@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.treedim.com/PLMPack"
+    xmlns:exp="http://www.treedim.com/PLMPack"
+    elementFormDefault="qualified"
+>
+  <xs:annotation>
+    <xs:documentation>
+      PLMPack processor settings
+      Version 9.0.0.0
+    </xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="double">
+    <xs:restriction base="xs:double"/>
+  </xs:simpleType>
+  <xs:simpleType name="int">
+    <xs:restriction base="xs:int"/>
+  </xs:simpleType>
+  <xs:simpleType name="uint">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="string">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <!-- enumerations : begin -->
+  <xs:simpleType name="fluteDirection">
+    <xs:annotation>
+      <xs:documentation>
+        Flute direction of a material.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="X"/>
+      <xs:enumeration value="Y"/>
+      <xs:enumeration value="None"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="lineType">
+    <xs:annotation>
+      <xs:documentation>
+        An enumerated type to describe line types.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="LT_CUT">
+        <xs:annotation>
+          <xs:documentation>Coupant</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LT_PERFOCREASING">
+        <xs:annotation>
+          <xs:documentation>Perfo-rainant</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LT_CONSTRUCTION">
+        <xs:annotation>
+          <xs:documentation>Construction</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LT_PERFO">
+        <xs:annotation>
+          <xs:documentation>Perfo</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LT_HALFCUT">
+        <xs:annotation>
+          <xs:documentation>Mi-chair</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LT_CREASING">
+        <xs:annotation>
+          <xs:documentation>Rainant</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LT_AXIS">
+        <xs:annotation>
+          <xs:documentation>Axe</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LT_COTATION">
+        <xs:annotation>
+          <xs:documentation>Cotation</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LT_ORIGIN">
+        <xs:annotation>
+          <xs:documentation>Origine</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LT_GRID">
+        <xs:annotation>
+          <xs:documentation>Grilles</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LT_BRIDGES">
+        <xs:annotation>
+          <xs:documentation>Ponts</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- enumerations : end-->
+  <xs:simpleType name="listOfInt">
+    <xs:list itemType="exp:int"/>
+  </xs:simpleType>
+  <xs:simpleType name="color">
+    <xs:restriction base="exp:listOfInt">
+      <xs:length value="3"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="listOfDouble">
+    <xs:annotation>
+      <xs:documentation>
+        A string of space separated doubles.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:list itemType="exp:double"/>
+  </xs:simpleType>
+  <xs:simpleType name="array2">
+    <xs:annotation>
+      <xs:documentation>
+        A string with two space separated doubles.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="exp:listOfDouble">
+      <xs:length value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- ### Actual schema : begin ### -->
+  <xs:element name="ExporterSettings">
+    <xs:annotation>
+      <xs:documentation>
+        Settings of exporter.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="GeneralSettings" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>
+              General description of table with scale to use and table dimensions.
+            </xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:attribute name="Scale" type="exp:double"/>
+            <xs:attribute name="LimitFormat" type="exp:array2" use="required"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TypeCutJobs" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>List of different TypeCutJobs</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TypeCutJob" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>TypeCutJob describes material and pens to use for each line type</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Material" minOccurs="1" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:attribute name="Thickness" type="exp:double" use="required"/>
+                        <xs:attribute name="FluteDirection" type="exp:fluteDirection" use="optional" default="None"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Tools" minOccurs="1" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Tool" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:attribute name="LineType" type="exp:lineType" use="required"/>
+                              <xs:attribute name="Step" type="exp:int" use="optional"/>
+                              <xs:attribute name="ToolNumber" type="exp:int" use="required"/>
+                              <xs:attribute name="ToolName" type="exp:string" use="required"/>
+                              <xs:attribute name="Color" type="exp:color" use="required"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Name" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- ### Actual schema : end ### -->
+</xs:schema>

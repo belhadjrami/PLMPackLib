@@ -114,6 +114,21 @@ namespace Pic
                     default: return "Unknown";
                 }
             }
+            public static LT ParseLineType(string s)
+            {
+                if (string.Equals("LT_CUT", s))                 return LT.LT_CUT;
+                else if (string.Equals("LT_PERFOCREASING", s))  return LT.LT_PERFOCREASING;
+                else if (string.Equals("LT_CONSTRUCTION", s))   return LT.LT_CONSTRUCTION;
+                else if (string.Equals("LT_PERFO", s))          return LT.LT_PERFO;
+                else if (string.Equals("LT_HALFCUT", s))        return LT.LT_HALFCUT;
+                else if (string.Equals("LT_CREASING", s))       return LT.LT_CREASING;
+                else if (string.Equals("LT_AXIS", s))           return LT.LT_AXIS;
+                else if (string.Equals("LT_COTATION", s))       return LT.LT_COTATION;
+                else if (string.Equals("LT_ORIGIN", s))         return LT.LT_ORIGIN;
+                else if (string.Equals("LT_GRID", s))           return LT.LT_GRID;
+                else if (string.Equals("LT_BRIDGES", s))        return LT.LT_BRIDGES;
+                else return LT.LT_DEFAULT;
+            }
             #endregion
 
             #region Implement IDisposable

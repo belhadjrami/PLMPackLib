@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<ExporterSettings xsi:schemaLocation="http://www.treedim.com/PLMPack K:\GitHub\PLMPackLib\treeDiM.Processor\ExporterSettings.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.treedim.com/PLMPack" xmlns:exp="http://www.treedim.com/PLMPack">
+  <GeneralSettings Scale="100" LimitFormat="1000.0 1200.0" />
+  <TypeCutJobs>
+    <TypeCutJob Name="Folding CardBoard">
+      <Material Thickness="0.5"/>
+      <Tools>
+        <Tool LineType="LT_CREASING" Step="0" ToolNumber="3" ToolName="Creasing Wheel" Color="0 255 0"/>
+        <Tool LineType="LT_CUT" Step="1" ToolNumber="1" ToolName="Cut Out Knife" Color="255 0 0"/>
+      </Tools>
+    </TypeCutJob>
+    <TypeCutJob Name="Corrugated Cardboard">
+      <Material Thickness="3" FluteDirection="Y"/>
+      <Tools>
+        <Tool LineType="LT_CREASING" Step="0" ToolNumber="3" ToolName="Creasing Weel" Color="0 255 0"/>
+        <Tool LineType="LT_CUT" Step="1" ToolNumber="1" ToolName="Oscillating Knife" Color="255 0 0"/>
+      </Tools>
+    </TypeCutJob>
+    <TypeCutJob Name="XBoard">
+      <Material Thickness="15"/>
+      <Tools>
+        <Tool LineType="LT_CREASING" Step="0" ToolNumber="4" ToolName="V-Cut" Color="0 255 0"/>
+        <Tool LineType="LT_CUT" Step="1" ToolNumber="6" ToolName="POT" Color="255 0 0"/>
+      </Tools>
+    </TypeCutJob>
+  </TypeCutJobs>
+</ExporterSettings>
