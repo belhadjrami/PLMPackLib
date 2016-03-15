@@ -109,7 +109,6 @@ namespace treeDiM.Processor
                         sb.AppendLine("PD;");
                         PenDown = true;
                     }
-                    sb.AppendLine(string.Format("PA{0:0},{1:0};", 100 * pt0.X, 100 * pt0.Y));
                 }
 
                 if (entity is PicArc)
@@ -123,7 +122,9 @@ namespace treeDiM.Processor
                     }
                     PicArc arc = entity as PicArc;
                     Vector2D arcCenter = arc.Center;
-                    sb.AppendLine(string.Format("AA{0:0},{1:0},{2}", 100 * arcCenter.X, 100 * arcCenter.Y, arc.Angle(pt0, pt1)));
+                        , 100 * arcCenter.X
+                        , 100 * arcCenter.Y
+                        , arc.Angle(pt0, pt1).ToString("F2", System.Globalization.CultureInfo.InvariantCulture)));
                 }
                 currentPt = pt1;
 

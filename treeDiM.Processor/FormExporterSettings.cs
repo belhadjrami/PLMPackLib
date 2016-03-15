@@ -69,15 +69,11 @@ namespace treeDiM.Processor
                 PicTypedDrawable entity = _entities[i];
                 PicSegment seg = entity as PicSegment;
                 if (null != seg)
-                {
                     factory.AddSegment(seg.LineType, seg.Group, seg.Layer, seg.Pt0, seg.Pt1);
-                }
 
                 PicArc arc = entity as PicArc;
                 if (null != arc)
-                {
-                    factory.AddArc(arc.LineType, arc.Group, arc.Layer, arc.Center, arc.Source, arc.Target);
-                }
+                    factory.AddArc(arc.LineType, arc.Group, arc.Layer, arc.Center, arc.Radius, arc.AngleBeg, arc.AngleEnd);
             }
         }
         #endregion
