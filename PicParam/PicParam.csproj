@@ -816,6 +816,10 @@
       <Project>{24D95CE6-335E-4B4B-95C9-AAC4D89E4D93}</Project>
       <Name>Sharp3D.Math</Name>
     </ProjectReference>
+    <ProjectReference Include="..\treeDiM.Processor\treeDiM.Processor.csproj">
+      <Project>{a9fcdb3a-2450-44ac-b639-9a13a9f5e2a6}</Project>
+      <Name>treeDiM.Processor</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TreeDim.UserControls\TreeDim.UserControls.csproj">
       <Project>{D75634E3-34AA-4418-A6B6-3647BFF90606}</Project>
       <Name>TreeDim.UserControls</Name>

@@ -232,6 +232,11 @@ namespace Pic.Factory2D.Control
             }
         }
 
+        public PicFactory GetFactory()
+        {
+            return _factory;
+        }
+
         public void ShowAboutBox()
         {
             AboutBox form = new AboutBox();

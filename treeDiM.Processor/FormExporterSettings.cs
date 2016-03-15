@@ -44,7 +44,10 @@ namespace treeDiM.Processor
                 cbCutJobType.SelectedIndex = 0;
 
             // fill fileSelect control
-            string filePath = Path.Combine(Properties.Settings.Default.OutputDirectory, FileName);
+            string fileName = FileName;
+            fileName = FileName.Replace('*', '_');
+            fileName = fileName.Replace('-', '_');
+            string filePath = Path.Combine(Properties.Settings.Default.OutputDirectory, fileName);
             fileSelectOutput.FileName = Path.ChangeExtension(filePath, "oxf");
         }
         protected override void OnClosed(EventArgs e)
@@ -84,22 +87,30 @@ namespace treeDiM.Processor
         {
             if (null == _factory || null == _exporterSettings)
                 return;
-            // selected
-            Dictionary<PicGraphics.LT, CutTool> toolDictionary = new Dictionary<PicGraphics.LT, CutTool>();
-            ExporterSettingsTypeCutJob typeCutJob = _exporterSettings.TypeCutJobs[cbCutJobType.SelectedIndex];
-            foreach (ExporterSettingsTypeCutJobTool tool in typeCutJob.Tools)
-            {
-                PicGraphics.LT lineType = PicGraphics.ParseLineType(tool.LineType.ToString());
-                toolDictionary.Add(lineType, new CutTool(tool.ToolNumber, tool.ToolName, tool.Color.ToArray(), tool.Step));
-            }
-
-            Generator.ProcessEntities(_factory, toolDictionary, ref _entities);
+            Generator.ProcessEntities(_factory, ToolDictionary, ref _entities);
 
             trackBarEntities.Minimum = 0;
             trackBarEntities.Maximum = _entities.Count;
             trackBarEntities.Value = _entities.Count;
 
             factoryViewerCurrent.Refresh();
+        }
+        private Dictionary<PicGraphics.LT, CutTool> ToolDictionary
+        {
+            get
+            { 
+            Dictionary<PicGraphics.LT, CutTool> toolDictionary = new Dictionary<PicGraphics.LT, CutTool>();
+            if (null != _exporterSettings)
+            {
+                ExporterSettingsTypeCutJob typeCutJob = _exporterSettings.TypeCutJobs[cbCutJobType.SelectedIndex];
+                foreach (ExporterSettingsTypeCutJobTool tool in typeCutJob.Tools)
+                {
+                    PicGraphics.LT lineType = PicGraphics.ParseLineType(tool.LineType.ToString());
+                    toolDictionary.Add(lineType, new CutTool(tool.ToolNumber, tool.ToolType.ToString(), tool.ToolName, tool.Color.ToArray()));
+                }
+            }
+            return toolDictionary;
+            }
         }
         #endregion
 
@@ -126,6 +137,15 @@ namespace treeDiM.Processor
         {
             factoryViewerCurrent.Refresh();
         }
+        private void onOK(object sender, EventArgs e)
+        {
+            ExporterSettingsTypeCutJob typeCutJob = _exporterSettings.TypeCutJobs[cbCutJobType.SelectedIndex];
+            if (!Generator.Export(_factory, ToolDictionary
+                , _exporterSettings.GeneralSettings.LimitFormat.ToArray(), typeCutJob.Name, typeCutJob.Material.Thickness
+                , fileSelectOutput.FileName))
+            {            
+            }
+        }
         #endregion
 
         #region Data members
@@ -134,5 +154,7 @@ namespace treeDiM.Processor
         private PicFactory _factory;
         private List<PicTypedDrawable> _entities;
         #endregion
+
+
     }
 }

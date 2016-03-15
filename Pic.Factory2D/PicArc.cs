@@ -100,6 +100,11 @@ namespace Pic
                 while (arc._angleEnd < arc._angleBeg)       arc._angleEnd += 360.0;
                 return arc;
             }
+            public double Angle(Vector2D pt0, Vector2D pt1)
+            {
+                bool sign = (pt0 - Source).GetLength() < 1.0E-03;
+                return (sign ? 1.0 : -1.0 )* (_angleEnd - _angleBeg);
+            }
 			#endregion
 
             #region Private methods

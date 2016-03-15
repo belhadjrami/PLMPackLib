@@ -639,7 +639,7 @@
             this.toolStripButtonSUMMA.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             resources.ApplyResources(this.toolStripButtonSUMMA, "toolStripButtonSUMMA");
             this.toolStripButtonSUMMA.Name = "toolStripButtonSUMMA";
-            this.toolStripButtonSUMMA.Click += new System.EventHandler(this.toolStripButtonPostProcessor_Click);
+            this.toolStripButtonSUMMA.Click += new System.EventHandler(this.toolStripButtonSUMMA_Click);
             // 
             // toolStripSeparator7
             // 

@@ -995,11 +995,9 @@ namespace treeDiM.Processor
 
         private lineType lineTypeField;
 
-        private int stepField;
-
-        private bool stepFieldSpecified;
-
         private int toolNumberField;
+
+        private toolType toolTypeField;
 
         private string toolNameField;
 
@@ -1026,32 +1024,6 @@ namespace treeDiM.Processor
         }
 
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public int Step
-        {
-            get
-            {
-                return this.stepField;
-            }
-            set
-            {
-                this.stepField = value;
-            }
-        }
-
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool StepSpecified
-        {
-            get
-            {
-                return this.stepFieldSpecified;
-            }
-            set
-            {
-                this.stepFieldSpecified = value;
-            }
-        }
-
-        [System.Xml.Serialization.XmlAttributeAttribute()]
         public int ToolNumber
         {
             get
@@ -1061,6 +1033,19 @@ namespace treeDiM.Processor
             set
             {
                 this.toolNumberField = value;
+            }
+        }
+
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public toolType ToolType
+        {
+            get
+            {
+                return this.toolTypeField;
+            }
+            set
+            {
+                this.toolTypeField = value;
             }
         }
 
@@ -1315,5 +1300,57 @@ namespace treeDiM.Processor
 
         /// <remarks/>
         LT_BRIDGES,
+    }
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1064.2")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.treedim.com/PLMPack")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://www.treedim.com/PLMPack", IsNullable = false)]
+    public enum toolType
+    {
+
+        /// <remarks/>
+        Regmark,
+
+        /// <remarks/>
+        Cut,
+
+        /// <remarks/>
+        Draw,
+
+        /// <remarks/>
+        Crease,
+
+        /// <remarks/>
+        KissCut,
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("V-Cut")]
+        VCut,
+
+        /// <remarks/>
+        EOT,
+
+        /// <remarks/>
+        POT,
+
+        /// <remarks/>
+        ThruCut,
+
+        /// <remarks/>
+        Laser,
+
+        /// <remarks/>
+        DRT,
+
+        /// <remarks/>
+        Drill,
+
+        /// <remarks/>
+        Milling,
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("Milling Multipass")]
+        MillingMultipass,
     }
 }

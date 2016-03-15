@@ -20,6 +20,8 @@ using PicParam.Properties;
 
 using treeDiM.StackBuilder.GUIExtension;
 using MRU;
+
+using treeDiM.Processor;
 #endregion
 
 namespace PicParam
@@ -619,6 +621,23 @@ namespace PicParam
                 MessageBox.Show(ex.Message);
             }
         }
+        private void toolStripButtonSUMMA_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                PicFactory factory = null;
+                if (_pluginViewCtrl.Visible)
+                    factory = _pluginViewCtrl.GetFactory();
+                else if (_factoryViewCtrl.Visible)
+                    factory = _factoryViewCtrl.GetFactory();
+                Generator.ShowProcessor(factory, DocumentName);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         private void Export(string filePath)
         {
             // write file
@@ -661,7 +680,6 @@ namespace PicParam
                 _log.WarnFormat("Failed to open file {0} with exception: {1}", filePath, ex.Message);
             }
         }
-
         private void ExportAndOpenExtension(string sExt, string sPathExectable)
         {
             // build temp file path

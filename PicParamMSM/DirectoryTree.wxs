@@ -27,6 +27,7 @@
           <Directory Id="Documents" Name="Documents"/>
           <Directory Id="Thumbnails" Name="Thumbnails"/>
         </Directory>
+        <Directory Id="ExporterSettings" Name="ExporterSettings"/>
       </Directory>
       <Directory Id="ProgramMenuFolder" Name="Programs" ShortName="PMenu">
         <Directory Id="ProgramMenuDir" Name="treeDiM" ShortName="treeDiM" />

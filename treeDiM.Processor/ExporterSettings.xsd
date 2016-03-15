@@ -25,6 +25,7 @@
     <xs:restriction base="xs:string"/>
   </xs:simpleType>
   <!-- enumerations : begin -->
+  <!-- Flute direction-->
   <xs:simpleType name="fluteDirection">
     <xs:annotation>
       <xs:documentation>
@@ -37,6 +38,7 @@
       <xs:enumeration value="None"/>
     </xs:restriction>
   </xs:simpleType>
+  <!-- Line type-->
   <xs:simpleType name="lineType">
     <xs:annotation>
       <xs:documentation>
@@ -99,6 +101,29 @@
           <xs:documentation>Ponts</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--Method name / Tool type-->
+  <xs:simpleType name="toolType">
+    <xs:annotation>
+      <xs:documentation>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Regmark"/>
+      <xs:enumeration value="Cut"/>
+      <xs:enumeration value="Draw"/>
+      <xs:enumeration value="Crease"/>
+      <xs:enumeration value="KissCut"/>
+      <xs:enumeration value="V-Cut"/>
+      <xs:enumeration value="EOT"/>
+      <xs:enumeration value="POT"/>
+      <xs:enumeration value="ThruCut"/>
+      <xs:enumeration value="Laser"/>
+      <xs:enumeration value="DRT"/>
+      <xs:enumeration value="Drill"/>
+      <xs:enumeration value="Milling"/>
+      <xs:enumeration value="Milling Multipass"/>
     </xs:restriction>
   </xs:simpleType>
   <!-- enumerations : end-->
@@ -172,8 +197,8 @@
                           <xs:element name="Tool" minOccurs="0" maxOccurs="unbounded">
                             <xs:complexType>
                               <xs:attribute name="LineType" type="exp:lineType" use="required"/>
-                              <xs:attribute name="Step" type="exp:int" use="optional"/>
                               <xs:attribute name="ToolNumber" type="exp:int" use="required"/>
+                              <xs:attribute name="ToolType" type="exp:toolType" use="required"/>
                               <xs:attribute name="ToolName" type="exp:string" use="required"/>
                               <xs:attribute name="Color" type="exp:color" use="required"/>
                             </xs:complexType>

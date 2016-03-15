@@ -674,6 +674,15 @@ namespace Pic.Plugin.ViewCtrl
                 fstream.Write(byteArray, 0, byteArray.GetLength(0));
         }
 
+        public PicFactory GetFactory()
+        {
+            Pic.Factory2D.PicFactory factory = new Pic.Factory2D.PicFactory();
+            Component.CreateFactoryEntities(factory, CurrentParameterStack);
+            if (_reflectionX) factory.ProcessVisitor(new PicVisitorTransform(Transform2D.ReflectionX));
+            if (_reflectionY) factory.ProcessVisitor(new PicVisitorTransform(Transform2D.ReflectionY));
+            return factory;
+        }
+
         public byte[] GetExportFile(string fileExt, Pic.Plugin.ParameterStack stack)
         {
             // build factory

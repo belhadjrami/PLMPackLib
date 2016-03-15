@@ -5,22 +5,22 @@
     <TypeCutJob Name="Folding CardBoard">
       <Material Thickness="0.5"/>
       <Tools>
-        <Tool LineType="LT_CREASING" Step="0" ToolNumber="3" ToolName="Creasing Wheel" Color="0 255 0"/>
-        <Tool LineType="LT_CUT" Step="1" ToolNumber="1" ToolName="Cut Out Knife" Color="255 0 0"/>
+        <Tool LineType="LT_CREASING" ToolNumber="3" ToolType="Crease" ToolName="Creasing Wheel" Color="0 255 0"/>
+        <Tool LineType="LT_CUT" ToolNumber="1"  ToolType="Cut" ToolName="Cut Out Knife" Color="255 0 0"/>
       </Tools>
     </TypeCutJob>
     <TypeCutJob Name="Corrugated Cardboard">
       <Material Thickness="3" FluteDirection="Y"/>
       <Tools>
-        <Tool LineType="LT_CREASING" Step="0" ToolNumber="3" ToolName="Creasing Weel" Color="0 255 0"/>
-        <Tool LineType="LT_CUT" Step="1" ToolNumber="1" ToolName="Oscillating Knife" Color="255 0 0"/>
+        <Tool LineType="LT_CREASING" ToolNumber="3" ToolType="Crease" ToolName="Creasing Weel" Color="0 255 0"/>
+        <Tool LineType="LT_CUT" ToolNumber="1" ToolType="Cut" ToolName="Oscillating Knife" Color="255 0 0"/>
       </Tools>
     </TypeCutJob>
     <TypeCutJob Name="XBoard">
       <Material Thickness="15"/>
       <Tools>
-        <Tool LineType="LT_CREASING" Step="0" ToolNumber="4" ToolName="V-Cut" Color="0 255 0"/>
-        <Tool LineType="LT_CUT" Step="1" ToolNumber="6" ToolName="POT" Color="255 0 0"/>
+        <Tool LineType="LT_CREASING" ToolNumber="4" ToolType="Crease" ToolName="V-Cut" Color="0 255 0"/>
+        <Tool LineType="LT_CUT" ToolNumber="6" ToolType="Cut" ToolName="POT" Color="255 0 0"/>
       </Tools>
     </TypeCutJob>
   </TypeCutJobs>
