@@ -231,7 +231,7 @@
         <File Source="..\treeDiM.Processor\ExporterSettings.xml"/>
         <File Source="..\treeDiM.Processor\ExporterSettings.xsd"/>
         <util:XmlFile Id="setExporterSettingsPath" Action="setValue" File="[Bin32]PLMPackLib.exe.config"
-                      ElementPath="/configuration/applicationSettings/treeDiM.Processor.Settings/setting[\[]@name='SettingsFilePath'[\]]/value" Value="[ExporterSettings]\ExporterSettings.xml" />
+                      ElementPath="/configuration/applicationSettings/treeDiM.Processor.Properties.Settings/setting[\[]@name='SettingsFilePath'[\]]/value" Value="[ExporterSettings]ExporterSettings.xml" />
         <Condition>Installed OR NETFRAMEWORK40FULL</Condition>
       </Component>
     </DirectoryRef>
