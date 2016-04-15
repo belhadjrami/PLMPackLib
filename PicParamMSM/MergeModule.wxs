@@ -129,14 +129,13 @@
         <File Source="..\PicParam\bin\x86\Release\OptionsLib.dll" />
         <Condition>Installed OR NETFRAMEWORK40FULL</Condition>
       </Component>
-      <!-- PicParamDesktop.exe -->
-      <Component Id="PicParamDesktop" Guid="89E0D0DB-262B-476C-BA8A-A7328A83FB4B">
+      <!-- PLMPackLib.exe -->
+      <Component Id="PLMPackLib.exe" Guid="89E0D0DB-262B-476C-BA8A-A7328A83FB4B">
         <File Source="..\PicParam\bin\x86\Release\PLMPackLib.exe" KeyPath="yes" Checksum="yes">
           <Shortcut Id="startMenuAdv" Directory="ProgramMenuDir" Advertise="yes" Name="PLMPackLib" WorkingDirectory="Bin32" Icon="Icon.exe">
             <Icon Id="Icon.exe" SourceFile="..\PicParam\bin\x86\Release\PLMPackLib.exe" />
           </Shortcut>
         </File>
-        <File Source="..\PicParam\bin\x86\Release\PLMPackLib.exe.config"/>
         <RemoveFolder Id="DeleteShortcutFolder" Directory="ProgramMenuDir" On="uninstall" />
         <Condition>Installed OR NETFRAMEWORK40FULL</Condition>
       </Component>
@@ -230,10 +229,15 @@
       <Component Id="ExporterSettingsXml" Guid="{33ED0B4C-5BBC-45DE-8D45-5C3E282F1274}">
         <File Source="..\treeDiM.Processor\ExporterSettings.xml"/>
         <File Source="..\treeDiM.Processor\ExporterSettings.xsd"/>
-        <util:XmlFile Id="setExporterSettingsPath" Action="setValue" File="[Bin32]PLMPackLib.exe.config"
-                      ElementPath="/configuration/applicationSettings/treeDiM.Processor.Properties.Settings/setting[\[]@name='SettingsFilePath'[\]]/value" Value="[ExporterSettings]ExporterSettings.xml" />
         <Condition>Installed OR NETFRAMEWORK40FULL</Condition>
       </Component>
+      <?ifdef DatabaseEmbedded ?>
+        <Component Id="PLMPackLibExeConfigModif3" Guid="{3C1AB544-F6BA-4B41-8EDF-6072F070C991}">
+           <util:XmlFile Id="setExporterSettingsPath" Action="setValue" File="[Bin32]PLMPackLib.exe.config"
+                        ElementPath="/configuration/applicationSettings/treeDiM.Processor.Properties.Settings/setting[\[]@name='SettingsFilePath'[\]]/value" Value="[ExporterSettings]ExporterSettings.xml" />
+          <Condition>Installed OR NETFRAMEWORK40FULL</Condition>
+        </Component>
+      <?endif?>
     </DirectoryRef>
     <!-- ProgramMenuFolder -->
     <DirectoryRef Id="DesktopFolder">
