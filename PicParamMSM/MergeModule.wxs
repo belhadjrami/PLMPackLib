@@ -231,13 +231,6 @@
         <File Source="..\treeDiM.Processor\ExporterSettings.xsd"/>
         <Condition>Installed OR NETFRAMEWORK40FULL</Condition>
       </Component>
-      <?ifdef DatabaseEmbedded ?>
-        <Component Id="PLMPackLibExeConfigModif3" Guid="{3C1AB544-F6BA-4B41-8EDF-6072F070C991}">
-           <util:XmlFile Id="setExporterSettingsPath" Action="setValue" File="[Bin32]PLMPackLib.exe.config"
-                        ElementPath="/configuration/applicationSettings/treeDiM.Processor.Properties.Settings/setting[\[]@name='SettingsFilePath'[\]]/value" Value="[ExporterSettings]ExporterSettings.xml" />
-          <Condition>Installed OR NETFRAMEWORK40FULL</Condition>
-        </Component>
-      <?endif?>
     </DirectoryRef>
     <!-- ProgramMenuFolder -->
     <DirectoryRef Id="DesktopFolder">
@@ -252,6 +245,7 @@
     <?ifdef DatabaseEmbedded?>
     <ComponentRef Id="PLMPackLibExeConfigModif1"/>
     <ComponentRef Id="PLMPackLibExeConfigModif2"/>
+    <ComponentRef Id="PLMPackLibExeConfigModif3"/>
     <ComponentRef Id="PLMPackLibExeConfigRebranding"/>
     <?endif?>
     <!--********** Application files : END *********************************-->
