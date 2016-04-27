@@ -40,6 +40,7 @@
       <Component Id="PLMPackLibExeConfigModif3" Guid="3C1AB544-F6BA-4B41-8EDF-6072F070C991" KeyPath="yes">
         <util:XmlFile Id="setExporterSettingsPath" Action="setValue" File="[Bin32]PLMPackLib.exe.config"
                       ElementPath="/configuration/applicationSettings/treeDiM.Processor.Properties.Settings/setting[\[]@name='SettingsFilePath'[\]]/value" Value="[ExporterSettings]ExporterSettings.xml" />
+        <Condition>DATABASEEXISTS</Condition>
       </Component>
       <Component Id="PLMPackLibExeConfigRebranding" Guid="09A4538D-757D-4FED-8415-E2C5BAD3B42C" KeyPath="yes">
         <Condition>REBRANDED</Condition>
