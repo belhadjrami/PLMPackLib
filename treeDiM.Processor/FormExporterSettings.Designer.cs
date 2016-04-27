@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormExporterSettings));
             this.bnOK = new System.Windows.Forms.Button();
             this.bnCancel = new System.Windows.Forms.Button();
             this.lbCutJobType = new System.Windows.Forms.Label();
@@ -41,95 +42,65 @@
             // 
             // bnOK
             // 
-            this.bnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.bnOK, "bnOK");
             this.bnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.bnOK.Location = new System.Drawing.Point(429, 13);
             this.bnOK.Name = "bnOK";
-            this.bnOK.Size = new System.Drawing.Size(75, 23);
-            this.bnOK.TabIndex = 0;
-            this.bnOK.Text = "OK";
             this.bnOK.UseVisualStyleBackColor = true;
             this.bnOK.Click += new System.EventHandler(this.onOK);
             // 
             // bnCancel
             // 
-            this.bnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.bnCancel, "bnCancel");
             this.bnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.bnCancel.Location = new System.Drawing.Point(429, 43);
             this.bnCancel.Name = "bnCancel";
-            this.bnCancel.Size = new System.Drawing.Size(75, 23);
-            this.bnCancel.TabIndex = 1;
-            this.bnCancel.Text = "Cancel";
             this.bnCancel.UseVisualStyleBackColor = true;
             // 
             // lbCutJobType
             // 
-            this.lbCutJobType.AutoSize = true;
-            this.lbCutJobType.Location = new System.Drawing.Point(13, 13);
+            resources.ApplyResources(this.lbCutJobType, "lbCutJobType");
             this.lbCutJobType.Name = "lbCutJobType";
-            this.lbCutJobType.Size = new System.Drawing.Size(63, 13);
-            this.lbCutJobType.TabIndex = 2;
-            this.lbCutJobType.Text = "Cut job type";
             // 
             // lbOutputFilePath
             // 
-            this.lbOutputFilePath.AutoSize = true;
-            this.lbOutputFilePath.Location = new System.Drawing.Point(13, 43);
+            resources.ApplyResources(this.lbOutputFilePath, "lbOutputFilePath");
             this.lbOutputFilePath.Name = "lbOutputFilePath";
-            this.lbOutputFilePath.Size = new System.Drawing.Size(39, 13);
-            this.lbOutputFilePath.TabIndex = 3;
-            this.lbOutputFilePath.Text = "Output";
             // 
             // cbCutJobType
             // 
+            resources.ApplyResources(this.cbCutJobType, "cbCutJobType");
             this.cbCutJobType.FormattingEnabled = true;
-            this.cbCutJobType.Location = new System.Drawing.Point(100, 13);
             this.cbCutJobType.Name = "cbCutJobType";
-            this.cbCutJobType.Size = new System.Drawing.Size(153, 21);
-            this.cbCutJobType.TabIndex = 4;
             this.cbCutJobType.SelectedIndexChanged += new System.EventHandler(this.onCutJobTypeChanged);
             // 
             // fileSelectOutput
             // 
-            this.fileSelectOutput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.fileSelectOutput.Location = new System.Drawing.Point(99, 43);
+            resources.ApplyResources(this.fileSelectOutput, "fileSelectOutput");
+            this.fileSelectOutput.Filter = "(*.oxf)|oxf|All files (*.*)|*.*";
             this.fileSelectOutput.Name = "fileSelectOutput";
-            this.fileSelectOutput.Size = new System.Drawing.Size(323, 20);
-            this.fileSelectOutput.TabIndex = 5;
+            this.fileSelectOutput.SaveMode = true;
             // 
             // trackBarEntities
             // 
-            this.trackBarEntities.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.trackBarEntities.Location = new System.Drawing.Point(12, 294);
+            resources.ApplyResources(this.trackBarEntities, "trackBarEntities");
             this.trackBarEntities.Name = "trackBarEntities";
-            this.trackBarEntities.Size = new System.Drawing.Size(491, 45);
-            this.trackBarEntities.TabIndex = 6;
             this.trackBarEntities.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBarEntities.Scroll += new System.EventHandler(this.onScroll);
             // 
             // factoryViewerCurrent
             // 
-            this.factoryViewerCurrent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.factoryViewerCurrent, "factoryViewerCurrent");
             this.factoryViewerCurrent.ForeColor = System.Drawing.Color.White;
-            this.factoryViewerCurrent.Location = new System.Drawing.Point(13, 72);
             this.factoryViewerCurrent.Name = "factoryViewerCurrent";
             this.factoryViewerCurrent.ReflectionX = false;
             this.factoryViewerCurrent.ReflectionY = false;
             this.factoryViewerCurrent.ShowAboutMenu = false;
             this.factoryViewerCurrent.ShowCotations = false;
             this.factoryViewerCurrent.ShowNestingMenu = false;
-            this.factoryViewerCurrent.Size = new System.Drawing.Size(491, 187);
-            this.factoryViewerCurrent.TabIndex = 7;
             // 
             // FormExporterSettings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(516, 337);
             this.Controls.Add(this.factoryViewerCurrent);
             this.Controls.Add(this.trackBarEntities);
             this.Controls.Add(this.fileSelectOutput);
@@ -141,7 +112,6 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormExporterSettings";
-            this.Text = "Exporter settings...";
             ((System.ComponentModel.ISupportInitialize)(this.trackBarEntities)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <ExporterSettings xsi:schemaLocation="http://www.treedim.com/PLMPack K:\GitHub\PLMPackLib\treeDiM.Processor\ExporterSettings.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.treedim.com/PLMPack" xmlns:exp="http://www.treedim.com/PLMPack">
+  <!--
+  enumeration LineType : LT_CUT, LT_PERFOCREASING, LT_CONSTRUCTION, LT_PERFO, LT_HALFCUT, LT_CREASING, LT_AXIS, LT_COTATION, LT_ORIGIN, LT_GRID, LT_BRIDGES
+  -->
   <GeneralSettings Scale="100" LimitFormat="1000.0 1200.0" />
   <TypeCutJobs>
     <TypeCutJob Name="Folding CardBoard">
@@ -19,7 +22,7 @@
     <TypeCutJob Name="XBoard">
       <Material Thickness="15"/>
       <Tools>
-        <Tool LineType="LT_CREASING" ToolNumber="4" ToolType="Crease" ToolName="V-Cut" Color="0 255 0"/>
+        <Tool LineType="LT_CREASING" ToolNumber="4" ToolType="V-Cut" ToolName="V-Cut" Color="0 255 0"/>
         <Tool LineType="LT_CUT" ToolNumber="6" ToolType="Cut" ToolName="POT" Color="255 0 0"/>
       </Tools>
     </TypeCutJob>

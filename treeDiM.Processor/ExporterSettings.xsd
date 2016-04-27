@@ -103,29 +103,6 @@
       </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
-  <!--Method name / Tool type-->
-  <xs:simpleType name="toolType">
-    <xs:annotation>
-      <xs:documentation>
-      </xs:documentation>
-    </xs:annotation>
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="Regmark"/>
-      <xs:enumeration value="Cut"/>
-      <xs:enumeration value="Draw"/>
-      <xs:enumeration value="Crease"/>
-      <xs:enumeration value="KissCut"/>
-      <xs:enumeration value="V-Cut"/>
-      <xs:enumeration value="EOT"/>
-      <xs:enumeration value="POT"/>
-      <xs:enumeration value="ThruCut"/>
-      <xs:enumeration value="Laser"/>
-      <xs:enumeration value="DRT"/>
-      <xs:enumeration value="Drill"/>
-      <xs:enumeration value="Milling"/>
-      <xs:enumeration value="Milling Multipass"/>
-    </xs:restriction>
-  </xs:simpleType>
   <!-- enumerations : end-->
   <xs:simpleType name="listOfInt">
     <xs:list itemType="exp:int"/>
@@ -198,7 +175,7 @@
                             <xs:complexType>
                               <xs:attribute name="LineType" type="exp:lineType" use="required"/>
                               <xs:attribute name="ToolNumber" type="exp:int" use="required"/>
-                              <xs:attribute name="ToolType" type="exp:toolType" use="required"/>
+                              <xs:attribute name="ToolType" type="exp:string" use="required"/>
                               <xs:attribute name="ToolName" type="exp:string" use="required"/>
                               <xs:attribute name="Color" type="exp:color" use="required"/>
                             </xs:complexType>

@@ -96,8 +96,10 @@ namespace treeDiM.Processor
                     // get corresponding CutTool
                     CutTool ct = dicTool[lt];
                     // SP -> change layer
+                    sb.AppendLine("PU;");
                     sb.AppendLine(string.Format("SP{0};LN{1};LC{2},{3},{4};TN{5}"
                         , ct._number, ct._type, ct._color[0], ct._color[1], ct._color[2], ct._name));
+                    PenDown = false;
                 }
                 Vector2D pt0 = Vector2D.Zero, pt1 = Vector2D.Zero;
                 if (entity is PicSegment)

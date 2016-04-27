@@ -35,7 +35,18 @@ namespace treeDiM.Processor
  	        base.OnLoad(e);
 
             // load exporter settings
-            _exporterSettings = ExporterSettings.LoadFromFile(Settings.Default.SettingsFilePath);
+            try
+            {
+                _exporterSettings = ExporterSettings.LoadFromFile(Settings.Default.SettingsFilePath);
+            }
+            catch (Exception ex)
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine(string.Format("File {0} appears to be invalid.", Settings.Default.SettingsFilePath));
+                sb.AppendLine(ex.Message);
+                MessageBox.Show( sb.ToString() );
+                Close();
+            }
 
             // fill combo
             foreach (ExporterSettingsTypeCutJob job in _exporterSettings.TypeCutJobs)
@@ -95,17 +106,17 @@ namespace treeDiM.Processor
         {
             get
             { 
-            Dictionary<PicGraphics.LT, CutTool> toolDictionary = new Dictionary<PicGraphics.LT, CutTool>();
-            if (null != _exporterSettings)
-            {
-                ExporterSettingsTypeCutJob typeCutJob = _exporterSettings.TypeCutJobs[cbCutJobType.SelectedIndex];
-                foreach (ExporterSettingsTypeCutJobTool tool in typeCutJob.Tools)
+                Dictionary<PicGraphics.LT, CutTool> toolDictionary = new Dictionary<PicGraphics.LT, CutTool>();
+                if (null != _exporterSettings)
                 {
-                    PicGraphics.LT lineType = PicGraphics.ParseLineType(tool.LineType.ToString());
-                    toolDictionary.Add(lineType, new CutTool(tool.ToolNumber, tool.ToolType.ToString(), tool.ToolName, tool.Color.ToArray()));
+                    ExporterSettingsTypeCutJob typeCutJob = _exporterSettings.TypeCutJobs[cbCutJobType.SelectedIndex];
+                    foreach (ExporterSettingsTypeCutJobTool tool in typeCutJob.Tools)
+                    {
+                        PicGraphics.LT lineType = PicGraphics.ParseLineType(tool.LineType.ToString());
+                        toolDictionary.Add(lineType, new CutTool(tool.ToolNumber, tool.ToolType.ToString(), tool.ToolName, tool.Color.ToArray()));
+                    }
                 }
-            }
-            return toolDictionary;
+                return toolDictionary;
             }
         }
         #endregion
@@ -116,7 +127,6 @@ namespace treeDiM.Processor
             get { return _fileName; }
             set { _fileName = value; }
         }
-
         public PicFactory Factory
         {
             set { _factory = value; }
@@ -150,7 +160,5 @@ namespace treeDiM.Processor
         private PicFactory _factory;
         private List<PicTypedDrawable> _entities;
         #endregion
-
-
     }
 }

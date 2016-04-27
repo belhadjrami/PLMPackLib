@@ -94,6 +94,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormExporterSettings.fr-FR.resx">
+      <DependentUpon>FormExporterSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormExporterSettings.resx">
       <DependentUpon>FormExporterSettings.cs</DependentUpon>
     </EmbeddedResource>
