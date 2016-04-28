@@ -80,7 +80,8 @@ namespace treeDiM.Processor
             // used material 
             sb.AppendLine(string.Format("TM{0};",materialName));
 
-            bool PenDown = false;
+            bool PenDown = false, toolChanged = false;
+
             Vector2D currentPt = Vector2D.Zero;
             PicGraphics.LT lt = PicGraphics.LT.LT_DEFAULT;
 
@@ -99,17 +100,18 @@ namespace treeDiM.Processor
                     sb.AppendLine("PU;");
                     sb.AppendLine(string.Format("SP{0};LN{1};LC{2},{3},{4};TN{5}"
                         , ct._number, ct._type, ct._color[0], ct._color[1], ct._color[2], ct._name));
-                    PenDown = false;
+                    toolChanged = true;
+                    
                 }
                 Vector2D pt0 = Vector2D.Zero, pt1 = Vector2D.Zero;
                 if (entity is PicSegment)
                 {
                     PenDown = EntityPoints(entity, currentPt, ref pt0, ref pt1); // if connected, then PenDown
-                    if (!PenDown)
+                    if (!PenDown || toolChanged)
                     {
                         sb.AppendLine(string.Format("PU;PA{0:0},{1:0};", 100 * pt0.X, 100 * pt0.Y));
                         sb.AppendLine("PD;");
-                        PenDown = true;
+                        toolChanged = false;
                     }
                     sb.AppendLine(string.Format("PA{0:0},{1:0};", 100 * pt1.X, 100 * pt1.Y));
                 }
@@ -117,11 +119,11 @@ namespace treeDiM.Processor
                 if (entity is PicArc)
                 {
                     PenDown = EntityPoints(entity, currentPt, ref pt0, ref pt1);
-                    if (!PenDown)
+                    if (!PenDown || toolChanged)
                     { 
                         sb.AppendLine(string.Format("PU;PA{0:0},{1:0};", 100 * pt0.X, 100 * pt0.Y));
                         sb.AppendLine("PD;");
-                        PenDown = true;
+                        toolChanged = false;
                     }
                     PicArc arc = entity as PicArc;
                     Vector2D arcCenter = arc.Center;

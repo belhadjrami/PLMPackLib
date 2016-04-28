@@ -1,29 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<ExporterSettings xsi:schemaLocation="http://www.treedim.com/PLMPack K:\GitHub\PLMPackLib\treeDiM.Processor\ExporterSettings.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.treedim.com/PLMPack" xmlns:exp="http://www.treedim.com/PLMPack">
-  <!--
-  enumeration LineType : LT_CUT, LT_PERFOCREASING, LT_CONSTRUCTION, LT_PERFO, LT_HALFCUT, LT_CREASING, LT_AXIS, LT_COTATION, LT_ORIGIN, LT_GRID, LT_BRIDGES
-  -->
+<ExporterSettings xsi:schemaLocation="http://www.treedim.com/PLMPack K:\GitHub\PLMPackLib\treeDiM.Processor\ExporterSettings.xsd"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.treedim.com/PLMPack" xmlns:exp="http://www.treedim.com/PLMPack">
   <GeneralSettings Scale="100" LimitFormat="1000.0 1200.0" />
   <TypeCutJobs>
     <TypeCutJob Name="Folding CardBoard">
       <Material Thickness="0.5"/>
       <Tools>
-        <Tool LineType="LT_CREASING" ToolNumber="3" ToolType="Crease" ToolName="Creasing Wheel" Color="0 255 0"/>
-        <Tool LineType="LT_CUT" ToolNumber="1"  ToolType="Cut" ToolName="Cut Out Knife" Color="255 0 0"/>
+        <Tool LineType="LT_CREASING" ToolNumber="10" ToolType="Creasing Wheel" ToolName="Creasing Wheel" Color="191 191 64"/>
+        <Tool LineType="LT_CUT" ToolNumber="12"  ToolType="Cut Out Knife" ToolName="Cut Out Knife" Color="255 0 0"/>
       </Tools>
     </TypeCutJob>
     <TypeCutJob Name="Corrugated Cardboard">
       <Material Thickness="3" FluteDirection="Y"/>
       <Tools>
-        <Tool LineType="LT_CREASING" ToolNumber="3" ToolType="Crease" ToolName="Creasing Weel" Color="0 255 0"/>
-        <Tool LineType="LT_CUT" ToolNumber="1" ToolType="Cut" ToolName="Oscillating Knife" Color="255 0 0"/>
+        <Tool LineType="LT_CREASING" ToolNumber="10" ToolType="Creasing Wheel" ToolName="Creasing Wheel" Color="191 191 64"/>
+        <Tool LineType="LT_CUT" ToolNumber="14" ToolType="Oscillating Knife" ToolName="Oscillating Knife" Color="39 126 54"/>
       </Tools>
     </TypeCutJob>
     <TypeCutJob Name="XBoard">
       <Material Thickness="15"/>
       <Tools>
-        <Tool LineType="LT_CREASING" ToolNumber="4" ToolType="V-Cut" ToolName="V-Cut" Color="0 255 0"/>
-        <Tool LineType="LT_CUT" ToolNumber="6" ToolType="Cut" ToolName="POT" Color="255 0 0"/>
+        <Tool LineType="LT_CREASING" ToolNumber="4" ToolType="V-Cut 45" ToolName="V-Cut" Color="184 170 50"/>
+        <Tool LineType="LT_CUT" ToolNumber="16" ToolType="Cut" ToolName="POT" Color="153 153 102"/>
       </Tools>
     </TypeCutJob>
   </TypeCutJobs>
