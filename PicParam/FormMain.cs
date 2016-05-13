@@ -707,7 +707,13 @@ namespace PicParam
                 MessageBox.Show("Failed to retrieve reference point and thickness");
                 return;
             }
-
+            // allow
+            if (!System.IO.File.Exists(Pic3DExporterPath))
+            {
+                MessageBox.Show(string.Format("File {0} could not be found!", Pic3DExporterPath));
+                return;
+            }
+            // show form and generate PDF 3D
             FormGeneratePDF3D form = new FormGeneratePDF3D(this);
             form.OutputFilePath = Path.ChangeExtension(Path.Combine(Path.GetTempPath(), treeNode.Name), "pdf");
             form.thickness = thickness;
@@ -787,7 +793,7 @@ namespace PicParam
                     job.SaveToFile(xmlFile);
 
                     // #### execute Pic3DExporter
-                    string exePath = Path.Combine(currentDir, "Pic3DExporter.exe");
+                    string exePath = Pic3DExporterPath;
                     if (!System.IO.File.Exists(exePath))
                     {
                         MessageBox.Show(string.Format("File {0} could not be found!", exePath));
@@ -956,7 +962,9 @@ namespace PicParam
                 toolStripButtonEditParameters.Enabled = _pluginViewCtrl.Visible && _pluginViewCtrl.HasDependancies;
 
                 // PDF3D button
-                bool tools3DGenerate = _pluginViewCtrl.Visible && (null != _pluginViewCtrl.Component) && _pluginViewCtrl.Component.IsSupportingAutomaticFolding;
+                bool tools3DGenerate = _pluginViewCtrl.Visible && (null != _pluginViewCtrl.Component)
+                    && _pluginViewCtrl.Component.IsSupportingAutomaticFolding
+                    && System.IO.File.Exists(Pic3DExporterPath);
                 toolStripSButtonDES3.Enabled = tools3DGenerate;
                 toolStripMI_ExportPicador3D.Enabled = tools3DGenerate;
                 toolStripMI_ExportPDF3D.Enabled = tools3DGenerate;
@@ -1183,6 +1191,16 @@ namespace PicParam
         {
             get { return _docPath; }
             set { _docPath = value; }
+        }
+        #endregion
+
+        #region Public properties
+        public string Pic3DExporterPath
+        {
+            get
+            {
+                return Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), "..\\Bin8_2D\\Pic3DExporter.exe");
+            }
         }
         #endregion
 

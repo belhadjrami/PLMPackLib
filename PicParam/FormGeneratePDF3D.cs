@@ -40,19 +40,13 @@ namespace PicParam
             set { fileSelectOutput.FileName = value; }
             get { return fileSelectOutput.FileName; }
         }
-
-        private string CurrentDir
-        {
-            //get { return Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location); }
-            get { return @"K:\GitHub\Picador3D\x64\Release"; }
-        }
         #endregion
 
         #region Load override
         protected override void OnLoad(EventArgs e)
         {
  	        base.OnLoad(e);
-            fileSelectPdfTemplate.FileName = Path.Combine(CurrentDir, "DefaultTemplate.pdf");
+            fileSelectPdfTemplate.FileName = Path.Combine( Path.GetDirectoryName(formMain.Pic3DExporterPath), "DefaultTemplate.pdf" );
             onFileNameChanged(this, null);
         }
         #endregion
@@ -109,7 +103,6 @@ namespace PicParam
                 {
                     job.Pathes.Add(new Pic3DExporter.PathItem() { pathID = string.Format("FID-{0}", ++fid), path = filePath, type = Pic3DExporter.pathType.FILE });
                 }
-
                 // **** FILES END ****
                 // **** TASKS BEGIN ****
                 // DES -> DES3
@@ -175,7 +168,7 @@ namespace PicParam
                 job.SaveToFile(xmlFile);
 
                 // #### execute Pic3DExporter
-                string exePath = Path.Combine(CurrentDir, "Pic3DExporter.exe");
+                string exePath = formMain.Pic3DExporterPath;
                 if (!System.IO.File.Exists(exePath))
                 {
                     MessageBox.Show(string.Format("File {0} could not be found!", exePath));
@@ -214,7 +207,5 @@ namespace PicParam
             }
         }
         #endregion
-
-
     }
 }
