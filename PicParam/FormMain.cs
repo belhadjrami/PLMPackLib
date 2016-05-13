@@ -638,7 +638,7 @@ namespace PicParam
             }
         }
 
-        private void Export(string filePath)
+        public void Export(string filePath)
         {
             // write file
             if (_pluginViewCtrl.Visible)
@@ -699,145 +699,22 @@ namespace PicParam
             List<Document> des3Docs = treeNode.GetBrothersWithExtension(db, "des3");
             if (0 == des3Docs.Count)
             {   MessageBox.Show("Missing des3 for sample pattern files");   return; }
-            List<string> filePathes = new List<string>();
-            foreach (Document d in des3Docs)
-                filePathes.Add(d.File.Path(db));
-
-            SaveFileDialog fd = new SaveFileDialog();
-            fd.Filter = "pdf files (*.pdf)|*.pdf|All files (*.*)|*.*";
-            fd.FilterIndex = 0;
-            fd.DefaultExt = "pdf";
-            fd.FileName = treeNode.Name + ".pdf";
-
-            if (DialogResult.OK == fd.ShowDialog())
+            // get default thickness
+            Sharp3D.Math.Core.Vector2D refPoint = Sharp3D.Math.Core.Vector2D.Zero;
+            double thickness = 0.0;
+            if (!_pluginViewCtrl.GetReferencePointAndThickness(ref refPoint, ref thickness))
             {
-                string pdfFile = fd.FileName;
-                string desFile = Path.ChangeExtension(pdfFile, "des");
-                string des3File = Path.ChangeExtension(pdfFile, "des3");
-                string xmlFile = Path.ChangeExtension(pdfFile, "xml");
-                string u3dFile = Path.ChangeExtension(pdfFile, "u3d");
-                string currentDir = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-                string defaultPdfTemplate = Path.Combine(currentDir, "DefaultTemplate.pdf");
-
-                // generate des file
-                Export(desFile);
-                // reference point
-                double thickness = 0.0;
-                Sharp3D.Math.Core.Vector2D v = Sharp3D.Math.Core.Vector2D.Zero;
-                if (_pluginViewCtrl.GetReferencePointAndThickness(ref v, ref thickness))
-                {
-                    // #### job file
-                    Pic3DExporter.Job job = new Pic3DExporter.Job();
-                    // **** FILES BEGIN ****
-                    job.Pathes.Add(new Pic3DExporter.PathItem() { pathID = "FID-1", path = defaultPdfTemplate, type = Pic3DExporter.pathType.FILE });
-                    job.Pathes.Add(new Pic3DExporter.PathItem() { pathID = "FID-2", path = desFile, type = Pic3DExporter.pathType.FILE });
-                    job.Pathes.Add(new Pic3DExporter.PathItem() { pathID = "FID-3", path = des3File, type = Pic3DExporter.pathType.FILE });
-                    job.Pathes.Add(new Pic3DExporter.PathItem() { pathID = "FID-4", path = u3dFile, type = Pic3DExporter.pathType.FILE });
-                    job.Pathes.Add(new Pic3DExporter.PathItem() { pathID = "FID-5", path = pdfFile, type = Pic3DExporter.pathType.FILE });
-
-                    int fid = 5;
-                    foreach (string filePath in filePathes)
-                    {
-                        job.Pathes.Add(new Pic3DExporter.PathItem() { pathID = string.Format("FID-{0}", ++fid), path = filePath, type = Pic3DExporter.pathType.FILE });
-                    }
-
-                    // **** FILES END ****
-                    // **** TASKS BEGIN ****
-                    // DES -> DES3
-                    Pic3DExporter.task_2D_TO_DES3 task_2D_to_DES3 = new Pic3DExporter.task_2D_TO_DES3() { id = "TID-1" };
-                    task_2D_to_DES3.Inputs.Add(new Pic3DExporter.PathRef() { pathID = "FID-2", role = "input des", deleteAfterUsing = false });
-                    task_2D_to_DES3.Outputs.Add(new Pic3DExporter.PathRef() { pathID = "FID-3", role = "output des3", deleteAfterUsing = false });
-                    task_2D_to_DES3.autoparameters.thicknessSpecified = true;
-                    task_2D_to_DES3.autoparameters.thickness = (float)thickness;
-                    task_2D_to_DES3.autoparameters.foldPositionSpecified = true;
-                    task_2D_to_DES3.autoparameters.foldPosition = (float)0.5;
-                    task_2D_to_DES3.autoparameters.pointRef.Add((float)v.X);
-                    task_2D_to_DES3.autoparameters.pointRef.Add((float)v.Y);
-                    fid = 5;
-                    foreach (string filePath in filePathes)
-                    {
-                        task_2D_to_DES3.autoparameters.modelFiles.Add(new Pic3DExporter.PathRef() { pathID = string.Format("FID-{0}", ++fid), role = "model files", deleteAfterUsing = false });
-                    }
-                    job.Tasks.Add(task_2D_to_DES3);
-                    // DES3 -> U3D
-                    Pic3DExporter.task_DES3_TO_U3D task_DES3_to_U3D = new Pic3DExporter.task_DES3_TO_U3D() { id = "TID-2" };
-                    task_DES3_to_U3D.Dependencies = "TID-1";
-                    task_DES3_to_U3D.Inputs.Add(new Pic3DExporter.PathRef() { pathID = "FID-3", role = "input des3", deleteAfterUsing = false });
-                    task_DES3_to_U3D.Outputs.Add(new Pic3DExporter.PathRef() { pathID = "FID-4", role = "output u3d", deleteAfterUsing = false });
-                    task_DES3_to_U3D.Parameters.Material.opacitySpecified = true;
-                    task_DES3_to_U3D.Parameters.Material.opacity = 1.0F;
-                    task_DES3_to_U3D.Parameters.Material.reflectivitySpecified = true;
-                    task_DES3_to_U3D.Parameters.Material.reflectivity = 0.0F;
-                    task_DES3_to_U3D.Parameters.Qualities.meshDefaultSpecified = true;
-                    task_DES3_to_U3D.Parameters.Qualities.meshDefault = 1000;
-                    task_DES3_to_U3D.Parameters.Qualities.meshPositionSpecified = true;
-                    task_DES3_to_U3D.Parameters.Qualities.meshPosition = 1000;
-                    task_DES3_to_U3D.Parameters.Qualities.shaderQualitySpecified = true;
-                    task_DES3_to_U3D.Parameters.Qualities.shaderQuality = 1000;
-                    job.Tasks.Add(task_DES3_to_U3D);
-                    // U3D -> PDF
-                    float[] mat = { -0.768655F, -0.632503F, 0.0954455F, -0.220844F, 0.402444F, 0.888407F, -0.600332F, 0.661799F, -0.449025F, 1805.8F, -1990.7F, 1350.67F };
-                    List<float> viewMatrix = new List<float>(mat);
-                    float[] bColor = { 1.0f, 1.0f, 1.0f };
-                    List<float> backColor = new List<float>(bColor);
-
-                    Pic3DExporter.task_U3D_TO_PDF task_U3D_to_PDF = new Pic3DExporter.task_U3D_TO_PDF() { id = "TID-3" };
-                    task_U3D_to_PDF.Dependencies = "TID-2";
-                    task_U3D_to_PDF.Inputs.Add(new Pic3DExporter.PathRef() { pathID = "FID-4", role = "input u3d", deleteAfterUsing = false });
-                    task_U3D_to_PDF.Inputs.Add(new Pic3DExporter.PathRef() { pathID = "FID-1", role = "pdf template", deleteAfterUsing = false });
-                    task_U3D_to_PDF.Outputs.Add(new Pic3DExporter.PathRef() { pathID = "FID-5", role = "output pdf", deleteAfterUsing = false });
-                    task_U3D_to_PDF.pdfAnnotation.PageLayout.buttonPositionsSpecified = true;
-                    task_U3D_to_PDF.pdfAnnotation.PageLayout.buttonPositions = Pic3DExporter.RelativePosition.LEFT;
-                    task_U3D_to_PDF.pdfAnnotation.PageLayout.pageNumberSpecified = true;
-                    task_U3D_to_PDF.pdfAnnotation.PageLayout.pageNumber = 1;
-                    task_U3D_to_PDF.pdfAnnotation.PageLayout.position.Add(40);
-                    task_U3D_to_PDF.pdfAnnotation.PageLayout.position.Add(40);
-                    task_U3D_to_PDF.pdfAnnotation.PageLayout.dimensions.Add(760);
-                    task_U3D_to_PDF.pdfAnnotation.PageLayout.dimensions.Add(500);
-                    task_U3D_to_PDF.pdfAnnotation.ViewNodes.Add(new Pic3DExporter.viewNode() { name = "View_Step0", matrix = viewMatrix, backgroundColor = backColor, COSpecified = true, CO = 3000.0f, lightingScheme = "CAD" });
-                    job.Tasks.Add(task_U3D_to_PDF);
-                    // 
-                    // open PDF
-                    Pic3DExporter.task_OPEN_PDF_ADOBEREADER task_OpenPDF = new Pic3DExporter.task_OPEN_PDF_ADOBEREADER() { id = "TID-4" };
-                    task_OpenPDF.Dependencies = "TID-3";
-                    task_OpenPDF.Inputs.Add(new Pic3DExporter.PathRef() { pathID = "FID-5", role = "input pdf", deleteAfterUsing = false });
-                    job.Tasks.Add(task_OpenPDF);
-                    // **** TASKS END ****
-                    job.SaveToFile(xmlFile);
-
-                    // #### execute Pic3DExporter
-                    string exePath = Path.Combine(currentDir, "Pic3DExporter.exe");
-                    if (!System.IO.File.Exists(exePath))
-                    {
-                        MessageBox.Show(string.Format("File {0} could not be found!", exePath));
-                        return;
-                    }
-
-                    var procExporter = new Process
-                    {
-                        StartInfo = new ProcessStartInfo
-                        {
-                            FileName = exePath,
-                            Arguments = string.Format(" -t \"{0}\"", xmlFile),
-                            UseShellExecute = false,
-                            CreateNoWindow = true,
-                            RedirectStandardOutput = false,
-                            RedirectStandardError = false
-                        }
-                    };
-                    procExporter.Start();
-                    procExporter.WaitForExit();
-                    Thread.Sleep(1000);
-
-                    // delete xml task file
-                    try
-                    {
-                        if (!Properties.Settings.Default.DebugMode)
-                            System.IO.File.Delete(xmlFile); 
-                    }
-                    catch (Exception) { }
-                }
+                MessageBox.Show("Failed to retrieve reference point and thickness");
+                return;
             }
+
+            FormGeneratePDF3D form = new FormGeneratePDF3D(this);
+            form.OutputFilePath = Path.ChangeExtension(Path.Combine(Path.GetTempPath(), treeNode.Name), "pdf");
+            form.thickness = thickness;
+            form.v = refPoint;
+            foreach (Document d in des3Docs)
+                form.filePathes.Add(d.File.Path(db));
+            form.ShowDialog();
         }
         private void toolStripButtonDES3_Click(object sender, EventArgs e)
         {
@@ -1034,16 +911,20 @@ namespace PicParam
                 toolStripBundlePalletAnalysis.Enabled = _pluginViewCtrl.Visible && _pluginViewCtrl.AllowFlatPalletization;
                 // enable export toolbar buttons
                 toolStripButtonExport.Enabled = buttonsEnabled || _webBrowser4PDF.Visible;
-                toolStripButtonPicGEOM.Enabled = buttonsEnabled && ApplicationAvailabilityChecker.IsAvailable("PicGEOM");
-                toolStripButtonPicDecoup.Enabled = buttonsEnabled && ApplicationAvailabilityChecker.IsAvailable("PicDecoup");
-                toolStripButtonPicador3D.Enabled = buttonsEnabled && ApplicationAvailabilityChecker.IsAvailable("Picador3D");
+                toolStripSButtonExportApp.Enabled = buttonsEnabled && ApplicationAvailabilityChecker.IsAvailable("PicGEOM");
+                toolStripMI_PicGEOM.Enabled = buttonsEnabled && ApplicationAvailabilityChecker.IsAvailable("PicGEOM");
+                toolStripMI_PicDecoup.Enabled = buttonsEnabled && ApplicationAvailabilityChecker.IsAvailable("PicDecoup");
+                toolStripMI_Picador3D.Enabled = buttonsEnabled && ApplicationAvailabilityChecker.IsAvailable("Picador3D");
+                toolStripMI_ExportPicador3D.Enabled = buttonsEnabled && ApplicationAvailabilityChecker.IsAvailable("Picador3D");
+                toolStripMI_ExportPDF3D.Enabled = buttonsEnabled;
                 toolStripButtonOceProCut.Enabled = buttonsEnabled;
+                toolStripSButtonExport.Enabled = buttonsEnabled;
+                toolStripMI_DXF.Enabled = buttonsEnabled;
+                toolStripMI_AI.Enabled = buttonsEnabled;
+                toolStripMI_CFF2.Enabled = buttonsEnabled;
+                toolStripMI_PDF.Enabled = buttonsEnabled;
                 toolStripButtonARISTO.Enabled = buttonsEnabled;
                 toolStripButtonZUND.Enabled = buttonsEnabled;
-                toolStripButtonPDF.Enabled = buttonsEnabled;
-                toolStripButtonDXF.Enabled = buttonsEnabled;
-                toolStripButtonAI.Enabled = buttonsEnabled;
-                toolStripButtonCFF2.Enabled = buttonsEnabled;
                 toolStripButtonSUMMA.Enabled = buttonsEnabled;
                 // "File" menu items
                 exportToolStripMenuItem.Enabled = buttonsEnabled;
@@ -1076,8 +957,9 @@ namespace PicParam
 
                 // PDF3D button
                 bool tools3DGenerate = _pluginViewCtrl.Visible && (null != _pluginViewCtrl.Component) && _pluginViewCtrl.Component.IsSupportingAutomaticFolding;
-                toolStripButtonPDF3D.Enabled = tools3DGenerate;
-                toolStripButtonDES3.Enabled = tools3DGenerate;
+                toolStripSButtonDES3.Enabled = tools3DGenerate;
+                toolStripMI_ExportPicador3D.Enabled = tools3DGenerate;
+                toolStripMI_ExportPDF3D.Enabled = tools3DGenerate;
             }
             catch (Exception ex)
             {
@@ -1120,7 +1002,6 @@ namespace PicParam
                 _log.Error(ex.ToString());
             }
         }
-
         private void toolStripButtonEditParameters_Click(object sender, EventArgs e)
         {
             try
@@ -1215,6 +1096,18 @@ namespace PicParam
         {
             try
             {
+                var procBrowser = new Process
+                {
+                    StartInfo = new ProcessStartInfo
+                    {
+                        FileName = Properties.Settings.Default.HelpUrl,
+                        UseShellExecute = true,
+                        CreateNoWindow = false,
+                        Verb = "open",
+                        WindowStyle = ProcessWindowStyle.Normal
+                    }
+                };
+                procBrowser.Start();
             }
             catch (Exception ex)
             {
@@ -1535,9 +1428,5 @@ namespace PicParam
 
         private bool _showRoot;
         #endregion
-
-
-
-
     }
 }

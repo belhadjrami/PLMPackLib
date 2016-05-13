@@ -59,5 +59,8 @@
     <Setting Name="TSButtonAvailableSUMMA" Type="System.Boolean" Scope="Application">
       <Value Profile="(Default)">False</Value>
     </Setting>
+    <Setting Name="HelpUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.plmpack.com/en/packlib_guide.htm</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

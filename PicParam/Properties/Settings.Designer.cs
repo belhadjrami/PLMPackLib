@@ -227,5 +227,14 @@ namespace PicParam.Properties {
                 return ((bool)(this["TSButtonAvailableSUMMA"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://www.plmpack.com/en/packlib_guide.htm")]
+        public string HelpUrl {
+            get {
+                return ((string)(this["HelpUrl"]));
+            }
+        }
     }
 }

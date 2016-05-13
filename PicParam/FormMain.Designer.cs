@@ -89,10 +89,19 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButtonLayout = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButtonDXF = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonCFF2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonAI = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonPDF = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSButtonExport = new System.Windows.Forms.ToolStripSplitButton();
+            this.toolStripMI_DXF = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMI_CFF2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMI_AI = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMI_PDF = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSButtonExportApp = new System.Windows.Forms.ToolStripSplitButton();
+            this.toolStripMI_PicGEOM = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMI_Picador3D = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMI_PicDecoup = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSButtonDES3 = new System.Windows.Forms.ToolStripSplitButton();
+            this.toolStripMI_ExportPicador3D = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMI_ExportPDF3D = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButtonARISTO = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonOceProCut = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonZUND = new System.Windows.Forms.ToolStripButton();
@@ -102,12 +111,6 @@
             this.toolStripButtonPalletization = new System.Windows.Forms.ToolStripButton();
             this.toolStripBundlePalletAnalysis = new System.Windows.Forms.ToolStripButton();
             this.toolStripBundleCaseAnalysis = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButtonPicGEOM = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonPicador3D = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonPicDecoup = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonDES3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonPDF3D = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButtonHelp = new System.Windows.Forms.ToolStripButton();
             this.openFileDialogRestore = new System.Windows.Forms.OpenFileDialog();
@@ -454,10 +457,10 @@
             this.toolStripSeparator5,
             this.toolStripButtonLayout,
             this.toolStripSeparator6,
-            this.toolStripButtonDXF,
-            this.toolStripButtonCFF2,
-            this.toolStripButtonAI,
-            this.toolStripButtonPDF,
+            this.toolStripSButtonExport,
+            this.toolStripSButtonExportApp,
+            this.toolStripSButtonDES3,
+            this.toolStripSeparator14,
             this.toolStripButtonARISTO,
             this.toolStripButtonOceProCut,
             this.toolStripButtonZUND,
@@ -467,12 +470,6 @@
             this.toolStripButtonPalletization,
             this.toolStripBundlePalletAnalysis,
             this.toolStripBundleCaseAnalysis,
-            this.toolStripSeparator14,
-            this.toolStripButtonPicGEOM,
-            this.toolStripButtonPicador3D,
-            this.toolStripButtonPicDecoup,
-            this.toolStripButtonDES3,
-            this.toolStripButtonPDF3D,
             this.toolStripSeparator16,
             this.toolStripButtonHelp});
             this.toolStripMain.Name = "toolStripMain";
@@ -585,33 +582,97 @@
             this.toolStripSeparator6.Name = "toolStripSeparator6";
             resources.ApplyResources(this.toolStripSeparator6, "toolStripSeparator6");
             // 
-            // toolStripButtonDXF
+            // toolStripSButtonExport
             // 
-            this.toolStripButtonDXF.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.toolStripButtonDXF, "toolStripButtonDXF");
-            this.toolStripButtonDXF.Name = "toolStripButtonDXF";
-            this.toolStripButtonDXF.Click += new System.EventHandler(this.toolStripButtonDXF_Click);
+            this.toolStripSButtonExport.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripSButtonExport.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMI_DXF,
+            this.toolStripMI_CFF2,
+            this.toolStripMI_AI,
+            this.toolStripMI_PDF});
+            resources.ApplyResources(this.toolStripSButtonExport, "toolStripSButtonExport");
+            this.toolStripSButtonExport.Name = "toolStripSButtonExport";
+            this.toolStripSButtonExport.ButtonClick += new System.EventHandler(this.toolStripButtonDXF_Click);
             // 
-            // toolStripButtonCFF2
+            // toolStripMI_DXF
             // 
-            this.toolStripButtonCFF2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.toolStripButtonCFF2, "toolStripButtonCFF2");
-            this.toolStripButtonCFF2.Name = "toolStripButtonCFF2";
-            this.toolStripButtonCFF2.Click += new System.EventHandler(this.toolStripButtonCFF2_Click);
+            resources.ApplyResources(this.toolStripMI_DXF, "toolStripMI_DXF");
+            this.toolStripMI_DXF.Name = "toolStripMI_DXF";
+            this.toolStripMI_DXF.Click += new System.EventHandler(this.toolStripButtonDXF_Click);
             // 
-            // toolStripButtonAI
+            // toolStripMI_CFF2
             // 
-            this.toolStripButtonAI.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.toolStripButtonAI, "toolStripButtonAI");
-            this.toolStripButtonAI.Name = "toolStripButtonAI";
-            this.toolStripButtonAI.Click += new System.EventHandler(this.toolStripButtonAI_Click);
+            resources.ApplyResources(this.toolStripMI_CFF2, "toolStripMI_CFF2");
+            this.toolStripMI_CFF2.Name = "toolStripMI_CFF2";
+            this.toolStripMI_CFF2.Click += new System.EventHandler(this.toolStripButtonCFF2_Click);
             // 
-            // toolStripButtonPDF
+            // toolStripMI_AI
             // 
-            this.toolStripButtonPDF.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.toolStripButtonPDF, "toolStripButtonPDF");
-            this.toolStripButtonPDF.Name = "toolStripButtonPDF";
-            this.toolStripButtonPDF.Click += new System.EventHandler(this.toolStripButtonPDF_Click);
+            resources.ApplyResources(this.toolStripMI_AI, "toolStripMI_AI");
+            this.toolStripMI_AI.Name = "toolStripMI_AI";
+            this.toolStripMI_AI.Click += new System.EventHandler(this.toolStripButtonAI_Click);
+            // 
+            // toolStripMI_PDF
+            // 
+            resources.ApplyResources(this.toolStripMI_PDF, "toolStripMI_PDF");
+            this.toolStripMI_PDF.Name = "toolStripMI_PDF";
+            this.toolStripMI_PDF.Click += new System.EventHandler(this.toolStripButtonPDF_Click);
+            // 
+            // toolStripSButtonExportApp
+            // 
+            this.toolStripSButtonExportApp.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripSButtonExportApp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMI_PicGEOM,
+            this.toolStripMI_Picador3D,
+            this.toolStripMI_PicDecoup});
+            resources.ApplyResources(this.toolStripSButtonExportApp, "toolStripSButtonExportApp");
+            this.toolStripSButtonExportApp.Name = "toolStripSButtonExportApp";
+            this.toolStripSButtonExportApp.ButtonClick += new System.EventHandler(this.toolStripButtonPicGEOM_Click);
+            // 
+            // toolStripMI_PicGEOM
+            // 
+            resources.ApplyResources(this.toolStripMI_PicGEOM, "toolStripMI_PicGEOM");
+            this.toolStripMI_PicGEOM.Name = "toolStripMI_PicGEOM";
+            this.toolStripMI_PicGEOM.Click += new System.EventHandler(this.toolStripButtonPicGEOM_Click);
+            // 
+            // toolStripMI_Picador3D
+            // 
+            resources.ApplyResources(this.toolStripMI_Picador3D, "toolStripMI_Picador3D");
+            this.toolStripMI_Picador3D.Name = "toolStripMI_Picador3D";
+            this.toolStripMI_Picador3D.Click += new System.EventHandler(this.toolStripButtonPicador3D_Click);
+            // 
+            // toolStripMI_PicDecoup
+            // 
+            resources.ApplyResources(this.toolStripMI_PicDecoup, "toolStripMI_PicDecoup");
+            this.toolStripMI_PicDecoup.Name = "toolStripMI_PicDecoup";
+            this.toolStripMI_PicDecoup.Click += new System.EventHandler(this.toolStripButtonPicDecoup_Click);
+            // 
+            // toolStripSButtonDES3
+            // 
+            this.toolStripSButtonDES3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripSButtonDES3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMI_ExportPDF3D,
+            this.toolStripMI_ExportPicador3D});
+            resources.ApplyResources(this.toolStripSButtonDES3, "toolStripSButtonDES3");
+            this.toolStripSButtonDES3.Name = "toolStripSButtonDES3";
+            this.toolStripSButtonDES3.ButtonClick += new System.EventHandler(this.toolStripButtonDES3_Click);
+            // 
+            // toolStripMI_ExportPicador3D
+            // 
+            resources.ApplyResources(this.toolStripMI_ExportPicador3D, "toolStripMI_ExportPicador3D");
+            this.toolStripMI_ExportPicador3D.Name = "toolStripMI_ExportPicador3D";
+            this.toolStripMI_ExportPicador3D.Click += new System.EventHandler(this.toolStripButtonDES3_Click);
+            // 
+            // toolStripMI_ExportPDF3D
+            // 
+            resources.ApplyResources(this.toolStripMI_ExportPDF3D, "toolStripMI_ExportPDF3D");
+            this.toolStripMI_ExportPDF3D.Name = "toolStripMI_ExportPDF3D";
+            this.toolStripMI_ExportPDF3D.Click += new System.EventHandler(this.toolStripButtonPDF3D_Click);
+            // 
+            // toolStripSeparator14
+            // 
+            this.toolStripSeparator14.Name = "toolStripSeparator14";
+            resources.ApplyResources(this.toolStripSeparator14, "toolStripSeparator14");
             // 
             // toolStripButtonARISTO
             // 
@@ -673,46 +734,6 @@
             resources.ApplyResources(this.toolStripBundleCaseAnalysis, "toolStripBundleCaseAnalysis");
             this.toolStripBundleCaseAnalysis.Name = "toolStripBundleCaseAnalysis";
             this.toolStripBundleCaseAnalysis.Click += new System.EventHandler(this.toolStripButtonBundleCase_Click);
-            // 
-            // toolStripSeparator14
-            // 
-            this.toolStripSeparator14.Name = "toolStripSeparator14";
-            resources.ApplyResources(this.toolStripSeparator14, "toolStripSeparator14");
-            // 
-            // toolStripButtonPicGEOM
-            // 
-            this.toolStripButtonPicGEOM.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.toolStripButtonPicGEOM, "toolStripButtonPicGEOM");
-            this.toolStripButtonPicGEOM.Name = "toolStripButtonPicGEOM";
-            this.toolStripButtonPicGEOM.Click += new System.EventHandler(this.toolStripButtonPicGEOM_Click);
-            // 
-            // toolStripButtonPicador3D
-            // 
-            this.toolStripButtonPicador3D.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.toolStripButtonPicador3D, "toolStripButtonPicador3D");
-            this.toolStripButtonPicador3D.Name = "toolStripButtonPicador3D";
-            this.toolStripButtonPicador3D.Click += new System.EventHandler(this.toolStripButtonPicador3D_Click);
-            // 
-            // toolStripButtonPicDecoup
-            // 
-            this.toolStripButtonPicDecoup.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.toolStripButtonPicDecoup, "toolStripButtonPicDecoup");
-            this.toolStripButtonPicDecoup.Name = "toolStripButtonPicDecoup";
-            this.toolStripButtonPicDecoup.Click += new System.EventHandler(this.toolStripButtonPicDecoup_Click);
-            // 
-            // toolStripButtonDES3
-            // 
-            this.toolStripButtonDES3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.toolStripButtonDES3, "toolStripButtonDES3");
-            this.toolStripButtonDES3.Name = "toolStripButtonDES3";
-            this.toolStripButtonDES3.Click += new System.EventHandler(this.toolStripButtonDES3_Click);
-            // 
-            // toolStripButtonPDF3D
-            // 
-            this.toolStripButtonPDF3D.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            resources.ApplyResources(this.toolStripButtonPDF3D, "toolStripButtonPDF3D");
-            this.toolStripButtonPDF3D.Name = "toolStripButtonPDF3D";
-            this.toolStripButtonPDF3D.Click += new System.EventHandler(this.toolStripButtonPDF3D_Click);
             // 
             // toolStripSeparator16
             // 
@@ -809,11 +830,7 @@
         private System.Windows.Forms.ToolStripMenuItem mergeDatabaseToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem clearDatabaseToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton toolStripButtonRoot;
-        private System.Windows.Forms.ToolStripButton toolStripButtonPicDecoup;
         private System.Windows.Forms.ToolStripButton toolStripButtonExport;
-        private System.Windows.Forms.ToolStripButton toolStripButtonPicGEOM;
-        private System.Windows.Forms.ToolStripButton toolStripButtonPicador3D;
-        private System.Windows.Forms.ToolStripButton toolStripButtonDXF;
         private System.Windows.Forms.ToolStripButton toolStripButtonCaseOptimization;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
@@ -822,8 +839,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator11;
         private System.Windows.Forms.ToolStripMenuItem defineDatabasePathToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton toolStripButtonOceProCut;
-        private System.Windows.Forms.ToolStripButton toolStripButtonAI;
-        private System.Windows.Forms.ToolStripButton toolStripButtonCFF2;
         private System.Windows.Forms.ToolStripButton toolStripButtonDownload;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator13;
         private System.Windows.Forms.ToolStripMenuItem mnuFileMRU;
@@ -831,17 +846,26 @@
         private System.Windows.Forms.ToolStripButton toolStripButtonSearch;
         private System.Windows.Forms.ToolStripButton toolStripButtonStartPageWeb;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator14;
-        private System.Windows.Forms.ToolStripButton toolStripButtonPDF3D;
-        private System.Windows.Forms.ToolStripButton toolStripButtonPDF;
         private System.Windows.Forms.ToolStripButton toolStripButtonARISTO;
         private System.Windows.Forms.ToolStripButton toolStripButtonZUND;
-        private System.Windows.Forms.ToolStripButton toolStripButtonDES3;
         private System.Windows.Forms.ToolStripButton toolStripButtonSUMMA;
         private System.Windows.Forms.ToolStripMenuItem editComponentDllToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator16;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
         private System.Windows.Forms.ToolStripButton toolStripBundlePalletAnalysis;
         private System.Windows.Forms.ToolStripButton toolStripBundleCaseAnalysis;
+        private System.Windows.Forms.ToolStripSplitButton toolStripSButtonExport;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMI_DXF;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMI_CFF2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMI_AI;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMI_PDF;
+        private System.Windows.Forms.ToolStripSplitButton toolStripSButtonExportApp;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMI_PicGEOM;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMI_Picador3D;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMI_PicDecoup;
+        private System.Windows.Forms.ToolStripSplitButton toolStripSButtonDES3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMI_ExportPicador3D;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMI_ExportPDF3D;
     }
 }
 

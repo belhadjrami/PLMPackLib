@@ -18,7 +18,7 @@ using Pic.DAL.Properties;
 
 namespace Pic.DAL
 {
-    internal class DBDescriptor
+    public class DBDescriptor
     {
         #region Constants
         public static int BUFFER_SIZE = 2048;

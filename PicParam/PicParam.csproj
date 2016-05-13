@@ -130,6 +130,12 @@
     <Compile Include="FormDefineComponentGUID.Designer.cs">
       <DependentUpon>FormDefineComponentGUID.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormGeneratePDF3D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGeneratePDF3D.Designer.cs">
+      <DependentUpon>FormGeneratePDF3D.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSearch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -516,6 +522,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDefineComponentGUID.resx">
       <DependentUpon>FormDefineComponentGUID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGeneratePDF3D.resx">
+      <DependentUpon>FormGeneratePDF3D.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.it-IT.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
