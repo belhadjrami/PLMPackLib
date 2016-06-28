@@ -27,8 +27,6 @@ namespace Pic.Factory2D.Control
             InitializeComponent();
             // initialize format loader with default values
             FormatLoader = new CardboardFormatLoaderDefault();
-
-            Load +=new EventHandler(FormImpositionSettings_Load);
         }
         #endregion
 
@@ -127,7 +125,7 @@ namespace Pic.Factory2D.Control
             OnCardboardFormatChanged();
         }
 
-        private void bnEditCardboardFormats_Click(object sender, EventArgs e)
+        private void onEditCardboardFormats(object sender, EventArgs e)
         {
             try
             {
@@ -140,7 +138,7 @@ namespace Pic.Factory2D.Control
             }
         }
 
-        private void FormImpositionSettings_Load(object sender, EventArgs e)
+        protected override void OnLoad(EventArgs e)
         {
             try
             {
@@ -173,8 +171,9 @@ namespace Pic.Factory2D.Control
                 MessageBox.Show(ex.Message);
             }
         }
-        private void FormImpositionSettings_FormClosing(object sender, FormClosingEventArgs e)
+        protected override void OnClosed(EventArgs e)
         {
+            base.OnClosed(e);
             // cardboard format
             Properties.Settings.Default.ImpositionCarboardFormat = cbCardboardFormat.SelectedIndex;
             // margins

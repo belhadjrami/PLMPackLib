@@ -137,12 +137,12 @@
             resources.ApplyResources(this.bnEditCardboardFormats, "bnEditCardboardFormats");
             this.bnEditCardboardFormats.Name = "bnEditCardboardFormats";
             this.bnEditCardboardFormats.UseVisualStyleBackColor = true;
-            this.bnEditCardboardFormats.Click += new System.EventHandler(this.bnEditCardboardFormats_Click);
+            this.bnEditCardboardFormats.Click += new System.EventHandler(this.onEditCardboardFormats);
             // 
             // nudOffsetY
             // 
-            resources.ApplyResources(this.nudOffsetY, "nudOffsetY");
             this.nudOffsetY.DecimalPlaces = 1;
+            resources.ApplyResources(this.nudOffsetY, "nudOffsetY");
             this.nudOffsetY.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -157,8 +157,8 @@
             // 
             // nudOffsetX
             // 
-            resources.ApplyResources(this.nudOffsetX, "nudOffsetX");
             this.nudOffsetX.DecimalPlaces = 1;
+            resources.ApplyResources(this.nudOffsetX, "nudOffsetX");
             this.nudOffsetX.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -183,35 +183,34 @@
             // 
             // tabControl
             // 
-            resources.ApplyResources(this.tabControl, "tabControl");
             this.tabControl.Controls.Add(this.tabAllowedPatterns);
             this.tabControl.Controls.Add(this.tabOffsets);
             this.tabControl.Controls.Add(this.tabMargins);
             this.tabControl.Controls.Add(this.tabSpacing);
+            resources.ApplyResources(this.tabControl, "tabControl");
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
             // 
             // tabAllowedPatterns
             // 
-            resources.ApplyResources(this.tabAllowedPatterns, "tabAllowedPatterns");
             this.tabAllowedPatterns.Controls.Add(this.cbAllowColumnRotation);
             this.tabAllowedPatterns.Controls.Add(this.cbAllowRowRotation);
+            resources.ApplyResources(this.tabAllowedPatterns, "tabAllowedPatterns");
             this.tabAllowedPatterns.Name = "tabAllowedPatterns";
             this.tabAllowedPatterns.UseVisualStyleBackColor = true;
             // 
             // tabOffsets
             // 
-            resources.ApplyResources(this.tabOffsets, "tabOffsets");
             this.tabOffsets.Controls.Add(this.nudOffsetY);
             this.tabOffsets.Controls.Add(this.lbOffsetX);
             this.tabOffsets.Controls.Add(this.nudOffsetX);
             this.tabOffsets.Controls.Add(this.lbOffsetY);
+            resources.ApplyResources(this.tabOffsets, "tabOffsets");
             this.tabOffsets.Name = "tabOffsets";
             this.tabOffsets.UseVisualStyleBackColor = true;
             // 
             // tabMargins
             // 
-            resources.ApplyResources(this.tabMargins, "tabMargins");
             this.tabMargins.Controls.Add(this.lbmm3);
             this.tabMargins.Controls.Add(this.lbmm1);
             this.tabMargins.Controls.Add(this.lbmm4);
@@ -226,6 +225,7 @@
             this.tabMargins.Controls.Add(this.nudTopBottomMargin);
             this.tabMargins.Controls.Add(this.label2);
             this.tabMargins.Controls.Add(this.cbTopBottom);
+            resources.ApplyResources(this.tabMargins, "tabMargins");
             this.tabMargins.Name = "tabMargins";
             this.tabMargins.UseVisualStyleBackColor = true;
             // 
@@ -251,8 +251,8 @@
             // 
             // nudLeftRightMargin
             // 
-            resources.ApplyResources(this.nudLeftRightMargin, "nudLeftRightMargin");
             this.nudLeftRightMargin.DecimalPlaces = 1;
+            resources.ApplyResources(this.nudLeftRightMargin, "nudLeftRightMargin");
             this.nudLeftRightMargin.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -267,8 +267,8 @@
             // 
             // nudTopBottomRemaining
             // 
-            resources.ApplyResources(this.nudTopBottomRemaining, "nudTopBottomRemaining");
             this.nudTopBottomRemaining.DecimalPlaces = 1;
+            resources.ApplyResources(this.nudTopBottomRemaining, "nudTopBottomRemaining");
             this.nudTopBottomRemaining.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -283,8 +283,8 @@
             // 
             // nudLeftRightRemaining
             // 
-            resources.ApplyResources(this.nudLeftRightRemaining, "nudLeftRightRemaining");
             this.nudLeftRightRemaining.DecimalPlaces = 1;
+            resources.ApplyResources(this.nudLeftRightRemaining, "nudLeftRightRemaining");
             this.nudLeftRightRemaining.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -299,20 +299,20 @@
             // 
             // cbRightLeft
             // 
-            resources.ApplyResources(this.cbRightLeft, "cbRightLeft");
             this.cbRightLeft.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbRightLeft.FormattingEnabled = true;
             this.cbRightLeft.Items.AddRange(new object[] {
             resources.GetString("cbRightLeft.Items"),
             resources.GetString("cbRightLeft.Items1"),
             resources.GetString("cbRightLeft.Items2")});
+            resources.ApplyResources(this.cbRightLeft, "cbRightLeft");
             this.cbRightLeft.Name = "cbRightLeft";
             this.cbRightLeft.SelectedIndexChanged += new System.EventHandler(this.cbPlacement_SelectedIndexChanged);
             // 
             // nudTopBottomMargin
             // 
-            resources.ApplyResources(this.nudTopBottomMargin, "nudTopBottomMargin");
             this.nudTopBottomMargin.DecimalPlaces = 1;
+            resources.ApplyResources(this.nudTopBottomMargin, "nudTopBottomMargin");
             this.nudTopBottomMargin.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -327,19 +327,18 @@
             // 
             // cbTopBottom
             // 
-            resources.ApplyResources(this.cbTopBottom, "cbTopBottom");
             this.cbTopBottom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTopBottom.FormattingEnabled = true;
             this.cbTopBottom.Items.AddRange(new object[] {
             resources.GetString("cbTopBottom.Items"),
             resources.GetString("cbTopBottom.Items1"),
             resources.GetString("cbTopBottom.Items2")});
+            resources.ApplyResources(this.cbTopBottom, "cbTopBottom");
             this.cbTopBottom.Name = "cbTopBottom";
             this.cbTopBottom.SelectedIndexChanged += new System.EventHandler(this.cbPlacement_SelectedIndexChanged);
             // 
             // tabSpacing
             // 
-            resources.ApplyResources(this.tabSpacing, "tabSpacing");
             this.tabSpacing.Controls.Add(this.lbmm6);
             this.tabSpacing.Controls.Add(this.nudSpaceY);
             this.tabSpacing.Controls.Add(this.label3);
@@ -347,6 +346,7 @@
             this.tabSpacing.Controls.Add(this.lbmm5);
             this.tabSpacing.Controls.Add(this.nudSpaceX);
             this.tabSpacing.Controls.Add(this.label9);
+            resources.ApplyResources(this.tabSpacing, "tabSpacing");
             this.tabSpacing.Name = "tabSpacing";
             this.tabSpacing.UseVisualStyleBackColor = true;
             // 
@@ -357,8 +357,8 @@
             // 
             // nudSpaceY
             // 
-            resources.ApplyResources(this.nudSpaceY, "nudSpaceY");
             this.nudSpaceY.DecimalPlaces = 1;
+            resources.ApplyResources(this.nudSpaceY, "nudSpaceY");
             this.nudSpaceY.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -383,8 +383,8 @@
             // 
             // nudSpaceX
             // 
-            resources.ApplyResources(this.nudSpaceX, "nudSpaceX");
             this.nudSpaceX.DecimalPlaces = 1;
+            resources.ApplyResources(this.nudSpaceX, "nudSpaceX");
             this.nudSpaceX.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -456,8 +456,6 @@
             this.Name = "FormImpositionSettings";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormImpositionSettings_FormClosing);
-            this.Load += new System.EventHandler(this.FormImpositionSettings_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudOffsetY)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudOffsetX)).EndInit();
             this.tabControl.ResumeLayout(false);

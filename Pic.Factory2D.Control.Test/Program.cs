@@ -26,11 +26,13 @@ namespace Pic.Factory2D.Control.Test
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
 
-                const int iIndex = 2;
+                const int iIndex = 3;
                 if (1 == iIndex)
                     Application.Run(new FormMain1());
                 else if (2 == iIndex)
                     Application.Run(new FormMain2());
+                else if (3 == iIndex)
+                    Application.Run(new FormMain3());
             }
             catch (Exception ex)
             {

@@ -68,7 +68,7 @@ namespace Pic.Factory2D.Control
         }
         #endregion
 
-        #region System.windows.Forms.Form override
+        #region Form override
         protected override void OnLoad(EventArgs e)
         {
             // make ToolStripButton available
@@ -277,7 +277,7 @@ namespace Pic.Factory2D.Control
                     case "pdf": fd.FilterIndex = 5; break;
                     default: break;
                 }
-                // shaow SaveFileDialog
+                // show SaveFileDialog
                 if (DialogResult.OK == fd.ShowDialog())
                     factoryViewer.WriteExportFile(fd.FileName, fileExt);
             }        

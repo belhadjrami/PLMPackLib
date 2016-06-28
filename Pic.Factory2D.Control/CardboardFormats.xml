@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<CardboardFormats xsi:schemaLocation="http://www.treedim.com/Pic.Factory2D.Control C:\wPicador\Picador3D\Bin\..\Schemas\Pic3DExporter.xsd"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns="http://www.treedim.com/Pic.Factory2D.Control"
+                  xmlns:exp="http://www.treedim.com/Pic.Factory2D.Control">
+  <fCardboardFormat name="F1" dimensions="1000 800"/>
+  <fCardboardFormat name="F2" dimensions="1200 1000"/>
+  <fCardboardFormat name="F3" dimensions="3600 2400"/>
+</CardboardFormats> 
