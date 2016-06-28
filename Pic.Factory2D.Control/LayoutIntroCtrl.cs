@@ -50,6 +50,8 @@ namespace Pic.Factory2D.Control
         public LayoutIntroCtrl()
         {
             InitializeComponent();
+
+
         }
         #endregion
 
@@ -77,6 +79,8 @@ namespace Pic.Factory2D.Control
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
+
+            setFormatsFileName(@"C:\Picador\CardboardFormats.xml");
 
             // initialize number of rows/columns
             nudNumberDirX.Value = (decimal)2;
@@ -257,6 +261,34 @@ namespace Pic.Factory2D.Control
             if (null != LayoutCanceled)
                 LayoutCanceled(sender, new LayoutCtrlEventArgs(0, string.Empty));
         }
+        #endregion
+
+        #region MAPPING_OF_USER32_DLL_SECTION
+        [DllImport("user32.dll", EntryPoint = "SendMessage")]
+        public static extern IntPtr SendMessage(
+            int hwnd, uint wMsg, IntPtr wParam, IntPtr lParam);
+
+        [DllImport("user32.dll", EntryPoint = "SendMessage")]
+        public static extern int SendMessage(
+            int hwnd, uint wMsg, int wParam, string lParam);
+
+        [DllImport("user32.dll", EntryPoint = "SendMessage")]
+        public static extern int SendMessage(
+            int hwnd, uint wMsg, int wParam, out int lParam);
+
+        [DllImport("user32.dll", EntryPoint = "SendMessage")]
+        public static extern int GetNbFiles(
+            int hwnd, uint wMsg, int wParam, int lParam);
+
+        [DllImport("user32.dll", EntryPoint = "SendMessage")]
+        public static extern int GetFileNames(
+            int hwnd, uint wMsg,
+            [MarshalAs(UnmanagedType.LPArray)]IntPtr[] wParam,
+            int lParam);
+
+        [DllImport("user32.dll", EntryPoint = "SendMessage")]
+        public static extern int SendMessage(
+            int hwnd, uint wMsg, int wParam, StringBuilder lParam);
         #endregion
 
         #region ActiveX Dll functions
