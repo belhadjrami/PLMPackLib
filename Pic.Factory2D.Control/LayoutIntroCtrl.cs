@@ -218,7 +218,7 @@ namespace Pic.Factory2D.Control
                     // set solutions
                     form.Solutions = _solutions;
                     form.Format = CurrentCardboardFormat;
-                    form.DrawingName = Path.ChangeExtension(_drawingName, "");
+                    form.DrawingName = Path.GetFileNameWithoutExtension(_drawingName);
                     // show imposition dlg
                     if (DialogResult.OK == form.ShowDialog(this))
                     {
