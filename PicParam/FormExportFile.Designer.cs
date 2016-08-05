@@ -101,8 +101,8 @@
             this.MinimizeBox = false;
             this.Name = "FormExportFile";
             this.ShowIcon = false;
-            this.Load += new System.EventHandler(this.FormExportFile_Load);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormExportFile_FormClosing);
+            this.Load += new System.EventHandler(this.FormExportFile_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

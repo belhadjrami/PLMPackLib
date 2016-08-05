@@ -38,22 +38,22 @@
             // 
             // contextMenuStripDefault
             // 
-            resources.ApplyResources(this.contextMenuStripDefault, "contextMenuStripDefault");
             this.contextMenuStripDefault.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addNewBranchToolStripMenuItem,
             this.addNewDocumentToolStripMenuItem});
             this.contextMenuStripDefault.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.contextMenuStripDefault, "contextMenuStripDefault");
             // 
             // addNewBranchToolStripMenuItem
             // 
-            resources.ApplyResources(this.addNewBranchToolStripMenuItem, "addNewBranchToolStripMenuItem");
             this.addNewBranchToolStripMenuItem.Name = "addNewBranchToolStripMenuItem";
+            resources.ApplyResources(this.addNewBranchToolStripMenuItem, "addNewBranchToolStripMenuItem");
             this.addNewBranchToolStripMenuItem.Click += new System.EventHandler(this.toolStripMenuItemNewBranch);
             // 
             // addNewDocumentToolStripMenuItem
             // 
-            resources.ApplyResources(this.addNewDocumentToolStripMenuItem, "addNewDocumentToolStripMenuItem");
             this.addNewDocumentToolStripMenuItem.Name = "addNewDocumentToolStripMenuItem";
+            resources.ApplyResources(this.addNewDocumentToolStripMenuItem, "addNewDocumentToolStripMenuItem");
             this.addNewDocumentToolStripMenuItem.Click += new System.EventHandler(this.toolStripMenuItemNewDocument);
             // 
             // DocumentTreeBranchView

@@ -41,88 +41,55 @@
             // 
             // label_name
             // 
-            this.label_name.AccessibleDescription = null;
-            this.label_name.AccessibleName = null;
             resources.ApplyResources(this.label_name, "label_name");
-            this.label_name.Font = null;
             this.label_name.Name = "label_name";
             // 
             // label_description
             // 
-            this.label_description.AccessibleDescription = null;
-            this.label_description.AccessibleName = null;
             resources.ApplyResources(this.label_description, "label_description");
-            this.label_description.Font = null;
             this.label_description.Name = "label_description";
             // 
             // checkBoxImage
             // 
-            this.checkBoxImage.AccessibleDescription = null;
-            this.checkBoxImage.AccessibleName = null;
             resources.ApplyResources(this.checkBoxImage, "checkBoxImage");
-            this.checkBoxImage.BackgroundImage = null;
-            this.checkBoxImage.Font = null;
             this.checkBoxImage.Name = "checkBoxImage";
             this.checkBoxImage.UseVisualStyleBackColor = true;
             this.checkBoxImage.CheckedChanged += new System.EventHandler(this.checkBoxImage_CheckedChanged);
             // 
             // bnOk
             // 
-            this.bnOk.AccessibleDescription = null;
-            this.bnOk.AccessibleName = null;
             resources.ApplyResources(this.bnOk, "bnOk");
-            this.bnOk.BackgroundImage = null;
             this.bnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.bnOk.Font = null;
             this.bnOk.Name = "bnOk";
             this.bnOk.UseVisualStyleBackColor = true;
             // 
             // bnCancel
             // 
-            this.bnCancel.AccessibleDescription = null;
-            this.bnCancel.AccessibleName = null;
             resources.ApplyResources(this.bnCancel, "bnCancel");
-            this.bnCancel.BackgroundImage = null;
             this.bnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.bnCancel.Font = null;
             this.bnCancel.Name = "bnCancel";
             this.bnCancel.UseVisualStyleBackColor = true;
             // 
             // textBoxName
             // 
-            this.textBoxName.AccessibleDescription = null;
-            this.textBoxName.AccessibleName = null;
             resources.ApplyResources(this.textBoxName, "textBoxName");
-            this.textBoxName.BackgroundImage = null;
-            this.textBoxName.Font = null;
             this.textBoxName.Name = "textBoxName";
             // 
             // textBoxDescription
             // 
-            this.textBoxDescription.AccessibleDescription = null;
-            this.textBoxDescription.AccessibleName = null;
             resources.ApplyResources(this.textBoxDescription, "textBoxDescription");
-            this.textBoxDescription.BackgroundImage = null;
-            this.textBoxDescription.Font = null;
             this.textBoxDescription.Name = "textBoxDescription";
             // 
             // fileSelectCtrl
             // 
-            this.fileSelectCtrl.AccessibleDescription = null;
-            this.fileSelectCtrl.AccessibleName = null;
             resources.ApplyResources(this.fileSelectCtrl, "fileSelectCtrl");
-            this.fileSelectCtrl.BackgroundImage = null;
-            this.fileSelectCtrl.Font = null;
             this.fileSelectCtrl.Name = "fileSelectCtrl";
             // 
             // FormCreateBranch
             // 
             this.AcceptButton = this.bnOk;
-            this.AccessibleDescription = null;
-            this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = null;
             this.CancelButton = this.bnCancel;
             this.Controls.Add(this.fileSelectCtrl);
             this.Controls.Add(this.textBoxDescription);
@@ -132,7 +99,6 @@
             this.Controls.Add(this.checkBoxImage);
             this.Controls.Add(this.label_description);
             this.Controls.Add(this.label_name);
-            this.Font = null;
             this.Name = "FormCreateBranch";
             this.ShowIcon = false;
             this.Load += new System.EventHandler(this.FormCreateBranch_Load);

@@ -40,7 +40,7 @@
             this.exportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dxfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cf2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem(); 
+            this.cf2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pdfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.desToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();

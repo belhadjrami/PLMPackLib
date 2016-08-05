@@ -127,21 +127,21 @@
   <data name="$this.AccessibleDescription" xml:space="preserve">
     <value>Database settings</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;fileSelect.Type" xml:space="preserve">
-    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.9.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;labelDatabasePath.Name" xml:space="preserve">
+    <value>labelDatabasePath</value>
   </data>
   <data name="label1.AccessibleDescription" xml:space="preserve">
     <value>Database file path</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelDatabasePath.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
   <data name="fileSelect.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GLib.Options.OptionsPanel, OptionsLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>GLib.Options.OptionsPanel, OptionsLib, Version=8.0.9.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Database file</value>
@@ -171,8 +171,14 @@
   <data name="fileSelect.AccessibleName" xml:space="preserve">
     <value>Database file path</value>
   </data>
-  <data name="&gt;&gt;fileSelect.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;labelDatabasePath.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="labelDatabasePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 16</value>
   </data>
   <data name="&gt;&gt;folderBrowserDlg.Name" xml:space="preserve">
     <value>folderBrowserDlg</value>
@@ -183,8 +189,8 @@
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 13</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;fileSelect.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="label1.AccessibleName" xml:space="preserve">
     <value>Database file path</value>
@@ -195,11 +201,23 @@
   <data name="&gt;&gt;fileSelect.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;labelDatabasePath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="$this.AccessibleName" xml:space="preserve">
     <value>Database settings</value>
   </data>
+  <data name="&gt;&gt;fileSelect.Type" xml:space="preserve">
+    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.9.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="&gt;&gt;labelDatabasePath.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>500, 215</value>
@@ -217,6 +235,6 @@
     <value>17, 17</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>es-ES</value>
+    <value>pl-PL</value>
   </metadata>
 </root>

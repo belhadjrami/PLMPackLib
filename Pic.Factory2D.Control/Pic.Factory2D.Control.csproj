@@ -188,6 +188,9 @@
     <EmbeddedResource Include="AboutBox.ja-JP.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AboutBox.pl-PL.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AboutBox.resx">
       <SubType>Designer</SubType>
       <DependentUpon>AboutBox.cs</DependentUpon>
@@ -208,6 +211,9 @@
     <EmbeddedResource Include="FactoryDataCtrl.ja-JP.resx">
       <DependentUpon>FactoryDataCtrl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FactoryDataCtrl.pl-PL.resx">
+      <DependentUpon>FactoryDataCtrl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FactoryDataCtrl.resx">
       <DependentUpon>FactoryDataCtrl.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -222,6 +228,9 @@
       <DependentUpon>FactoryViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FactoryViewer.ja-JP.resx">
+      <DependentUpon>FactoryViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FactoryViewer.pl-PL.resx">
       <DependentUpon>FactoryViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FactoryViewer.resx">
@@ -252,6 +261,9 @@
     <EmbeddedResource Include="FormImposition.ja-JP.resx">
       <DependentUpon>FormImposition.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormImposition.pl-PL.resx">
+      <DependentUpon>FormImposition.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormImposition.resx">
       <DependentUpon>FormImposition.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -275,6 +287,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLayoutViewer.resx">
       <DependentUpon>FormLayoutViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutIntroCtrl.fr-FR.resx">
+      <DependentUpon>LayoutIntroCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutIntroCtrl.pl-PL.resx">
+      <DependentUpon>LayoutIntroCtrl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LayoutIntroCtrl.resx">
       <DependentUpon>LayoutIntroCtrl.cs</DependentUpon>

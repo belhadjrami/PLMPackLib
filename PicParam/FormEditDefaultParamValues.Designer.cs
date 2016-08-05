@@ -43,6 +43,9 @@
             // 
             resources.ApplyResources(this._pluginViewCtrl, "_pluginViewCtrl");
             this._pluginViewCtrl.CloseButtonVisible = false;
+            this._pluginViewCtrl.Component = null;
+            this._pluginViewCtrl.HasDependancies = false;
+            this._pluginViewCtrl.Localizer = null;
             this._pluginViewCtrl.Name = "_pluginViewCtrl";
             // 
             // _pluginViewCtrl.Panel1

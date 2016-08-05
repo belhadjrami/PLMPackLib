@@ -35,7 +35,6 @@
             // webBrowserStartPage
             // 
             resources.ApplyResources(this.webBrowserStartPage, "webBrowserStartPage");
-            this.webBrowserStartPage.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowserStartPage.Name = "webBrowserStartPage";
             // 
             // StartPageControl

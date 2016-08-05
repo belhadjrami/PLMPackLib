@@ -132,7 +132,6 @@
             // webBrowser4PDF
             // 
             resources.ApplyResources(this.webBrowser4PDF, "webBrowser4PDF");
-            this.webBrowser4PDF.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser4PDF.Name = "webBrowser4PDF";
             // 
             // componentLoaderControl

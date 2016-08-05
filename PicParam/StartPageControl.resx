@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="splitContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="webBrowserStartPage.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -135,17 +138,29 @@
   <data name="&gt;&gt;webBrowserStartPage.Type" xml:space="preserve">
     <value>System.Windows.Forms.WebBrowser, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>500, 500</value>
+  <data name="splitContainer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;listBoxLibraries.Type" xml:space="preserve">
+    <value>ListBoxLibraries, PLMPackLib, Version=8.0.9.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="listBoxLibraries.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="&gt;&gt;splitContainer1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="bnMerge.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 59</value>
+  </data>
   <data name="&gt;&gt;listBoxLibraries.Name" xml:space="preserve">
     <value>listBoxLibraries</value>
   </data>
-  <data name="splitContainer1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="bnMerge.Text" xml:space="preserve">
+    <value>Download and add new</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Download and update</value>
   </data>
   <data name="webBrowserStartPage.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -155,9 +170,6 @@
   </data>
   <data name="&gt;&gt;webBrowserStartPage.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="splitContainer1.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>StartPageControl</value>
@@ -177,41 +189,41 @@
   <data name="listBoxLibraries.Size" type="System.Drawing.Size, System.Drawing">
     <value>401, 246</value>
   </data>
+  <data name="&gt;&gt;webBrowserStartPage.Name" xml:space="preserve">
+    <value>webBrowserStartPage</value>
+  </data>
   <data name="&gt;&gt;bnMerge.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Panel1.Name" xml:space="preserve">
-    <value>splitContainer1.Panel1</value>
-  </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 59</value>
-  </data>
-  <data name="&gt;&gt;listBoxLibraries.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="listBoxLibraries.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;webBrowserStartPage.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="webBrowserStartPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>500, 250</value>
-  </data>
-  <data name="webBrowserStartPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
   </data>
   <data name="&gt;&gt;button1.Name" xml:space="preserve">
     <value>button1</value>
   </data>
-  <data name="bnMerge.Location" type="System.Drawing.Point, System.Drawing">
-    <value>410, 8</value>
+  <data name="&gt;&gt;splitContainer1.Panel1.Name" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
   </data>
-  <data name="&gt;&gt;webBrowserStartPage.Name" xml:space="preserve">
-    <value>webBrowserStartPage</value>
+  <data name="listBoxLibraries.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 59</value>
+  </data>
+  <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 500</value>
+  </data>
+  <data name="&gt;&gt;webBrowserStartPage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="listBoxLibraries.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="webBrowserStartPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="splitContainer1.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;splitContainer1.Panel2.Type" xml:space="preserve">
     <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -225,26 +237,17 @@
   <data name="&gt;&gt;button1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
-  <data name="&gt;&gt;listBoxLibraries.Type" xml:space="preserve">
-    <value>ListBoxLibraries, PLMPackLib, Version=8.0.9.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
   <data name="bnMerge.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="splitContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="&gt;&gt;listBoxLibraries.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Download and update</value>
-  </data>
-  <data name="bnMerge.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 59</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Panel2.Parent" xml:space="preserve">
-    <value>splitContainer1</value>
+  <data name="&gt;&gt;bnMerge.Name" xml:space="preserve">
+    <value>bnMerge</value>
   </data>
   <data name="listBoxLibraries.ItemHeight" type="System.Int32, mscorlib">
     <value>153</value>
@@ -258,35 +261,32 @@
   <data name="&gt;&gt;splitContainer1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="listBoxLibraries.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;splitContainer1.Panel2.Name" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
   <data name="&gt;&gt;splitContainer1.Panel1.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;bnMerge.Name" xml:space="preserve">
-    <value>bnMerge</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bnMerge.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="listBoxLibraries.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
     <value>410, 70</value>
   </data>
-  <data name="bnMerge.Text" xml:space="preserve">
-    <value>Download and add new</value>
+  <data name="bnMerge.Location" type="System.Drawing.Point, System.Drawing">
+    <value>410, 8</value>
+  </data>
+  <data name="&gt;&gt;bnMerge.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="webBrowserStartPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 250</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="listBoxLibraries.IntegralHeight" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -301,6 +301,6 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>fr-FR</value>
+    <value>pl-PL</value>
   </metadata>
 </root>

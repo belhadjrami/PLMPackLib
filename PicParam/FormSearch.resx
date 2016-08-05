@@ -211,11 +211,11 @@
         AAAAAAAAAAAAAA==
 </value>
   </data>
-  <data name="bnCancel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
   <data name="lbResults.ItemHeight" type="System.Int32, mscorlib">
     <value>14</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Search...</value>
   </data>
   <data name="bnCancel.Location" type="System.Drawing.Point, System.Drawing">
     <value>483, 7</value>
@@ -241,6 +241,9 @@
   </data>
   <data name="&gt;&gt;bnCancel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbMinTextLength.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;lbResults.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -272,14 +275,11 @@
   <data name="&gt;&gt;tbSearch.Name" xml:space="preserve">
     <value>tbSearch</value>
   </data>
-  <data name="lbMinTextLength.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 13</value>
-  </data>
   <data name="lbMinTextLength.Location" type="System.Drawing.Point, System.Drawing">
     <value>97, 33</value>
   </data>
-  <data name="chkSearchNameOnly.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 49</value>
+  <data name="&gt;&gt;chkSearchNameOnly.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="chkSearchNameOnly.Text" xml:space="preserve">
     <value>Search names only</value>
@@ -305,9 +305,6 @@
   <data name="tbSearch.Size" type="System.Drawing.Size, System.Drawing">
     <value>373, 20</value>
   </data>
-  <data name="&gt;&gt;lbMinTextLength.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="lbMinTextLength.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
@@ -317,7 +314,10 @@
   <data name="&gt;&gt;tbSearch.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;chkSearchNameOnly.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbResults.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
@@ -326,14 +326,14 @@
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;chkSearchNameOnly.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="lbMinTextLength.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 13</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 7</value>
   </data>
-  <data name="&gt;&gt;chkSearchNameOnly.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="chkSearchNameOnly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 49</value>
   </data>
   <data name="lbResults.Font" type="System.Drawing.Font, System.Drawing">
     <value>Courier New, 8.25pt</value>
@@ -356,25 +356,25 @@
   <data name="bnCancel.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="&gt;&gt;lbMinTextLength.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="bnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;lbResults.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Search...</value>
+  <data name="&gt;&gt;lbMinTextLength.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
-  <data name="&gt;&gt;lbResults.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>es-ES</value>
+    <value>pl-PL</value>
   </metadata>
 </root>

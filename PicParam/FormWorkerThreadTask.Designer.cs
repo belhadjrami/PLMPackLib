@@ -28,30 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormWorkerThreadTask));
             this.rtbOutput = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // rtbOutput
             // 
-            this.rtbOutput.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbOutput.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.rtbOutput, "rtbOutput");
             this.rtbOutput.Name = "rtbOutput";
-            this.rtbOutput.Size = new System.Drawing.Size(585, 173);
-            this.rtbOutput.TabIndex = 0;
-            this.rtbOutput.Text = "";
             // 
-            // FormProcessDatabase
+            // FormWorkerThreadTask
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(585, 173);
             this.Controls.Add(this.rtbOutput);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FormProcessDatabase";
+            this.Name = "FormWorkerThreadTask";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "title";
             this.ResumeLayout(false);
 
         }

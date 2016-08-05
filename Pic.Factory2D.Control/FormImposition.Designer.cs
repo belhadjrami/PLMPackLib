@@ -239,6 +239,7 @@
             // 
             // toolStripImposition
             // 
+            resources.ApplyResources(this.toolStripImposition, "toolStripImposition");
             this.toolStripImposition.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.toolStripImposition.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButtonExport,
@@ -249,12 +250,12 @@
             this.toolStripButtonCFF2,
             this.toolStripButtonPDF,
             this.toolStripButtonOceProCut});
-            resources.ApplyResources(this.toolStripImposition, "toolStripImposition");
             this.toolStripImposition.Name = "toolStripImposition";
             this.toolStripImposition.Stretch = true;
             // 
             // toolStripButtonExport
             // 
+            resources.ApplyResources(this.toolStripButtonExport, "toolStripButtonExport");
             this.toolStripButtonExport.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButtonExport.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripExportDES,
@@ -262,83 +263,82 @@
             this.toolStripExportPDF,
             this.toolStriExportAI,
             this.toolStripExportCF2});
-            resources.ApplyResources(this.toolStripButtonExport, "toolStripButtonExport");
             this.toolStripButtonExport.Name = "toolStripButtonExport";
             // 
             // toolStripExportDES
             // 
-            this.toolStripExportDES.Name = "toolStripExportDES";
             resources.ApplyResources(this.toolStripExportDES, "toolStripExportDES");
+            this.toolStripExportDES.Name = "toolStripExportDES";
             this.toolStripExportDES.Click += new System.EventHandler(this.toolStripExport_Click);
             // 
             // toolStripExportDXF
             // 
-            this.toolStripExportDXF.Name = "toolStripExportDXF";
             resources.ApplyResources(this.toolStripExportDXF, "toolStripExportDXF");
+            this.toolStripExportDXF.Name = "toolStripExportDXF";
             this.toolStripExportDXF.Click += new System.EventHandler(this.toolStripExport_Click);
             // 
             // toolStripExportPDF
             // 
-            this.toolStripExportPDF.Name = "toolStripExportPDF";
             resources.ApplyResources(this.toolStripExportPDF, "toolStripExportPDF");
+            this.toolStripExportPDF.Name = "toolStripExportPDF";
             this.toolStripExportPDF.Click += new System.EventHandler(this.toolStripExport_Click);
             // 
             // toolStriExportAI
             // 
-            this.toolStriExportAI.Name = "toolStriExportAI";
             resources.ApplyResources(this.toolStriExportAI, "toolStriExportAI");
+            this.toolStriExportAI.Name = "toolStriExportAI";
             this.toolStriExportAI.Click += new System.EventHandler(this.toolStripExport_Click);
             // 
             // toolStripExportCF2
             // 
-            this.toolStripExportCF2.Name = "toolStripExportCF2";
             resources.ApplyResources(this.toolStripExportCF2, "toolStripExportCF2");
+            this.toolStripExportCF2.Name = "toolStripExportCF2";
             this.toolStripExportCF2.Click += new System.EventHandler(this.toolStripExport_Click);
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
             resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
             // 
             // toolStripButtonPicGEOM
             // 
-            this.toolStripButtonPicGEOM.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             resources.ApplyResources(this.toolStripButtonPicGEOM, "toolStripButtonPicGEOM");
+            this.toolStripButtonPicGEOM.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButtonPicGEOM.Name = "toolStripButtonPicGEOM";
             this.toolStripButtonPicGEOM.Click += new System.EventHandler(this.toolStripButtonPicGEOM_Click);
             // 
             // toolStripButtonDXF
             // 
-            this.toolStripButtonDXF.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             resources.ApplyResources(this.toolStripButtonDXF, "toolStripButtonDXF");
+            this.toolStripButtonDXF.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButtonDXF.Name = "toolStripButtonDXF";
             this.toolStripButtonDXF.Click += new System.EventHandler(this.toolStripButtonDXF_Click);
             // 
             // toolStripButtonAI
             // 
-            this.toolStripButtonAI.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             resources.ApplyResources(this.toolStripButtonAI, "toolStripButtonAI");
+            this.toolStripButtonAI.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButtonAI.Name = "toolStripButtonAI";
             this.toolStripButtonAI.Click += new System.EventHandler(this.toolStripButtonAI_Click);
             // 
             // toolStripButtonCFF2
             // 
-            this.toolStripButtonCFF2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             resources.ApplyResources(this.toolStripButtonCFF2, "toolStripButtonCFF2");
+            this.toolStripButtonCFF2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButtonCFF2.Name = "toolStripButtonCFF2";
             this.toolStripButtonCFF2.Click += new System.EventHandler(this.toolStripButtonCFF2_Click);
             // 
             // toolStripButtonPDF
             // 
-            this.toolStripButtonPDF.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             resources.ApplyResources(this.toolStripButtonPDF, "toolStripButtonPDF");
+            this.toolStripButtonPDF.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButtonPDF.Name = "toolStripButtonPDF";
             this.toolStripButtonPDF.Click += new System.EventHandler(this.toolStripButtonPDF_Click);
             // 
             // toolStripButtonOceProCut
             // 
-            this.toolStripButtonOceProCut.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             resources.ApplyResources(this.toolStripButtonOceProCut, "toolStripButtonOceProCut");
+            this.toolStripButtonOceProCut.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButtonOceProCut.Name = "toolStripButtonOceProCut";
             this.toolStripButtonOceProCut.Click += new System.EventHandler(this.toolStripButtonOceProCut_Click);
             // 

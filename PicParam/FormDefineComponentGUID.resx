@@ -127,11 +127,14 @@
   <data name="&gt;&gt;lbGUID.Name" xml:space="preserve">
     <value>lbGUID</value>
   </data>
+  <data name="bnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>320, 35</value>
+  </data>
   <data name="&gt;&gt;bnOK.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="bnCancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>320, 35</value>
+  <data name="&gt;&gt;tbGUID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lbGUID.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -147,9 +150,6 @@
   </data>
   <data name="&gt;&gt;bnCancel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bnCancel.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="lbGUID.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 7</value>
@@ -179,9 +179,6 @@
   <data name="&gt;&gt;tbGUID.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;tbGUID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;lbGUID.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -196,6 +193,9 @@
   </data>
   <data name="bnCancel.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
+  </data>
+  <data name="bnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="lbGUID.Text" xml:space="preserve">
     <value>GUID</value>
@@ -212,8 +212,8 @@
   <data name="&gt;&gt;bnOK.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="bnCancel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;bnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="bnOK.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -234,6 +234,6 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ja-JP</value>
+    <value>pl-PL</value>
   </metadata>
 </root>

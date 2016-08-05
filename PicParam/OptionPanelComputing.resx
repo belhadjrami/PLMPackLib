@@ -149,8 +149,8 @@
   <data name="lbMaximumNumberOfEntities.AccessibleName" xml:space="preserve">
     <value>Maximum number of entities</value>
   </data>
-  <data name="lbMaximumNumberOfEntities.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="lbMaximumNumberOfEntities.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 11</value>
   </data>
   <data name="&gt;&gt;lbMaximumNumberOfEntities.Name" xml:space="preserve">
     <value>lbMaximumNumberOfEntities</value>
@@ -162,16 +162,13 @@
     <value>75, 20</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GLib.Options.OptionsPanel, OptionsLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>GLib.Options.OptionsPanel, OptionsLib, Version=8.0.9.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;nudMaxNumberOfEntities.Name" xml:space="preserve">
     <value>nudMaxNumberOfEntities</value>
   </data>
   <data name="&gt;&gt;lbMaximumNumberOfEntities.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="lbMaximumNumberOfEntities.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 11</value>
   </data>
   <data name="nudMaxNumberOfEntities.Location" type="System.Drawing.Point, System.Drawing">
     <value>168, 9</value>
@@ -194,6 +191,9 @@
   <data name="$this.AccessibleName" xml:space="preserve">
     <value>Computing settings</value>
   </data>
+  <data name="lbMaximumNumberOfEntities.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;nudMaxNumberOfEntities.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -201,6 +201,6 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>es-ES</value>
+    <value>pl-PL</value>
   </metadata>
 </root>

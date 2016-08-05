@@ -65,15 +65,15 @@
             // 
             // fileSelectOutput
             // 
-            this.fileSelectOutput.Filter = "pdf files (*.pdf)|*.pdf|All files (*.*)|*.*";
             resources.ApplyResources(this.fileSelectOutput, "fileSelectOutput");
+            this.fileSelectOutput.Filter = "pdf files (*.pdf)|*.pdf|All files (*.*)|*.*";
             this.fileSelectOutput.Name = "fileSelectOutput";
             this.fileSelectOutput.FileNameChanged += new System.EventHandler(this.onFileNameChanged);
             // 
             // fileSelectPdfTemplate
             // 
-            this.fileSelectPdfTemplate.Filter = "pdf files (*.pdf)|*.pdf|All files (*.*)|*.*";
             resources.ApplyResources(this.fileSelectPdfTemplate, "fileSelectPdfTemplate");
+            this.fileSelectPdfTemplate.Filter = "pdf files (*.pdf)|*.pdf|All files (*.*)|*.*";
             this.fileSelectPdfTemplate.Name = "fileSelectPdfTemplate";
             this.fileSelectPdfTemplate.FileNameChanged += new System.EventHandler(this.onFileNameChanged);
             // 

@@ -351,6 +351,9 @@
     <EmbeddedResource Include="DownloadPageControl.ja-JP.resx">
       <DependentUpon>DownloadPageControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DownloadPageControl.pl-PL.resx">
+      <DependentUpon>DownloadPageControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAboutBox.es-ES.resx">
       <DependentUpon>FormAboutBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -395,16 +398,25 @@
     <EmbeddedResource Include="FormCreateBranch.it-IT.resx">
       <DependentUpon>FormCreateBranch.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCreateBranch.pl-PL.resx">
+      <DependentUpon>FormCreateBranch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCreateCardboardFormat.es-ES.resx">
       <DependentUpon>FormCreateCardboardFormat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCreateCardboardFormat.it-IT.resx">
       <DependentUpon>FormCreateCardboardFormat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCreateCardboardFormat.pl-PL.resx">
+      <DependentUpon>FormCreateCardboardFormat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCreateCardboardProfile.es-ES.resx">
       <DependentUpon>FormCreateCardboardProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCreateCardboardProfile.it-IT.resx">
+      <DependentUpon>FormCreateCardboardProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCreateCardboardProfile.pl-PL.resx">
       <DependentUpon>FormCreateCardboardProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCreateDocument.es-ES.resx">
@@ -414,6 +426,9 @@
     <EmbeddedResource Include="FormCreateDocument.it-IT.resx">
       <DependentUpon>FormCreateDocument.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCreateDocument.pl-PL.resx">
+      <DependentUpon>FormCreateDocument.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDefineComponentGUID.es-ES.resx">
       <DependentUpon>FormDefineComponentGUID.cs</DependentUpon>
@@ -427,10 +442,16 @@
     <EmbeddedResource Include="FormDefineComponentGUID.ja-JP.resx">
       <DependentUpon>FormDefineComponentGUID.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDefineComponentGUID.pl-PL.resx">
+      <DependentUpon>FormDefineComponentGUID.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEditCardboardFormats.es-ES.resx">
       <DependentUpon>FormEditCardboardFormats.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEditCardboardFormats.it-IT.resx">
+      <DependentUpon>FormEditCardboardFormats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditCardboardFormats.pl-PL.resx">
       <DependentUpon>FormEditCardboardFormats.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEditDatabasePath.es-ES.resx">
@@ -443,6 +464,9 @@
       <DependentUpon>FormEditDatabasePath.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEditDatabasePath.ja-JP.resx">
+      <DependentUpon>FormEditDatabasePath.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditDatabasePath.pl-PL.resx">
       <DependentUpon>FormEditDatabasePath.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEditDatabasePath.resx">
@@ -461,6 +485,9 @@
     <EmbeddedResource Include="FormEditDefaultParamValues.ja-JP.resx">
       <DependentUpon>FormEditDefaultParamValues.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormEditDefaultParamValues.pl-PL.resx">
+      <DependentUpon>FormEditDefaultParamValues.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEditMajorations.es-ES.resx">
       <DependentUpon>FormEditMajorations.cs</DependentUpon>
     </EmbeddedResource>
@@ -468,6 +495,9 @@
       <DependentUpon>FormEditMajorations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEditMajorations.it-IT.resx">
+      <DependentUpon>FormEditMajorations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditMajorations.pl-PL.resx">
       <DependentUpon>FormEditMajorations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEditMajorations.resx">
@@ -478,6 +508,9 @@
       <DependentUpon>FormEditMaterials.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEditMaterials.it-IT.resx">
+      <DependentUpon>FormEditMaterials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditMaterials.pl-PL.resx">
       <DependentUpon>FormEditMaterials.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEditMaterials.resx">
@@ -493,6 +526,9 @@
     <EmbeddedResource Include="FormEditProfiles.it-IT.resx">
       <DependentUpon>FormEditProfiles.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormEditProfiles.pl-PL.resx">
+      <DependentUpon>FormEditProfiles.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEditProfiles.resx">
       <SubType>Designer</SubType>
       <DependentUpon>FormEditProfiles.cs</DependentUpon>
@@ -501,6 +537,9 @@
       <DependentUpon>FormExportFile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormExportFile.it-IT.resx">
+      <DependentUpon>FormExportFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExportFile.pl-PL.resx">
       <DependentUpon>FormExportFile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormExportFile.resx">
@@ -523,10 +562,16 @@
     <EmbeddedResource Include="FormDefineComponentGUID.resx">
       <DependentUpon>FormDefineComponentGUID.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormGeneratePDF3D.pl-PL.resx">
+      <DependentUpon>FormGeneratePDF3D.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormGeneratePDF3D.resx">
       <DependentUpon>FormGeneratePDF3D.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.it-IT.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.pl-PL.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPluginEditor.es-ES.resx">
@@ -537,10 +582,16 @@
       <DependentUpon>FormPluginEditor.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormPluginEditor.pl-PL.resx">
+      <DependentUpon>FormPluginEditor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRenameNode.es-ES.resx">
       <DependentUpon>FormRenameNode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRenameNode.it-IT.resx">
+      <DependentUpon>FormRenameNode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRenameNode.pl-PL.resx">
       <DependentUpon>FormRenameNode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSearch.es-ES.resx">
@@ -555,8 +606,14 @@
     <EmbeddedResource Include="FormSearch.ja-JP.resx">
       <DependentUpon>FormSearch.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormSearch.pl-PL.resx">
+      <DependentUpon>FormSearch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSearch.resx">
       <DependentUpon>FormSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWorkerThreadTask.pl-PL.resx">
+      <DependentUpon>FormWorkerThreadTask.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormWorkerThreadTask.resx">
       <DependentUpon>FormWorkerThreadTask.cs</DependentUpon>
@@ -590,6 +647,9 @@
     <EmbeddedResource Include="OptionPanelComponentViewer.ja-JP.resx">
       <DependentUpon>OptionPanelComponentViewer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OptionPanelComponentViewer.pl-PL.resx">
+      <DependentUpon>OptionPanelComponentViewer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OptionPanelComponentViewer.resx">
       <DependentUpon>OptionPanelComponentViewer.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -604,6 +664,9 @@
       <DependentUpon>OptionPanelComputing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OptionPanelComputing.ja-JP.resx">
+      <DependentUpon>OptionPanelComputing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionPanelComputing.pl-PL.resx">
       <DependentUpon>OptionPanelComputing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OptionPanelComputing.resx">
@@ -622,6 +685,9 @@
     <EmbeddedResource Include="OptionPanelDatabase.ja-JP.resx">
       <DependentUpon>OptionPanelDatabase.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OptionPanelDatabase.pl-PL.resx">
+      <DependentUpon>OptionPanelDatabase.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OptionPanelDebug.es-ES.resx">
       <DependentUpon>OptionPanelDebug.cs</DependentUpon>
     </EmbeddedResource>
@@ -632,6 +698,9 @@
       <DependentUpon>OptionPanelDebug.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OptionPanelDebug.ja-JP.resx">
+      <DependentUpon>OptionPanelDebug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionPanelDebug.pl-PL.resx">
       <DependentUpon>OptionPanelDebug.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OptionPanelDebug.resx">
@@ -650,6 +719,9 @@
     <EmbeddedResource Include="OptionPanelMajorations.ja-JP.resx">
       <DependentUpon>OptionPanelMajorations.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OptionPanelMajorations.pl-PL.resx">
+      <DependentUpon>OptionPanelMajorations.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OptionPanelMajorations.resx">
       <DependentUpon>OptionPanelMajorations.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -664,6 +736,9 @@
       <DependentUpon>OptionPanelOutputFileOpening.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OptionPanelOutputFileOpening.ja-JP.resx">
+      <DependentUpon>OptionPanelOutputFileOpening.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionPanelOutputFileOpening.pl-PL.resx">
       <DependentUpon>OptionPanelOutputFileOpening.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OptionPanelOutputFileOpening.resx">
@@ -682,6 +757,9 @@
     <EmbeddedResource Include="OptionPanelThumbnail.ja-JP.resx">
       <DependentUpon>OptionPanelThumbnail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OptionPanelThumbnail.pl-PL.resx">
+      <DependentUpon>OptionPanelThumbnail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OptionPanelThumbnail.resx">
       <DependentUpon>OptionPanelThumbnail.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -696,6 +774,9 @@
       <DependentUpon>OptionPanelWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OptionPanelWindow.ja-JP.resx">
+      <DependentUpon>OptionPanelWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionPanelWindow.pl-PL.resx">
       <DependentUpon>OptionPanelWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OptionPanelWindow.resx">
@@ -727,7 +808,13 @@
     <EmbeddedResource Include="SplashScreen.ja-JP.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.pl-PL.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StartPageControl.fr-FR.resx">
+      <DependentUpon>StartPageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartPageControl.pl-PL.resx">
       <DependentUpon>StartPageControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartPageControl.resx">
