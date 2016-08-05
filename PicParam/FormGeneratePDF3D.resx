@@ -238,7 +238,7 @@
     <value>fileSelectOutput</value>
   </data>
   <data name="&gt;&gt;fileSelectOutput.Type" xml:space="preserve">
-    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.7.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.9.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;fileSelectOutput.Parent" xml:space="preserve">
     <value>$this</value>
@@ -259,7 +259,7 @@
     <value>fileSelectPdfTemplate</value>
   </data>
   <data name="&gt;&gt;fileSelectPdfTemplate.Type" xml:space="preserve">
-    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.7.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.9.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;fileSelectPdfTemplate.Parent" xml:space="preserve">
     <value>$this</value>

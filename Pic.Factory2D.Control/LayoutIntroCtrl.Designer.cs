@@ -41,12 +41,13 @@
             this.bnOk = new System.Windows.Forms.Button();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPageOffsets = new System.Windows.Forms.TabPage();
-            this.tabPageMargins = new System.Windows.Forms.TabPage();
-            this.tabPageSpacing = new System.Windows.Forms.TabPage();
+            this.lbUnitOffsetY = new System.Windows.Forms.Label();
+            this.lbUnitOffsetX = new System.Windows.Forms.Label();
             this.nudOffsetY = new System.Windows.Forms.NumericUpDown();
             this.lbOffsetX = new System.Windows.Forms.Label();
             this.nudOffsetX = new System.Windows.Forms.NumericUpDown();
             this.lbOffsetY = new System.Windows.Forms.Label();
+            this.tabPageMargins = new System.Windows.Forms.TabPage();
             this.lbmm3 = new System.Windows.Forms.Label();
             this.lbmm1 = new System.Windows.Forms.Label();
             this.lbmm4 = new System.Windows.Forms.Label();
@@ -61,6 +62,7 @@
             this.nudTopBottomMargin = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.cbTopBottom = new System.Windows.Forms.ComboBox();
+            this.tabPageSpacing = new System.Windows.Forms.TabPage();
             this.lbmm6 = new System.Windows.Forms.Label();
             this.nudSpaceY = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
@@ -68,20 +70,18 @@
             this.lbmm5 = new System.Windows.Forms.Label();
             this.nudSpaceX = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
-            this.lbUnitOffsetX = new System.Windows.Forms.Label();
-            this.lbUnitOffsetY = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumberDirY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumberDirX)).BeginInit();
             this.tabControl.SuspendLayout();
             this.tabPageOffsets.SuspendLayout();
-            this.tabPageMargins.SuspendLayout();
-            this.tabPageSpacing.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudOffsetY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudOffsetX)).BeginInit();
+            this.tabPageMargins.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudLeftRightMargin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTopBottomRemaining)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLeftRightRemaining)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTopBottomMargin)).BeginInit();
+            this.tabPageSpacing.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSpaceY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSpaceX)).BeginInit();
             this.SuspendLayout();
@@ -131,6 +131,7 @@
             this.rbLayoutMode2.TabStop = true;
             this.rbLayoutMode2.Text = "Choose number of rows and columns";
             this.rbLayoutMode2.UseVisualStyleBackColor = true;
+            this.rbLayoutMode2.CheckedChanged += new System.EventHandler(this.onLayoutModeChanged);
             // 
             // rbLayoutMode1
             // 
@@ -143,6 +144,7 @@
             this.rbLayoutMode1.TabStop = true;
             this.rbLayoutMode1.Text = "Choose cardboard format";
             this.rbLayoutMode1.UseVisualStyleBackColor = true;
+            this.rbLayoutMode1.CheckedChanged += new System.EventHandler(this.onLayoutModeChanged);
             this.rbLayoutMode1.Click += new System.EventHandler(this.onLayoutModeChanged);
             // 
             // bnEditCardboardFormats
@@ -234,45 +236,25 @@
             this.tabPageOffsets.Text = "Offsets";
             this.tabPageOffsets.UseVisualStyleBackColor = true;
             // 
-            // tabPageMargins
+            // lbUnitOffsetY
             // 
-            this.tabPageMargins.Controls.Add(this.lbmm3);
-            this.tabPageMargins.Controls.Add(this.lbmm1);
-            this.tabPageMargins.Controls.Add(this.lbmm4);
-            this.tabPageMargins.Controls.Add(this.lbmm2);
-            this.tabPageMargins.Controls.Add(this.nudLeftRightMargin);
-            this.tabPageMargins.Controls.Add(this.lbRemainingLeftRight);
-            this.tabPageMargins.Controls.Add(this.nudTopBottomRemaining);
-            this.tabPageMargins.Controls.Add(this.lbRemainingBottomTop);
-            this.tabPageMargins.Controls.Add(this.nudLeftRightRemaining);
-            this.tabPageMargins.Controls.Add(this.label4);
-            this.tabPageMargins.Controls.Add(this.cbRightLeft);
-            this.tabPageMargins.Controls.Add(this.nudTopBottomMargin);
-            this.tabPageMargins.Controls.Add(this.label2);
-            this.tabPageMargins.Controls.Add(this.cbTopBottom);
-            this.tabPageMargins.Location = new System.Drawing.Point(4, 22);
-            this.tabPageMargins.Name = "tabPageMargins";
-            this.tabPageMargins.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageMargins.Size = new System.Drawing.Size(525, 144);
-            this.tabPageMargins.TabIndex = 1;
-            this.tabPageMargins.Text = "Margins";
-            this.tabPageMargins.UseVisualStyleBackColor = true;
+            this.lbUnitOffsetY.AutoSize = true;
+            this.lbUnitOffsetY.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbUnitOffsetY.Location = new System.Drawing.Point(203, 33);
+            this.lbUnitOffsetY.Name = "lbUnitOffsetY";
+            this.lbUnitOffsetY.Size = new System.Drawing.Size(23, 13);
+            this.lbUnitOffsetY.TabIndex = 32;
+            this.lbUnitOffsetY.Text = "mm";
             // 
-            // tabPageSpacing
+            // lbUnitOffsetX
             // 
-            this.tabPageSpacing.Controls.Add(this.lbmm6);
-            this.tabPageSpacing.Controls.Add(this.nudSpaceY);
-            this.tabPageSpacing.Controls.Add(this.label3);
-            this.tabPageSpacing.Controls.Add(this.label1);
-            this.tabPageSpacing.Controls.Add(this.lbmm5);
-            this.tabPageSpacing.Controls.Add(this.nudSpaceX);
-            this.tabPageSpacing.Controls.Add(this.label9);
-            this.tabPageSpacing.Location = new System.Drawing.Point(4, 22);
-            this.tabPageSpacing.Name = "tabPageSpacing";
-            this.tabPageSpacing.Size = new System.Drawing.Size(525, 144);
-            this.tabPageSpacing.TabIndex = 2;
-            this.tabPageSpacing.Text = "Spacing";
-            this.tabPageSpacing.UseVisualStyleBackColor = true;
+            this.lbUnitOffsetX.AutoSize = true;
+            this.lbUnitOffsetX.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbUnitOffsetX.Location = new System.Drawing.Point(203, 9);
+            this.lbUnitOffsetX.Name = "lbUnitOffsetX";
+            this.lbUnitOffsetX.Size = new System.Drawing.Size(23, 13);
+            this.lbUnitOffsetX.TabIndex = 31;
+            this.lbUnitOffsetX.Text = "mm";
             // 
             // nudOffsetY
             // 
@@ -329,6 +311,30 @@
             this.lbOffsetY.Size = new System.Drawing.Size(45, 13);
             this.lbOffsetY.TabIndex = 5;
             this.lbOffsetY.Text = "Offset Y";
+            // 
+            // tabPageMargins
+            // 
+            this.tabPageMargins.Controls.Add(this.lbmm3);
+            this.tabPageMargins.Controls.Add(this.lbmm1);
+            this.tabPageMargins.Controls.Add(this.lbmm4);
+            this.tabPageMargins.Controls.Add(this.lbmm2);
+            this.tabPageMargins.Controls.Add(this.nudLeftRightMargin);
+            this.tabPageMargins.Controls.Add(this.lbRemainingLeftRight);
+            this.tabPageMargins.Controls.Add(this.nudTopBottomRemaining);
+            this.tabPageMargins.Controls.Add(this.lbRemainingBottomTop);
+            this.tabPageMargins.Controls.Add(this.nudLeftRightRemaining);
+            this.tabPageMargins.Controls.Add(this.label4);
+            this.tabPageMargins.Controls.Add(this.cbRightLeft);
+            this.tabPageMargins.Controls.Add(this.nudTopBottomMargin);
+            this.tabPageMargins.Controls.Add(this.label2);
+            this.tabPageMargins.Controls.Add(this.cbTopBottom);
+            this.tabPageMargins.Location = new System.Drawing.Point(4, 22);
+            this.tabPageMargins.Name = "tabPageMargins";
+            this.tabPageMargins.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageMargins.Size = new System.Drawing.Size(525, 144);
+            this.tabPageMargins.TabIndex = 1;
+            this.tabPageMargins.Text = "Margins";
+            this.tabPageMargins.UseVisualStyleBackColor = true;
             // 
             // lbmm3
             // 
@@ -488,6 +494,22 @@
             this.cbTopBottom.Size = new System.Drawing.Size(71, 21);
             this.cbTopBottom.TabIndex = 18;
             // 
+            // tabPageSpacing
+            // 
+            this.tabPageSpacing.Controls.Add(this.lbmm6);
+            this.tabPageSpacing.Controls.Add(this.nudSpaceY);
+            this.tabPageSpacing.Controls.Add(this.label3);
+            this.tabPageSpacing.Controls.Add(this.label1);
+            this.tabPageSpacing.Controls.Add(this.lbmm5);
+            this.tabPageSpacing.Controls.Add(this.nudSpaceX);
+            this.tabPageSpacing.Controls.Add(this.label9);
+            this.tabPageSpacing.Location = new System.Drawing.Point(4, 22);
+            this.tabPageSpacing.Name = "tabPageSpacing";
+            this.tabPageSpacing.Size = new System.Drawing.Size(525, 144);
+            this.tabPageSpacing.TabIndex = 2;
+            this.tabPageSpacing.Text = "Spacing";
+            this.tabPageSpacing.UseVisualStyleBackColor = true;
+            // 
             // lbmm6
             // 
             this.lbmm6.AutoSize = true;
@@ -564,26 +586,6 @@
             this.label9.TabIndex = 30;
             this.label9.Text = "Space between cuts";
             // 
-            // lbUnitOffsetX
-            // 
-            this.lbUnitOffsetX.AutoSize = true;
-            this.lbUnitOffsetX.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbUnitOffsetX.Location = new System.Drawing.Point(203, 9);
-            this.lbUnitOffsetX.Name = "lbUnitOffsetX";
-            this.lbUnitOffsetX.Size = new System.Drawing.Size(23, 13);
-            this.lbUnitOffsetX.TabIndex = 31;
-            this.lbUnitOffsetX.Text = "mm";
-            // 
-            // lbUnitOffsetY
-            // 
-            this.lbUnitOffsetY.AutoSize = true;
-            this.lbUnitOffsetY.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbUnitOffsetY.Location = new System.Drawing.Point(203, 33);
-            this.lbUnitOffsetY.Name = "lbUnitOffsetY";
-            this.lbUnitOffsetY.Size = new System.Drawing.Size(23, 13);
-            this.lbUnitOffsetY.TabIndex = 32;
-            this.lbUnitOffsetY.Text = "mm";
-            // 
             // LayoutIntroCtrl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -607,16 +609,16 @@
             this.tabControl.ResumeLayout(false);
             this.tabPageOffsets.ResumeLayout(false);
             this.tabPageOffsets.PerformLayout();
-            this.tabPageMargins.ResumeLayout(false);
-            this.tabPageMargins.PerformLayout();
-            this.tabPageSpacing.ResumeLayout(false);
-            this.tabPageSpacing.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudOffsetY)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudOffsetX)).EndInit();
+            this.tabPageMargins.ResumeLayout(false);
+            this.tabPageMargins.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudLeftRightMargin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTopBottomRemaining)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLeftRightRemaining)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTopBottomMargin)).EndInit();
+            this.tabPageSpacing.ResumeLayout(false);
+            this.tabPageSpacing.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSpaceY)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSpaceX)).EndInit();
             this.ResumeLayout(false);

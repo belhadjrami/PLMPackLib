@@ -28,7 +28,7 @@ namespace Pic.Factory2D.Control
     [ClassInterface(ClassInterfaceType.AutoDual)]
     [ProgId("Pic.Factory2D.Control.LayoutIntroCtrl")]
     [ComVisible(true)]
-    public partial class LayoutIntroCtrl : UserControl/*, ILayoutCtrl*/
+    public partial class LayoutIntroCtrl : UserControl
     {
         #region Data members
         private string _drawingName;
@@ -50,8 +50,6 @@ namespace Pic.Factory2D.Control
         public LayoutIntroCtrl()
         {
             InitializeComponent();
-
-
         }
         #endregion
 
@@ -120,7 +118,6 @@ namespace Pic.Factory2D.Control
             }
         }
         #endregion
-
 
         #region Event handlers
         private void onEditFormats(object sender, EventArgs e)
@@ -230,7 +227,10 @@ namespace Pic.Factory2D.Control
                         _result = form.Result;
                     }
                     else
+                    {
                         _result = 0;
+                        return;
+                    }
                 }
             }
             catch (PicToolTooLongException /*ex*/)

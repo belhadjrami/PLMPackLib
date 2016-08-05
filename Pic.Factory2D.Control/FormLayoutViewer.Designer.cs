@@ -402,6 +402,7 @@
             // bnToCurrentFile
             // 
             this.bnToCurrentFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.bnToCurrentFile.Enabled = false;
             this.bnToCurrentFile.Location = new System.Drawing.Point(592, 500);
             this.bnToCurrentFile.Name = "bnToCurrentFile";
             this.bnToCurrentFile.Size = new System.Drawing.Size(142, 23);
@@ -420,11 +421,13 @@
             this.bnCancel.TabIndex = 37;
             this.bnCancel.Text = "Cancel";
             this.bnCancel.UseVisualStyleBackColor = true;
+            this.bnCancel.Click += new System.EventHandler(this.onCancel);
             // 
             // FormLayoutViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.bnCancel;
             this.ClientSize = new System.Drawing.Size(739, 561);
             this.Controls.Add(this.bnCancel);
             this.Controls.Add(this.bnToCurrentFile);
@@ -435,6 +438,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormLayoutViewer";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "Select layout...";
             this.grpbLengthes.ResumeLayout(false);
             this.grpbLengthes.PerformLayout();

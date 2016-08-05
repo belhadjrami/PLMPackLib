@@ -58,6 +58,11 @@
         <File Source="..\PicParam\bin\x86\Release\Pic.Factory2D.Control.dll" />
         <Condition>Installed OR NETFRAMEWORK40FULL</Condition>
       </Component>
+      <Component Id="Pic.Factory2D.Control.Layout" Guid="A4C718C8-E765-4BA3-BDD6-E0E0CC3C3861">
+         <File Source="..\Pic.Factory2D.Control.Layout\bin\x86\Release\Pic.Factory2D.Control.Layout.exe" />
+        <File Source="..\Pic.Factory2D.Control\CardboardFormats.xml"/>
+         <Condition>Installed OR NETFRAMEWORK40FULL</Condition>       
+      </Component>
       <!-- log4net -->
       <Component Id="log4net" Guid="D27E7869-FFFB-479f-B351-0A416C5E45E0">
         <File Source="..\PicParam\bin\x86\Release\log4net.dll" KeyPath="yes" />

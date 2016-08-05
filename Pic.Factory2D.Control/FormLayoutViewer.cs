@@ -218,6 +218,11 @@ namespace Pic.Factory2D.Control
         }
         #endregion
 
+        private void onCancel(object sender, EventArgs e)
+        {
+
+        }
+
         #endregion
     }
 }
