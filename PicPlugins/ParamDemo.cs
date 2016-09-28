@@ -682,3 +682,36 @@ public List<Vector2D> ReferencePoints(ParameterStack stack)
     List<Vector2D> ltPoints = new List<Vector2D>();
     return ltPoints;
 }
+///
+/// flat palletization
+///
+public bool IsSupportingFlatPalletization
+{   get { return false; }   }
+///
+/// flat dimensions
+///
+public void FlatDimensions(ParameterStack stack, out double[] flatDimensions)
+{
+    flatDimensions = new double[3];
+}
+/// <summary>
+/// Number of parts
+/// </summary>
+public int NoParts
+{   get { return 1; } }
+/// <summary>
+/// Part name
+/// </summary>
+public string PartName(int i)
+{
+    string[] partNames = {"Part0"};
+    return partNames[i];
+}
+/// <summary>
+/// Layer name
+/// </summary>
+public string LayerName(int i)
+{
+    string[] layerName = {"Layer0"};
+    return layerName[i];
+}

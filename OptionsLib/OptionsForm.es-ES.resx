@@ -1147,4 +1147,58 @@
 	<metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
 		<value>ja-JP</value>
 	</metadata>
+	<data name="CatHeader.Text" xml:space="preserve">
+		<value>Categorias:</value>
+	</data>
+	<data name="CatDescr.AccessibleDescription" xml:space="preserve">
+		<value>Este cuadro muestra una descripción de cada categoría </value>
+	</data>
+	<data name="CatHeader.AccessibleDescription" xml:space="preserve">
+		<value>Categorias Principales</value>
+	</data>
+	<data name="AppRestartLabel.AccessibleDescription" xml:space="preserve">
+		<value>Este cuadro indica que la aplicación debe reiniciarse para que los cambios surtan efecto.</value>
+	</data>
+	<data name="OKBtn.Text" xml:space="preserve">
+		<value>OK</value>
+	</data>
+	<data name="CancelBtn.AccessibleDescription" xml:space="preserve">
+		<value>Cancelar los cambios y cerrar el formulario de opciones.</value>
+	</data>
+	<data name="OptionsPanelPath.Text" xml:space="preserve">
+		<value>Opciones de Ruta</value>
+	</data>
+	<data name="CatTree.AccessibleDescription" xml:space="preserve">
+		<value>Opciones de Categorias</value>
+	</data>
+	<data name="CatDescr.Text" xml:space="preserve">
+		<value>Descipción</value>
+	</data>
+	<data name="OptionsPanelPath.AccessibleDescription" xml:space="preserve">
+		<value>Este cuadro muestra la ruta de acceso a las opciones para el actual panel de opciones.</value>
+	</data>
+	<data name="OptionDescrLabel.AccessibleDescription" xml:space="preserve">
+		<value>Este cuadro muestra una breve descripción de cada control.</value>
+	</data>
+	<data name="ApplyBtn.Text" xml:space="preserve">
+		<value>Aplicar</value>
+	</data>
+	<data name="$this.Text" xml:space="preserve">
+		<value>Opciones</value>
+	</data>
+	<data name="CancelBtn.Text" xml:space="preserve">
+		<value>Cancelar</value>
+	</data>
+	<data name="OptionDescrLabel.Text" xml:space="preserve">
+		<value>Descipción</value>
+	</data>
+	<data name="ApplyBtn.AccessibleDescription" xml:space="preserve">
+		<value>Aplicar Cambios</value>
+	</data>
+	<data name="AppRestartLabel.Text" xml:space="preserve">
+		<value>La Aplicación debe reiniciar el sistema para que los cambios surtan efecto</value>
+	</data>
+	<data name="OKBtn.AccessibleDescription" xml:space="preserve">
+		<value>Aplicar los cambios y cerrar el formulario de opciones.</value>
+	</data>
 </root>

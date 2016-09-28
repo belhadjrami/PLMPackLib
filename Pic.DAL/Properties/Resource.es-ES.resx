@@ -117,4 +117,25 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="COMPONENTDEFAULTPARAMETERVALUES" xml:space="preserve">
+		<value>Los valores de los parámetros predeterminados: {0}</value>
+	</data>
+	<data name="FAILEDTOEXTRACTFILE" xml:space="preserve">
+		<value>Error al extraer el archivo {0}.</value>
+	</data>
+	<data name="FILENOTFOUND" xml:space="preserve">
+		<value>El archivo {0} no se pudo encontrar.</value>
+	</data>
+	<data name="INSERTEDCOMPONENT" xml:space="preserve">
+		<value>Insertar Componente {0}</value>
+	</data>
+	<data name="INSERTEDDOCUMENT" xml:space="preserve">
+		<value>Insertar Documento {0}</value>
+	</data>
+	<data name="INSERTEDNODE" xml:space="preserve">
+		<value>Insertar Nodo</value>
+	</data>
+	<data name="NODEALREADYINSERTED" xml:space="preserve">
+		<value>Nodo {0} ya existe. Descartando…</value>
+	</data>
 </root>

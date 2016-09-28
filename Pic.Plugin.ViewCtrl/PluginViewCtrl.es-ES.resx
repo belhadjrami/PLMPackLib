@@ -294,4 +294,19 @@
 	<data name="$this.Localizable" type="System.Boolean, mscorlib">
 		<value>True</value>
 	</data>
+	<data name="reflectionYToolStripMenuItem.Text" xml:space="preserve">
+		<value>Reflejo &amp;Y</value>
+	</data>
+	<data name="reflectionXToolStripMenuItem.Text" xml:space="preserve">
+		<value>Reflejo &amp;X</value>
+	</data>
+	<data name="showCotationsToolStripMenuItem.Text" xml:space="preserve">
+		<value>Mostrar Dimensiones</value>
+	</data>
+	<data name="impositionToolStripMenuItem.Text" xml:space="preserve">
+		<value>Mostrar Imposición</value>
+	</data>
+	<data name="fitViewToolStripMenuItem.Text" xml:space="preserve">
+		<value>&amp;Ajustar Vista</value>
+	</data>
 </root>

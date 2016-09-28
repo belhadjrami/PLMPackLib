@@ -1,6 +1,6 @@
-﻿namespace Pic.Factory2D.Control.Layout
+﻿namespace Pic.Plugin.GeneratorCtrl.Client
 {
-    partial class FormLayoutIntro
+    partial class FormMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.layoutIntroCtrl = new Pic.Factory2D.Control.LayoutIntroCtrl();
+            this.generatorCtrl = new Pic.Plugin.GeneratorCtrl.GeneratorCtrl();
             this.SuspendLayout();
             // 
-            // layoutIntroCtrl
+            // generatorCtrl
             // 
-            this.layoutIntroCtrl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutIntroCtrl.Location = new System.Drawing.Point(0, 0);
-            this.layoutIntroCtrl.Name = "layoutIntroCtrl";
-            this.layoutIntroCtrl.Size = new System.Drawing.Size(524, 381);
-            this.layoutIntroCtrl.TabIndex = 0;
+            this.generatorCtrl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.generatorCtrl.Location = new System.Drawing.Point(0, 0);
+            this.generatorCtrl.Name = "generatorCtrl";
+            this.generatorCtrl.PluginVersion = "2.0.0.0";
+            this.generatorCtrl.Size = new System.Drawing.Size(684, 561);
+            this.generatorCtrl.TabIndex = 0;
             // 
-            // FormLayoutIntro
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(524, 381);
-            this.Controls.Add(this.layoutIntroCtrl);
+            this.ClientSize = new System.Drawing.Size(684, 561);
+            this.Controls.Add(this.generatorCtrl);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FormLayoutIntro";
+            this.Name = "FormMain";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "Layout settings...";
+            this.Text = "FormMain";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private LayoutIntroCtrl layoutIntroCtrl;
+        #region Data members
+        private GeneratorCtrl generatorCtrl;
+        #endregion
     }
 }
+

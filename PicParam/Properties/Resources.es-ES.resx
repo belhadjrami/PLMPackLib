@@ -213,4 +213,34 @@
 	<data name="splash_zund" type="System.Resources.ResXFileRef, System.Windows.Forms">
 		<value>..\Resources\splash_zund.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
 	</data>
+	<data name="ID_ABOUT" xml:space="preserve">
+		<value>Acerca de {0}…</value>
+	</data>
+	<data name="ID_APPLICATIONMUSTRESTART" xml:space="preserve">
+		<value>{0} tendrá que ser reiniciado. Ahora cerrar</value>
+	</data>
+	<data name="ID_EDITCOMPONENT" xml:space="preserve">
+		<value>Editar Componentes {0}…</value>
+	</data>
+	<data name="ID_TREEMENUDELETE" xml:space="preserve">
+		<value>Eliminar</value>
+	</data>
+	<data name="ID_TREEMENUNEWBRANCH" xml:space="preserve">
+		<value>Nueva Carpeta…</value>
+	</data>
+	<data name="ID_TREEMENUNEWDOCUMENT" xml:space="preserve">
+		<value>Nuevo Documento…</value>
+	</data>
+	<data name="ID_TREEMENURENAME" xml:space="preserve">
+		<value>Renombrar…</value>
+	</data>
+	<data name="ID_TREENODEDOWNLOAD" xml:space="preserve">
+		<value>Descargar</value>
+	</data>
+	<data name="ID_TREENODESTARTPAGE" xml:space="preserve">
+		<value>Página de inicio</value>
+	</data>
+	<data name="ID_VERSION" xml:space="preserve">
+		<value>Versión {0}</value>
+	</data>
 </root>

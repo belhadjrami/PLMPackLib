@@ -282,4 +282,31 @@
 	<metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
 		<value>True</value>
 	</metadata>
+	<data name="colWidth.Text" xml:space="preserve">
+		<value>Ancho</value>
+	</data>
+	<data name="btCreate.Text" xml:space="preserve">
+		<value>&amp;Crear Nuevo Formato…</value>
+	</data>
+	<data name="colName.Text" xml:space="preserve">
+		<value>Nombre del Producto</value>
+	</data>
+	<data name="btDelete.Text" xml:space="preserve">
+		<value>&amp;Suprimir</value>
+	</data>
+	<data name="colHeight.Text" xml:space="preserve">
+		<value>Alto</value>
+	</data>
+	<data name="btModify.Text" xml:space="preserve">
+		<value>&amp;Modificar…</value>
+	</data>
+	<data name="btClose.Text" xml:space="preserve">
+		<value>&amp;Cerrar</value>
+	</data>
+	<data name="colDescription.Text" xml:space="preserve">
+		<value>Descripción</value>
+	</data>
+	<data name="$this.Text" xml:space="preserve">
+		<value>Editar Formato del cartón…</value>
+	</data>
 </root>

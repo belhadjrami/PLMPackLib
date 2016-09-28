@@ -36,7 +36,7 @@
             // 
             resources.ApplyResources(this._generatorCtrl, "_generatorCtrl");
             this._generatorCtrl.Name = "_generatorCtrl";
-            this._generatorCtrl.OutputPath = "C:\\Users\\HidaS\\AppData\\Local\\Temp\\.dll";
+            this._generatorCtrl.OutputPath = string.Format("{0}.dll", "test");
             this._generatorCtrl.PluginVersion = "2.0.0.0";
             this._generatorCtrl.TabStop = false;
             this._generatorCtrl.Load += new System.EventHandler(this._generatorCtrl_Load);

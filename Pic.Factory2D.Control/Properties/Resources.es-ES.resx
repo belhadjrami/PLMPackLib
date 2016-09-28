@@ -97,4 +97,22 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="ID_ABANDONPROCESSING" xml:space="preserve">
+		<value>Abandonando el proceso porque el número de entidades supera los {0}. Este número puede ser modificado en las preferencias del usuario.</value>
+	</data>
+	<data name="ID_ABANDONPROCESSING_SHORT" xml:space="preserve">
+		<value>No puede ser generado: muy largo</value>
+	</data>
+	<data name="ID_MINMARGINBOTTOM" xml:space="preserve">
+		<value>Margen minimo Inferior</value>
+	</data>
+	<data name="ID_MINMARGINLEFT" xml:space="preserve">
+		<value>Margen minimo a la Izquierda</value>
+	</data>
+	<data name="ID_MINMARGINRIGHT" xml:space="preserve">
+		<value>Margen minimo a la Derecha</value>
+	</data>
+	<data name="ID_MINMARGINTOP" xml:space="preserve">
+		<value>Margen minimo Superior</value>
+	</data>
 </root>
