@@ -64,8 +64,8 @@
          <Condition>Installed OR NETFRAMEWORK40FULL</Condition>       
       </Component>
       <Component Id="Pic.Plugin.GeneratorCtrl.Client" Guid="96033482-CB7A-4A35-891F-77AEDAC7E080">
-        <File Source="..\Pic.Factory2D.Control.Layout\bin\x86\Release\Pic.Plugin.GeneratorCtrl.Client.exe"/>
-        <File Source="..\Pic.Factory2D.Control.Layout\bin\x86\Release\Pic.Plugin.GeneratorCtrl.Client.exe.config"/>
+        <File Source="..\Pic.Plugin.GeneratorCtrl.Client\bin\x86\Release\Pic.Plugin.GeneratorCtrl.Client.exe"/>
+        <File Source="..\Pic.Plugin.GeneratorCtrl.Client\bin\x86\Release\Pic.Plugin.GeneratorCtrl.Client.exe.config"/>
         <Condition>Installed OR NETFRAMEWORK40FULL</Condition>       
       </Component>
       <!-- log4net -->
