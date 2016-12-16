@@ -99,12 +99,12 @@ namespace PicParam
 
             _pluginViewCtrl.PluginPath = filePath;
 
-            toolStripButtonCotations.Enabled = true;
+            toolStripButtonCotationsAuto.Enabled = true;
             toolStripButtonReflectionX.Enabled = true;
             toolStripButtonReflectionY.Enabled = true;
             toolStripButtonExport.Enabled = true;
             exportToolStripMenuItem.Enabled = true;
-            toolStripMenuItemCotations.Enabled = true;
+            toolStripMenuItemCotationsAuto.Enabled = true;
         }
 
         private void LoadPicadorFile(string filePath, string fileFormat)
@@ -118,10 +118,12 @@ namespace PicParam
                 PicLoaderDes picLoaderDes = new PicLoaderDes(factory);
                 using (DES_FileReader fileReader = new DES_FileReader())
                     fileReader.ReadFile(filePath, picLoaderDes);
+                /*
                 // remove existing quotations
                 factory.Remove((new PicFilterCode(PicEntity.eCode.PE_COTATIONDISTANCE))
                                     | (new PicFilterCode(PicEntity.eCode.PE_COTATIONHORIZONTAL))
                                     | (new PicFilterCode(PicEntity.eCode.PE_COTATIONVERTICAL)));
+                 */ 
                 // build autoquotation
                 PicAutoQuotation.BuildQuotation(factory);
             }
@@ -851,28 +853,39 @@ namespace PicParam
         #endregion
 
         #region Toolbar event handlers
-        void toolStripButtonCotations_Click(object sender, System.EventArgs e)
+        private void onShowHideCotationsAuto(object sender, System.EventArgs e)
         {
-            if (_pluginViewCtrl.Visible)
-                _pluginViewCtrl.ShowCotations = !_pluginViewCtrl.ShowCotations;
-            else if (_factoryViewCtrl.Visible)
-                _factoryViewCtrl.ShowCotations = !_factoryViewCtrl.ShowCotations;
+            IToolInterface currentView = CurrentTool;
+            if (null == currentView) return;
+            currentView.ShowCotationsAuto = !currentView.ShowCotationsAuto;
             UpdateToolCommands();
+        }
+        private void onShowHideCotationsCode(object sender, System.EventArgs e)
+        {
+            IToolInterface currentView = CurrentTool;
+            if (null == currentView) return;
+            currentView.ShowCotationsAuto = !currentView.ShowCotationsAuto;
+            UpdateToolCommands();
+        }
+        private void onShowHideAxes(object sender, System.EventArgs e)
+        {
+            IToolInterface currentView = CurrentTool;
+            if (null == currentView) return;
+            currentView.ShowAxes = !currentView.ShowAxes;
+            UpdateToolCommands();            
         }
         private void toolStripButtonReflectionX_Click(object sender, EventArgs e)
         {
-            if (_pluginViewCtrl.Visible)
-                _pluginViewCtrl.ReflectionX = !_pluginViewCtrl.ReflectionX;
-            else if (_factoryViewCtrl.Visible)
-                _factoryViewCtrl.ReflectionX = !_factoryViewCtrl.ReflectionX;
+            IToolInterface currentView = CurrentTool;
+            if (null == currentView) return;
+            currentView.ReflectionX = !currentView.ReflectionX;
             UpdateToolCommands();
         }
         private void toolStripButtonReflectionY_Click(object sender, EventArgs e)
         {
-            if (_pluginViewCtrl.Visible)
-                _pluginViewCtrl.ReflectionY = !_pluginViewCtrl.ReflectionY;
-            else if (_factoryViewCtrl.Visible)
-                _factoryViewCtrl.ReflectionY = !_factoryViewCtrl.ReflectionY;
+            IToolInterface currentView = CurrentTool;
+            if (null == currentView) return;
+            currentView.ReflectionY = !currentView.ReflectionY;
             UpdateToolCommands();
         }
         private void toolStripButtonLayout_Click(object sender, EventArgs e)
@@ -890,6 +903,19 @@ namespace PicParam
                 _log.Error(ex.ToString());
             }
         }
+        private IToolInterface CurrentTool
+        {
+            get
+            {
+                if (_pluginViewCtrl.Visible)
+                    return _pluginViewCtrl;
+                else if (_factoryViewCtrl.Visible)
+                    return _factoryViewCtrl;
+                else
+                    return null;
+            }
+        }
+
         private void UpdateToolCommands()
         {
             try
@@ -898,11 +924,10 @@ namespace PicParam
                 toolStripMain.Visible = true;
                 menuStripMain.Visible = true;
                 statusStrip.Visible = true;
-
                 // enable toolbar buttons
                 bool buttonsEnabled = _pluginViewCtrl.Visible || _factoryViewCtrl.Visible;
-                toolStripButtonCotations.Enabled = buttonsEnabled;
-                toolStripMenuItemCotations.Enabled = buttonsEnabled;
+                toolStripButtonCotationsAuto.Enabled = buttonsEnabled;
+                toolStripMenuItemCotationsAuto.Enabled = buttonsEnabled;
                 toolStripButtonReflectionX.Enabled = buttonsEnabled;
                 reflectionXToolStripMenuItem.Enabled = buttonsEnabled;
                 toolStripButtonReflectionY.Enabled = buttonsEnabled;
@@ -910,6 +935,10 @@ namespace PicParam
                 toolStripButtonLayout.Enabled = buttonsEnabled;
                 layoutToolStripMenuItem.Enabled = buttonsEnabled;
                 toolStripMenuItemCotationShortLines.Enabled = buttonsEnabled;
+                toolStripButtonCotationsCode.Enabled = buttonsEnabled;
+                toolStripMenuItemCotationsCode.Enabled = buttonsEnabled;
+                toolStripButtonAxes.Enabled = buttonsEnabled;
+                toolStripMenuItemAxes.Enabled = buttonsEnabled;
                 // only allow palletization / case optimisation when a component is selected
                 toolStripButtonPalletization.Enabled = _pluginViewCtrl.Visible && _pluginViewCtrl.AllowPalletization;
                 toolStripButtonCaseOptimization.Enabled = _pluginViewCtrl.Visible && _pluginViewCtrl.AllowPalletization;
@@ -936,29 +965,27 @@ namespace PicParam
                 exportToolStripMenuItem.Enabled = buttonsEnabled;
                 toolStripMenuItemPicGEOM.Enabled = buttonsEnabled && ApplicationAvailabilityChecker.IsAvailable("PicGEOM");
 
-                // check state
-                bool showCotations = false, reflectionX = false, reflectionY = false;
-                if (_pluginViewCtrl.Visible)
-                {
-                    showCotations = _pluginViewCtrl.ShowCotations;
-                    reflectionX = _pluginViewCtrl.ReflectionX;
-                    reflectionY = _pluginViewCtrl.ReflectionY;
-                }
-                else if (_factoryViewCtrl.Visible)
-                {
-                    showCotations = _factoryViewCtrl.ShowCotations;
-                    reflectionX = _factoryViewCtrl.ReflectionX;
-                    reflectionY = _factoryViewCtrl.ReflectionY;
-                }
 
-                toolStripButtonCotations.CheckState = showCotations ? CheckState.Checked : CheckState.Unchecked;
-                toolStripMenuItemCotations.CheckState = showCotations ? CheckState.Checked : CheckState.Unchecked;
-                toolStripButtonReflectionX.CheckState = reflectionX ? CheckState.Checked : CheckState.Unchecked;
-                reflectionXToolStripMenuItem.CheckState = reflectionX ? CheckState.Checked : CheckState.Unchecked;
-                toolStripButtonReflectionY.CheckState = reflectionY ? CheckState.Checked : CheckState.Unchecked;
-                reflectionYToolStripMenuItem.CheckState = reflectionY ? CheckState.Checked : CheckState.Unchecked;
+                IToolInterface currentTool = CurrentTool;
+                if (null != currentTool)
+                {
+                    // cotation auto
+                    toolStripButtonCotationsAuto.CheckState = currentTool.ShowCotationsAuto ? CheckState.Checked : CheckState.Unchecked;
+                    toolStripMenuItemCotationsAuto.CheckState = currentTool.ShowCotationsAuto ? CheckState.Checked : CheckState.Unchecked;
+                    // cotation code
+                    toolStripButtonCotationsCode.CheckState = currentTool.ShowCotationsCode ? CheckState.Checked : CheckState.Unchecked;
+                    toolStripMenuItemCotationsCode.CheckState = currentTool.ShowCotationsCode ? CheckState.Checked : CheckState.Unchecked;
+                    // axes
+                    toolStripButtonAxes.CheckState =  currentTool.ShowAxes ? CheckState.Checked : CheckState.Unchecked;
+                    toolStripMenuItemAxes.CheckState = currentTool.ShowAxes ? CheckState.Checked : CheckState.Unchecked;
+                    // reflectionX
+                    toolStripButtonReflectionX.CheckState = currentTool.ReflectionX ? CheckState.Checked : CheckState.Unchecked;
+                    reflectionXToolStripMenuItem.CheckState = currentTool.ReflectionX ? CheckState.Checked : CheckState.Unchecked;
+                    // reflectionY
+                    toolStripButtonReflectionY.CheckState = currentTool.ReflectionY ? CheckState.Checked : CheckState.Unchecked;
+                    reflectionYToolStripMenuItem.CheckState = currentTool.ReflectionY ? CheckState.Checked : CheckState.Unchecked;                
+                }
                 toolStripEditComponentCode.Enabled = _pluginViewCtrl.Visible;
-
                 toolStripButtonEditParameters.Enabled = _pluginViewCtrl.Visible && _pluginViewCtrl.HasDependancies;
 
                 // PDF3D button

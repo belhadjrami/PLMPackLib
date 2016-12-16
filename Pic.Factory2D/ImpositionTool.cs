@@ -349,6 +349,7 @@ namespace Pic.Factory2D
         private IEntityContainer _container;
         private int _iRows, _iCols;
         private double _unitLengthCut, _unitLengthFold, _unitArea;
+        private double _lengthCut = -1.0;
         internal Bitmap _thumbnail;
         private Box2D _box;
         private static int _thumbnailWidth = 75;
@@ -439,6 +440,25 @@ namespace Pic.Factory2D
                 factory.AddBlockRef(block, pos.Transformation * pos0.Transformation.Inverse());
             }
         }
+
+        public void ComputeLengthCutFold()
+        { 
+            if (_lengthCut <= 0)
+            {
+                _lengthCut = 0.0;
+                using (PicFactory factory = new PicFactory())
+                {
+                    // fill factory with entities
+                    CreateEntities(factory);
+                    // counting added length only
+                    PicVisitorComputeLength visitorComputeLength = new PicVisitorComputeLength();
+                    factory.ProcessVisitor(visitorComputeLength/*, new PicFilterLineType(PicGraphics.LT.LT_CUT)*/);
+                    // cut length
+                    _lengthCut = visitorComputeLength.Length;
+                }
+
+            }
+        }
         #endregion
 
         #region Public properties
@@ -471,7 +491,15 @@ namespace Pic.Factory2D
         public double UnitLengthCut { set { _unitLengthCut = value; } }
         public double UnitLengthFold { set { _unitLengthFold = value; } }
         public double UnitArea { set { _unitArea = value; } }
-        public double LengthCut { get { return _unitLengthCut * PositionCount; } }
+        public double LengthCut
+        {
+            get
+            {
+                ComputeLengthCutFold();
+                return _lengthCut;
+                //return _unitLengthCut * PositionCount; 
+            }
+        }
         public double LengthFold { get {return _unitLengthFold * PositionCount; } }
         public double Area { get { return _unitArea * PositionCount; } }
 
@@ -816,6 +844,7 @@ namespace Pic.Factory2D
         private string _name, _description;
         private double _width, _height;
         #endregion
+
         #region Constructor
         public CardboardFormat(int id, string name, string description, double width, double height)
         {
@@ -826,12 +855,14 @@ namespace Pic.Factory2D
             _height = height;
         }
         #endregion
+
         #region Public properties
         public Vector2D Dimensions { get { return new Vector2D(_width, _height); } }
         public double Width { get { return _width; } }
         public double Height { get { return _height; } }
         public double Area { get { return _width * _height; } }
         #endregion
+
         #region Object overrides
         public override string ToString()
         {

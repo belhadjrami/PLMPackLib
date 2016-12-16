@@ -64,7 +64,7 @@
             this.viewer.Name = "viewer";
             this.viewer.ReflectionX = false;
             this.viewer.ReflectionY = false;
-            this.viewer.ShowCotations = false;
+            this.viewer.ShowCotationsAuto = false;
             this.viewer.Size = new System.Drawing.Size(450, 468);
             this.viewer.TabIndex = 16;
             // 

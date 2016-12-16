@@ -54,7 +54,7 @@
             this.pluginViewCtrl.ParamValues = null;
             this.pluginViewCtrl.ReflectionX = false;
             this.pluginViewCtrl.ReflectionY = false;
-            this.pluginViewCtrl.ShowCotations = true;
+            this.pluginViewCtrl.ShowCotationsAuto = true;
             this.pluginViewCtrl.ShowSummary = false;
             this.pluginViewCtrl.ValidateButtonVisible = false;
             // 

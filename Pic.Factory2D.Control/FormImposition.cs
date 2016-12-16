@@ -271,8 +271,8 @@ namespace Pic.Factory2D.Control
                 switch (fileExt)
                 {
                     case "des": fd.FilterIndex = 1; break;
-                    case "dxf": fd.FilterIndex  = 2; break;
-                    case "ai": fd.FilterIndex   = 3; break;
+                    case "dxf": fd.FilterIndex = 2; break;
+                    case "ai": fd.FilterIndex = 3; break;
                     case "cf2": fd.FilterIndex = 4; break;
                     case "pdf": fd.FilterIndex = 5; break;
                     default: break;

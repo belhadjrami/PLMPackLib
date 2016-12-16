@@ -254,7 +254,7 @@ namespace Pic.Factory2D
         #endregion
 
         #region Helpers
-        protected Transform2D BlockTransformation
+        public Transform2D BlockTransformation
         {
             get { return Transform2D.Translation(_coord) * Transform2D.Rotation(_angle); }
         }

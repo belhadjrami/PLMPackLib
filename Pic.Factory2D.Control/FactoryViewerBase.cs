@@ -20,7 +20,7 @@ using log4net;
 namespace Pic.Factory2D.Control
 {
     #region FactoryViewerBase
-    public partial class FactoryViewerBase : UserControl
+    public partial class FactoryViewerBase : UserControl, IToolInterface
     {
         #region Constructor
         public FactoryViewerBase()
@@ -69,6 +69,17 @@ namespace Pic.Factory2D.Control
             set { _factory = value; }
         }
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public CardboardFormatLoader CardBoardFormatLoader
+        {
+            set
+            {
+                _cardboardFormatLoader = value;
+            }
+        }
+        #endregion
+
+        #region IToolInterface
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Box2D BoundingBox
         {
             get { return _picGraphics.DrawingBox; }
@@ -80,12 +91,13 @@ namespace Pic.Factory2D.Control
             {
                 _reflectionX = value;
                 reflectionXToolStripMenuItem.Checked = _reflectionX;
-
+                /*
                 // remove existing quotations
                 _factory.Remove((new PicFilterCode(PicEntity.eCode.PE_COTATIONDISTANCE))
                  | (new PicFilterCode(PicEntity.eCode.PE_COTATIONHORIZONTAL))
                  | (new PicFilterCode(PicEntity.eCode.PE_COTATIONVERTICAL))
                  );
+                 */ 
                 // transform entities
                 _factory.ProcessVisitor(new PicVisitorTransform(Transform2D.ReflectionX));
                 // add quotations
@@ -100,12 +112,13 @@ namespace Pic.Factory2D.Control
             {
                 _reflectionY = value;
                 reflectionYToolStripMenuItem.Checked = _reflectionY;
-
+                /*
                 // remove existing quotations
                 _factory.Remove((new PicFilterCode(PicEntity.eCode.PE_COTATIONDISTANCE))
                  | (new PicFilterCode(PicEntity.eCode.PE_COTATIONHORIZONTAL))
                  | (new PicFilterCode(PicEntity.eCode.PE_COTATIONVERTICAL))
                  );
+                 */ 
                 // transform entities
                 _factory.ProcessVisitor(new PicVisitorTransform(Transform2D.ReflectionY));
                 // add quotations
@@ -113,7 +126,7 @@ namespace Pic.Factory2D.Control
                 FitView();
             }
         }
-        public bool ShowCotations
+        public bool ShowCotationsAuto
         {
             get { return _showCotations; }
             set
@@ -123,12 +136,22 @@ namespace Pic.Factory2D.Control
                 Invalidate();
             }
         }
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public CardboardFormatLoader CardBoardFormatLoader
+        public bool ShowCotationsCode
         {
+            get { return _showCotationsCode;    }
             set
             {
-                _cardboardFormatLoader = value;
+                _showCotationsCode = value;
+                Invalidate();
+            }
+        }
+        public bool ShowAxes
+        {
+            get { return _showAxes; }
+            set
+            {
+                _showAxes = value;
+                Invalidate();
             }
         }
         #endregion
@@ -425,7 +448,7 @@ namespace Pic.Factory2D.Control
         #region Context menu
         private void showCotationsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ShowCotations = !_showCotations;
+            ShowCotationsAuto = !_showCotations;
             ToolStripMenuItem item = sender as ToolStripMenuItem;
             item.Checked = _showCotations;
         }
@@ -529,7 +552,8 @@ namespace Pic.Factory2D.Control
         PicGraphicsControl _picGraphics;
         PicFactory _factory = new PicFactory();
         private Point _mousePositionPrev;
-        private bool _reflectionX = false, _reflectionY = false, _showCotations = false;
+        private bool _reflectionX = false, _reflectionY = false
+            , _showCotations = false, _showCotationsCode = false, _showAxes = false;
         private CardboardFormatLoader _cardboardFormatLoader;
 
         private ImpositionTool _impositionTool;

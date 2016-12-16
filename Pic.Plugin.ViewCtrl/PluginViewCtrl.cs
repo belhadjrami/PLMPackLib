@@ -29,7 +29,7 @@ namespace Pic.Plugin.ViewCtrl
     ClassInterface(ClassInterfaceType.AutoDispatch),
     Docking(DockingBehavior.AutoDock)
     ]
-    public partial class PluginViewCtrl : SplitContainer
+    public partial class PluginViewCtrl : SplitContainer, IToolInterface
     {
         #region Data members
         [NonSerialized]private Pic.Plugin.Component _component;
@@ -43,7 +43,7 @@ namespace Pic.Plugin.ViewCtrl
         private bool _buttonCloseVisible = false;
         private bool _buttonValidateVisible = false;
         private ComboBox _comboProfile;
-        private bool _showCotations = true;
+        private bool _showCotations = true, _showCotationsCode = false, _showAxes = true;
         private bool _showSummary = false;
         private Box2D _box;
         private Button btClose;
@@ -290,7 +290,7 @@ namespace Pic.Plugin.ViewCtrl
         #region Context menu
         private void showCotationsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ShowCotations = !_showCotations;
+            ShowCotationsAuto = !_showCotations;
             ToolStripMenuItem item = sender as ToolStripMenuItem;
             item.Checked = _showCotations;
         }
@@ -410,69 +410,11 @@ namespace Pic.Plugin.ViewCtrl
             }
             get { return ""; }  // is needed to have "PluginPath" appear as a property of the control
         }
-
-        public bool ReflectionX
-        {
-            get { return _reflectionX; }
-            set
-            {
-                if (DesignMode)
-                    return;
-                try
-                {
-                    _reflectionX = value;
-                    _computeBbox = true;
-                    Panel1.Invalidate();
-                }
-                catch (Exception /*ex*/)
-                {
-                }
-            }
-        }
-
-        public bool ReflectionY
-        {
-            get { return _reflectionY; }
-            set
-            {
-                if (DesignMode)
-                    return;
-                try
-                {
-                    _reflectionY = value;
-                    _computeBbox = true;
-                    Panel1.Invalidate();
-                }
-                catch (Exception /*ex*/)
-                {
-                }
-            }
-        }
-
-        public bool ShowCotations
-        {
-            get { return _showCotations; }
-            set
-            {
-                if (DesignMode)
-                    return;
-                try
-                {
-                    _showCotations = value;
-                    Panel1.Invalidate();
-                }
-                catch (Exception /*ex*/)
-                {
-                }
-            }
-        }
-
         public bool ShowSummary
         {
             get { return _showSummary; }
             set { _showSummary = value; }
         }
-
         public bool ValidateButtonVisible
         {
             get { return _buttonValidateVisible; }
@@ -483,7 +425,6 @@ namespace Pic.Plugin.ViewCtrl
                 if (_buttonValidateVisible) this.CloseButtonVisible = true;
             }
         }
-
         public bool CloseButtonVisible
         {
             get { return _buttonCloseVisible; }
@@ -526,7 +467,118 @@ namespace Pic.Plugin.ViewCtrl
                 Panel1.Invalidate();
             }
         }
+        /// <summary>
+        /// Loaded component name
+        /// </summary>
+        public string LoadedComponentName
+        {
+            get { return _component.Name; }
+        }
+        #endregion
 
+        #region IToolInterface implementation
+        /// <summary>
+        /// reflection X
+        /// </summary>
+        public bool ReflectionX
+        {
+            get { return _reflectionX; }
+            set
+            {
+                if (DesignMode)
+                    return;
+                try
+                {
+                    _reflectionX = value;
+                    _computeBbox = true;
+                    Panel1.Invalidate();
+                }
+                catch (Exception /*ex*/)
+                {
+                }
+            }
+        }
+        /// <summary>
+        /// reflection Y
+        /// </summary>
+        public bool ReflectionY
+        {
+            get { return _reflectionY; }
+            set
+            {
+                if (DesignMode)
+                    return;
+                try
+                {
+                    _reflectionY = value;
+                    _computeBbox = true;
+                    Panel1.Invalidate();
+                }
+                catch (Exception /*ex*/)
+                {
+                }
+            }
+        }
+        /// <summary>
+        /// show cotation auto
+        /// </summary>
+        public bool ShowCotationsAuto
+        {
+            get { return _showCotations; }
+            set
+            {
+                if (DesignMode)
+                    return;
+                try
+                {
+                    _showCotations = value;
+                    Panel1.Invalidate();
+                }
+                catch (Exception /*ex*/)
+                {
+                }
+            }
+        }
+        /// <summary>
+        /// show cotation code
+        /// </summary>
+        public bool ShowCotationsCode
+        {
+            get { return _showCotationsCode; }
+            set
+            {
+                if (DesignMode)
+                    return;
+                try
+                {
+                    _showCotationsCode = value;
+                    Panel1.Invalidate();
+                }
+                catch (Exception /*ex*/)
+                { 
+                }
+            }
+        }
+        /// <summary>
+        /// Show axes
+        /// </summary>
+        public bool ShowAxes
+        {
+            get { return _showAxes; }
+            set
+            {
+                if (DesignMode)
+                    return;
+                try
+                {
+                    _showAxes = value;
+                    Panel1.Invalidate();
+                }
+                catch (Exception /*ex*/)
+                { 
+                }
+            }
+        }
         /// <summary>
         /// Accessing entities bounding box
         /// </summary>
@@ -549,17 +601,9 @@ namespace Pic.Plugin.ViewCtrl
                     factory.ProcessVisitor(visitor);
                     box = visitor.Box;
                     box.AddMarginRatio(0.05);
-
                 }
                 return box;
             }
-        }
-        /// <summary>
-        /// Loaded component name
-        /// </summary>
-        public string LoadedComponentName
-        {
-            get { return _component.Name; }
         }
         #endregion
 
@@ -606,10 +650,12 @@ namespace Pic.Plugin.ViewCtrl
                     if (_reflectionY) factory.ProcessVisitor(new PicVisitorTransform(Transform2D.ReflectionY));
 
                     // remove existing quotations
+                    /*
                     factory.Remove((new PicFilterCode(PicEntity.eCode.PE_COTATIONDISTANCE))
                                     | (new PicFilterCode(PicEntity.eCode.PE_COTATIONHORIZONTAL))
                                     | (new PicFilterCode(PicEntity.eCode.PE_COTATIONVERTICAL))
                                     );
+                    */
                     // build auto quotation
                     if (_showCotations)
                         PicAutoQuotation.BuildQuotation(factory);

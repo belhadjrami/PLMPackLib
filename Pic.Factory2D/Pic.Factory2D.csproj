@@ -107,6 +107,7 @@
     <Compile Include="ImpositionToolCardboardFormat.cs" />
     <Compile Include="ImpositionToolXY.cs" />
     <Compile Include="IProgressCallback.cs" />
+    <Compile Include="IToolInterface.cs" />
     <Compile Include="PicAutoQuotation.cs" />
     <Compile Include="PicBlock.cs" />
     <Compile Include="PicBox2D.cs" />
@@ -135,6 +136,7 @@
     <Compile Include="PicToolArea.cs" />
     <Compile Include="PicToolRound.cs" />
     <Compile Include="PicVisitorCollectTypedDrawables.cs" />
+    <Compile Include="PicVisitorComputeLength.cs" />
     <Compile Include="PicVisitorDiecutOutput.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>

@@ -125,7 +125,7 @@
             this.factoryViewer.ReflectionX = false;
             this.factoryViewer.ReflectionY = false;
             this.factoryViewer.ShowAboutMenu = false;
-            this.factoryViewer.ShowCotations = false;
+            this.factoryViewer.ShowCotationsAuto = false;
             this.factoryViewer.ShowNestingMenu = false;
             this.factoryViewer.TabStop = false;
             // 

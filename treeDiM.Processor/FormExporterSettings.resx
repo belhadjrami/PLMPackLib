@@ -135,7 +135,7 @@
     <value>429, 43</value>
   </data>
   <data name="&gt;&gt;fileSelectOutput.Type" xml:space="preserve">
-    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.11.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.12.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="cbCutJobType.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 21</value>
@@ -268,7 +268,7 @@
     <value>lbCutJobType</value>
   </data>
   <data name="&gt;&gt;factoryViewerCurrent.Type" xml:space="preserve">
-    <value>Pic.Factory2D.Control.FactoryViewer, Pic.Factory2D.Control, Version=8.0.11.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Pic.Factory2D.Control.FactoryViewer, Pic.Factory2D.Control, Version=8.0.12.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="trackBarEntities.Size" type="System.Drawing.Size, System.Drawing">
     <value>491, 45</value>

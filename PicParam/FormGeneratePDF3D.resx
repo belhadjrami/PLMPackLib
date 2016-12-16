@@ -124,7 +124,7 @@
     <value />
   </data>
   <data name="&gt;&gt;fileSelectOutput.Type" xml:space="preserve">
-    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.11.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.12.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormGeneratePDF3D</value>
@@ -252,7 +252,7 @@
     <value>85, 12</value>
   </data>
   <data name="&gt;&gt;fileSelectPdfTemplate.Type" xml:space="preserve">
-    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.11.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.12.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>

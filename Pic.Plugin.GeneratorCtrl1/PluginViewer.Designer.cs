@@ -40,7 +40,7 @@
             this.ctrlPluginViewer.Name = "ctrlPluginViewer";
             this.ctrlPluginViewer.ReflectionX = false;
             this.ctrlPluginViewer.ReflectionY = false;
-            this.ctrlPluginViewer.ShowCotations = true;
+            this.ctrlPluginViewer.ShowCotationsAuto = true;
             this.ctrlPluginViewer.ShowSummary = true;
             this.ctrlPluginViewer.Size = new System.Drawing.Size(649, 520);
             this.ctrlPluginViewer.SplitterDistance = 434;

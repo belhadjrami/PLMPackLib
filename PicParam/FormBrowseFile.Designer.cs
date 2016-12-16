@@ -37,7 +37,7 @@
             this._factoryViewer.Name = "_factoryViewer";
             this._factoryViewer.ReflectionX = false;
             this._factoryViewer.ReflectionY = false;
-            this._factoryViewer.ShowCotations = false;
+            this._factoryViewer.ShowCotationsAuto = false;
             this._factoryViewer.Size = new System.Drawing.Size(499, 474);
             this._factoryViewer.TabIndex = 0;
             this._factoryViewer.TabStop = false;

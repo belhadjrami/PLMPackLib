@@ -567,6 +567,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGeneratePDF3D.resx">
       <DependentUpon>FormGeneratePDF3D.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.it-IT.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
@@ -1037,6 +1038,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormEditDefaultParamValues.resx">
       <DependentUpon>FormEditDefaultParamValues.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEditCardboardFormats.fr-FR.resx">
       <DependentUpon>FormEditCardboardFormats.cs</DependentUpon>
@@ -1088,6 +1090,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormRenameNode.resx">
       <DependentUpon>FormRenameNode.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.fr-FR.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
