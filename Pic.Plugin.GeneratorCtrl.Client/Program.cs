@@ -49,6 +49,15 @@ namespace Pic.Plugin.GeneratorCtrl.Client
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
 
+                // ### show command lines
+                if (Properties.Settings.Default.ShowCommandLine)
+                {
+                    string sArgs = string.Empty;
+                    foreach (string arg in args) sArgs += arg + "|";
+                    MessageBox.Show(string.Format("Command line:\n{0}", sArgs));
+                }
+                // ###
+
                 var options = new Options();
                 if (CommandLine.Parser.Default.ParseArguments(args, options))
                 {
@@ -66,6 +75,7 @@ namespace Pic.Plugin.GeneratorCtrl.Client
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.Message);
                 _log.Error( string.Format("Exception : {0}", ex.Message) );
             }
             finally

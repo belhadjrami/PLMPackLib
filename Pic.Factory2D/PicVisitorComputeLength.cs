@@ -79,7 +79,6 @@ namespace Pic.Factory2D
                 List<Segment> segmentCurrent = new List<Segment>();
                 segmentCurrent.Add(s1Init);
 
-                bool hasOverlapp = false;
                 foreach (Segment s0 in _segments)
                 {
                     // are segment colinear ?
@@ -109,21 +108,18 @@ namespace Pic.Factory2D
                         }
                         else if ( ( coordP0 >= 0.0 && coordP0 <= 1.0 ) && ( coordP1 >= 1 ) )
                         {
-                            hasOverlapp = true;
                             //-------S0P0---------S1P0---------S0P1--------S1P1--------
                             segmentCurrent.RemoveAt(i1);
                             segmentCurrent.Add(new Segment(s0.P1, swapped ? s1.P0 : s1.P1));
                         }
                         else if ( ( coordP0 <= 0.0) && (coordP1 >= 0 && coordP1 <=1))
                         {
-                            hasOverlapp = true;
                             //-------S1P0---------S0P0---------S1P1--------S0P1--------
                             segmentCurrent.RemoveAt(i1);
                             segmentCurrent.Add(new Segment(swapped ? s1.P1 : s1.P0, s0.P0));
                         }
                         else if ((coordP0 <= 0.0) && (coordP1 >= 1.0))
                         {
-                            hasOverlapp = true;
                             //-------S1P0--------S0P0----------S0P1--------S1P1---------
                             segmentCurrent.RemoveAt(i1);
                             segmentCurrent.Add(new Segment(swapped ? s1.P1 : s1.P0, s0.P0));
@@ -131,7 +127,6 @@ namespace Pic.Factory2D
                         }
                         else if ((coordP0 >= 0.0) && (coordP1 <= 1.0))
                         {
-                            hasOverlapp = true;
                             //-------S0P0--------S1P0----------S1P1--------S0P1---------
                             segmentCurrent.RemoveAt(i1);
                         }

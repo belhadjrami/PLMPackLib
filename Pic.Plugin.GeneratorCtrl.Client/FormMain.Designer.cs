@@ -36,9 +36,13 @@
             this.generatorCtrl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.generatorCtrl.Location = new System.Drawing.Point(0, 0);
             this.generatorCtrl.Name = "generatorCtrl";
+            this.generatorCtrl.OutputPath = "C:\\Users\\François\\AppData\\Local\\Temp\\.dll";
             this.generatorCtrl.PluginVersion = "2.0.0.0";
             this.generatorCtrl.Size = new System.Drawing.Size(684, 561);
             this.generatorCtrl.TabIndex = 0;
+            this.generatorCtrl.PluginValidated += new Pic.Plugin.GeneratorCtrl.GeneratorCtrl.GeneratorCtlrHandler(this.onPluginViewerClosed);
+            this.generatorCtrl.PluginViewerClosed += new Pic.Plugin.GeneratorCtrl.GeneratorCtrl.GeneratorCtlrHandler(this.onPluginViewerClosed);
+            this.generatorCtrl.PluginGenerated += new Pic.Plugin.GeneratorCtrl.GeneratorCtrl.GeneratorCtlrHandler(this.onPluginViewerOpened);
             // 
             // FormMain
             // 
@@ -52,6 +56,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "FormMain";
+            this.TopMost = true;
             this.ResumeLayout(false);
 
         }

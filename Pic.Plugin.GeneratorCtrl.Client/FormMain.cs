@@ -20,6 +20,7 @@ namespace Pic.Plugin.GeneratorCtrl.Client
         public FormMain()
         {
             InitializeComponent();
+            this.generatorCtrl.setComponentDirectory( Properties.Settings.Default.OutputPath );
         }
         #endregion
 
@@ -27,18 +28,20 @@ namespace Pic.Plugin.GeneratorCtrl.Client
         public string SourceFilePath
         {   set { this.generatorCtrl.setGeneratedSourceCodeFile(value); } }
         public string ComponentName
-        {
-            set
-            {
-                this.generatorCtrl.OutputPath = Path.Combine(Properties.Settings.Default.OutputPath, value + ".dll");
-                this.generatorCtrl.setDrawingName(value); 
-            } 
-        }
+        {   set { this.generatorCtrl.setDrawingName(value); } }
         public string ComponentDescription
         {   set { this.generatorCtrl.setDrawingDescription(value); } }
         #endregion
 
-        #region Data members
+        #region Handling GeneratorCtrl events
+        private void onPluginViewerClosed(object sender, GeneratorCtrlEventArgs e)
+        {
+            this.TopMost = true; 
+        }
+        private void onPluginViewerOpened(object sender, GeneratorCtrlEventArgs e)
+        {
+            this.TopMost = false; 
+        }
         #endregion
     }
 }

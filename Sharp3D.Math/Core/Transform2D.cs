@@ -159,6 +159,20 @@ namespace Sharp3D.Math.Core
                 * new Matrix3D(Vector3D.Zero, Vector3D.Zero, new Vector3D(-pt.X, -pt.Y, 0.0))
                 );     
         }
+        /// <summary>
+        /// Builds a symetry % axis transformation
+        /// </summary>
+        /// <param name="pt">A <see cref="Vector2D"/> point</param>
+        /// <param name="angleAxisDeg">A double angle value in degree</param>
+        /// <returns>A <see cref="Transform2D"/> object</returns>
+        public static Transform2D SymetryAxis(Vector2D pt, double angleAxisDeg)
+        {
+            return Transform2D.Translation(pt)
+                * Transform2D.Rotation(angleAxisDeg)
+                * Transform2D.ReflectionX
+                * Transform2D.Rotation(-angleAxisDeg)
+                * Transform2D.Translation(-pt);
+        }
         #endregion
 
         #region Binary operators

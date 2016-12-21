@@ -34,7 +34,6 @@ namespace Pic.Plugin.GeneratorCtrl
         private string _pluginPath;
         private IComponentSearchMethod _componentSearchMethod;
         private string _outputPath = string.Empty;
-        private bool _outputPathInitialized = false;
         private string _pluginVersion = "2.0.0.0";
         private FindAndReplaceForm _findForm = new FindAndReplaceForm();
         #endregion
@@ -42,6 +41,8 @@ namespace Pic.Plugin.GeneratorCtrl
         #region PluginValidated event (+ associated delegate)
         public delegate void GeneratorCtlrHandler(object sender, GeneratorCtrlEventArgs e);
         public event GeneratorCtlrHandler PluginValidated;
+        public event GeneratorCtlrHandler PluginViewerClosed;
+        public event GeneratorCtlrHandler PluginGenerated;
         #endregion
 
         #region Constructor
@@ -152,6 +153,9 @@ namespace Pic.Plugin.GeneratorCtrl
         }
         public void setComponentDirectory(String strComponentDirectory)
         {
+            if (!Directory.Exists(strComponentDirectory))
+                throw new DirectoryNotFoundException(
+                    string.Format("Plugin directory could not be found ({0}).\nSee .exe.config file!", strComponentDirectory));
             _localPluginDirectory = strComponentDirectory;
         }
         /// <summary>
@@ -213,13 +217,10 @@ namespace Pic.Plugin.GeneratorCtrl
             set
             {
                 _outputPath = value;
-                _outputPathInitialized = !string.IsNullOrEmpty(_outputPath);
             }
             get
             {
-                if (!_outputPathInitialized || string.IsNullOrEmpty(_outputPath))
-                    _outputPath = Path.Combine(_localPluginDirectory, txtName.Text.Replace(' ', '_') + ".dll");
-                return _outputPath;
+                return Path.Combine(_localPluginDirectory, txtName.Text.Replace(' ', '_') + ".dll");
             }
         }
         #endregion
@@ -392,6 +393,8 @@ namespace Pic.Plugin.GeneratorCtrl
                 // send event if no errors were found
                 if (res.Errors.Count == 0)
                 {
+                    if (null != PluginGenerated)
+                        PluginGenerated(this, new GeneratorCtrlEventArgs(res.PathToAssembly));
                     using (PluginViewer frmPluginViewer = new PluginViewer(_componentSearchMethod, res.PathToAssembly))
                     {
                         if (frmPluginViewer.ShowDialog() == DialogResult.OK)
@@ -419,16 +422,23 @@ namespace Pic.Plugin.GeneratorCtrl
                                         , true /*overwrite*/
                                         );
                                 else
+                                {
+                                    if (null != PluginViewerClosed)
+                                        PluginViewerClosed(this, new GeneratorCtrlEventArgs(res.PathToAssembly));
                                     return;
+                                }
                             }
                             // emit event if an event handler was defined
                             if (null != PluginValidated)
                                 PluginValidated(this, new GeneratorCtrlEventArgs(OutputPath));
                         }
+                        else
+                        {
+                            if (null != PluginViewerClosed)
+                                PluginViewerClosed(this, new GeneratorCtrlEventArgs(res.PathToAssembly));
+                        }
                     }
                 }
-
-
             }
             catch (Exception ex)
             {
