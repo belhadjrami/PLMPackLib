@@ -47,21 +47,26 @@ namespace Pic.DAL
             // remove zip path if it already exists
             if (System.IO.File.Exists(zipFilePath))
                 System.IO.File.Delete(zipFilePath);
+
+            // instantiate data context of current database
+            PPDataContext dbFrom = new PPDataContext();
+            // get node from
+            TreeNode nodeFrom = TreeNode.GetNodeByPath(dbFrom, null, nodePath, 0);
+            // build list of profiles referred by branch components
+            List<string> profileNames = new List<string>();
+            BuildListOfUsedCardboardProfiles(dbFrom, nodeFrom, ref profileNames);
+
             // build destination database path
             DBDescriptor dbDescTo = DBDescriptor.CreateTemp();
             {
-                // build data contexts
-                PPDataContext dbFrom = new PPDataContext();
+                // build data context
                 using (PPDataContext dbTo = new PPDataContext(dbDescTo))
                 {
-                    // copy format table
-                    CopyCardboardFormats(dbFrom, dbTo);
                     // copy cardboard profiles
-                    CopyCardboardProfiles(dbFrom, dbTo);
+                    MergeCardboardProfiles(dbFrom, dbTo, profileNames, callback);
                     // copy document types
                     CopyDocumentTypes(dbFrom, dbTo);
                     // copy branch nodes recursively
-                    TreeNode nodeFrom = TreeNode.GetNodeByPath(dbFrom, null, nodePath, 0);
                     TreeNode nodeTo = TreeNode.GetNodeByPath(dbTo, null, nodePath, 0); ;
                     CopyTreeNodesRecursively(dbFrom, dbTo, nodeFrom, nodeTo, callback);
                 }
@@ -96,7 +101,7 @@ namespace Pic.DAL
                 // copy format table
                 CopyCardboardFormats(dbFrom, dbTo);
                 // copy cardboard profiles
-                CopyCardboardProfiles(dbFrom, dbTo);
+                MergeCardboardProfiles(dbFrom, dbTo, callback);
                 // copy document types
                 CopyDocumentTypes(dbFrom, dbTo);
                 // copy branch nodes recursively
@@ -229,6 +234,7 @@ namespace Pic.DAL
                 }
             }
         }
+   
         public static void OverwriteDocumentTypes(PPDataContext dbFrom, PPDataContext dbTo, IProcessingCallback callback)
         {
             foreach (DocumentType dt in dbFrom.DocumentTypes)
@@ -249,23 +255,39 @@ namespace Pic.DAL
             }
         }
         /// <summary>
-        /// copy cardboard profile from dbFrom to dbTo
+        /// merge cardboard profile from dbFrom to dbTo
         /// </summary>
-        public static void CopyCardboardProfiles(PPDataContext dbFrom, PPDataContext dbTo)
-        {
-            foreach (CardboardProfile cp in dbFrom.CardboardProfiles)
-            { CardboardProfile.CreateNew(dbTo, cp.Name, cp.Code, cp.Thickness); }
-        }
         public static void MergeCardboardProfiles(PPDataContext dbFrom, PPDataContext dbTo, IProcessingCallback callback)
         {
             foreach (CardboardProfile cp in dbFrom.CardboardProfiles)
             {
                 if (CardboardProfile.HasByName(dbTo, cp.Name))
                 { if (null != callback) callback.Info(string.Format("Cardboard profile {0} already exists. Skipping...", cp.Name)); }
+                else if (CardboardProfile.HasByCode(dbTo, cp.Code))
+                { if (null != callback) callback.Info(string.Format("Cardboard profile with code {0} already exists. Skipping...", cp.Code)); }
                 else
                 {
                     if (null != callback) callback.Info(string.Format("Creating carboard profile {0}...", cp.Name));
                     CardboardProfile.CreateNew(dbTo, cp.Name, cp.Code, cp.Thickness);
+                }
+            }
+        }
+        public static void MergeCardboardProfiles(PPDataContext dbFrom, PPDataContext dbTo, List<string> listCardboardProfiles, IProcessingCallback callback)
+        {
+            foreach (string cpName in listCardboardProfiles)
+            {
+                CardboardProfile cp = CardboardProfile.GetByName(dbFrom, cpName);
+                if (null != cp)
+                {
+                    if (CardboardProfile.HasByName(dbTo, cp.Name))
+                    { if (null != callback) callback.Info(string.Format("Cardboard profile {0} already exists. Skipping...", cp.Name)); }
+                    else if (CardboardProfile.HasByCode(dbTo, cp.Code))
+                    { if (null != callback) callback.Info(string.Format("Cardboard profile with code {0} already exists. Skipping...", cp.Code)); }
+                    else
+                    {
+                        if (null != callback) callback.Info(string.Format("Creating carboard profile {0}...", cp.Name));
+                        CardboardProfile.CreateNew(dbTo, cp.Name, cp.Code, cp.Thickness);
+                    }
                 }
             }
         }
@@ -275,7 +297,7 @@ namespace Pic.DAL
             {
                 if (CardboardProfile.HasByName(dbTo, cp.Name))
                 {
-                    if (null != callback) callback.Info(string.Format("Cardboard profile {0} already exists. Skipping...", cp.Name));
+                    if (null != callback)         callback.Info(string.Format("Cardboard profile {0} already exists. Skipping...", cp.Name));
                     CardboardProfile cardboardProf = CardboardProfile.GetByName(dbTo, cp.Name);
                     cardboardProf.Code = cp.Code;
                     cardboardProf.Thickness = cp.Thickness;
@@ -317,13 +339,37 @@ namespace Pic.DAL
                 {
                     if (null != callback) callback.Info(string.Format("Cardboard format {0} already exists. Skipping...", cf.Name));
                     CardboardFormat cardboardFormat = CardboardFormat.GetByName(dbTo, cf.Name);
-
                 }
                 else
                 {
                     if (null != callback) callback.Info(string.Format("Creating carboard format {0}...", cf.Name));
                     CardboardFormat.CreateNew(dbTo, cf.Name, cf.Description, cf.Length, cf.Width);
                 }
+            }
+        }
+
+        public static void BuildListOfUsedCardboardProfiles(PPDataContext db, TreeNode nodeFrom, ref List<string> listProfileNames)
+        {
+            foreach (TreeNode childFrom in nodeFrom.Childrens(db))
+            {
+                if (childFrom.IsDocument)
+                {
+                    Document docFrom = childFrom.Documents(db)[0];
+                    string docTypeName = docFrom.DocumentType.Name;
+                    if (string.Equals("Parametric component", docTypeName, StringComparison.CurrentCultureIgnoreCase))
+                    {
+                        // get component
+                        Component compFrom = docFrom.Components[0];
+                        foreach (MajorationSet mjset in compFrom.MajorationSets)
+                        {
+                            string profileName = mjset.CardboardProfile.Name;
+                            if (null == listProfileNames.Find(p => p == profileName))
+                                listProfileNames.Add(profileName);
+                        }
+                    }
+                }
+                else
+                    BuildListOfUsedCardboardProfiles(db, childFrom, ref listProfileNames);
             }
         }
         // TreeNodes

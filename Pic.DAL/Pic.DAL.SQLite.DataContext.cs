@@ -98,12 +98,14 @@
         {
             return db.CardboardProfiles.Count(cbp => cbp.Name.ToLower() == name.ToLower()) > 0;
         }
-
+        public static bool HasByCode(PPDataContext db, string code)
+        {
+            return db.CardboardProfiles.Count(cbp => cbp.Code.ToLower() == code.ToLower()) > 0;
+        }
         public static CardboardProfile GetByName(PPDataContext db, string name)
         {
             return db.CardboardProfiles.SingleOrDefault(cbp => cbp.Name.ToLower() == name.ToLower());
         }
-
         public void Delete(PPDataContext db)
         {
             // check that this profile is not used in majoration sets that the only 
