@@ -141,7 +141,7 @@ namespace PicParam
                 if (dictMajo.ContainsKey(nud.Name.Substring(4)))
                 {
                     decimal v = (decimal)dictMajo[nud.Name.Substring(4)];
-                    if (nud.Minimum < v && v < nud.Maximum)     
+                    if (nud.Minimum <= v && v <= nud.Maximum)     
                         nud.Value = v;
                 }
 
