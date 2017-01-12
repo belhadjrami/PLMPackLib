@@ -93,15 +93,6 @@ namespace PicParam.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://www.plmpack.com/packlib/packlib_start_page.htm")]
-        public string StartPageUrl {
-            get {
-                return ((string)(this["StartPageUrl"]));
-            }
-        }
-        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
@@ -230,10 +221,19 @@ namespace PicParam.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://www.plmpack.com/en/packlib_guide.htm")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://www.treedim.com/packlib/tutorials")]
         public string HelpUrl {
             get {
                 return ((string)(this["HelpUrl"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://www.treedim.com/packlib/")]
+        public string StartPageUrl {
+            get {
+                return ((string)(this["StartPageUrl"]));
             }
         }
     }

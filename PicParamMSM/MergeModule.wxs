@@ -268,7 +268,6 @@
       <Custom Action="ZipExtractCA" Before="InstallFinalize">$DataInstall&gt;2 AND (Installed OR NETFRAMEWORK40FULL) AND (NOT DATABASEEXISTS)</Custom>
     </InstallExecuteSequence>
     <?endif?>
-
     <!--*********** Registry entries : BEGIN *******************************-->
     <!--Registry entry for Acrobat Reader (enable 3D content)-->
     <DirectoryRef Id="TARGETDIR">

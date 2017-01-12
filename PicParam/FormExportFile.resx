@@ -295,7 +295,7 @@
     <value>cbFileFormat</value>
   </data>
 	<data name="&gt;&gt;fileSelectCtrl.Type" xml:space="preserve">
-    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.13.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.14.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 	<data name="bnOk.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
 		<value>Top, Right</value>

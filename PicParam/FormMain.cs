@@ -766,7 +766,6 @@ namespace PicParam
                     {
                         job.Pathes.Add(new Pic3DExporter.PathItem() { pathID = string.Format("FID-{0}", ++fid), path = filePath, type = Pic3DExporter.pathType.FILE });
                     }
-
                     // **** FILES END ****
                     // **** TASKS BEGIN ****
                     // DES -> DES3
@@ -782,7 +781,8 @@ namespace PicParam
                     fid = 2;
                     foreach (string filePath in filePathes)
                     {
-                        task_2D_to_DES3.autoparameters.modelFiles.Add(new Pic3DExporter.PathRef() { pathID = string.Format("FID-{0}", ++fid), role = "model files", deleteAfterUsing = false });
+                        task_2D_to_DES3.autoparameters.modelFiles.Add(
+                            new Pic3DExporter.PathRef() { pathID = string.Format("FID-{0}", ++fid), role = "model files", deleteAfterUsing = false });
                     }
                     job.Tasks.Add(task_2D_to_DES3);
                     // **** TASKS END ****
