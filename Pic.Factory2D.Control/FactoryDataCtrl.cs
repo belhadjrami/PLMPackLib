@@ -115,6 +115,14 @@ namespace Pic.Factory2D.Control
                 _log.Error(ex.ToString());
             }
         }
+        /// <summary>
+        /// call TabChanged 
+        /// </summary>
+        private void tabControlData_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (null != TabChanged)
+                TabChanged(tabControlData.SelectedIndex);
+        }
         #endregion
 
         #region Private data members
@@ -125,14 +133,5 @@ namespace Pic.Factory2D.Control
         public delegate void onTabChanged(int currentIndex);
         public event onTabChanged TabChanged;
         #endregion
-
-        /// <summary>
-        /// call TabChanged 
-        /// </summary>
-        private void tabControlData_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (null != TabChanged)
-                TabChanged(tabControlData.SelectedIndex);
-        }
     }
 }

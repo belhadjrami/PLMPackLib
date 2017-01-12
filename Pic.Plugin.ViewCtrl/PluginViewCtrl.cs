@@ -648,7 +648,6 @@ namespace Pic.Plugin.ViewCtrl
                     Component.CreateFactoryEntities(factory, stack);
                     if (_reflectionX) factory.ProcessVisitor(new PicVisitorTransform(Transform2D.ReflectionX));
                     if (_reflectionY) factory.ProcessVisitor(new PicVisitorTransform(Transform2D.ReflectionY));
-
                     // remove existing quotations
                     if (!_showCotationCode)
                         factory.Remove( PicFilter.FilterCotation );
@@ -659,7 +658,6 @@ namespace Pic.Plugin.ViewCtrl
                     // filter 
                     PicFilter filter = _showAxes ? PicFilter.FilterNone
                         : PicFilter.FilterCotation | !(new PicFilterLineType(PicGraphics.LT.LT_COTATION));
-
 
                     // update drawing box?
                     if (_computeBbox)
@@ -737,9 +735,17 @@ namespace Pic.Plugin.ViewCtrl
             Component.CreateFactoryEntities(factory, stack);
             if (_reflectionX) factory.ProcessVisitor(new PicVisitorTransform(Transform2D.ReflectionX));
             if (_reflectionY) factory.ProcessVisitor(new PicVisitorTransform(Transform2D.ReflectionY));
+            // remove existing quotations
+            if (!_showCotationCode)
+                factory.Remove(PicFilter.FilterCotation);
+            // build auto quotations
+            if (_showCotationAuto)
+                PicAutoQuotation.BuildQuotation(factory);
 
             // instantiate filter
-            PicFilter filter = (_showCotationAuto ? PicFilter.FilterNone : !PicFilter.FilterCotation) & PicFilter.FilterNoZeroEntities;
+            PicFilter filter = _showAxes ? PicFilter.FilterNone
+                : PicFilter.FilterCotation | !(new PicFilterLineType(PicGraphics.LT.LT_COTATION));
+            filter = filter & PicFilter.FilterNoZeroEntities;
 
             // get bounding box
             Pic.Factory2D.PicVisitorBoundingBox visitorBoundingBox = new Pic.Factory2D.PicVisitorBoundingBox();
