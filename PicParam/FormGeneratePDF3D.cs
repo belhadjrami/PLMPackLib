@@ -107,7 +107,7 @@ namespace PicParam
                 // **** TASKS BEGIN ****
                 // DES -> DES3
                 Pic3DExporter.task_2D_TO_DES3 task_2D_to_DES3 = new Pic3DExporter.task_2D_TO_DES3() { id = "TID-1" };
-                task_2D_to_DES3.Inputs.Add(new Pic3DExporter.PathRef() { pathID = "FID-2", role = "input des", deleteAfterUsing = false });
+                task_2D_to_DES3.Inputs.Add(new Pic3DExporter.PathRef() { pathID = "FID-2", role = "input des", deleteAfterUsing = true });
                 task_2D_to_DES3.Outputs.Add(new Pic3DExporter.PathRef() { pathID = "FID-3", role = "output des3", deleteAfterUsing = false });
                 task_2D_to_DES3.autoparameters.thicknessSpecified = true;
                 task_2D_to_DES3.autoparameters.thickness = (float)thickness;
@@ -124,7 +124,7 @@ namespace PicParam
                 // DES3 -> U3D
                 Pic3DExporter.task_DES3_TO_U3D task_DES3_to_U3D = new Pic3DExporter.task_DES3_TO_U3D() { id = "TID-2" };
                 task_DES3_to_U3D.Dependencies = "TID-1";
-                task_DES3_to_U3D.Inputs.Add(new Pic3DExporter.PathRef() { pathID = "FID-3", role = "input des3", deleteAfterUsing = false });
+                task_DES3_to_U3D.Inputs.Add(new Pic3DExporter.PathRef() { pathID = "FID-3", role = "input des3", deleteAfterUsing = true });
                 task_DES3_to_U3D.Outputs.Add(new Pic3DExporter.PathRef() { pathID = "FID-4", role = "output u3d", deleteAfterUsing = false });
                 task_DES3_to_U3D.Parameters.Material.opacitySpecified = true;
                 task_DES3_to_U3D.Parameters.Material.opacity = 1.0F;
@@ -145,7 +145,7 @@ namespace PicParam
 
                 Pic3DExporter.task_U3D_TO_PDF task_U3D_to_PDF = new Pic3DExporter.task_U3D_TO_PDF() { id = "TID-3" };
                 task_U3D_to_PDF.Dependencies = "TID-2";
-                task_U3D_to_PDF.Inputs.Add(new Pic3DExporter.PathRef() { pathID = "FID-4", role = "input u3d", deleteAfterUsing = false });
+                task_U3D_to_PDF.Inputs.Add(new Pic3DExporter.PathRef() { pathID = "FID-4", role = "input u3d", deleteAfterUsing = true });
                 task_U3D_to_PDF.Inputs.Add(new Pic3DExporter.PathRef() { pathID = "FID-1", role = "pdf template", deleteAfterUsing = false });
                 task_U3D_to_PDF.Outputs.Add(new Pic3DExporter.PathRef() { pathID = "FID-5", role = "output pdf", deleteAfterUsing = false });
                 task_U3D_to_PDF.pdfAnnotation.PageLayout.buttonPositionsSpecified = true;
