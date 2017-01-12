@@ -1,9 +1,12 @@
-﻿using System;
+﻿#region Using directives
+using System;
 using System.Collections.Generic;
 using System.Text;
+#endregion
 
 namespace Pic.Factory2D
 {
+    #region PicFilter (base class)
     public class PicFilter
     {
         #region Constructor
@@ -39,15 +42,16 @@ namespace Pic.Factory2D
 
         #region Constants
         public static readonly PicFilter FilterNone = new PicFilter();
-        public static readonly PicFilter FilterCotation = new PicFilterNot(
-                (new PicFilterCode(PicEntity.eCode.PE_COTATIONDISTANCE))
-                | (new PicFilterCode(PicEntity.eCode.PE_COTATIONHORIZONTAL))
-                | (new PicFilterCode(PicEntity.eCode.PE_COTATIONVERTICAL))
-                );
+        public static readonly PicFilter FilterCotation
+            = (new PicFilterCode(PicEntity.eCode.PE_COTATIONDISTANCE))
+            | (new PicFilterCode(PicEntity.eCode.PE_COTATIONHORIZONTAL))
+            | (new PicFilterCode(PicEntity.eCode.PE_COTATIONVERTICAL));
         public static readonly PicFilter FilterNoZeroEntities = new PicFilterOutZeroEntities();
         #endregion
     }
+    #endregion
 
+    #region PicFilterNot
     /// <summary>
     /// "Not" condition filter
     /// </summary>
@@ -64,7 +68,9 @@ namespace Pic.Factory2D
         }
         private PicFilter _filter;
     }
+    #endregion
 
+    #region PicFilterOr
     /// <summary>
     /// "Or" condition filter
     /// </summary>
@@ -82,7 +88,9 @@ namespace Pic.Factory2D
         }
         private PicFilter _filter1, _filter2;
     }
+    #endregion
 
+    #region PicFilterAnd
     /// <summary>
     /// "And" condition filter
     /// </summary>
@@ -100,7 +108,9 @@ namespace Pic.Factory2D
         }
         private PicFilter _filter1, _filter2;
     }
+    #endregion
 
+    #region PicFilterCode
     /// <summary>
     /// Filter entity by code
     /// </summary>
@@ -120,7 +130,9 @@ namespace Pic.Factory2D
         }
         private PicEntity.eCode _code;
     }
+    #endregion
 
+    #region PicFilterGroup
     /// <summary>
     /// Filter entity by group
     /// </summary>
@@ -139,7 +151,9 @@ namespace Pic.Factory2D
         }
         private short _grp;
     }
+    #endregion
 
+    #region PicFilterListGroup
     public class PicFilterListGroup
         : PicFilter
     {
@@ -156,7 +170,9 @@ namespace Pic.Factory2D
         }
         private List<short> _grps;
     }
+    #endregion
 
+    #region PicFilterListLayer
     public class PicFilterListLayer
         : PicFilter
     {
@@ -173,7 +189,9 @@ namespace Pic.Factory2D
         }
         private List<short> _layers;
     }
+    #endregion
 
+    #region PicFilterOutZeroEntities
     /// <summary>
     /// Filter out very zero length entities
     /// </summary>
@@ -191,7 +209,9 @@ namespace Pic.Factory2D
         }
         private static double _epsilon = 0.1;
     }
+    #endregion
 
+    #region PicFilterTypedDrawable
     public class PicFilterTypedDrawable
         : PicFilter
     {
@@ -203,7 +223,9 @@ namespace Pic.Factory2D
             return entity is PicTypedDrawable;
         }
     }
+    #endregion
 
+    #region PicFilterLineType
     public class PicFilterLineType
         : PicFilter
     {
@@ -224,4 +246,5 @@ namespace Pic.Factory2D
         // data members
         private PicGraphics.LT _lt;
     }
+    #endregion
 }

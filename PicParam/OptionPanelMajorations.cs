@@ -23,6 +23,7 @@ namespace PicParam
 
         #region Override
         #endregion
+
         #region Handlers
         private void OptionPanelMajorations_Load(object sender, EventArgs e)
         {

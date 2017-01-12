@@ -51,7 +51,7 @@ namespace Pic.Factory2D.Control
             MouseDown += new MouseEventHandler(FactoryViewerBase_MouseDown);
             MouseUp += new MouseEventHandler(FactoryViewerBase_MouseUp);
 
-            showCotationsToolStripMenuItem.Checked = _showCotations;
+            showCotationsToolStripMenuItem.Checked = _showCotationAuto;
             reflectionXToolStripMenuItem.Checked = _reflectionX;
             reflectionYToolStripMenuItem.Checked = _reflectionY;
         }
@@ -91,13 +91,6 @@ namespace Pic.Factory2D.Control
             {
                 _reflectionX = value;
                 reflectionXToolStripMenuItem.Checked = _reflectionX;
-                /*
-                // remove existing quotations
-                _factory.Remove((new PicFilterCode(PicEntity.eCode.PE_COTATIONDISTANCE))
-                 | (new PicFilterCode(PicEntity.eCode.PE_COTATIONHORIZONTAL))
-                 | (new PicFilterCode(PicEntity.eCode.PE_COTATIONVERTICAL))
-                 );
-                 */ 
                 // transform entities
                 _factory.ProcessVisitor(new PicVisitorTransform(Transform2D.ReflectionX));
                 // add quotations
@@ -112,13 +105,6 @@ namespace Pic.Factory2D.Control
             {
                 _reflectionY = value;
                 reflectionYToolStripMenuItem.Checked = _reflectionY;
-                /*
-                // remove existing quotations
-                _factory.Remove((new PicFilterCode(PicEntity.eCode.PE_COTATIONDISTANCE))
-                 | (new PicFilterCode(PicEntity.eCode.PE_COTATIONHORIZONTAL))
-                 | (new PicFilterCode(PicEntity.eCode.PE_COTATIONVERTICAL))
-                 );
-                 */ 
                 // transform entities
                 _factory.ProcessVisitor(new PicVisitorTransform(Transform2D.ReflectionY));
                 // add quotations
@@ -128,11 +114,11 @@ namespace Pic.Factory2D.Control
         }
         public bool ShowCotationsAuto
         {
-            get { return _showCotations; }
+            get { return _showCotationAuto; }
             set
             {
-                _showCotations = value;
-                showCotationsToolStripMenuItem.Checked = _showCotations;
+                _showCotationAuto = value;
+                showCotationsToolStripMenuItem.Checked = _showCotationAuto;
                 Invalidate();
             }
         }
@@ -189,7 +175,7 @@ namespace Pic.Factory2D.Control
             try
             {
                 // instantiate filter
-                PicFilter filter = (_showCotations ? PicFilter.FilterNone : PicFilter.FilterCotation) & PicFilter.FilterNoZeroEntities;
+                PicFilter filter = (_showCotationAuto ? PicFilter.FilterNone : !PicFilter.FilterCotation) & PicFilter.FilterNoZeroEntities;
                 // get bounding box
                 Pic.Factory2D.PicVisitorBoundingBox visitorBoundingBox = new Pic.Factory2D.PicVisitorBoundingBox();
                 _factory.ProcessVisitor(visitorBoundingBox, filter);
@@ -448,9 +434,9 @@ namespace Pic.Factory2D.Control
         #region Context menu
         private void showCotationsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ShowCotationsAuto = !_showCotations;
+            ShowCotationsAuto = !_showCotationAuto;
             ToolStripMenuItem item = sender as ToolStripMenuItem;
-            item.Checked = _showCotations;
+            item.Checked = _showCotationAuto;
         }
 
         private void reflectionXToolStripMenuItem_Click(object sender, EventArgs e)
@@ -543,7 +529,7 @@ namespace Pic.Factory2D.Control
         {
             _picGraphics.GdiGraphics = e.Graphics;
             if (null != _factory)
-                _factory.Draw(_picGraphics, _showCotations ? PicFilter.FilterNone : PicFilter.FilterCotation);
+                _factory.Draw(_picGraphics, _showCotationAuto ? PicFilter.FilterNone : !PicFilter.FilterCotation);
         }
         #endregion
 
@@ -553,7 +539,7 @@ namespace Pic.Factory2D.Control
         PicFactory _factory = new PicFactory();
         private Point _mousePositionPrev;
         private bool _reflectionX = false, _reflectionY = false
-            , _showCotations = false, _showCotationsCode = false, _showAxes = false;
+            , _showCotationAuto = false, _showCotationsCode = false, _showAxes = false;
         private CardboardFormatLoader _cardboardFormatLoader;
 
         private ImpositionTool _impositionTool;

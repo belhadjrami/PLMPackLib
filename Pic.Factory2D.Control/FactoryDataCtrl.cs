@@ -77,7 +77,7 @@ namespace Pic.Factory2D.Control
                     case 1:
                         // compute bounding box
                         PicVisitorBoundingBox visitorBB = new PicVisitorBoundingBox();
-                        _factory.ProcessVisitor(visitorBB, PicFilter.FilterCotation);
+                        _factory.ProcessVisitor(visitorBB, !PicFilter.FilterCotation);
                         // update controls
                         lblValueLength.Text = string.Format(": {0:0.#} mm", visitorBB.Box.Width);
                         lblValueWidth.Text = string.Format(": {0:0.#} mm", visitorBB.Box.Height);

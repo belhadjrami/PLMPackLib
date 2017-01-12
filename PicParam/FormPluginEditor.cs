@@ -52,8 +52,7 @@ namespace PicParam
             set
             {
                 _generatorCtrl.setComponentFilePath(value);
-                Text = string.Format(Properties.Resources.ID_EDITCOMPONENT, value);
- 
+                Text = string.Format(Properties.Resources.ID_EDITCOMPONENT, value); 
             }
         }
 

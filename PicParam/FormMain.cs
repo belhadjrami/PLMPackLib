@@ -118,12 +118,6 @@ namespace PicParam
                 PicLoaderDes picLoaderDes = new PicLoaderDes(factory);
                 using (DES_FileReader fileReader = new DES_FileReader())
                     fileReader.ReadFile(filePath, picLoaderDes);
-                /*
-                // remove existing quotations
-                factory.Remove((new PicFilterCode(PicEntity.eCode.PE_COTATIONDISTANCE))
-                                    | (new PicFilterCode(PicEntity.eCode.PE_COTATIONHORIZONTAL))
-                                    | (new PicFilterCode(PicEntity.eCode.PE_COTATIONVERTICAL)));
-                 */ 
                 // build autoquotation
                 PicAutoQuotation.BuildQuotation(factory);
             }
@@ -864,7 +858,7 @@ namespace PicParam
         {
             IToolInterface currentView = CurrentTool;
             if (null == currentView) return;
-            currentView.ShowCotationsAuto = !currentView.ShowCotationsAuto;
+            currentView.ShowCotationsCode = !currentView.ShowCotationsCode;
             UpdateToolCommands();
         }
         private void onShowHideAxes(object sender, System.EventArgs e)

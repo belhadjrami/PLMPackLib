@@ -25,7 +25,7 @@ namespace Pic.Factory2D
             box.AddMarginRatio(0.05);
             // draw image
             PicGraphicsImage picImage = new PicGraphicsImage(size, box);
-            factory.Draw(picImage, showCotations ? PicFilter.FilterNone : PicFilter.FilterCotation);
+            factory.Draw(picImage, showCotations ? PicFilter.FilterNone : !PicFilter.FilterCotation);
 
             bmp = picImage.Bitmap;            
         }

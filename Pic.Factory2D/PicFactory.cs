@@ -380,13 +380,14 @@ namespace Pic
                     }
                 }
 
+                // first, draw cotation
                 foreach (PicEntity entity in _entities)
                 {
                     try
                     {
                         // cotation
                         PicCotation cotation = entity as PicCotation;
-                        if (cotation != null && !cotation.Deleted && filter.Accept(cotation))
+                        if (cotation != null && !cotation.Deleted && filter.Accept(entity))
                             cotation.Draw(graphics);
                     }
                     catch (Exception ex)
@@ -394,7 +395,7 @@ namespace Pic
                         _log.Error(ex.Message);
                     }                
                 }
-
+                // then other entities
 				foreach (Object o in _entities)
 				{
 					try

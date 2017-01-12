@@ -138,7 +138,7 @@ namespace Pic.Factory2D.Control
         private void FactoryViewer_Paint(object sender, PaintEventArgs e)
         {
             _picGraphics.GdiGraphics = e.Graphics;
-            _factory.Draw(_picGraphics, _showCotations ? PicFilter.FilterNone : PicFilter.FilterCotation );
+            _factory.Draw(_picGraphics, _showCotations ? PicFilter.FilterNone : !PicFilter.FilterCotation);
         }
         #endregion
 
@@ -221,7 +221,7 @@ namespace Pic.Factory2D.Control
             try
             {
                 // instantiate filter
-                PicFilter filter = (_showCotations ? PicFilter.FilterNone : PicFilter.FilterCotation) & PicFilter.FilterNoZeroEntities;
+                PicFilter filter = (_showCotations ? PicFilter.FilterNone : !PicFilter.FilterCotation) & PicFilter.FilterNoZeroEntities;
                 // get bounding box
                 Pic.Factory2D.PicVisitorBoundingBox visitorBoundingBox = new Pic.Factory2D.PicVisitorBoundingBox();
                 _factory.ProcessVisitor(visitorBoundingBox, filter);

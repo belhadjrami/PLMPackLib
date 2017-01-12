@@ -103,7 +103,7 @@ namespace Pic.Factory2D
                 // compute bounding box
                 PicVisitorBoundingBox visitor = new PicVisitorBoundingBox();
                 visitor.TakePicBlocksIntoAccount = false;
-                factory.ProcessVisitor(visitor, PicFilter.FilterCotation);
+                factory.ProcessVisitor(visitor, !PicFilter.FilterCotation);
                 Box2D boxEntities = visitor.Box;
 
                 // compute default X step

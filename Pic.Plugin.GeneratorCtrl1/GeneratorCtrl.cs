@@ -220,7 +220,10 @@ namespace Pic.Plugin.GeneratorCtrl
             }
             get
             {
-                return Path.Combine(_localPluginDirectory, txtName.Text.Replace(' ', '_') + ".dll");
+                if (string.IsNullOrEmpty(_outputPath))
+                    return Path.Combine(_localPluginDirectory, txtName.Text.Replace(' ', '_') + ".dll");
+                else
+                    return _outputPath;
             }
         }
         #endregion

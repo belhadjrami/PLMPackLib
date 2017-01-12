@@ -154,7 +154,7 @@ namespace Pic.Plugin
             box.AddMarginRatio(0.05);
             // draw image
             PicGraphicsImage picImage = new PicGraphicsImage(size, box);
-            factory.Draw(picImage, _showCotations ? PicFilter.FilterNone : PicFilter.FilterCotation);
+            factory.Draw(picImage, _showCotations ? PicFilter.FilterNone : !PicFilter.FilterCotation);
 
             bmp = picImage.Bitmap;
         }
@@ -179,7 +179,7 @@ namespace Pic.Plugin
             box.AddMarginRatio(0.05);
             // draw image
             PicGraphicsImage picImage = new PicGraphicsImage(size, box);
-            factory.Draw(picImage, _showCotations ? PicFilter.FilterNone : PicFilter.FilterCotation);
+            factory.Draw(picImage, _showCotations ? PicFilter.FilterNone : !PicFilter.FilterCotation);
 
             bmp = picImage.Bitmap;
         }
@@ -202,7 +202,7 @@ namespace Pic.Plugin
             if (_reflexionY) factory.ProcessVisitor(new PicVisitorTransform(Transform2D.ReflectionY));
 
             // instantiate filter
-            PicFilter filter = (_showCotations ? PicFilter.FilterNone : PicFilter.FilterCotation) & PicFilter.FilterNoZeroEntities;
+            PicFilter filter = (_showCotations ? PicFilter.FilterNone : !PicFilter.FilterCotation) & PicFilter.FilterNoZeroEntities;
 
             // get bounding box
             Pic.Factory2D.PicVisitorBoundingBox visitorBoundingBox = new Pic.Factory2D.PicVisitorBoundingBox();
@@ -251,7 +251,7 @@ namespace Pic.Plugin
             if (_reflexionY) factory.ProcessVisitor(new PicVisitorTransform(Transform2D.ReflectionY));
             // get bounding box
             Pic.Factory2D.PicVisitorBoundingBox visitorBoundingBox = new Pic.Factory2D.PicVisitorBoundingBox();
-            factory.ProcessVisitor(visitorBoundingBox, _showCotations ? PicFilter.FilterNone : PicFilter.FilterCotation);
+            factory.ProcessVisitor(visitorBoundingBox, _showCotations ? PicFilter.FilterNone : !PicFilter.FilterCotation);
             Pic.Factory2D.Box2D box = visitorBoundingBox.Box;
             width = box.Width;
             height = box.Height;

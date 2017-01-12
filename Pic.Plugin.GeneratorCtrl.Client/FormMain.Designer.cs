@@ -58,7 +58,6 @@
             this.Text = "FormMain";
             this.TopMost = true;
             this.ResumeLayout(false);
-
         }
 
         #endregion

@@ -89,7 +89,7 @@ namespace treeDiM.DrawingQuery
             Box2D box = Box2D.Initial;
             using (PicVisitorBoundingBox visitor = new PicVisitorBoundingBox())
             {
-                _factory.ProcessVisitor(visitor, withDimensions ? PicFilter.FilterNone : PicFilter.FilterCotation);
+                _factory.ProcessVisitor(visitor, withDimensions ? PicFilter.FilterNone : !PicFilter.FilterCotation);
                 box = visitor.Box;
             }
             return box;        
@@ -146,7 +146,7 @@ namespace treeDiM.DrawingQuery
             // build filter
             PicFilter filter = new PicFilterListGroup(groups)
                 & new PicFilterListLayer(layers)
-                & (showDimensions ? PicFilter.FilterNone : PicFilter.FilterCotation);
+                & (showDimensions ? PicFilter.FilterNone : PicFilter.FilterNotCotation);
             // cotations with long lines
             PicGlobalCotationProperties.ShowShortCotationLines = false;
             // drawing
@@ -163,12 +163,12 @@ namespace treeDiM.DrawingQuery
             // build filter
             PicFilter filter = new PicFilterListGroup(groups)
                 & new PicFilterListLayer(layers)
-                & (showDimensions ? PicFilter.FilterNone : PicFilter.FilterCotation);
+                & (showDimensions ? PicFilter.FilterNone : PicFilter.FilterNotCotation);
             // cotations with long lines
             PicGlobalCotationProperties.ShowShortCotationLines = false;
             // drawing
             PicGraphicsImage picGraph = new PicGraphicsImage(imageSize, box);
-            _factory.Draw(picGraph, showDimensions ? PicFilter.FilterNone : PicFilter.FilterCotation);
+            _factory.Draw(picGraph, showDimensions ? PicFilter.FilterNone : !PicFilter.FilterCotation);
             return picGraph.Bitmap;
         }
         public void ImageToFile(string filePath, Size imageSize, bool showDimensions, List<short> groups, List<short> layers)

@@ -43,7 +43,7 @@ namespace Pic.Plugin.ViewCtrl
         private bool _buttonCloseVisible = false;
         private bool _buttonValidateVisible = false;
         private ComboBox _comboProfile;
-        private bool _showCotations = true, _showCotationsCode = false, _showAxes = true;
+        private bool _showCotationAuto = true, _showCotationCode = false, _showAxes = true;
         private bool _showSummary = false;
         private Box2D _box;
         private Button btClose;
@@ -139,7 +139,7 @@ namespace Pic.Plugin.ViewCtrl
 
 
             // context menu
-            this.showCotationsToolStripMenuItem.Checked = _showCotations;
+            this.showCotationsToolStripMenuItem.Checked = _showCotationAuto;
             this.reflectionXToolStripMenuItem.Checked = _reflectionX;
             this.reflectionYToolStripMenuItem.Checked = _reflectionY;
 
@@ -290,9 +290,9 @@ namespace Pic.Plugin.ViewCtrl
         #region Context menu
         private void showCotationsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ShowCotationsAuto = !_showCotations;
+            ShowCotationsAuto = !_showCotationAuto;
             ToolStripMenuItem item = sender as ToolStripMenuItem;
-            item.Checked = _showCotations;
+            item.Checked = _showCotationAuto;
         }
 
         private void reflectionXToolStripMenuItem_Click(object sender, EventArgs e)
@@ -524,14 +524,15 @@ namespace Pic.Plugin.ViewCtrl
         /// </summary>
         public bool ShowCotationsAuto
         {
-            get { return _showCotations; }
+            get { return _showCotationAuto; }
             set
             {
                 if (DesignMode)
                     return;
                 try
                 {
-                    _showCotations = value;
+                    _showCotationAuto = value;
+                    _computeBbox = true;
                     Panel1.Invalidate();
                 }
                 catch (Exception /*ex*/)
@@ -544,14 +545,15 @@ namespace Pic.Plugin.ViewCtrl
         /// </summary>
         public bool ShowCotationsCode
         {
-            get { return _showCotationsCode; }
+            get { return _showCotationCode; }
             set
             {
                 if (DesignMode)
                     return;
                 try
                 {
-                    _showCotationsCode = value;
+                    _showCotationCode = value;
+                    _computeBbox = true;
                     Panel1.Invalidate();
                 }
                 catch (Exception /*ex*/)
@@ -572,6 +574,7 @@ namespace Pic.Plugin.ViewCtrl
                 try
                 {
                     _showAxes = value;
+                    _computeBbox = true;
                     Panel1.Invalidate();
                 }
                 catch (Exception /*ex*/)
@@ -638,9 +641,6 @@ namespace Pic.Plugin.ViewCtrl
                 _picGraphics.GdiGraphics = e.Graphics;
                 _picGraphics.Size = this.Panel1.ClientSize;
 
-                // instantiate filter
-                PicFilter filter = _showCotations ? PicFilter.FilterNone : PicFilter.FilterCotation;
-
                 // build factory
                 using (Pic.Factory2D.PicFactory factory = new Pic.Factory2D.PicFactory())
                 {
@@ -650,21 +650,22 @@ namespace Pic.Plugin.ViewCtrl
                     if (_reflectionY) factory.ProcessVisitor(new PicVisitorTransform(Transform2D.ReflectionY));
 
                     // remove existing quotations
-                    /*
-                    factory.Remove((new PicFilterCode(PicEntity.eCode.PE_COTATIONDISTANCE))
-                                    | (new PicFilterCode(PicEntity.eCode.PE_COTATIONHORIZONTAL))
-                                    | (new PicFilterCode(PicEntity.eCode.PE_COTATIONVERTICAL))
-                                    );
-                    */
-                    // build auto quotation
-                    if (_showCotations)
+                    if (!_showCotationCode)
+                        factory.Remove( PicFilter.FilterCotation );
+                    // build auto quotations
+                    if (_showCotationAuto)
                         PicAutoQuotation.BuildQuotation(factory);
+
+                    // filter 
+                    PicFilter filter = _showAxes ? PicFilter.FilterNone
+                        : PicFilter.FilterCotation | !(new PicFilterLineType(PicGraphics.LT.LT_COTATION));
+
 
                     // update drawing box?
                     if (_computeBbox)
                     {
                         Pic.Factory2D.PicVisitorBoundingBox visitor = new Pic.Factory2D.PicVisitorBoundingBox();
-                        factory.ProcessVisitor(visitor);
+                        factory.ProcessVisitor(visitor, filter);
                         _box = new Box2D(visitor.Box);
                         Box2D box = visitor.Box;
                         box.AddMarginRatio(0.05);
@@ -738,7 +739,7 @@ namespace Pic.Plugin.ViewCtrl
             if (_reflectionY) factory.ProcessVisitor(new PicVisitorTransform(Transform2D.ReflectionY));
 
             // instantiate filter
-            PicFilter filter = (_showCotations ? PicFilter.FilterNone : PicFilter.FilterCotation) & PicFilter.FilterNoZeroEntities;
+            PicFilter filter = (_showCotationAuto ? PicFilter.FilterNone : !PicFilter.FilterCotation) & PicFilter.FilterNoZeroEntities;
 
             // get bounding box
             Pic.Factory2D.PicVisitorBoundingBox visitorBoundingBox = new Pic.Factory2D.PicVisitorBoundingBox();
