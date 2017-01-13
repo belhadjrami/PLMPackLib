@@ -174,12 +174,15 @@ namespace PicParam.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string CultureToUse {
             get {
                 return ((string)(this["CultureToUse"]));
+            }
+            set {
+                this["CultureToUse"] = value;
             }
         }
         
@@ -230,7 +233,7 @@ namespace PicParam.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://www.treedim.com/packlib/")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://www.treedim.com/packlib/actualites/")]
         public string StartPageUrl {
             get {
                 return ((string)(this["StartPageUrl"]));

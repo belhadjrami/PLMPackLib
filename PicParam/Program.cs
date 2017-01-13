@@ -41,7 +41,7 @@ namespace PicParam
                         _log.Error(string.Format("Specified culture in config file ({0}) appears to be invalid: {1}", specifiedCulture, ex.Message));
                     }
                 }
-
+                // get current culture
                 _log.Info(string.Format("Starting {0} with culture {1}", Application.ProductName, Thread.CurrentThread.CurrentUICulture));
 
                 Application.EnableVisualStyles();

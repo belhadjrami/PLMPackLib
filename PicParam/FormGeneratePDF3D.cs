@@ -84,6 +84,7 @@ namespace PicParam
                 string desFile = Path.ChangeExtension(pdfFile, "des");
                 string des3File = Path.ChangeExtension(pdfFile, "des3");
                 string xmlFile = Path.ChangeExtension(pdfFile, "xml");
+                string xmlResultFile = Path.ChangeExtension(pdfFile, "result.xml");
                 string u3dFile = Path.ChangeExtension(pdfFile, "u3d");
                 string defaultPdfTemplate = fileSelectPdfTemplate.FileName;
 
@@ -197,7 +198,10 @@ namespace PicParam
                 try
                 {
                     if (!Properties.Settings.Default.DebugMode)
+                    {
                         System.IO.File.Delete(xmlFile);
+                        System.IO.File.Delete(xmlResultFile);
+                    }
                 }
                 catch (Exception) { }
             }

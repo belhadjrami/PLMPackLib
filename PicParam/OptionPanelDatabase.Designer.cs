@@ -54,12 +54,11 @@
             this.CategoryPath = "Paramètres\\Base de données";
             this.Controls.Add(this.labelDatabasePath);
             this.Controls.Add(this.fileSelect);
-            this.DisplayName = "Base de données";
+            this.DisplayName = "Database";
             this.MinimumSize = new System.Drawing.Size(300, 100);
             this.Name = "OptionPanelDatabase";
             this.Load += new System.EventHandler(this.OptionPanelDatabase_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
         #endregion

@@ -149,8 +149,8 @@
   <data name="lbMaximumNumberOfEntities.AccessibleName" xml:space="preserve">
     <value>Maximum number of entities</value>
   </data>
-  <data name="lbMaximumNumberOfEntities.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 11</value>
+  <data name="lbMaximumNumberOfEntities.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;lbMaximumNumberOfEntities.Name" xml:space="preserve">
     <value>lbMaximumNumberOfEntities</value>
@@ -169,6 +169,9 @@
   </data>
   <data name="&gt;&gt;lbMaximumNumberOfEntities.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="lbMaximumNumberOfEntities.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 11</value>
   </data>
   <data name="nudMaxNumberOfEntities.Location" type="System.Drawing.Point, System.Drawing">
     <value>168, 9</value>
@@ -191,16 +194,10 @@
   <data name="$this.AccessibleName" xml:space="preserve">
     <value>Computing settings</value>
   </data>
-  <data name="lbMaximumNumberOfEntities.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;nudMaxNumberOfEntities.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>pl-PL</value>
   </metadata>
 </root>

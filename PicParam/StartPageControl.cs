@@ -28,7 +28,11 @@ namespace PicParam
         public System.Uri Url
         {
             get { return webBrowserStartPage.Url; }
-            set { webBrowserStartPage.Url = value; webBrowserStartPage.Refresh(); }
+            set
+            {
+                webBrowserStartPage.Url = value;
+                webBrowserStartPage.Refresh(); 
+            }
         }
         public DocumentTreeView TreeViewCtrl
         {
