@@ -38,10 +38,6 @@
             resources.ApplyResources(this.fileSelect, "fileSelect");
             this.fileSelect.Name = "fileSelect";
             // 
-            // folderBrowserDlg
-            // 
-            resources.ApplyResources(this.folderBrowserDlg, "folderBrowserDlg");
-            // 
             // labelDatabasePath
             // 
             resources.ApplyResources(this.labelDatabasePath, "labelDatabasePath");

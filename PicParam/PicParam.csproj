@@ -568,6 +568,15 @@
     <EmbeddedResource Include="FormDefineComponentGUID.resx">
       <DependentUpon>FormDefineComponentGUID.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormGeneratePDF3D.es-ES.resx">
+      <DependentUpon>FormGeneratePDF3D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGeneratePDF3D.fr-FR.resx">
+      <DependentUpon>FormGeneratePDF3D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGeneratePDF3D.it-IT.resx">
+      <DependentUpon>FormGeneratePDF3D.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormGeneratePDF3D.pl-PL.resx">
       <DependentUpon>FormGeneratePDF3D.cs</DependentUpon>
     </EmbeddedResource>
@@ -681,6 +690,15 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="OptionPanelCulture.fr-FR.resx">
+      <DependentUpon>OptionPanelCulture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionPanelCulture.it-IT.resx">
+      <DependentUpon>OptionPanelCulture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionPanelCulture.ja-JP.resx">
+      <DependentUpon>OptionPanelCulture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionPanelCulture.pl-PL.resx">
       <DependentUpon>OptionPanelCulture.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OptionPanelCulture.resx">
@@ -809,6 +827,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Properties\Resources.es-ES.resx" />
+    <EmbeddedResource Include="Properties\Resources.it-IT.resx" />
+    <EmbeddedResource Include="Properties\Resources.pl-PL.resx" />
     <EmbeddedResource Include="SplashScreen.es-ES.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -824,12 +845,6 @@
     <EmbeddedResource Include="SplashScreen.pl-PL.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StartPageControl.fr-FR.resx">
-      <DependentUpon>StartPageControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StartPageControl.pl-PL.resx">
-      <DependentUpon>StartPageControl.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="StartPageControl.resx">
       <DependentUpon>StartPageControl.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -842,11 +857,6 @@
       <Generator>PublicSettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.fr-FR.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.fr-FR.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>

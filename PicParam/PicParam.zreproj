@@ -1,18 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <project>
-  <configuration createBackupFiles="False" hideEmptyRows="False" hideTranslatedRows="False" useSpellChecker="True" neutralLanguageCode="en-us" languagesToDisplay="en-US;es-ES;fr-FR;it-IT;ja-JP;pl-PL">
+  <configuration createBackupFiles="False" hideEmptyRows="False" hideTranslatedRows="False" useSpellChecker="True" resXIndentChar="	" neutralLanguageCode="en-us" languagesToDisplay="en-US;es-ES;fr-FR;it-IT;ja-JP;pl-PL">
     <globalSetting name="Filter-ResourceEditorGrid">&lt;XtraSerializer version="1.0" application="View"&gt;
   &lt;property name="#LayoutVersion" /&gt;
   &lt;property name="ActiveFilterString" /&gt;
 &lt;/XtraSerializer&gt;</globalSetting>
     <globalSetting name="Sort-ResourceEditorGrid">&lt;XtraSerializer version="1.0" application="View"&gt;
   &lt;property name="#LayoutVersion" /&gt;
+  &lt;property name="SortInfo"&gt;~Xtra#Base64AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFHcmlkLnYxNi4xLCBWZXJzaW9uPTE2LjEuOC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAAADhEZXZFeHByZXNzLlh0cmFHcmlkLkNvbHVtbnMuR3JpZENvbHVtblNvcnRJbmZvQ29sbGVjdGlvbgQAAAAKZ3JvdXBDb3VudAVjbG9uZQ9jbG9uZUdyb3VwQ291bnQTQ29sbGVjdGlvbkJhc2UrbGlzdAADAAMIsgFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5MaXN0YDFbW0RldkV4cHJlc3MuWHRyYUdyaWQuQ29sdW1ucy5HcmlkQ29sdW1uU29ydEluZm8sIERldkV4cHJlc3MuWHRyYUdyaWQudjE2LjEsIFZlcnNpb249MTYuMS44LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YV1dCBxTeXN0ZW0uQ29sbGVjdGlvbnMuQXJyYXlMaXN0AgAAAAAAAAAJAwAAAAAAAAAJBAAAAAQDAAAAsgFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5MaXN0YDFbW0RldkV4cHJlc3MuWHRyYUdyaWQuQ29sdW1ucy5HcmlkQ29sdW1uU29ydEluZm8sIERldkV4cHJlc3MuWHRyYUdyaWQudjE2LjEsIFZlcnNpb249MTYuMS44LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YV1dAwAAAAZfaXRlbXMFX3NpemUIX3ZlcnNpb24EAAAwRGV2RXhwcmVzcy5YdHJhR3JpZC5Db2x1bW5zLkdyaWRDb2x1bW5Tb3J0SW5mb1tdAgAAAAgICQUAAAAAAAAAAAAAAAQEAAAAHFN5c3RlbS5Db2xsZWN0aW9ucy5BcnJheUxpc3QDAAAABl9pdGVtcwVfc2l6ZQhfdmVyc2lvbgUAAAgICQYAAAABAAAABAAAAAcFAAAAAAEAAAAAAAAABC5EZXZFeHByZXNzLlh0cmFHcmlkLkNvbHVtbnMuR3JpZENvbHVtblNvcnRJbmZvAgAAABAGAAAABAAAAAkHAAAADQMMCAAAABlEZXZFeHByZXNzLlh0cmFHcmlkLnYxNi4xBQcAAAAuRGV2RXhwcmVzcy5YdHJhR3JpZC5Db2x1bW5zLkdyaWRDb2x1bW5Tb3J0SW5mbwIAAAAJU29ydE9yZGVyCkNvbHVtbk5hbWUAAQgIAAAAAQAAAAYJAAAAB2NvbE5hbWUL&lt;/property&gt;
 &lt;/XtraSerializer&gt;</globalSetting>
     <globalSetting name="autoTranslateForm.prefixTextBox.Text">####</globalSetting>
     <globalSetting name="autoTranslateForm.prefixCheckBox.Checked">False</globalSetting>
     <globalSetting name="autoTranslateForm.referenceLanguageComboBoxEdit.SelectedIndex">0</globalSetting>
     <globalSetting name="autoTranslateForm.languagesToTranslateCheckListBox">1</globalSetting>
-    <globalSetting name="projectMruItems">&lt;?xml version='1.0' encoding='utf-8'?&gt;&lt;items&gt;&lt;item type="2" checksum="5621905528" /&gt;&lt;item type="2" checksum="4565915358" /&gt;&lt;item type="2" checksum="7145946536" /&gt;&lt;item type="2" checksum="4306421631" /&gt;&lt;item type="2" checksum="7073948344" /&gt;&lt;item type="2" checksum="4929828124" /&gt;&lt;item type="1" checksum="-2050328664" /&gt;&lt;item type="2" checksum="6219811965" /&gt;&lt;item type="2" checksum="4146354503" /&gt;&lt;/items&gt;</globalSetting>
+    <globalSetting name="projectMruItems">&lt;?xml version='1.0' encoding='utf-8'?&gt;&lt;items&gt;&lt;item type="2" checksum="6554942530" /&gt;&lt;item type="2" checksum="10215841052" /&gt;&lt;/items&gt;</globalSetting>
     <globalSetting name="sendFileToTranslator.destinationFilePathTextEdit.Text">K:\GitHub\PLMPackLib\PicParam\PicParam-{LanguageName}.xlsx</globalSetting>
     <globalSetting name="sendFileToTranslator.fileGroupsListBox">..\OptionsLib\OptionsForm###{{{}}}###..\OptionsLib\Properties\Resources###{{{}}}###..\Pic.DAL.LibrairyLoader\FormMergeLib###{{{}}}###..\Pic.DAL\Properties\Resource###{{{}}}###..\Pic.DAL\Properties\Resources###{{{}}}###..\Pic.Factory2D.Control\AboutBox###{{{}}}###..\Pic.Factory2D.Control\FactoryDataCtrl###{{{}}}###..\Pic.Factory2D.Control\FactoryViewer###{{{}}}###..\Pic.Factory2D.Control\FactoryViewerBase###{{{}}}###..\Pic.Factory2D.Control\FormImposition###{{{}}}###..\Pic.Factory2D.Control\FormImpositionSettings###{{{}}}###..\Pic.Factory2D.Control\Properties\Resources###{{{}}}###..\Pic.Factory2D.Control\Resource###{{{}}}###..\Pic.Plugin.GeneratorCtrl1\Properties\Resources###{{{}}}###..\Pic.Plugin.ViewCtrl\PluginViewCtrl###{{{}}}###..\Pic.Plugin.ViewCtrl\Properties\Resource###{{{}}}###..\TreeDim.UserControls\ProgressWindow###{{{}}}###ComponentLoaderControl###{{{}}}###DocumentTreeBranchView###{{{}}}###DocumentTreeView###{{{}}}###FormBrowseFile###{{{}}}###FormCreateBranch###{{{}}}###FormCreateCardboardFormat###{{{}}}###FormCreateCardboardProfile###{{{}}}###FormCreateDocument###{{{}}}###FormEditCardboardFormats###{{{}}}###FormEditDefaultParamValues###{{{}}}###FormEditMajorations###{{{}}}###FormEditMaterials###{{{}}}###FormEditProfiles###{{{}}}###FormExportFile###{{{}}}###FormPluginEditor###{{{}}}###FormRenameNode###{{{}}}###Properties\Resources###{{{}}}###SplashScreen</globalSetting>
     <globalSetting name="sendFileToTranslator.languagesToExportCheckListBox">Espagnol (Espagne) (es-es)</globalSetting>
@@ -70,68 +71,19 @@ Kind regards</globalSetting>
     <globalSetting name="CreateNewFileForm.newLanguageComboBox.SelectedIndex">317</globalSetting>
     <globalSetting name="CreateNewFileForm.copyTextsCheckBox.Checked">True</globalSetting>
     <globalSetting name="CreateNewFileForm.automaticallyTranslateCheckBox.Checked">False</globalSetting>
-    <userSetting name="François@TREEDIM_PC2.filesInitialDir">K:\Codeplex\PLMPackLib\Pic.DAL.LibrairyLoader</userSetting>
+    <globalSetting name="AddNewFileGroupForm.destinationLanguagesListBox">5</globalSetting>
+    <globalSetting name="AddNewFileGroupForm.extensionComboBoxEdit">0</globalSetting>
+    <globalSetting name="AddNewFileGroupForm.baseFolderTextEdit.Text">K:\Codeplex\StackBuilder</globalSetting>
+    <globalSetting name="AddNewFileGroupForm.baseFileNameTextEdit.Text">
+    </globalSetting>
+    <userSetting name="François@TREEDIM_PC2.filesInitialDir">K:\GitHub\PLMPackLib\PicParam</userSetting>
     <userSetting name="François@TREEDIM_PC2.FindText">
     </userSetting>
-    <userSetting name="François@TREEDIM_PC2.RecentFiles">K:\GitHub\PLMPackLib\PicParam\FormCreateBranch.resx;K:\GitHub\PLMPackLib\PicParam\FormCreateBranch.es-ES.resx;K:\GitHub\PLMPackLib\PicParam\FormCreateBranch.fr-FR.resx;K:\GitHub\PLMPackLib\PicParam\FormCreateBranch.it-IT.resx;K:\GitHub\PLMPackLib\PicParam\FormCreateBranch.ja-JP.resx;K:\GitHub\PLMPackLib\PicParam\FormCreateBranch.pl-PL.resx###***###K:\GitHub\PLMPackLib\PicParam\FormExportFile.resx;K:\GitHub\PLMPackLib\PicParam\FormExportFile.es-ES.resx;K:\GitHub\PLMPackLib\PicParam\FormExportFile.fr-FR.resx;K:\GitHub\PLMPackLib\PicParam\FormExportFile.it-IT.resx;K:\GitHub\PLMPackLib\PicParam\FormExportFile.ja-JP.resx;K:\GitHub\PLMPackLib\PicParam\FormExportFile.pl-PL.resx###***###K:\GitHub\PLMPackLib\PicParam\FormEditMajorations.resx;K:\GitHub\PLMPackLib\PicParam\FormEditMajorations.es-ES.resx;K:\GitHub\PLMPackLib\PicParam\FormEditMajorations.fr-FR.resx;K:\GitHub\PLMPackLib\PicParam\FormEditMajorations.it-IT.resx;K:\GitHub\PLMPackLib\PicParam\FormEditMajorations.ja-JP.resx;K:\GitHub\PLMPackLib\PicParam\FormEditMajorations.pl-PL.resx###***###K:\GitHub\PLMPackLib\PicParam\Properties\Resources.resx;K:\GitHub\PLMPackLib\PicParam\Properties\Resources.es-ES.resx;K:\GitHub\PLMPackLib\PicParam\Properties\Resources.fr-FR.resx;K:\GitHub\PLMPackLib\PicParam\Properties\Resources.it-IT.resx;K:\GitHub\PLMPackLib\PicParam\Properties\Resources.ja-JP.resx;K:\GitHub\PLMPackLib\PicParam\Properties\Resources.pl-PL.resx###***###K:\GitHub\PLMPackLib\PicParam\FormEditMaterials.resx;K:\GitHub\PLMPackLib\PicParam\FormEditMaterials.es-ES.resx;K:\GitHub\PLMPackLib\PicParam\FormEditMaterials.fr-FR.resx;K:\GitHub\PLMPackLib\PicParam\FormEditMaterials.it-IT.resx;K:\GitHub\PLMPackLib\PicParam\FormEditMaterials.ja-JP.resx;K:\GitHub\PLMPackLib\PicParam\FormEditMaterials.pl-PL.resx###***###K:\GitHub\PLMPackLib\PicParam\FormCreateCardboardFormat.resx;K:\GitHub\PLMPackLib\PicParam\FormCreateCardboardFormat.es-ES.resx;K:\GitHub\PLMPackLib\PicParam\FormCreateCardboardFormat.fr-FR.resx;K:\GitHub\PLMPackLib\PicParam\FormCreateCardboardFormat.it-IT.resx;K:\GitHub\PLMPackLib\PicParam\FormCreateCardboardFormat.ja-JP.resx;K:\GitHub\PLMPackLib\PicParam\FormCreateCardboardFormat.pl-PL.resx###***######***###K:\GitHub\PLMPackLib\PicParam\FormCreateDocument.resx;K:\GitHub\PLMPackLib\PicParam\FormCreateDocument.es-ES.resx;K:\GitHub\PLMPackLib\PicParam\FormCreateDocument.fr-FR.resx;K:\GitHub\PLMPackLib\PicParam\FormCreateDocument.it-IT.resx;K:\GitHub\PLMPackLib\PicParam\FormCreateDocument.ja-JP.resx;K:\GitHub\PLMPackLib\PicParam\FormCreateDocument.pl-PL.resx###***###K:\GitHub\PLMPackLib\PicParam\FormRenameNode.resx;K:\GitHub\PLMPackLib\PicParam\FormRenameNode.es-ES.resx;K:\GitHub\PLMPackLib\PicParam\FormRenameNode.fr-FR.resx;K:\GitHub\PLMPackLib\PicParam\FormRenameNode.it-IT.resx;K:\GitHub\PLMPackLib\PicParam\FormRenameNode.ja-JP.resx;K:\GitHub\PLMPackLib\PicParam\FormRenameNode.pl-PL.resx</userSetting>
+    <userSetting name="François@TREEDIM_PC2.RecentFiles">K:\GitHub\PLMPackLib\TreeDim.UserControls\ProgressWindow.resx;K:\GitHub\PLMPackLib\TreeDim.UserControls\ProgressWindow.es-ES.resx;K:\GitHub\PLMPackLib\TreeDim.UserControls\ProgressWindow.fr-FR.resx;K:\GitHub\PLMPackLib\TreeDim.UserControls\ProgressWindow.it-IT.resx;K:\GitHub\PLMPackLib\TreeDim.UserControls\ProgressWindow.ja-JP.resx;K:\GitHub\PLMPackLib\TreeDim.UserControls\ProgressWindow.pl-PL.resx###***###K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl.Test\Properties\Resources.resx;K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl.Test\Properties\Resources.es-ES.resx;K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl.Test\Properties\Resources.fr-FR.resx;K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl.Test\Properties\Resources.it-IT.resx;K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl.Test\Properties\Resources.ja-JP.resx;K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl.Test\Properties\Resources.pl-PL.resx</userSetting>
     <description>
     </description>
   </configuration>
   <fileGroups>
-    <fileGroup name="" projectFolderUniqueID="18702f82-8fdd-443d-9954-23d0f032f2dc" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="01989186-fc63-48d9-bb66-0773b4f09756">
-      <file filePath="..\OptionsLib\OptionsForm.resx" absoluteFilePath="K:\GitHub\PLMPackLib\OptionsLib\OptionsForm.resx" uniqueID="5ec3d662-a001-4afa-ba98-11d948f732dc" />
-      <file filePath="..\OptionsLib\OptionsForm.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\OptionsLib\OptionsForm.es-ES.resx" uniqueID="8872b439-4902-4055-bb08-f43c8924f2c6" />
-      <file filePath="..\OptionsLib\OptionsForm.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\OptionsLib\OptionsForm.fr-FR.resx" uniqueID="b67496fb-6d93-4edc-b94c-9f91c07f05c9" />
-      <file filePath="..\OptionsLib\OptionsForm.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\OptionsLib\OptionsForm.it-IT.resx" uniqueID="d0aa6c0b-3641-40f9-83bf-b8995616b964" />
-      <file filePath="..\OptionsLib\OptionsForm.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\OptionsLib\OptionsForm.ja-JP.resx" uniqueID="fda57360-4905-432e-a46c-f0cec7c25895" />
-      <file filePath="..\OptionsLib\OptionsForm.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\OptionsLib\OptionsForm.pl-PL.resx" uniqueID="131ed479-f5e2-471d-aca1-315fcd1d5bdd" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="18702f82-8fdd-443d-9954-23d0f032f2dc" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="ec145faa-7e08-4b6e-89b4-1419d73c4065">
-      <file filePath="..\OptionsLib\Properties\Resources.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\OptionsLib\Properties\Resources.fr-FR.resx" uniqueID="b3c9924d-f7b6-4ec7-8849-c5db07170b6f" />
-      <file filePath="..\OptionsLib\Properties\Resources.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\OptionsLib\Properties\Resources.ja-JP.resx" uniqueID="ee8cb39f-c77c-4a50-a1cb-990472789de4" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="11004d57-e886-408b-8842-0a4741c20618">
-      <file filePath="..\Pic.DAL.LibrairyLoader\FormMergeLib.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL.LibrairyLoader\FormMergeLib.resx" uniqueID="13f7097e-a022-48dc-8899-a55178a53c81" />
-      <file filePath="..\Pic.DAL.LibrairyLoader\FormMergeLib.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL.LibrairyLoader\FormMergeLib.es-ES.resx" uniqueID="6ea5d8ad-d00d-46e9-b4b2-779775e2c6c5" />
-      <file filePath="..\Pic.DAL.LibrairyLoader\FormMergeLib.fr.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL.LibrairyLoader\FormMergeLib.fr.resx" uniqueID="9d175360-79d2-4b24-b892-18f1436ba1c1" />
-      <file filePath="..\Pic.DAL.LibrairyLoader\FormMergeLib.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL.LibrairyLoader\FormMergeLib.fr-FR.resx" uniqueID="2aeb2b5e-1722-4b7a-9c06-1b11f10ad13a" />
-      <file filePath="..\Pic.DAL.LibrairyLoader\FormMergeLib.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL.LibrairyLoader\FormMergeLib.it-IT.resx" uniqueID="19ec8894-138a-4364-a125-5ebfcc6d8685" />
-      <file filePath="..\Pic.DAL.LibrairyLoader\FormMergeLib.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL.LibrairyLoader\FormMergeLib.ja-JP.resx" uniqueID="91d9a5e6-891f-4419-bb91-22486102930e" />
-      <file filePath="..\Pic.DAL.LibrairyLoader\FormMergeLib.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL.LibrairyLoader\FormMergeLib.pl-PL.resx" uniqueID="e46ae5f8-1e4a-49e8-af91-e300e7ba070a" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="b9442bfa-0619-4581-84b5-ef11a783eb8c" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="55d496f3-9cdc-40c0-b147-a6ac03765cfb">
-      <file filePath="..\Pic.DAL\Properties\Resource.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL\Properties\Resource.resx" uniqueID="5d976c58-ed96-4663-ae61-119330a7d7bb" />
-      <file filePath="..\Pic.DAL\Properties\Resource.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL\Properties\Resource.es-ES.resx" uniqueID="1ea75b5a-2608-4556-9068-e8334a979aa1" />
-      <file filePath="..\Pic.DAL\Properties\Resource.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL\Properties\Resource.fr-FR.resx" uniqueID="abb02590-b28e-45a6-a6f8-10fe93f276c9" />
-      <file filePath="..\Pic.DAL\Properties\Resource.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL\Properties\Resource.it-IT.resx" uniqueID="4ddb9314-8971-46d4-b603-6fa321c4671d" />
-      <file filePath="..\Pic.DAL\Properties\Resource.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL\Properties\Resource.ja-JP.resx" uniqueID="e699a0e9-a228-4909-bfd7-ecebb1704475" />
-      <file filePath="..\Pic.DAL\Properties\Resource.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL\Properties\Resource.pl-PL.resx" uniqueID="46f4b28c-71ef-4e48-8e57-2ada382ccc61" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="b9442bfa-0619-4581-84b5-ef11a783eb8c" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="a7829939-b577-4dfd-a81a-5738aab7fcc3">
-      <file filePath="..\Pic.DAL\Properties\Resources.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL\Properties\Resources.fr-FR.resx" uniqueID="6ba6fab4-f78e-48a0-97da-5263e67e3406" />
-      <file filePath="..\Pic.DAL\Properties\Resources.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL\Properties\Resources.it-IT.resx" uniqueID="1d86499d-d3ef-4b59-a282-576377ad5591" />
-      <file filePath="..\Pic.DAL\Properties\Resources.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL\Properties\Resources.ja-JP.resx" uniqueID="bac9a211-00e2-4720-a017-842a3fb2a122" />
-      <remarks>
-      </remarks>
-    </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="85ff24d4-acc7-40b2-a2fd-d5fef2491052" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="55dcb788-bc5a-44a6-91dc-902f1a2b107a">
-      <file filePath="..\Pic.Factory2D.Control.Test\Properties\Resources.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control.Test\Properties\Resources.resx" uniqueID="2865a9c9-56ff-42cd-bb8b-6ee1bd2de50b" />
-      <file filePath="..\Pic.Factory2D.Control.Test\Properties\Resources.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control.Test\Properties\Resources.es-ES.resx" uniqueID="4afa344a-a91a-48ee-a5a2-d20e27d45277" />
-      <file filePath="..\Pic.Factory2D.Control.Test\Properties\Resources.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control.Test\Properties\Resources.fr-FR.resx" uniqueID="034306b4-49e8-44f0-a892-c0d0cc598189" />
-      <file filePath="..\Pic.Factory2D.Control.Test\Properties\Resources.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control.Test\Properties\Resources.it-IT.resx" uniqueID="c3601560-ce02-4db7-abca-1a5535f88ec4" />
-      <file filePath="..\Pic.Factory2D.Control.Test\Properties\Resources.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control.Test\Properties\Resources.ja-JP.resx" uniqueID="3f2d7da4-891b-471b-9194-12c544c22746" />
-      <file filePath="..\Pic.Factory2D.Control.Test\Properties\Resources.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control.Test\Properties\Resources.pl-PL.resx" uniqueID="82f8a873-c718-4f0c-8b95-8c25f35cc530" />
-      <remarks>
-      </remarks>
-    </fileGroup>
     <fileGroup name="" projectFolderUniqueID="07c3cb2d-eaad-4eab-8efe-3f787a0cdeb0" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="5732bb55-e710-4d33-a55a-7be6102f8e27">
       <file filePath="..\Pic.Factory2D.Control\AboutBox.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control\AboutBox.resx" uniqueID="1a1b5118-6a68-4182-b6de-aef0203eab61" />
       <file filePath="..\Pic.Factory2D.Control\AboutBox.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control\AboutBox.es-ES.resx" uniqueID="57585302-3947-40d0-93d4-80af8311eed6" />
@@ -187,23 +139,46 @@ Kind regards</globalSetting>
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="08cd78a1-5d25-4cd4-81c8-faf284cd596a" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="c56dd846-3ebb-46df-abfb-d970f9fe0ecd">
-      <file filePath="..\Pic.Factory2D.Control\Properties\Resources.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control\Properties\Resources.resx" uniqueID="76476e1e-c2ca-43bf-9de9-2488b8ca49b2" />
-      <file filePath="..\Pic.Factory2D.Control\Properties\Resources.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control\Properties\Resources.es-ES.resx" uniqueID="341c73d9-429a-4d11-a7a7-3c8f71ceca69" />
-      <file filePath="..\Pic.Factory2D.Control\Properties\Resources.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control\Properties\Resources.fr-FR.resx" uniqueID="e1342533-af05-4e21-a9ed-44b0f11d8116" />
-      <file filePath="..\Pic.Factory2D.Control\Properties\Resources.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control\Properties\Resources.it-IT.resx" uniqueID="72b9a29f-d4d8-4599-a384-2aecbe2e7cf9" />
-      <file filePath="..\Pic.Factory2D.Control\Properties\Resources.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control\Properties\Resources.ja-JP.resx" uniqueID="9823c5ed-1cdb-4748-8792-ac6ece14b6be" />
-      <file filePath="..\Pic.Factory2D.Control\Properties\Resources.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control\Properties\Resources.pl-PL.resx" uniqueID="d9e67d3d-bd07-4508-b2d1-6ea040ebd96d" />
+    <fileGroup name="" projectFolderUniqueID="18702f82-8fdd-443d-9954-23d0f032f2dc" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="01989186-fc63-48d9-bb66-0773b4f09756">
+      <file filePath="..\OptionsLib\OptionsForm.resx" absoluteFilePath="K:\GitHub\PLMPackLib\OptionsLib\OptionsForm.resx" uniqueID="5ec3d662-a001-4afa-ba98-11d948f732dc" />
+      <file filePath="..\OptionsLib\OptionsForm.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\OptionsLib\OptionsForm.es-ES.resx" uniqueID="8872b439-4902-4055-bb08-f43c8924f2c6" />
+      <file filePath="..\OptionsLib\OptionsForm.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\OptionsLib\OptionsForm.fr-FR.resx" uniqueID="b67496fb-6d93-4edc-b94c-9f91c07f05c9" />
+      <file filePath="..\OptionsLib\OptionsForm.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\OptionsLib\OptionsForm.it-IT.resx" uniqueID="d0aa6c0b-3641-40f9-83bf-b8995616b964" />
+      <file filePath="..\OptionsLib\OptionsForm.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\OptionsLib\OptionsForm.ja-JP.resx" uniqueID="fda57360-4905-432e-a46c-f0cec7c25895" />
+      <file filePath="..\OptionsLib\OptionsForm.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\OptionsLib\OptionsForm.pl-PL.resx" uniqueID="131ed479-f5e2-471d-aca1-315fcd1d5bdd" />
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="07c3cb2d-eaad-4eab-8efe-3f787a0cdeb0" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="737ddddb-8440-4270-807c-c39de271ad19">
-      <file filePath="..\Pic.Factory2D.Control\Resource.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control\Resource.resx" uniqueID="2a995e7b-87e0-485a-a18b-af576e0282d7" />
-      <file filePath="..\Pic.Factory2D.Control\Resource.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control\Resource.es-ES.resx" uniqueID="963c9391-2672-4044-9d06-323113061afc" />
-      <file filePath="..\Pic.Factory2D.Control\Resource.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control\Resource.fr-FR.resx" uniqueID="b866af51-cf0b-46e3-bd34-2a707c2bf352" />
-      <file filePath="..\Pic.Factory2D.Control\Resource.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control\Resource.it-IT.resx" uniqueID="8ce2b184-c92e-44c6-b101-fd8698ebdb08" />
-      <file filePath="..\Pic.Factory2D.Control\Resource.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control\Resource.ja-JP.resx" uniqueID="7d911260-9e57-4b6e-b16a-9d414e94de75" />
-      <file filePath="..\Pic.Factory2D.Control\Resource.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control\Resource.pl-PL.resx" uniqueID="8dc0a406-a5d2-4b47-ba52-4e6b5e59a3c9" />
+    <fileGroup name="" projectFolderUniqueID="18702f82-8fdd-443d-9954-23d0f032f2dc" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="ec145faa-7e08-4b6e-89b4-1419d73c4065">
+      <file filePath="..\OptionsLib\Properties\Resources.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\OptionsLib\Properties\Resources.fr-FR.resx" uniqueID="b3c9924d-f7b6-4ec7-8849-c5db07170b6f" />
+      <file filePath="..\OptionsLib\Properties\Resources.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\OptionsLib\Properties\Resources.ja-JP.resx" uniqueID="ee8cb39f-c77c-4a50-a1cb-990472789de4" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="b9442bfa-0619-4581-84b5-ef11a783eb8c" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="a7829939-b577-4dfd-a81a-5738aab7fcc3">
+      <file filePath="..\Pic.DAL\Properties\Resources.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL\Properties\Resources.fr-FR.resx" uniqueID="6ba6fab4-f78e-48a0-97da-5263e67e3406" />
+      <file filePath="..\Pic.DAL\Properties\Resources.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL\Properties\Resources.it-IT.resx" uniqueID="1d86499d-d3ef-4b59-a282-576377ad5591" />
+      <file filePath="..\Pic.DAL\Properties\Resources.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL\Properties\Resources.ja-JP.resx" uniqueID="bac9a211-00e2-4720-a017-842a3fb2a122" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="b9442bfa-0619-4581-84b5-ef11a783eb8c" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="55d496f3-9cdc-40c0-b147-a6ac03765cfb">
+      <file filePath="..\Pic.DAL\Properties\Resource.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL\Properties\Resource.resx" uniqueID="5d976c58-ed96-4663-ae61-119330a7d7bb" />
+      <file filePath="..\Pic.DAL\Properties\Resource.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL\Properties\Resource.es-ES.resx" uniqueID="1ea75b5a-2608-4556-9068-e8334a979aa1" />
+      <file filePath="..\Pic.DAL\Properties\Resource.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL\Properties\Resource.fr-FR.resx" uniqueID="abb02590-b28e-45a6-a6f8-10fe93f276c9" />
+      <file filePath="..\Pic.DAL\Properties\Resource.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL\Properties\Resource.it-IT.resx" uniqueID="4ddb9314-8971-46d4-b603-6fa321c4671d" />
+      <file filePath="..\Pic.DAL\Properties\Resource.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL\Properties\Resource.ja-JP.resx" uniqueID="e699a0e9-a228-4909-bfd7-ecebb1704475" />
+      <file filePath="..\Pic.DAL\Properties\Resource.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.DAL\Properties\Resource.pl-PL.resx" uniqueID="46f4b28c-71ef-4e48-8e57-2ada382ccc61" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="85ff24d4-acc7-40b2-a2fd-d5fef2491052" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="55dcb788-bc5a-44a6-91dc-902f1a2b107a">
+      <file filePath="..\Pic.Factory2D.Control.Test\Properties\Resources.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control.Test\Properties\Resources.resx" uniqueID="2865a9c9-56ff-42cd-bb8b-6ee1bd2de50b" />
+      <file filePath="..\Pic.Factory2D.Control.Test\Properties\Resources.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control.Test\Properties\Resources.es-ES.resx" uniqueID="4afa344a-a91a-48ee-a5a2-d20e27d45277" />
+      <file filePath="..\Pic.Factory2D.Control.Test\Properties\Resources.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control.Test\Properties\Resources.fr-FR.resx" uniqueID="034306b4-49e8-44f0-a892-c0d0cc598189" />
+      <file filePath="..\Pic.Factory2D.Control.Test\Properties\Resources.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control.Test\Properties\Resources.it-IT.resx" uniqueID="c3601560-ce02-4db7-abca-1a5535f88ec4" />
+      <file filePath="..\Pic.Factory2D.Control.Test\Properties\Resources.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control.Test\Properties\Resources.ja-JP.resx" uniqueID="3f2d7da4-891b-471b-9194-12c544c22746" />
+      <file filePath="..\Pic.Factory2D.Control.Test\Properties\Resources.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control.Test\Properties\Resources.pl-PL.resx" uniqueID="82f8a873-c718-4f0c-8b95-8c25f35cc530" />
       <remarks>
       </remarks>
     </fileGroup>
@@ -247,16 +222,6 @@ Kind regards</globalSetting>
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="05e64324-3b21-42a3-bae9-345311fbfc61" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="69e857af-6c31-48c6-89b0-5f23bdb9278e">
-      <file filePath="..\Pic.Plugin.ViewCtrl\PluginViewCtrl.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl\PluginViewCtrl.resx" uniqueID="7bf38092-02d1-4cfd-8721-1394acfb6df2" />
-      <file filePath="..\Pic.Plugin.ViewCtrl\PluginViewCtrl.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl\PluginViewCtrl.es-ES.resx" uniqueID="c6d75d01-6a0a-43bd-a937-069d05cdcc19" />
-      <file filePath="..\Pic.Plugin.ViewCtrl\PluginViewCtrl.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl\PluginViewCtrl.fr-FR.resx" uniqueID="aef3cf6a-c627-4ed0-96af-8717c3a29de0" />
-      <file filePath="..\Pic.Plugin.ViewCtrl\PluginViewCtrl.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl\PluginViewCtrl.it-IT.resx" uniqueID="734a4ace-9d40-4e63-876f-e0a39218028d" />
-      <file filePath="..\Pic.Plugin.ViewCtrl\PluginViewCtrl.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl\PluginViewCtrl.ja-JP.resx" uniqueID="02187815-7c24-47aa-99c8-023a2d227bec" />
-      <file filePath="..\Pic.Plugin.ViewCtrl\PluginViewCtrl.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl\PluginViewCtrl.pl-PL.resx" uniqueID="458d3652-a096-474e-b554-8221531c7fed" />
-      <remarks>
-      </remarks>
-    </fileGroup>
     <fileGroup name="" projectFolderUniqueID="05e64324-3b21-42a3-bae9-345311fbfc61" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="13169026-f86b-486e-9f6f-7889978f322f">
       <file filePath="..\Pic.Plugin.ViewCtrl\Properties\Resource.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl\Properties\Resource.resx" uniqueID="2917819e-b307-4373-ac33-7371da21489f" />
       <file filePath="..\Pic.Plugin.ViewCtrl\Properties\Resource.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl\Properties\Resource.es-ES.resx" uniqueID="0fec1932-dc56-4a0b-8841-430b6eff0728" />
@@ -264,6 +229,16 @@ Kind regards</globalSetting>
       <file filePath="..\Pic.Plugin.ViewCtrl\Properties\Resource.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl\Properties\Resource.it-IT.resx" uniqueID="2452414d-45b0-4498-ba2c-e75c3ac8693d" />
       <file filePath="..\Pic.Plugin.ViewCtrl\Properties\Resource.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl\Properties\Resource.ja-JP.resx" uniqueID="0ddf6e92-f4c4-4242-a67b-385ada4d8163" />
       <file filePath="..\Pic.Plugin.ViewCtrl\Properties\Resource.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl\Properties\Resource.pl-PL.resx" uniqueID="45648959-1398-46ae-956d-a44125f942bb" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="05e64324-3b21-42a3-bae9-345311fbfc61" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="69e857af-6c31-48c6-89b0-5f23bdb9278e">
+      <file filePath="..\Pic.Plugin.ViewCtrl\PluginViewCtrl.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl\PluginViewCtrl.resx" uniqueID="7bf38092-02d1-4cfd-8721-1394acfb6df2" />
+      <file filePath="..\Pic.Plugin.ViewCtrl\PluginViewCtrl.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl\PluginViewCtrl.es-ES.resx" uniqueID="c6d75d01-6a0a-43bd-a937-069d05cdcc19" />
+      <file filePath="..\Pic.Plugin.ViewCtrl\PluginViewCtrl.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl\PluginViewCtrl.fr-FR.resx" uniqueID="aef3cf6a-c627-4ed0-96af-8717c3a29de0" />
+      <file filePath="..\Pic.Plugin.ViewCtrl\PluginViewCtrl.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl\PluginViewCtrl.it-IT.resx" uniqueID="734a4ace-9d40-4e63-876f-e0a39218028d" />
+      <file filePath="..\Pic.Plugin.ViewCtrl\PluginViewCtrl.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl\PluginViewCtrl.ja-JP.resx" uniqueID="02187815-7c24-47aa-99c8-023a2d227bec" />
+      <file filePath="..\Pic.Plugin.ViewCtrl\PluginViewCtrl.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Plugin.ViewCtrl\PluginViewCtrl.pl-PL.resx" uniqueID="458d3652-a096-474e-b554-8221531c7fed" />
       <remarks>
       </remarks>
     </fileGroup>
@@ -277,183 +252,306 @@ Kind regards</globalSetting>
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="a8d347c8-182b-4454-9f35-96729d9b8a36">
-      <file filePath="ComponentLoaderControl.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\ComponentLoaderControl.resx" uniqueID="5b44ada4-eb80-40ba-b9e5-2f6f0a67b10e" />
-      <file filePath="ComponentLoaderControl.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\ComponentLoaderControl.es-ES.resx" uniqueID="675d72fb-8fd3-4575-b0b6-28e7bf0f6cf0" />
-      <file filePath="ComponentLoaderControl.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\ComponentLoaderControl.fr-FR.resx" uniqueID="bc5d0535-1f9f-45a1-8cff-a1fcd5b913cd" />
-      <file filePath="ComponentLoaderControl.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\ComponentLoaderControl.it-IT.resx" uniqueID="49345883-ec02-4e34-acf3-e549efc8670d" />
-      <file filePath="ComponentLoaderControl.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\ComponentLoaderControl.ja-JP.resx" uniqueID="1e6e49a4-1197-45b9-8f0b-7f64994848ac" />
-      <file filePath="ComponentLoaderControl.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\ComponentLoaderControl.pl-PL.resx" uniqueID="6ee90af0-ad5e-40e8-af74-d1574fc05d06" />
+    <fileGroup name="" projectFolderUniqueID="07c3cb2d-eaad-4eab-8efe-3f787a0cdeb0" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="737ddddb-8440-4270-807c-c39de271ad19">
+      <file filePath="..\Pic.Factory2D.Control\Resource.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control\Resource.resx" uniqueID="2a995e7b-87e0-485a-a18b-af576e0282d7" />
+      <file filePath="..\Pic.Factory2D.Control\Resource.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control\Resource.es-ES.resx" uniqueID="963c9391-2672-4044-9d06-323113061afc" />
+      <file filePath="..\Pic.Factory2D.Control\Resource.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control\Resource.fr-FR.resx" uniqueID="b866af51-cf0b-46e3-bd34-2a707c2bf352" />
+      <file filePath="..\Pic.Factory2D.Control\Resource.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control\Resource.it-IT.resx" uniqueID="8ce2b184-c92e-44c6-b101-fd8698ebdb08" />
+      <file filePath="..\Pic.Factory2D.Control\Resource.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control\Resource.ja-JP.resx" uniqueID="7d911260-9e57-4b6e-b16a-9d414e94de75" />
+      <file filePath="..\Pic.Factory2D.Control\Resource.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\Pic.Factory2D.Control\Resource.pl-PL.resx" uniqueID="8dc0a406-a5d2-4b47-ba52-4e6b5e59a3c9" />
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="898ff835-f5b8-4908-93fc-c4bf41c288aa">
-      <file filePath="DocumentTreeBranchView.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\DocumentTreeBranchView.resx" uniqueID="cbe8b577-5557-4903-acb8-4c146684a3de" />
-      <file filePath="DocumentTreeBranchView.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\DocumentTreeBranchView.es-ES.resx" uniqueID="24390659-be24-425a-bfc5-8cc593cc01cc" />
-      <file filePath="DocumentTreeBranchView.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\DocumentTreeBranchView.fr-FR.resx" uniqueID="6b68689d-22c2-4800-b4df-7fab5a27c2d0" />
-      <file filePath="DocumentTreeBranchView.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\DocumentTreeBranchView.it-IT.resx" uniqueID="6c4494ef-5785-4334-9b4e-01dc083de747" />
-      <file filePath="DocumentTreeBranchView.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\DocumentTreeBranchView.ja-JP.resx" uniqueID="8fc5ae86-da65-4dc1-b8ca-eae5e0a7abdd" />
-      <file filePath="DocumentTreeBranchView.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\DocumentTreeBranchView.pl-PL.resx" uniqueID="b100a320-1b52-45ce-8fcd-8fbf5c13a98a" />
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="0d8e0baf-f848-4817-ad91-1419eb8b1ab8">
+      <file filePath="Properties\Resources.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\Properties\Resources.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="Properties\Resources.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\Properties\Resources.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="Properties\Resources.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\Properties\Resources.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="Properties\Resources.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\Properties\Resources.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="Properties\Resources.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\Properties\Resources.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="Properties\Resources.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\Properties\Resources.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="82d48f11-4be4-4548-b21b-0b7fed63361e">
-      <file filePath="DocumentTreeView.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\DocumentTreeView.resx" uniqueID="192c9d79-f7a7-405f-913b-f02d1fb0f18a" />
-      <file filePath="DocumentTreeView.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\DocumentTreeView.es-ES.resx" uniqueID="b24e7b4f-f3ce-4649-a619-3931df71b025" />
-      <file filePath="DocumentTreeView.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\DocumentTreeView.fr-FR.resx" uniqueID="4c82a44c-e032-4ec4-ab17-dc02384bebdb" />
-      <file filePath="DocumentTreeView.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\DocumentTreeView.it-IT.resx" uniqueID="549aaf6c-8f09-4835-abd2-667e97086bb6" />
-      <file filePath="DocumentTreeView.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\DocumentTreeView.ja-JP.resx" uniqueID="f60ee0b7-3815-47f6-bfa6-815d6a087eca" />
-      <file filePath="DocumentTreeView.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\DocumentTreeView.pl-PL.resx" uniqueID="6e3a486b-0ca9-4a7a-bfe0-87ab8ec5b656" />
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="ComponentLoaderControl.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\ComponentLoaderControl.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="ComponentLoaderControl.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\ComponentLoaderControl.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="ComponentLoaderControl.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\ComponentLoaderControl.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="ComponentLoaderControl.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\ComponentLoaderControl.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="ComponentLoaderControl.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\ComponentLoaderControl.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="ComponentLoaderControl.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\ComponentLoaderControl.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="f53aaceb-a19c-43e6-8374-ff1d0264bb26">
-      <file filePath="FormBrowseFile.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormBrowseFile.resx" uniqueID="b6d1e683-5ff8-42e4-9ffe-f4a318ace29a" />
-      <file filePath="FormBrowseFile.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormBrowseFile.es-ES.resx" uniqueID="1e0dd6c7-d7cb-4662-b743-d51cfb281f09" />
-      <file filePath="FormBrowseFile.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormBrowseFile.fr-FR.resx" uniqueID="f4a38a77-ab0d-4db9-a487-7c2da1ab979a" />
-      <file filePath="FormBrowseFile.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormBrowseFile.it-IT.resx" uniqueID="1b18d7eb-b80f-4ff5-8e42-d58f7f90fd30" />
-      <file filePath="FormBrowseFile.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormBrowseFile.ja-JP.resx" uniqueID="f645ff67-49cd-4354-ac1a-b5a8768f2844" />
-      <file filePath="FormBrowseFile.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormBrowseFile.pl-PL.resx" uniqueID="dd43d15b-7e79-4779-a367-776ccef6123b" />
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="DocumentTreeBranchView.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\DocumentTreeBranchView.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="912ea034-ad50-45c0-b64d-a6dcf488d4d3">
-      <file filePath="FormCreateBranch.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateBranch.resx" uniqueID="5cce23a5-f2cf-4d95-8a3e-7856efb8626d" />
-      <file filePath="FormCreateBranch.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateBranch.es-ES.resx" uniqueID="31fcb5ea-e9eb-4939-8d9d-6cc997f8b15f" />
-      <file filePath="FormCreateBranch.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateBranch.fr-FR.resx" uniqueID="8a9fb7da-e870-4797-b189-87a7732f5581" />
-      <file filePath="FormCreateBranch.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateBranch.it-IT.resx" uniqueID="06c31fae-0cfa-4962-82d1-1a4b6c353e0a" />
-      <file filePath="FormCreateBranch.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateBranch.ja-JP.resx" uniqueID="c958613f-6721-4ce0-930e-e9193f8c14b1" />
-      <file filePath="FormCreateBranch.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateBranch.pl-PL.resx" uniqueID="8a13e8c1-1b33-4b1f-885d-0952a1b755a3" />
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="DownloadPageControl.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\DownloadPageControl.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="DownloadPageControl.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\DownloadPageControl.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="DownloadPageControl.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\DownloadPageControl.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="DownloadPageControl.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\DownloadPageControl.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="DownloadPageControl.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\DownloadPageControl.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="DownloadPageControl.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\DownloadPageControl.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="b8b0deb6-40b2-41b2-84df-b322d6e10aa4">
-      <file filePath="FormCreateCardboardFormat.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateCardboardFormat.resx" uniqueID="c5460e3d-d759-46cc-ad25-9f46603eaac8" />
-      <file filePath="FormCreateCardboardFormat.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateCardboardFormat.es-ES.resx" uniqueID="a9ffe315-a4c6-4013-add4-4177ddf7a8a9" />
-      <file filePath="FormCreateCardboardFormat.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateCardboardFormat.fr-FR.resx" uniqueID="73a4e127-5a12-46cf-b99b-d75b740c9beb" />
-      <file filePath="FormCreateCardboardFormat.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateCardboardFormat.it-IT.resx" uniqueID="1b2756f9-2dab-42eb-a281-ab5a71b813f2" />
-      <file filePath="FormCreateCardboardFormat.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateCardboardFormat.ja-JP.resx" uniqueID="7f28b496-800a-4d21-aee4-b6c9a0a296a0" />
-      <file filePath="FormCreateCardboardFormat.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateCardboardFormat.pl-PL.resx" uniqueID="c66f50bc-5879-470a-91d0-8ce4452fa1a0" />
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="FormAboutBox.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormAboutBox.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormAboutBox.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormAboutBox.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormAboutBox.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormAboutBox.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormAboutBox.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormAboutBox.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormAboutBox.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormAboutBox.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="fea0d946-3b85-409e-990f-e651bb35b286">
-      <file filePath="FormCreateCardboardProfile.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateCardboardProfile.resx" uniqueID="481a7af3-4858-450b-95be-23679099a7fa" />
-      <file filePath="FormCreateCardboardProfile.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateCardboardProfile.es-ES.resx" uniqueID="ea1cb44b-3440-4c2d-9dff-36d75a8f8a7a" />
-      <file filePath="FormCreateCardboardProfile.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateCardboardProfile.fr-FR.resx" uniqueID="45d63c1e-01fe-4005-8df2-6b1b6acddf0e" />
-      <file filePath="FormCreateCardboardProfile.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateCardboardProfile.it-IT.resx" uniqueID="97da4bbf-5eab-4c91-99f8-434a673b8ede" />
-      <file filePath="FormCreateCardboardProfile.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateCardboardProfile.ja-JP.resx" uniqueID="865de679-63e6-42b7-a88e-95dcba0b9f24" />
-      <file filePath="FormCreateCardboardProfile.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateCardboardProfile.pl-PL.resx" uniqueID="7fc27ead-fc31-4264-bb1c-ef079618fa66" />
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="FormBrowseFile.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormBrowseFile.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormBrowseFile.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormBrowseFile.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormBrowseFile.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormBrowseFile.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormBrowseFile.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormBrowseFile.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormBrowseFile.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormBrowseFile.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormBrowseFile.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormBrowseFile.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="38c4a7cc-287a-4ed9-97f9-a387b0276b9f">
-      <file filePath="FormCreateDocument.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateDocument.resx" uniqueID="16655855-5118-4758-be38-467575d5d151" />
-      <file filePath="FormCreateDocument.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateDocument.es-ES.resx" uniqueID="a70fbfaf-ed76-4b88-a353-1a488d98578e" />
-      <file filePath="FormCreateDocument.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateDocument.fr-FR.resx" uniqueID="e3db9fc1-4ff2-4410-845a-37b73e635eb8" />
-      <file filePath="FormCreateDocument.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateDocument.it-IT.resx" uniqueID="54290278-4c58-4fb7-9296-843c96f4cfdc" />
-      <file filePath="FormCreateDocument.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateDocument.ja-JP.resx" uniqueID="a9c19df0-9819-4e8c-8ce7-24378f791659" />
-      <file filePath="FormCreateDocument.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateDocument.pl-PL.resx" uniqueID="76a2133c-a933-4bcc-a91d-a8dd2c8c06a8" />
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="FormCreateBranch.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateBranch.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormCreateBranch.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateBranch.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormCreateBranch.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateBranch.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormCreateBranch.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateBranch.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormCreateBranch.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateBranch.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormCreateBranch.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateBranch.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="424c1b78-1ebc-46b2-a376-89348cd67b08">
-      <file filePath="FormEditCardboardFormats.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditCardboardFormats.resx" uniqueID="11fc57ee-5234-490a-9f66-2167075d0bb4" />
-      <file filePath="FormEditCardboardFormats.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditCardboardFormats.es-ES.resx" uniqueID="f0db6343-4d9d-40d6-8e3d-939a4fef29ca" />
-      <file filePath="FormEditCardboardFormats.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditCardboardFormats.fr-FR.resx" uniqueID="3fc7e822-251e-4607-a29a-6f0f7aafea96" />
-      <file filePath="FormEditCardboardFormats.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditCardboardFormats.it-IT.resx" uniqueID="8546a44d-da48-4240-891c-c5f21a95bfbd" />
-      <file filePath="FormEditCardboardFormats.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditCardboardFormats.ja-JP.resx" uniqueID="e5cc4a75-4c16-4d5c-be78-4aeb0497960d" />
-      <file filePath="FormEditCardboardFormats.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditCardboardFormats.pl-PL.resx" uniqueID="420ae76a-2e7b-454a-9047-3cab60365124" />
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="FormCreateDocument.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateDocument.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormCreateDocument.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateDocument.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormCreateDocument.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateDocument.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormCreateDocument.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateDocument.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormCreateDocument.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateDocument.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormCreateDocument.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormCreateDocument.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="527efc54-f87a-4ee1-a8a3-578fa69d4ec4">
-      <file filePath="FormEditDefaultParamValues.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditDefaultParamValues.resx" uniqueID="e9eea22a-db6f-4691-9e69-b66f6f759c45" />
-      <file filePath="FormEditDefaultParamValues.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditDefaultParamValues.es-ES.resx" uniqueID="fbeaf0d5-496e-41a6-b068-c5d4fddc2384" />
-      <file filePath="FormEditDefaultParamValues.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditDefaultParamValues.fr-FR.resx" uniqueID="94ce04b5-85c3-4047-b7ed-ecb384efe15e" />
-      <file filePath="FormEditDefaultParamValues.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditDefaultParamValues.it-IT.resx" uniqueID="50c9f0e7-6c82-4d2c-b48a-e8c59bbbd02a" />
-      <file filePath="FormEditDefaultParamValues.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditDefaultParamValues.ja-JP.resx" uniqueID="ba02ea04-062c-4e48-b14a-5718783d9c3d" />
-      <file filePath="FormEditDefaultParamValues.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditDefaultParamValues.pl-PL.resx" uniqueID="71d46c52-bc77-4666-b2fe-ee59ae95bbb8" />
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="FormDefineComponentGUID.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormDefineComponentGUID.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormDefineComponentGUID.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormDefineComponentGUID.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormDefineComponentGUID.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormDefineComponentGUID.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormDefineComponentGUID.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormDefineComponentGUID.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormDefineComponentGUID.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormDefineComponentGUID.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormDefineComponentGUID.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormDefineComponentGUID.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="07ad4186-ccd4-41a4-85b6-649c8524a9ca">
-      <file filePath="FormEditMajorations.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMajorations.resx" uniqueID="ba448902-aea5-4cbf-837a-0e56b69f2c0a" />
-      <file filePath="FormEditMajorations.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMajorations.es-ES.resx" uniqueID="14044809-6853-459b-ad90-e3042f8b1c71" />
-      <file filePath="FormEditMajorations.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMajorations.fr-FR.resx" uniqueID="2bc5c959-5aff-4f7f-9434-4df0deef9994" />
-      <file filePath="FormEditMajorations.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMajorations.it-IT.resx" uniqueID="64bb182f-9de8-4546-acb3-5887031bc3bb" />
-      <file filePath="FormEditMajorations.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMajorations.ja-JP.resx" uniqueID="036990ae-ce85-4796-9dd6-8305c36fc91f" />
-      <file filePath="FormEditMajorations.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMajorations.pl-PL.resx" uniqueID="68493463-c32f-4983-9754-982984c58cad" />
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="FormEditCardboardFormats.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditCardboardFormats.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditCardboardFormats.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditCardboardFormats.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditCardboardFormats.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditCardboardFormats.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditCardboardFormats.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditCardboardFormats.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditCardboardFormats.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditCardboardFormats.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditCardboardFormats.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditCardboardFormats.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="4534c138-c71b-474d-87b3-b2fff3aecc65">
-      <file filePath="FormEditMaterials.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMaterials.resx" uniqueID="9acc5b4d-d7db-47be-8d54-14e31aa0e2ef" />
-      <file filePath="FormEditMaterials.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMaterials.es-ES.resx" uniqueID="f53ba9d0-e88b-4836-ba31-76c89c089d39" />
-      <file filePath="FormEditMaterials.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMaterials.fr-FR.resx" uniqueID="f20cbae7-0576-4b2e-b625-3a4f80a50d92" />
-      <file filePath="FormEditMaterials.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMaterials.it-IT.resx" uniqueID="02920be6-6e29-4d42-b005-e1cf115cae04" />
-      <file filePath="FormEditMaterials.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMaterials.ja-JP.resx" uniqueID="90d72846-2e17-4990-818a-f0229e0ef240" />
-      <file filePath="FormEditMaterials.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMaterials.pl-PL.resx" uniqueID="46354280-9d46-46cd-8d94-c7acb740b4a2" />
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="FormEditDatabasePath.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditDatabasePath.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditDatabasePath.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditDatabasePath.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditDatabasePath.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditDatabasePath.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditDatabasePath.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditDatabasePath.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditDatabasePath.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditDatabasePath.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditDatabasePath.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditDatabasePath.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="8d496232-6af2-43e6-a6f9-d6d1801d752b">
-      <file filePath="FormEditProfiles.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditProfiles.resx" uniqueID="d57fe7da-ab46-4b36-9093-54aae071767e" />
-      <file filePath="FormEditProfiles.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditProfiles.es-ES.resx" uniqueID="dcf4a858-5988-48e4-a320-181c330371b1" />
-      <file filePath="FormEditProfiles.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditProfiles.fr-FR.resx" uniqueID="7e99ed1b-b1d8-4053-ba5a-a50c39607ecc" />
-      <file filePath="FormEditProfiles.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditProfiles.it-IT.resx" uniqueID="a1d099a1-1efe-43da-91e5-5be11aa619a4" />
-      <file filePath="FormEditProfiles.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditProfiles.ja-JP.resx" uniqueID="0cff9694-5bb5-4c81-ab6f-fcd7e4dd055a" />
-      <file filePath="FormEditProfiles.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditProfiles.pl-PL.resx" uniqueID="4d226791-0ab0-4143-9857-c559cedb7613" />
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="FormEditDefaultParamValues.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditDefaultParamValues.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditDefaultParamValues.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditDefaultParamValues.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditDefaultParamValues.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditDefaultParamValues.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditDefaultParamValues.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditDefaultParamValues.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditDefaultParamValues.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditDefaultParamValues.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditDefaultParamValues.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditDefaultParamValues.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="adfb721b-b17d-4d73-a614-9072ad612fd0">
-      <file filePath="FormExportFile.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormExportFile.resx" uniqueID="86a99c58-6151-40da-9286-14c44dd6b2fc" />
-      <file filePath="FormExportFile.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormExportFile.es-ES.resx" uniqueID="ab327d6b-2d7c-482b-b3c2-bd96d0c75c60" />
-      <file filePath="FormExportFile.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormExportFile.fr-FR.resx" uniqueID="594433bf-1518-4912-b947-734f9ddaf36a" />
-      <file filePath="FormExportFile.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormExportFile.it-IT.resx" uniqueID="dcac4351-70df-45ab-9bf6-79b4ed76b296" />
-      <file filePath="FormExportFile.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormExportFile.ja-JP.resx" uniqueID="1706e29f-9edc-4ed4-9f7f-11a305a0423a" />
-      <file filePath="FormExportFile.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormExportFile.pl-PL.resx" uniqueID="9cbccfc6-84a1-49e1-831b-59620371c05f" />
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="FormEditMajorations.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMajorations.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditMajorations.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMajorations.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditMajorations.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMajorations.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditMajorations.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMajorations.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditMajorations.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMajorations.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditMajorations.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMajorations.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="5d9f131d-552f-4e3e-a1ab-ddeacc91d0db">
-      <file filePath="FormPluginEditor.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormPluginEditor.resx" uniqueID="6c6199d4-0bb4-4930-816b-6007a190c3ce" />
-      <file filePath="FormPluginEditor.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormPluginEditor.es-ES.resx" uniqueID="fd123632-c493-4a96-a147-54f9bf862d47" />
-      <file filePath="FormPluginEditor.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormPluginEditor.fr-FR.resx" uniqueID="213376af-3178-4d5c-b7ca-f7d5d6e74eb8" />
-      <file filePath="FormPluginEditor.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormPluginEditor.it-IT.resx" uniqueID="49caa512-e1b6-42ac-8575-e21fd6a7d821" />
-      <file filePath="FormPluginEditor.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormPluginEditor.ja-JP.resx" uniqueID="cc430d82-4353-4724-a400-13ea6bf700e0" />
-      <file filePath="FormPluginEditor.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormPluginEditor.pl-PL.resx" uniqueID="f20f8a5b-c5f3-4317-a473-eb69dbd69fa0" />
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="FormEditMaterials.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMaterials.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditMaterials.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMaterials.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditMaterials.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMaterials.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditMaterials.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMaterials.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditMaterials.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMaterials.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditMaterials.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditMaterials.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="b7935c1c-7b40-48d1-85bb-81b197344914">
-      <file filePath="FormRenameNode.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormRenameNode.resx" uniqueID="82247d9b-3e4e-4b61-9191-1e8e7b1cc233" />
-      <file filePath="FormRenameNode.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormRenameNode.es-ES.resx" uniqueID="0cd1c58a-665c-47ba-9e74-b7a949b7a5cf" />
-      <file filePath="FormRenameNode.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormRenameNode.fr-FR.resx" uniqueID="59e0c9b5-2982-42d5-8928-e4e9588ba41b" />
-      <file filePath="FormRenameNode.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormRenameNode.it-IT.resx" uniqueID="779074ff-866f-4a27-a8d7-80564f29d6c9" />
-      <file filePath="FormRenameNode.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormRenameNode.ja-JP.resx" uniqueID="4ff2ed2a-456a-4631-a95f-fe2eec041c11" />
-      <file filePath="FormRenameNode.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormRenameNode.pl-PL.resx" uniqueID="29d71152-ac8b-4da3-82c5-450083ae7dd7" />
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="FormEditProfiles.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditProfiles.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditProfiles.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditProfiles.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditProfiles.fr.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditProfiles.fr.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditProfiles.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditProfiles.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditProfiles.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditProfiles.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditProfiles.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditProfiles.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormEditProfiles.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormEditProfiles.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="e9a4e8b9-86c0-4f50-8280-60dce48a3314">
-      <file filePath="Properties\Resources.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\Properties\Resources.resx" uniqueID="66f26cca-6620-4db0-8755-49c9453afd09" />
-      <file filePath="Properties\Resources.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\Properties\Resources.es-ES.resx" uniqueID="6b6181d9-19db-40de-bbce-0a293a1c0fea" />
-      <file filePath="Properties\Resources.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\Properties\Resources.fr-FR.resx" uniqueID="e1cbb362-3ae4-4be4-8d2d-fd7cea6634b9" />
-      <file filePath="Properties\Resources.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\Properties\Resources.it-IT.resx" uniqueID="6cfb2071-f9e2-4ab3-910d-8a1827cd14cb" />
-      <file filePath="Properties\Resources.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\Properties\Resources.ja-JP.resx" uniqueID="9a7f1b41-020c-435e-bf47-d00611a0f4b6" />
-      <file filePath="Properties\Resources.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\Properties\Resources.pl-PL.resx" uniqueID="be15e708-c873-459a-ab23-68ae0bd4ed6f" />
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="FormExportFile.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormExportFile.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormExportFile.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormExportFile.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormExportFile.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormExportFile.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormExportFile.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormExportFile.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormExportFile.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormExportFile.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormExportFile.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormExportFile.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
       <remarks>
       </remarks>
     </fileGroup>
-    <fileGroup name="" projectFolderUniqueID="00000000-0000-0000-0000-000000000000" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="399eedb3-119b-4ca9-87b6-fdf0d0a5090c">
-      <file filePath="SplashScreen.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\SplashScreen.resx" uniqueID="e0bf99f6-c5cd-438b-acc4-d97b5ab65af5" />
-      <file filePath="SplashScreen.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\SplashScreen.es-ES.resx" uniqueID="e89791ae-8db3-4fde-847c-b771a978a8e8" />
-      <file filePath="SplashScreen.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\SplashScreen.fr-FR.resx" uniqueID="c2b0ff2e-4987-4cc4-bc47-e57850e8228c" />
-      <file filePath="SplashScreen.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\SplashScreen.it-IT.resx" uniqueID="027934c2-a8d3-406e-accd-b9d8d665e9cc" />
-      <file filePath="SplashScreen.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\SplashScreen.ja-JP.resx" uniqueID="43ce104d-33c8-4891-bebe-ad4ff595738c" />
-      <file filePath="SplashScreen.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\SplashScreen.pl-PL.resx" uniqueID="b375165a-0072-44f2-8920-114ffbe8e69b" />
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="FormMain.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormMain.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormMain.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormMain.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormMain.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormMain.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormMain.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormMain.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormMain.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormMain.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormMain.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormMain.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="50b22285-673b-4fd7-a4d6-0b7986c1473f">
+      <file filePath="FormGeneratePDF3D.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormGeneratePDF3D.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormGeneratePDF3D.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormGeneratePDF3D.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="FormPluginEditor.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormPluginEditor.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormPluginEditor.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormPluginEditor.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormPluginEditor.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormPluginEditor.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormPluginEditor.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormPluginEditor.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormPluginEditor.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormPluginEditor.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="FormRenameNode.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormRenameNode.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormRenameNode.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormRenameNode.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormRenameNode.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormRenameNode.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormRenameNode.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormRenameNode.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormRenameNode.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormRenameNode.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormRenameNode.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormRenameNode.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="FormSearch.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormSearch.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormSearch.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormSearch.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormSearch.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormSearch.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormSearch.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormSearch.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormSearch.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormSearch.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="FormSearch.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\FormSearch.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="OptionPanelComponentViewer.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelComponentViewer.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelComponentViewer.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelComponentViewer.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelComponentViewer.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelComponentViewer.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelComponentViewer.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelComponentViewer.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelComponentViewer.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelComponentViewer.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelComponentViewer.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelComponentViewer.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="OptionPanelComputing.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelComputing.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelComputing.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelComputing.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelComputing.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelComputing.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelComputing.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelComputing.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelComputing.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelComputing.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelComputing.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelComputing.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="OptionPanelDatabase.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelDatabase.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelDatabase.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelDatabase.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelDatabase.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelDatabase.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelDatabase.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelDatabase.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelDatabase.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelDatabase.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelDatabase.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelDatabase.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="OptionPanelMajorations.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelMajorations.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelMajorations.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelMajorations.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelMajorations.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelMajorations.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelMajorations.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelMajorations.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelMajorations.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelMajorations.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelMajorations.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelMajorations.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="9b4f18f8-5afc-4e71-9319-a4f21c8ed9bc">
+      <file filePath="OptionPanelWindow.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelWindow.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelWindow.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelWindow.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelWindow.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelWindow.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelWindow.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelWindow.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelWindow.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelWindow.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelWindow.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelWindow.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="7462a2b0-52be-4f6a-9f31-0eec5536e32c">
+      <file filePath="OptionsFormPLMPackLib.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionsFormPLMPackLib.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionsFormPLMPackLib.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionsFormPLMPackLib.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="OptionPanelThumbnail.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelThumbnail.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelThumbnail.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelThumbnail.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelThumbnail.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelThumbnail.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelThumbnail.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelThumbnail.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelThumbnail.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelThumbnail.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelThumbnail.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelThumbnail.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="9d7b8970-79d5-48ea-82e8-ba4135389c2a">
+      <file filePath="OptionPanelOutputFileOpening.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelOutputFileOpening.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelOutputFileOpening.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelOutputFileOpening.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelOutputFileOpening.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelOutputFileOpening.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelOutputFileOpening.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelOutputFileOpening.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelOutputFileOpening.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelOutputFileOpening.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="OptionPanelOutputFileOpening.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\OptionPanelOutputFileOpening.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="00000000-0000-0000-0000-000000000000">
+      <file filePath="SplashScreen.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\SplashScreen.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="SplashScreen.es-ES.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\SplashScreen.es-ES.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="SplashScreen.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\SplashScreen.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="SplashScreen.it-IT.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\SplashScreen.it-IT.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="SplashScreen.ja-JP.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\SplashScreen.ja-JP.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="SplashScreen.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\SplashScreen.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <remarks>
+      </remarks>
+    </fileGroup>
+    <fileGroup name="" projectFolderUniqueID="7307330a-c753-49cd-b778-a209fd2bc607" orderPosition="0" ignoreDuringExportAndImport="False" uniqueID="1fb7ebdc-64b7-4b0b-ac15-791a32b6282f">
+      <file filePath="StartPageControl.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\StartPageControl.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="StartPageControl.fr-FR.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\StartPageControl.fr-FR.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
+      <file filePath="StartPageControl.pl-PL.resx" absoluteFilePath="K:\GitHub\PLMPackLib\PicParam\StartPageControl.pl-PL.resx" uniqueID="00000000-0000-0000-0000-000000000000" />
       <remarks>
       </remarks>
     </fileGroup>
@@ -641,11 +739,6 @@ Kind regards</globalSetting>
       </remarks>
       <dynSettings />
     </projectFolder>
-    <projectFolder uniqueID="bd7561af-6a0a-4603-bc92-b8078f7f27c2" parentUniqueID="00000000-0000-0000-0000-000000000000" name="PicParam" orderPosition="0">
-      <remarks>
-      </remarks>
-      <dynSettings />
-    </projectFolder>
     <projectFolder uniqueID="fee20714-c570-4e33-b56b-694eaad5d518" parentUniqueID="00000000-0000-0000-0000-000000000000" name="Sharp3D.Math" orderPosition="0">
       <remarks>
       </remarks>
@@ -679,6 +772,30 @@ Kind regards</globalSetting>
       <remarks>
       </remarks>
       <dynSettings />
+    </projectFolder>
+    <projectFolder uniqueID="7307330a-c753-49cd-b778-a209fd2bc607" parentUniqueID="00000000-0000-0000-0000-000000000000" name="PicParam" orderPosition="0">
+      <remarks>
+      </remarks>
+      <dynSettings>
+        <setting name="UseParentFilePatternSettings">
+          <value>True</value>
+        </setting>
+        <setting name="NeutralLanguageFileNamePattern">
+          <value>[basename][optionaldefaulttypes].[extension]</value>
+        </setting>
+        <setting name="NonNeutralLanguageFileNamePattern">
+          <value>[basename][optionaldefaulttypes].[languagecode].[extension]</value>
+        </setting>
+        <setting name="BaseNameDotCount">
+          <value>0</value>
+        </setting>
+        <setting name="DefaultFileTypesToIgnore">
+          <value>.aspx;.ascx;.asmx;.master;.sitemap</value>
+        </setting>
+        <setting name="IgnoreDuringExportAndImport">
+          <value>False</value>
+        </setting>
+      </dynSettings>
     </projectFolder>
   </projectFolders>
 </project>

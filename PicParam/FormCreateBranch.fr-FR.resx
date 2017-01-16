@@ -161,4 +161,7 @@
 	<data name="bnOk.Text" xml:space="preserve">
 		<value>OK</value>
 	</data>
+	<data name="label_description.Text" xml:space="preserve">
+		<value>Description</value>
+	</data>
 </root>

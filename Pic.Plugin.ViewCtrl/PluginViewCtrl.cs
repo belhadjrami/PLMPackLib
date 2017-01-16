@@ -657,7 +657,7 @@ namespace Pic.Plugin.ViewCtrl
 
                     // filter 
                     PicFilter filter = _showAxes ? PicFilter.FilterNone
-                        : PicFilter.FilterCotation | !(new PicFilterLineType(PicGraphics.LT.LT_COTATION));
+                        : PicFilter.FilterCotation | !(new PicFilterLineType(PicGraphics.LT.LT_COTATION) | new PicFilterLineType(PicGraphics.LT.LT_AXIS));
 
                     // update drawing box?
                     if (_computeBbox)
@@ -744,7 +744,7 @@ namespace Pic.Plugin.ViewCtrl
 
             // instantiate filter
             PicFilter filter = _showAxes ? PicFilter.FilterNone
-                : PicFilter.FilterCotation | !(new PicFilterLineType(PicGraphics.LT.LT_COTATION));
+                : PicFilter.FilterCotation | !(new PicFilterLineType(PicGraphics.LT.LT_COTATION) | new PicFilterLineType(PicGraphics.LT.LT_AXIS) );
             filter = filter & PicFilter.FilterNoZeroEntities;
 
             // get bounding box

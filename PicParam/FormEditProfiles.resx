@@ -306,4 +306,16 @@
 	<metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
 		<value>pl-PL</value>
 	</metadata>
+	<data name="Profil.Text" xml:space="preserve">
+		<value>Profile</value>
+	</data>
+	<data name="ID.Text" xml:space="preserve">
+		<value>ID</value>
+	</data>
+	<data name="Thickness.Text" xml:space="preserve">
+		<value>Thickness</value>
+	</data>
+	<data name="Profile.Text" xml:space="preserve">
+		<value>Profile</value>
+	</data>
 </root>
