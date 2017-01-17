@@ -183,7 +183,7 @@
 		<value>4</value>
 	</data>
 	<data name="&gt;&gt;_pluginViewCtrl.Type" xml:space="preserve">
-    <value>Pic.Plugin.ViewCtrl.PluginViewCtrl, Pic.Plugin.ViewCtrl, Version=8.0.15.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Pic.Plugin.ViewCtrl.PluginViewCtrl, Pic.Plugin.ViewCtrl, Version=8.0.16.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 	<data name="&gt;&gt;_pluginViewCtrl.ZOrder" xml:space="preserve">
     <value>5</value>
