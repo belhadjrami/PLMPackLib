@@ -305,7 +305,6 @@ namespace DesLib4NET
             WriteCode(11);
             _br.Write(arc._angle);
         }
-
         public void WriteCotationDistance(DES_CotationDistance cotation)
         {
              // save in table

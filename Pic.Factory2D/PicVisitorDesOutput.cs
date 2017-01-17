@@ -112,27 +112,52 @@ namespace Pic.Factory2D
                 case PicEntity.eCode.PE_COTATIONDISTANCE:
                     {
                         PicCotationDistance cotation = entity as PicCotationDistance;
-                        /*
                         _desWriter.WriteCotationDistance(
                             new DES_CotationDistance(
-                                (float)cotation.Pt0.X
-                                , (float)cotation.Pt0.Y
-                                , (float)cotation.Pt1.X
-                                , (float)cotation.Pt1.Y
-                                , (float)cotation.Offset
+                                (float)cotation.Pt0.X, (float)cotation.Pt0.Y, (float)cotation.Pt1.X, (float)cotation.Pt1.Y
+                                , LineTypeToDesPen(cotation.LineType)
                                 , (byte)cotation.Group
                                 , (byte)cotation.Layer
-                                )
+                                , (float)cotation.Offset
+                                , 0.0f
+                                , 0.0f
+                                , 0.0f
+                                , false, false, false, false, 1, cotation.Text, ' ')                                
                             );
-                         */ 
                     }
                     break;
                 case PicEntity.eCode.PE_COTATIONHORIZONTAL:
                     {
+                        PicCotationHorizontal cotation = entity as PicCotationHorizontal;
+                        _desWriter.WriteCotationDistance(
+                            new DES_CotationDistance(
+                                (float)cotation.Pt0.X, (float)cotation.Pt0.Y, (float)cotation.Pt1.X, (float)cotation.Pt1.Y
+                                , LineTypeToDesPen(cotation.LineType)
+                                , (byte)cotation.Group
+                                , (byte)cotation.Layer
+                                , (float) cotation.Offset
+                                , 0.0f
+                                , 0.0f
+                                , 0.0f
+                                , false, false, false, false, 1, cotation.Text, ' ')
+                            );
                     }
                     break;
                 case PicEntity.eCode.PE_COTATIONVERTICAL:
                     {
+                        PicCotationVertical cotation = entity as PicCotationVertical;
+                        _desWriter.WriteCotationDistance(
+                            new DES_CotationDistance(
+                                (float)cotation.Pt0.X, (float)cotation.Pt0.Y, (float)cotation.Pt1.X, (float)cotation.Pt1.Y
+                                , LineTypeToDesPen(cotation.LineType)
+                                , (byte)cotation.Group
+                                , (byte)cotation.Layer
+                                , (float) cotation.Offset
+                                , 0.0f
+                                , 0.0f
+                                , 0.0f
+                                , false, false, false, false, 1, cotation.Text, ' ')
+                            );
                     }
                     break;
                 case PicEntity.eCode.PE_COTATIONRADIUSEXT:

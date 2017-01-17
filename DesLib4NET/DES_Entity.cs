@@ -1,9 +1,12 @@
-﻿using System;
+﻿#region Using directives
+using System;
 using System.Collections.Generic;
 using System.Text;
+#endregion
 
 namespace DesLib4NET
 {
+    #region DES_Entity
     public abstract class DES_Entity
     {
         #region Constructors
@@ -14,6 +17,35 @@ namespace DesLib4NET
             _layer = layer;
         }
         #endregion
+        #region Extremities to DimDir
+        protected void DimDir(float x0, float y0, float x1, float y1)
+        { 
+            _x = 0.5f * (x0 + x1);
+            _y = 0.5f * (y0 + y1);
+            _dim = 0.5f * (float)Math.Sqrt((x1 - x0) * (x1 - x0) + (y1 - y0) * (y1 - y0));
+            // dir
+            double vecx = 0.5f * (x1 - x0) / _dim;
+            double vecy = 0.5f * (y1 - y0) / _dim;
+            double angleRad = 0.0;
+            if (vecy > 1.0) vecy = 1.0;
+            if (vecy < -1.0) vecy = -1.0;
+            if (vecx >= 0.0)
+            {
+                if (vecy >= 0.0)
+                    angleRad = Math.Asin(vecy);
+                else
+                    angleRad = 2 * Math.PI - Math.Asin(-vecy);
+            }
+            else
+            {
+                if (vecy >= 0.0)
+                    angleRad = Math.PI - Math.Asin(vecy);
+                else
+                    angleRad = Math.PI + Math.Asin(-vecy);
+            }
+            _dir = (float)(angleRad * 180.0 / Math.PI);        
+        }
+        #endregion
         #region Data members
         public float _x = 0.0f, _y = 0.0f;
         public float _dim = 0.0f, _dir = 0.0f;
@@ -21,7 +53,9 @@ namespace DesLib4NET
         public byte _lock = 0;
         #endregion
     }
+    #endregion
 
+    #region DES_Point
     public class DES_Point : DES_Entity
     {
         #region Constructor
@@ -39,38 +73,16 @@ namespace DesLib4NET
         }
         #endregion
     }
+    #endregion
 
+    #region DES_Segment
     public class DES_Segment : DES_Entity
     {
         #region Constructor
-        public DES_Segment(float x1, float y1, float x2, float y2, byte pen, byte grp, byte layer)
+        public DES_Segment(float x0, float y0, float x1, float y1, byte pen, byte grp, byte layer)
             : base(pen, grp, layer)
         {
-            double length = Math.Sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
-            base._x = 0.5f*(x1+x2);
-            base._y = 0.5f*(y1+y2);
-            base._dim = 0.5f*(float)length;
-            // dir
-            double vecx = (x2-x1)/length;
-	        double vecy = (y2-y1)/length;
-	        double angleRad = 0.0;
-	        if (vecy > 1.0)		vecy = 1.0;
-	        if (vecy < -1.0)	vecy = -1.0;
-	        if (vecx >= 0.0)
-	        {
-		        if (vecy >= 0.0)
-			        angleRad = Math.Asin( vecy );
-		        else
-                    angleRad = 2 * Math.PI - Math.Asin(-vecy);
-	        }
-	        else
-	        {
-		        if (vecy >= 0.0)
-                    angleRad = Math.PI - Math.Asin(vecy);
-		        else
-                    angleRad = Math.PI + Math.Asin(-vecy);	
-	        }
-            base._dir = (float)(angleRad * 180.0 / Math.PI);
+            DimDir(x0, y0, x1, y1);
         }
         #endregion
         #region Object override
@@ -98,7 +110,9 @@ namespace DesLib4NET
         }
         #endregion
     }
+    #endregion
 
+    #region DES_Arc
     public class DES_Arc : DES_Entity
     {
         #region Constructor
@@ -122,7 +136,9 @@ namespace DesLib4NET
         public float _angle = 0.0f;
         #endregion
     }
+    #endregion
 
+    #region DES_Bezier
     public class DES_Bezier : DES_Entity
     {
         public DES_Bezier(byte pen, byte grp, byte layer)
@@ -130,7 +146,9 @@ namespace DesLib4NET
         { 
         }
     }
+    #endregion
 
+    #region DES_Nurbs
     public class DES_Nurbs : DES_Entity
     {
         public DES_Nurbs(byte pen, byte grp, byte layer)
@@ -138,7 +156,9 @@ namespace DesLib4NET
         { 
         }
     }
+    #endregion
 
+    #region DES_Ellipse
     public class DES_Ellipse : DES_Entity
     { 
         public DES_Ellipse(byte pen, byte grp, byte layer)
@@ -146,15 +166,21 @@ namespace DesLib4NET
         { 
         }
     }
+    #endregion
 
+    #region DES_Surface
     public class DES_Surface : DES_Entity
-    { 
-         public DES_Surface(byte pen, byte grp, byte layer)
+    {
+        #region Constructor
+        public DES_Surface(byte pen, byte grp, byte layer)
             : base(pen, grp, layer)
-        { 
+        {
         }
-   }
+        #endregion
+    }
+    #endregion
 
+    #region DES_Pose
     public class DES_Pose : DES_Entity
     {
         #region Constructor
@@ -171,7 +197,9 @@ namespace DesLib4NET
         public short _mir;
         #endregion
     }
+    #endregion
 
+    #region DES_CardboardFormat
     public class DES_CardboardFormat : DES_Entity
     {
         #region Constructors
@@ -199,28 +227,37 @@ namespace DesLib4NET
         public float _thickness = 0.0f;
         #endregion
     }
+    #endregion
 
+    #region DES_Text
     public class DES_Text : DES_Entity
-    { 
+    {
+        #region Constructor
         public DES_Text(byte pen, byte grp, byte layer)
             : base(pen, grp, layer)
-        { 
+        {
         }
+        #endregion
     }
+    #endregion
 
+    #region DES_Image
     public class DES_Image : DES_Entity
     {
+        #region Constructor
         public DES_Image(byte pen, byte grp, byte layer)
             : base(pen, grp, layer)
-        { 
+        {
         }
+        #endregion
     }
+    #endregion
 
+    #region DES_CotationDistance
     public class DES_CotationDistance : DES_Entity
     { 
         #region Constructor
-        public DES_CotationDistance(
-            float x, float y, float dir, float dim
+        public DES_CotationDistance(float x0, float y0, float x1, float y1
             , byte pen, byte grp, byte layer
             , float offset, float reduction
             , float ecartSup, float ecartInf, bool invDep
@@ -228,10 +265,7 @@ namespace DesLib4NET
             , short noDecimals, string text, char houv)
             : base(pen, grp, layer)
         {
-            _x = x;
-            _y = y;
-            _dir = dir;
-            _dim = dim;
+            DimDir(x0, y0, x1, y1);
 
             _offset = offset;
             _reduction = reduction;
@@ -243,7 +277,6 @@ namespace DesLib4NET
             _noDecimals = noDecimals;
             _text = text;
             _houv = houv;
-             
         }
         #endregion
 
@@ -272,4 +305,5 @@ namespace DesLib4NET
         public char _houv;
         #endregion
     }
+    #endregion
 }

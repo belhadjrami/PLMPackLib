@@ -142,7 +142,7 @@
     <value>fileSelect</value>
   </data>
 	<data name="&gt;&gt;fileSelect.Type" xml:space="preserve">
-    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.14.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.15.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 	<data name="&gt;&gt;fileSelect.Parent" xml:space="preserve">
     <value>$this</value>
@@ -205,7 +205,7 @@
     <value>OptionPanelDatabase</value>
   </data>
 	<data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GLib.Options.OptionsPanel, OptionsLib, Version=8.0.14.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>GLib.Options.OptionsPanel, OptionsLib, Version=8.0.15.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 	<data name="label1.Text" xml:space="preserve">
 		<value>Database file</value>
