@@ -69,7 +69,7 @@ namespace Pic
             #endregion
 
             #region Protected virtual methods
-            protected virtual void GetOffsetPoints(out Vector2D pt2, out Vector2D pt3)
+            public virtual void GetOffsetPoints(out Vector2D pt2, out Vector2D pt3)
             {
                 // build normal
                 Vector2D vI = (_pt1 - _pt0); vI.Normalize();

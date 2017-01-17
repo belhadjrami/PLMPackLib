@@ -31,7 +31,7 @@ namespace Pic
             /// </summary>
             /// <param name="pt2">out : offset point for _pt0</param>
             /// <param name="pt3">out : offset point for _pt1</param>
-            protected override void GetOffsetPoints(out Vector2D pt2, out Vector2D pt3)
+            public override void GetOffsetPoints(out Vector2D pt2, out Vector2D pt3)
             { 
                 double delta = -_globalCotationProperties._hrap;
                 pt2 = new Vector2D(_pt0.X - _offset + Math.Sign(_offset) * delta, _pt0.Y);

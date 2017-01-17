@@ -5,6 +5,7 @@ using System.Text;
 using System.IO;
 
 using DesLib4NET;
+using Sharp3D.Math.Core;
 #endregion
 
 namespace Pic.Factory2D
@@ -129,13 +130,17 @@ namespace Pic.Factory2D
                 case PicEntity.eCode.PE_COTATIONHORIZONTAL:
                     {
                         PicCotationHorizontal cotation = entity as PicCotationHorizontal;
+                        // get offset points
+                        Vector2D offsetPt0, offsetPt1;
+                        cotation.GetOffsetPoints(out offsetPt0, out offsetPt1);
+
                         _desWriter.WriteCotationDistance(
                             new DES_CotationDistance(
-                                (float)cotation.Pt0.X, (float)cotation.Pt0.Y, (float)cotation.Pt1.X, (float)cotation.Pt1.Y
+                                (float)offsetPt0.X, (float)offsetPt0.Y, (float)offsetPt1.X, (float)offsetPt1.Y
                                 , LineTypeToDesPen(cotation.LineType)
                                 , (byte)cotation.Group
                                 , (byte)cotation.Layer
-                                , (float) cotation.Offset
+                                , (float) (cotation.Pt0.Y -offsetPt0.Y + cotation.Offset)
                                 , 0.0f
                                 , 0.0f
                                 , 0.0f
@@ -146,13 +151,17 @@ namespace Pic.Factory2D
                 case PicEntity.eCode.PE_COTATIONVERTICAL:
                     {
                         PicCotationVertical cotation = entity as PicCotationVertical;
+                        // get offset points
+                        Vector2D offsetPt0, offsetPt1;
+                        cotation.GetOffsetPoints(out offsetPt0, out offsetPt1);
+
                         _desWriter.WriteCotationDistance(
                             new DES_CotationDistance(
-                                (float)cotation.Pt0.X, (float)cotation.Pt0.Y, (float)cotation.Pt1.X, (float)cotation.Pt1.Y
+                                (float)offsetPt0.X, (float)offsetPt0.Y, (float)offsetPt1.X, (float)offsetPt1.Y
                                 , LineTypeToDesPen(cotation.LineType)
                                 , (byte)cotation.Group
                                 , (byte)cotation.Layer
-                                , (float) cotation.Offset
+                                , (float) (offsetPt0.X - cotation.Pt0.X + cotation.Offset)
                                 , 0.0f
                                 , 0.0f
                                 , 0.0f
