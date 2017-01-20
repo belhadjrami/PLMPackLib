@@ -130,4 +130,7 @@
 	<data name="$this.Text" xml:space="preserve">
     <value>Définir les valeurs par défaut des composants...</value>
   </data>
+	<data name="bnOk.Text" xml:space="preserve">
+		<value>OK</value>
+	</data>
 </root>

@@ -217,7 +217,7 @@
 		<value>Acerca de {0}…</value>
 	</data>
 	<data name="ID_APPLICATIONMUSTRESTART" xml:space="preserve">
-		<value>{0} tendrá que ser reiniciado. Ahora cerrar</value>
+		<value>{0} tendrá que ser reiniciado. Ahora cerrar…</value>
 	</data>
 	<data name="ID_EDITCOMPONENT" xml:space="preserve">
 		<value>Editar Componentes {0}…</value>
@@ -226,10 +226,10 @@
 		<value>Eliminar</value>
 	</data>
 	<data name="ID_TREEMENUNEWBRANCH" xml:space="preserve">
-		<value>Nueva Carpeta…</value>
+		<value>Nueva rama</value>
 	</data>
 	<data name="ID_TREEMENUNEWDOCUMENT" xml:space="preserve">
-		<value>Nuevo Documento…</value>
+		<value>Nuevo documento...</value>
 	</data>
 	<data name="ID_TREEMENURENAME" xml:space="preserve">
 		<value>Renombrar…</value>
@@ -242,5 +242,62 @@
 	</data>
 	<data name="ID_VERSION" xml:space="preserve">
 		<value>Versión {0}</value>
+	</data>
+	<data name="ID_APPLICATIONEXITING" xml:space="preserve">
+		<value>{0} saldrá ahora ...</value>
+	</data>
+	<data name="ID_CLEARDATABASEWARNING" xml:space="preserve">
+		<value>Está a punto de borrar el contenido de la base de datos. ¿Estás seguro?</value>
+	</data>
+	<data name="ID_DATABASENOTFOUND" xml:space="preserve">
+		<value>No se pudo encontrar el archivo de base de datos en la ruta siguiente: {0}\n ¿Desea restaurar un archivo de base de datos?</value>
+	</data>
+	<data name="ID_DATABASEOVERWRITE" xml:space="preserve">
+		<value>Los documentos que compartan la misma posición en el árbol que los disponibles en la biblioteca se sobrescribirán.\nCualquier modificación se perderá. ¿Continuar?</value>
+	</data>
+	<data name="ID_FILENOTFOUND_DEFAULTIMAGE" xml:space="preserve">
+		<value>No se pudo encontrar el archivo de imagen predeterminado en la siguiente ruta: {0}</value>
+	</data>
+	<data name="ID_FILENOTFOUND_PDFTHUMBNAILIMAGE" xml:space="preserve">
+		<value>Pdf miniatura no se pudo encontrar en la siguiente ruta: {0}</value>
+	</data>
+	<data name="ID_INFO_RUNASADMIN" xml:space="preserve">
+		<value>Para realizar esta operación, la aplicación debe ejecutarse como administrador.</value>
+	</data>
+	<data name="ID_MERGEFAILURE" xml:space="preserve">
+		<value>Error al fusionar la base de datos por la siguiente razón: {0}</value>
+	</data>
+	<data name="ID_RESTOREFAILURE" xml:space="preserve">
+		<value>Error al restaurar la base de datos por el siguiente motivo: {0}</value>
+	</data>
+	<data name="ID_RESTOREWARNING" xml:space="preserve">
+		<value>Tenga en cuenta que esta operación sobrescribirá su base de datos actual. ¿Continuar?</value>
+	</data>
+	<data name="ID_TREEMENUBACKUP" xml:space="preserve">
+		<value>Salvaguardia Rama  {0}</value>
+	</data>
+	<data name="ID_TREEMENUCOPY" xml:space="preserve">
+		<value>Duplicar el documento</value>
+	</data>
+	<data name="ID_TREEMENUSELECTINEXPLORER" xml:space="preserve">
+		<value>Abrir la carpeta que contiene</value>
+	</data>
+	<data name="ID_TREEMENUSENDPATHTOCLIPBOARD" xml:space="preserve">
+		<value>Enviar ruta del documento actual al portapapeles</value>
+	</data>
+	<data name="ID_TREENODEROOT" xml:space="preserve">
+		<value>Inicio</value>
+	</data>
+	<data name="ID_TREEWARNING_CANNOTMOVENODE" xml:space="preserve">
+		<value>El nodo {0} no se puede mover en el nodo {1} ya que este último es un niño.</value>
+	</data>
+	<data name="ID_TREEWARNING_DELETEBRANCH" xml:space="preserve">
+		<value>¿Borrar rama {0}?</value>
+	</data>
+	<data name="ID_TREEWARNING_DELETEDOCUMENT" xml:space="preserve">
+		<value>¿Borrar documento {0}?</value>
+	</data>
+	<data name="ID_TREEWARNING_MOVENODE" xml:space="preserve">
+		<value>¿Realmente desea mover el nodo "{0}" en el nodo "{1}"?</value>
 	</data>
 </root>

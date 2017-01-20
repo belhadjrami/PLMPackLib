@@ -128,7 +128,7 @@
 		<value>208, 17</value>
 	</data>
 	<data name="cbAllowRowRotation.Text" xml:space="preserve">
-    <value>Permettre les rotation dans les rangées</value>
+    <value>Permettre les rotations dans les rangées</value>
   </data>
 	<data name="cbAllowColumnRotation.Location" type="System.Drawing.Point, System.Drawing">
 		<value>7, 42</value>
@@ -230,7 +230,7 @@
 		<value>96, 13</value>
 	</data>
 	<data name="label9.Text" xml:space="preserve">
-    <value>Espace entre pose</value>
+    <value>Espace entre poses</value>
   </data>
 	<data name="rbLayoutMode1.Size" type="System.Drawing.Size, System.Drawing">
 		<value>160, 17</value>
@@ -248,7 +248,7 @@
 		<value>97, 13</value>
 	</data>
 	<data name="lbDirX.Text" xml:space="preserve">
-    <value>Nombre direction X</value>
+    <value>Nombre de lignes (Y)</value>
   </data>
 	<data name="nudNumberDirX.Location" type="System.Drawing.Point, System.Drawing">
 		<value>127, 136</value>
@@ -257,7 +257,7 @@
 		<value>97, 13</value>
 	</data>
 	<data name="lbDirY.Text" xml:space="preserve">
-    <value>Nombre direction Y</value>
+    <value>Nombre de colonnes (X)</value>
   </data>
 	<data name="nudNumberDirY.Location" type="System.Drawing.Point, System.Drawing">
 		<value>127, 163</value>
@@ -265,4 +265,7 @@
 	<data name="$this.Text" xml:space="preserve">
     <value>Paramètres d'imposition...</value>
   </data>
+	<data name="bnOk.Text" xml:space="preserve">
+		<value>&amp;OK</value>
+	</data>
 </root>

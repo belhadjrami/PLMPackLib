@@ -130,7 +130,7 @@
 		<value>187, 22</value>
 	</data>
 	<data name="exportToolStripMenuItem.Text" xml:space="preserve">
-    <value>Exporter...</value>
+    <value>Exporter vers...</value>
   </data>
 	<data name="toolStripMenuItemPicGEOM.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
 		<value>
@@ -154,7 +154,7 @@
 		<value>187, 22</value>
 	</data>
 	<data name="toolStripMenuItemPicGEOM.Text" xml:space="preserve">
-    <value>Ouvrir avec PicGEOM</value>
+    <value>Ouvrir avec Picador2D</value>
   </data>
 	<data name="toolStripSeparator8.Size" type="System.Drawing.Size, System.Drawing">
 		<value>184, 6</value>
@@ -460,7 +460,7 @@
 </value>
 	</data>
 	<data name="toolStripButtonExport.Text" xml:space="preserve">
-    <value>Exporter...</value>
+    <value>Exporter vers...</value>
   </data>
 	<data name="toolStripButtonExport.ToolTipText" xml:space="preserve">
     <value>Exporter...</value>
@@ -491,7 +491,7 @@
 </value>
 	</data>
 	<data name="toolStripButtonReflectionX.Text" xml:space="preserve">
-    <value>Reflexion % X</value>
+    <value>Symétrie X</value>
   </data>
 	<data name="toolStripButtonReflectionY.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
 		<value>
@@ -503,7 +503,7 @@
 </value>
 	</data>
 	<data name="toolStripButtonReflectionY.Text" xml:space="preserve">
-    <value>Reflexion % Y</value>
+    <value>Symétrie Y</value>
   </data>
 	<data name="toolStripEditComponentCode.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
 		<value>
@@ -718,7 +718,7 @@
 </value>
 	</data>
 	<data name="toolStripButtonPalletization.Text" xml:space="preserve">
-    <value>Analyser caisse/palette avec StackBuilder...</value>
+    <value>Analyse caisse/palette</value>
   </data>
 	<data name="toolStripBundlePalletAnalysis.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
 		<value>
@@ -850,7 +850,7 @@
 </value>
 	</data>
 	<data name="toolStripButtonHelp.Text" xml:space="preserve">
-    <value>Afficher l'aide en ligne</value>
+    <value>Aide</value>
   </data>
 	<assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
 	<data name="toolStripMain.TabIndex" type="System.Int32, mscorlib">
@@ -1039,6 +1039,54 @@
 		<value>Envoyer vers Summa</value>
 	</data>
 	<data name="toolStripButtonCaseOptimization.ToolTipText" xml:space="preserve">
-		<value>Effectuer une ompimisation étui/caisse/palette avec StackBuilder...</value>
+		<value>Effectuer une optimisation étui/caisse/palette avec StackBuilder...</value>
+	</data>
+	<data name="editComponentDllToolStripMenuItem.Text" xml:space="preserve">
+		<value>Editer le code du composant…</value>
+	</data>
+	<data name="toolStripMI_DXF.ToolTipText" xml:space="preserve">
+		<value>Export DXF</value>
+	</data>
+	<data name="toolStripMI_PicGEOM.Text" xml:space="preserve">
+		<value>Picador 2D</value>
+	</data>
+	<data name="toolStripMI_PicGEOM.ToolTipText" xml:space="preserve">
+		<value>Ouvrir avec PicGEOM</value>
+	</data>
+	<data name="toolStripMI_Picador3D.Text" xml:space="preserve">
+		<value>Picador 3D</value>
+	</data>
+	<data name="toolStripMI_Picador3D.ToolTipText" xml:space="preserve">
+		<value>Ouvrir avec Picador3D</value>
+	</data>
+	<data name="toolStripMI_PicDecoup.Text" xml:space="preserve">
+		<value>Picador Découpe</value>
+	</data>
+	<data name="toolStripMI_PicDecoup.ToolTipText" xml:space="preserve">
+		<value>Ouvrir avec PicDécoupe</value>
+	</data>
+	<data name="toolStripMI_ExportPDF3D.Text" xml:space="preserve">
+		<value>Générer un PDF 3D</value>
+	</data>
+	<data name="toolStripMI_ExportPDF3D.ToolTipText" xml:space="preserve">
+		<value>Générer un model PDF3D</value>
+	</data>
+	<data name="toolStripMI_ExportPicador3D.Text" xml:space="preserve">
+		<value>Générer pour Picador3D</value>
+	</data>
+	<data name="toolStripMI_ExportPicador3D.ToolTipText" xml:space="preserve">
+		<value>Générer un model Picador3D DES3 </value>
+	</data>
+	<data name="toolStripButtonPalletization.ToolTipText" xml:space="preserve">
+		<value>Effectuer une optimisation caisse/palette avec StackBuilder...</value>
+	</data>
+	<data name="toolStripBundlePalletAnalysis.Text" xml:space="preserve">
+		<value>Palettisation Liasse/Palette</value>
+	</data>
+	<data name="toolStripBundleCaseAnalysis.Text" xml:space="preserve">
+		<value>Encaissage Liasse/Caisse</value>
+	</data>
+	<data name="$this.Text" xml:space="preserve">
+		<value>PLMPaquer PLMPackLib</value>
 	</data>
 </root>

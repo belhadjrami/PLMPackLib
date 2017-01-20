@@ -131,7 +131,7 @@
 		<value>30, 13</value>
 	</data>
 	<data name="lblProfile.Text" xml:space="preserve">
-    <value>Profil</value>
+    <value>Profile</value>
   </data>
 	<data name="comboBoxProfile.Location" type="System.Drawing.Point, System.Drawing">
 		<value>92, 20</value>

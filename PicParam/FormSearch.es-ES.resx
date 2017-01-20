@@ -192,4 +192,16 @@
         AAAAAAAAAAAAAA==
 </value>
 	</data>
+	<data name="$this.Text" xml:space="preserve">
+		<value>Buscar...</value>
+	</data>
+	<data name="chkSearchNameOnly.Text" xml:space="preserve">
+		<value>Buscar solo nombres</value>
+	</data>
+	<data name="bnCancel.Text" xml:space="preserve">
+		<value>Cancelar</value>
+	</data>
+	<data name="bnSearch.Text" xml:space="preserve">
+		<value>Buscar</value>
+	</data>
 </root>

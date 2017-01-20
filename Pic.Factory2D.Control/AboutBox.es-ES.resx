@@ -1209,7 +1209,7 @@
 		<value>Ok</value>
 	</data>
 	<data name="labelCopyright.Text" xml:space="preserve">
-		<value>Copyright treeDim 2010</value>
+		<value>Copyright treeDim 2017</value>
 	</data>
 	<data name="labelVersion.Text" xml:space="preserve">
 		<value>Versión {0}</value>

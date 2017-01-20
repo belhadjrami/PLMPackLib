@@ -305,7 +305,7 @@
 		<value>Mostrar Dimensiones</value>
 	</data>
 	<data name="reflectionYToolStripMenuItem.Text" xml:space="preserve">
-		<value>Reflejo &amp;Y</value>
+		<value>Simetría &amp;Y</value>
 	</data>
 	<data name="exportToolStripMenuItem.Text" xml:space="preserve">
 		<value>Exportar…</value>
@@ -323,7 +323,7 @@
 		<value>DES</value>
 	</data>
 	<data name="reflectionXToolStripMenuItem.Text" xml:space="preserve">
-		<value>Reflejo &amp;X</value>
+		<value>Simetría &amp;X</value>
 	</data>
 	<data name="dxfToolStripMenuItem.Text" xml:space="preserve">
 		<value>DXF</value>

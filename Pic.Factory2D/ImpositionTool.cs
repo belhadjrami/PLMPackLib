@@ -232,7 +232,7 @@ namespace Pic.Factory2D
                 horizontalDistance = 0.0;
                 if (!PicBlockRef.Distance(listCol1, listCol2, PicBlockRef.DistDirection.HORIZONTAL_RIGHT, out horizontalDistance))
                     throw new Exception("Failed to compute distance between to block refs");
-                _patternStep.X = boxEntities.XMin + 5.0 * boxEntities.Width - horizontalDistance + 3.0 * minDistance.X;
+                _patternStep.X = boxEntities.XMin + 5.0 * boxEntities.Width - horizontalDistance + 2.0 * minDistance.X;
             }
         }
     }

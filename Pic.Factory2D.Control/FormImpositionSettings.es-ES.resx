@@ -192,7 +192,7 @@
 		<value>Offset X</value>
 	</data>
 	<data name="tabAllowedPatterns.Text" xml:space="preserve">
-		<value>Patrones Permitidos</value>
+		<value>Disposiciones permitidas</value>
 	</data>
 	<data name="tabOffsets.Text" xml:space="preserve">
 		<value>Offsets</value>
@@ -253,5 +253,23 @@
 	</data>
 	<data name="$this.Text" xml:space="preserve">
 		<value>Ajustes de Imposición…</value>
+	</data>
+	<data name="bnEditCardboardFormats.Text" xml:space="preserve">
+		<value>&amp; Formatos</value>
+	</data>
+	<data name="tabSpacing.Text" xml:space="preserve">
+		<value>Espacio</value>
+	</data>
+	<data name="rbLayoutMode1.Text" xml:space="preserve">
+		<value>Elegir el formato de cartón</value>
+	</data>
+	<data name="rbLayoutMode2.Text" xml:space="preserve">
+		<value>Elegir número de filas y columnas</value>
+	</data>
+	<data name="lbDirX.Text" xml:space="preserve">
+		<value>Número de filas</value>
+	</data>
+	<data name="lbDirY.Text" xml:space="preserve">
+		<value>Número de columnas</value>
 	</data>
 </root>

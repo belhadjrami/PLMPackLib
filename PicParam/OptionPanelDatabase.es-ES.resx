@@ -121,4 +121,19 @@
 	<data name="label1.Size" type="System.Drawing.Size, System.Drawing">
 		<value>72, 13</value>
 	</data>
+	<data name="fileSelect.AccessibleDescription" xml:space="preserve">
+		<value>Ruta de la Base de datos</value>
+	</data>
+	<data name="fileSelect.AccessibleName" xml:space="preserve">
+		<value>Ruta de la Base de datos</value>
+	</data>
+	<data name="labelDatabasePath.Text" xml:space="preserve">
+		<value>Base de Datos</value>
+	</data>
+	<data name="label1.Text" xml:space="preserve">
+		<value>Archivo de base de datos</value>
+	</data>
+	<data name="btDirectory.Text" xml:space="preserve">
+		<value>Carpeta de la base de datos</value>
+	</data>
 </root>

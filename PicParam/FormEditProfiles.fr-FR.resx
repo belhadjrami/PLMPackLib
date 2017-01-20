@@ -181,4 +181,10 @@
 	<data name="Profile.Text" xml:space="preserve">
 		<value>Profile</value>
 	</data>
+	<data name="colThickness.Text" xml:space="preserve">
+		<value>Epaisseur</value>
+	</data>
+	<data name="colName.Text" xml:space="preserve">
+		<value>Nom</value>
+	</data>
 </root>

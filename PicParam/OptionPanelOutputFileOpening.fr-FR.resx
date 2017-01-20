@@ -131,10 +131,10 @@
     <value>Application ouvrant les fichiers DXF</value>
   </data>
 	<data name="fileSelectOutputDXF.AccessibleDescription" xml:space="preserve">
-    <value>Chemin vers l'application ouvrant les fichiers DXF</value>
+    <value>Path to Chemin vers l'application ouvrant les fichiers AI</value>
   </data>
 	<data name="fileSelectOutputDXF.AccessibleName" xml:space="preserve">
-    <value>Chemin vers l'application ouvrant les fichiers DXF</value>
+    <value>Path to Chemin vers l'application ouvrant les fichiers AI</value>
   </data>
 	<data name="checkBoxAppAI.AccessibleDescription" xml:space="preserve">
     <value>Ouverture des fichiers Adobe Illustrator</value>
@@ -167,10 +167,10 @@
     <value>Application ouvrant les fichiers CFF2</value>
   </data>
 	<data name="fileSelectOutputCF2.AccessibleDescription" xml:space="preserve">
-    <value>Chemin vers l'application ouvrant les fichiers CFF2</value>
+    <value>Path to Chemin vers l'application ouvrant les fichiers AI</value>
   </data>
 	<data name="fileSelectOutputCF2.AccessibleName" xml:space="preserve">
-    <value>Chemin vers l'application ouvrant les fichiers CFF2</value>
+    <value>Path to Chemin vers l'application ouvrant les fichiers AI</value>
   </data>
 	<data name="$this.AccessibleDescription" xml:space="preserve">
     <value>Applications ouvrant les fichiers exportés</value>

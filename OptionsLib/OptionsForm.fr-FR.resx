@@ -541,7 +541,7 @@
 		<value>Options</value>
 	</data>
 	<data name="OptionDescrLabel.Text" xml:space="preserve">
-		<value>Description</value>
+		<value>Description.</value>
 	</data>
 	<data name="ApplyBtn.AccessibleDescription" xml:space="preserve">
 		<value>Appliquer les changements</value>
@@ -551,5 +551,23 @@
 	</data>
 	<data name="OKBtn.AccessibleDescription" xml:space="preserve">
 		<value>Appliquer les changements et fermer la boîtes de dialogue</value>
+	</data>
+	<data name="CatDescr.AccessibleDescription" xml:space="preserve">
+		<value>Cette fenêtre affiche les descriptions de chaque Categorie de la liste.</value>
+	</data>
+	<data name="AppRestartLabel.AccessibleDescription" xml:space="preserve">
+		<value>Cette fenêtre indique que l'application doit redémmarer</value>
+	</data>
+	<data name="CancelBtn.AccessibleDescription" xml:space="preserve">
+		<value>Annuler les changements et fermer la fenêtre d'option</value>
+	</data>
+	<data name="OptionsPanelPath.Text" xml:space="preserve">
+		<value>Options  » Chemin</value>
+	</data>
+	<data name="OptionsPanelPath.AccessibleDescription" xml:space="preserve">
+		<value>Cette fenêtre affiche les options de chemin</value>
+	</data>
+	<data name="OptionDescrLabel.AccessibleDescription" xml:space="preserve">
+		<value>Cette fenêtre affiche une courte description de chaque composant</value>
 	</data>
 </root>

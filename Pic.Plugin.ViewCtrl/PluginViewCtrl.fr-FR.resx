@@ -124,12 +124,12 @@
     <value>Afficher l'imposition</value>
   </data>
 	<data name="reflectionXToolStripMenuItem.Text" xml:space="preserve">
-    <value>Reflexion X</value>
+    <value>Mirroir &amp;X</value>
   </data>
 	<data name="reflectionYToolStripMenuItem.Text" xml:space="preserve">
-    <value>Reflexion Y</value>
+    <value>Mirroir &amp;Y</value>
   </data>
 	<data name="showCotationsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Afficher la cotation</value>
+    <value>Afficher les cotations</value>
   </data>
 </root>

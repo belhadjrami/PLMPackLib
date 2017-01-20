@@ -117,4 +117,19 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="rbAnnotations3.Text" xml:space="preserve">
+		<value>Utilizar fuente blanca sobre fondo negro</value>
+	</data>
+	<data name="rbAnnotations2.Text" xml:space="preserve">
+		<value>Utilizar fuente negro sobre imagen de fondo</value>
+	</data>
+	<data name="rbAnnotations1.Text" xml:space="preserve">
+		<value>Mostrar sin botón  anotaciones </value>
+	</data>
+	<data name="lbFontSize.Text" xml:space="preserve">
+		<value>tamaño de la fuente</value>
+	</data>
+	<data name="gbAnnotations.Text" xml:space="preserve">
+		<value>Anotación en miniatura</value>
+	</data>
 </root>

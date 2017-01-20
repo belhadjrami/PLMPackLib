@@ -121,4 +121,13 @@
 	<data name="lbMaximumNumberOfEntities.Size" type="System.Drawing.Size, System.Drawing">
 		<value>140, 13</value>
 	</data>
+	<data name="lbMaximumNumberOfEntities.Text" xml:space="preserve">
+		<value>Número máximo de entidades</value>
+	</data>
+	<data name="lbMaximumNumberOfEntities.AccessibleName" xml:space="preserve">
+		<value>Número máximo de entidades</value>
+	</data>
+	<data name="nudMaxNumberOfEntities.AccessibleName" xml:space="preserve">
+		<value>Número máximo de entidades</value>
+	</data>
 </root>

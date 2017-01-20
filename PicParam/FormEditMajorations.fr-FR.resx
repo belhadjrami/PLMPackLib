@@ -129,4 +129,10 @@
 	<data name="$this.Text" xml:space="preserve">
     <value>Editer les majorations...</value>
   </data>
+	<data name="bnOK.Text" xml:space="preserve">
+		<value>OK</value>
+	</data>
+	<data name="lblProfile.Text" xml:space="preserve">
+		<value>Profile</value>
+	</data>
 </root>

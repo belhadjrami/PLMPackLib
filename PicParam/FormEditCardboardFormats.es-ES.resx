@@ -289,7 +289,7 @@
 		<value>&amp;Crear Nuevo Formato…</value>
 	</data>
 	<data name="colName.Text" xml:space="preserve">
-		<value>Nombre del Producto</value>
+		<value>Nombre</value>
 	</data>
 	<data name="btDelete.Text" xml:space="preserve">
 		<value>&amp;Suprimir</value>

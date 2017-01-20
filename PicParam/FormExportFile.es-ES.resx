@@ -307,7 +307,7 @@
 		<value>Ok</value>
 	</data>
 	<data name="label_filePath.Text" xml:space="preserve">
-		<value>Ubicación</value>
+		<value>Ruta de archivo</value>
 	</data>
 	<data name="bnCancel.Text" xml:space="preserve">
 		<value>Cancelar</value>

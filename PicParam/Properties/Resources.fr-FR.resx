@@ -148,10 +148,10 @@
     <value>Supprimer</value>
   </data>
 	<data name="ID_TREEMENUNEWBRANCH" xml:space="preserve">
-    <value>Nouvelle branche...</value>
+    <value>Nouvelle branche…</value>
   </data>
 	<data name="ID_TREEMENUNEWDOCUMENT" xml:space="preserve">
-    <value>Nouveau document...</value>
+    <value>Nouveau document…</value>
   </data>
 	<data name="ID_TREEMENURENAME" xml:space="preserve">
     <value>Renommer...</value>
@@ -201,4 +201,13 @@
 	<data name="ID_TREENODESTARTPAGE" xml:space="preserve">
     <value>Accueil</value>
   </data>
+	<data name="ID_EDITCOMPONENT" xml:space="preserve">
+		<value>Editer le composant {0}</value>
+	</data>
+	<data name="ID_TREEMENUCOPY" xml:space="preserve">
+		<value>Dupliquer document</value>
+	</data>
+	<data name="ID_TREEMENUSETNEWGUID" xml:space="preserve">
+		<value>Set nquer component...</value>
+	</data>
 </root>

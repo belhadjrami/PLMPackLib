@@ -1016,7 +1016,7 @@
 		<value>OK</value>
 	</data>
 	<data name="labelCopyright.Text" xml:space="preserve">
-		<value>Copyright treeDiM 2010</value>
+		<value>Copyright treeDiM 2017</value>
 	</data>
 	<data name="labelVersion.Text" xml:space="preserve">
 		<value>Version {0}</value>

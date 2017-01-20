@@ -1901,4 +1901,196 @@
 	<data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+	<data name="exportToolStripMenuItem.Text" xml:space="preserve">
+		<value>Exportar…</value>
+	</data>
+	<data name="toolStripMenuItemPicGEOM.Text" xml:space="preserve">
+		<value>Enviar a Picador 2D</value>
+	</data>
+	<data name="toolStripMenuItemBrowseFile.Text" xml:space="preserve">
+		<value>Buscar Archivo...</value>
+	</data>
+	<data name="exitToolStripMenuItem.Text" xml:space="preserve">
+		<value>Salir</value>
+	</data>
+	<data name="fileToolStripMenuItem.Text" xml:space="preserve">
+		<value>Archivo</value>
+	</data>
+	<data name="toolStripMenuItemCotationsAuto.Text" xml:space="preserve">
+		<value>Dimensiones</value>
+	</data>
+	<data name="toolStripMenuItemCotationShortLines.Text" xml:space="preserve">
+		<value>Líneas cortas</value>
+	</data>
+	<data name="toolStripMenuItemCotationsCode.Text" xml:space="preserve">
+		<value>Dimensiones Prog</value>
+	</data>
+	<data name="toolStripMenuItemAxes.Text" xml:space="preserve">
+		<value>Eje</value>
+	</data>
+	<data name="reflectionXToolStripMenuItem.Text" xml:space="preserve">
+		<value>Symetria X</value>
+	</data>
+	<data name="reflectionYToolStripMenuItem.Text" xml:space="preserve">
+		<value>Symetria Y</value>
+	</data>
+	<data name="toolStripMenuItemView.Text" xml:space="preserve">
+		<value>Vista</value>
+	</data>
+	<data name="backupToolStripMenuItem1.Text" xml:space="preserve">
+		<value>Salvaguardar...</value>
+	</data>
+	<data name="restoreToolStripMenuItem1.Text" xml:space="preserve">
+		<value>Restaurar…</value>
+	</data>
+	<data name="mergeDatabaseToolStripMenuItem1.Text" xml:space="preserve">
+		<value>Fundir Base de datos</value>
+	</data>
+	<data name="clearDatabaseToolStripMenuItem.Text" xml:space="preserve">
+		<value>Vaciar la Base de Datos</value>
+	</data>
+	<data name="defineDatabasePathToolStripMenuItem.Text" xml:space="preserve">
+		<value>Definir la ruta de la Base de datos</value>
+	</data>
+	<data name="mnuFileMRU.Text" xml:space="preserve">
+		<value>Bases de datos utilizadas recientemente ...</value>
+	</data>
+	<data name="databaseToolStripMenuItem.Text" xml:space="preserve">
+		<value>Base de Datos</value>
+	</data>
+	<data name="toolStripMenuItemEditprofiles.Text" xml:space="preserve">
+		<value>Editar perfiles</value>
+	</data>
+	<data name="toolStripMenuItemEditCardboardFormats.Text" xml:space="preserve">
+		<value>Editar formatos de cartón</value>
+	</data>
+	<data name="layoutToolStripMenuItem.Text" xml:space="preserve">
+		<value>Imposición…</value>
+	</data>
+	<data name="editComponentDllToolStripMenuItem.Text" xml:space="preserve">
+		<value>Editar componente dll...</value>
+	</data>
+	<data name="toolStripMenuItemCustomize.Text" xml:space="preserve">
+		<value>Personalizar...</value>
+	</data>
+	<data name="toolsToolStripMenuItem.Text" xml:space="preserve">
+		<value>Herramentias</value>
+	</data>
+	<data name="toolStripMenuItemAboutTreeDimPicParam.Text" xml:space="preserve">
+		<value>Acerca TreeDim PLMPackLib...</value>
+	</data>
+	<data name="helpToolStripMenuItem.Text" xml:space="preserve">
+		<value>Ayuda</value>
+	</data>
+	<data name="menuStripMain.Text" xml:space="preserve">
+		<value>Estándar</value>
+	</data>
+	<data name="toolStripButtonSearch.Text" xml:space="preserve">
+		<value>Buscar...</value>
+	</data>
+	<data name="toolStripButtonExport.Text" xml:space="preserve">
+		<value>Exportar…</value>
+	</data>
+	<data name="toolStripButtonCotationsAuto.Text" xml:space="preserve">
+		<value>Mostrar / Ocultar Dimensiones Auto</value>
+	</data>
+	<data name="toolStripButtonCotationsCode.Text" xml:space="preserve">
+		<value>Mostrar / Ocultar Dimensiones Prog</value>
+	</data>
+	<data name="toolStripButtonAxes.Text" xml:space="preserve">
+		<value>Mostrar / Ocultar Eje</value>
+	</data>
+	<data name="toolStripButtonReflectionX.Text" xml:space="preserve">
+		<value>Simetría X</value>
+	</data>
+	<data name="toolStripButtonReflectionY.Text" xml:space="preserve">
+		<value>Simetría Y</value>
+	</data>
+	<data name="toolStripEditComponentCode.Text" xml:space="preserve">
+		<value>Editar componente código...</value>
+	</data>
+	<data name="toolStripButtonEditParameters.Text" xml:space="preserve">
+		<value>Editar parámetros ...</value>
+	</data>
+	<data name="toolStripButtonLayout.Text" xml:space="preserve">
+		<value>Construir imposición</value>
+	</data>
+	<data name="toolStripButtonLayout.ToolTipText" xml:space="preserve">
+		<value>Imposición…</value>
+	</data>
+	<data name="toolStripMI_DXF.Text" xml:space="preserve">
+		<value>DXF</value>
+	</data>
+	<data name="toolStripMI_AI.Text" xml:space="preserve">
+		<value>AI</value>
+	</data>
+	<data name="toolStripMI_PDF.Text" xml:space="preserve">
+		<value>PDF</value>
+	</data>
+	<data name="toolStripMI_PicGEOM.Text" xml:space="preserve">
+		<value>Picador2D</value>
+	</data>
+	<data name="toolStripMI_PicGEOM.ToolTipText" xml:space="preserve">
+		<value>Abrir con Picador 2D</value>
+	</data>
+	<data name="toolStripMI_Picador3D.ToolTipText" xml:space="preserve">
+		<value>Abrir con Picador3D</value>
+	</data>
+	<data name="toolStripMI_PicDecoup.Text" xml:space="preserve">
+		<value>PicCutting</value>
+	</data>
+	<data name="toolStripMI_PicDecoup.ToolTipText" xml:space="preserve">
+		<value>Abrir con PicCutting</value>
+	</data>
+	<data name="toolStripSButtonExportApp.Text" xml:space="preserve">
+		<value>Abrir con Picador 2D</value>
+	</data>
+	<data name="toolStripMI_ExportPDF3D.Text" xml:space="preserve">
+		<value>Generar PDF3D</value>
+	</data>
+	<data name="toolStripMI_ExportPDF3D.ToolTipText" xml:space="preserve">
+		<value>Generar PDF3D modelo</value>
+	</data>
+	<data name="toolStripMI_ExportPicador3D.Text" xml:space="preserve">
+		<value>Generar Picador3D</value>
+	</data>
+	<data name="toolStripMI_ExportPicador3D.ToolTipText" xml:space="preserve">
+		<value>Generar Picador3D DES3 modelo</value>
+	</data>
+	<data name="toolStripButtonARISTO.Text" xml:space="preserve">
+		<value>Enviar a ARISTO</value>
+	</data>
+	<data name="toolStripButtonOceProCut.Text" xml:space="preserve">
+		<value>Enviar a Océ Procut</value>
+	</data>
+	<data name="toolStripButtonZUND.Text" xml:space="preserve">
+		<value>Enviar a ZUND</value>
+	</data>
+	<data name="toolStripButtonSUMMA.Text" xml:space="preserve">
+		<value>Enviar a SUMMA</value>
+	</data>
+	<data name="toolStripButtonCaseOptimization.Text" xml:space="preserve">
+		<value>Optimización etuche/caja/paleta</value>
+	</data>
+	<data name="toolStripButtonCaseOptimization.ToolTipText" xml:space="preserve">
+		<value>Realizar la optimización etuche/caja/paleta con StackBuilder</value>
+	</data>
+	<data name="toolStripButtonPalletization.Text" xml:space="preserve">
+		<value>Análisis Caja/Paleta</value>
+	</data>
+	<data name="toolStripButtonPalletization.ToolTipText" xml:space="preserve">
+		<value>Realizar Análisis Caja/Paleta con StackBuilder</value>
+	</data>
+	<data name="toolStripBundlePalletAnalysis.Text" xml:space="preserve">
+		<value>Paletización de Paquetes</value>
+	</data>
+	<data name="toolStripBundleCaseAnalysis.Text" xml:space="preserve">
+		<value>Carga Paquetes/Caja</value>
+	</data>
+	<data name="toolStripButtonHelp.Text" xml:space="preserve">
+		<value>Ayuda</value>
+	</data>
+	<data name="saveFileDialogBackup.Filter" xml:space="preserve">
+		<value>Salguardia B.D. (*.zip)|*.zip</value>
+	</data>
 </root>
