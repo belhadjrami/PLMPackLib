@@ -137,7 +137,7 @@
     <value>168, 25</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GLib.Options.OptionsPanel, OptionsLib, Version=8.0.16.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>GLib.Options.OptionsPanel, OptionsLib, Version=8.0.17.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>OptionPanelDebug</value>
