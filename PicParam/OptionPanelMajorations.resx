@@ -259,7 +259,7 @@
 		<value>True</value>
 	</data>
 	<data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GLib.Options.OptionsPanel, OptionsLib, Version=8.0.17.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>GLib.Options.OptionsPanel, OptionsLib, Version=8.0.18.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 	<data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
 		<value>6, 13</value>

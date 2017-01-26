@@ -361,7 +361,7 @@
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 	<data name="&gt;&gt;thumbnailSelectCtrl.Type" xml:space="preserve">
-    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.17.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.18.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 	<data name="pictureBoxThumbnail.Size" type="System.Drawing.Size, System.Drawing">
 		<value>150, 150</value>

@@ -36,7 +36,7 @@
             this.generatorCtrl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.generatorCtrl.Location = new System.Drawing.Point(0, 0);
             this.generatorCtrl.Name = "generatorCtrl";
-            this.generatorCtrl.OutputPath = "C:\\Users\\François\\AppData\\Local\\Temp\\.dll";
+            this.generatorCtrl.OutputPath = string.Empty;
             this.generatorCtrl.PluginVersion = "2.0.0.0";
             this.generatorCtrl.Size = new System.Drawing.Size(684, 561);
             this.generatorCtrl.TabIndex = 0;

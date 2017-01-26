@@ -175,7 +175,7 @@
     <value>File</value>
   </data>
 	<data name="&gt;&gt;thumbnailSelectCtrl.Type" xml:space="preserve">
-    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.17.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.18.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 	<data name="&gt;&gt;factoryViewer.Parent" xml:space="preserve">
     <value>$this</value>
@@ -199,7 +199,7 @@
 		<value>False</value>
 	</data>
 	<data name="&gt;&gt;factoryViewer.Type" xml:space="preserve">
-    <value>Pic.Factory2D.Control.FactoryViewerBase, Pic.Factory2D.Control, Version=8.0.17.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Pic.Factory2D.Control.FactoryViewerBase, Pic.Factory2D.Control, Version=8.0.18.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 	<data name="componentLoaderControl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
 		<value>Top, Bottom, Left, Right</value>
@@ -274,7 +274,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 	<data name="&gt;&gt;componentLoaderControl.Type" xml:space="preserve">
-    <value>PicParam.ComponentLoaderControl, PLMPackLib, Version=8.0.17.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>PicParam.ComponentLoaderControl, PLMPackLib, Version=8.0.18.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 	<data name="&gt;&gt;chkDefaultParameters.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -547,7 +547,7 @@
 		<value>6, 41</value>
 	</data>
 	<data name="&gt;&gt;fileSelectCtrl.Type" xml:space="preserve">
-    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.17.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.18.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 	<data name="&gt;&gt;chkDefaultParameters.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
