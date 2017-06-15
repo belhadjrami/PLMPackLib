@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
 	<!-- 
     Microsoft ResX Schema 
@@ -118,6 +118,30 @@
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
 	<data name="btClose.Text" xml:space="preserve">
-    <value>&amp;Close </value>
+    <value>Zamknij</value>
   </data>
+	<data name="colWidth.Text" xml:space="preserve">
+		<value>Szerokość</value>
+	</data>
+	<data name="btCreate.Text" xml:space="preserve">
+		<value>Stwórz nowy format..</value>
+	</data>
+	<data name="colName.Text" xml:space="preserve">
+		<value>Nazwa</value>
+	</data>
+	<data name="btDelete.Text" xml:space="preserve">
+		<value>Usuń</value>
+	</data>
+	<data name="colHeight.Text" xml:space="preserve">
+		<value>Wysokość</value>
+	</data>
+	<data name="btModify.Text" xml:space="preserve">
+		<value>Modyfikuj</value>
+	</data>
+	<data name="colDescription.Text" xml:space="preserve">
+		<value>Opis</value>
+	</data>
+	<data name="$this.Text" xml:space="preserve">
+		<value>Edytuj format kartonu..</value>
+	</data>
 </root>

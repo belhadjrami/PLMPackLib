@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
 	<!-- 
     Microsoft ResX Schema 
@@ -118,6 +118,21 @@
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
 	<data name="$this.Text" xml:space="preserve">
-    <value>Rename {0}... </value>
+    <value>Zmień nazwę {0}..</value>
   </data>
+	<data name="chkCustomImage.Text" xml:space="preserve">
+		<value>Niestandardowa minatura</value>
+	</data>
+	<data name="label_description.Text" xml:space="preserve">
+		<value>Opis</value>
+	</data>
+	<data name="label_name.Text" xml:space="preserve">
+		<value>Nazwa</value>
+	</data>
+	<data name="bnOk.Text" xml:space="preserve">
+		<value>Ok</value>
+	</data>
+	<data name="bnCancel.Text" xml:space="preserve">
+		<value>Anuluj</value>
+	</data>
 </root>

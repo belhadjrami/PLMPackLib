@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
 	<!-- 
     Microsoft ResX Schema 
@@ -187,13 +187,13 @@
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 	<data name="reflectionYToolStripMenuItem.Text" xml:space="preserve">
-    <value>Reflection &amp;Y</value>
+    <value>Odbicie y</value>
   </data>
 	<data name="groupBox1_fr.Location" type="System.Drawing.Point, System.Drawing">
 		<value>0, 0</value>
 	</data>
 	<data name="reflectionXToolStripMenuItem.Text" xml:space="preserve">
-    <value>Reflection &amp;X</value>
+    <value>Odbicie x</value>
   </data>
 	<data name="showCotationsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
 		<value>155, 22</value>
@@ -208,13 +208,13 @@
 		<value />
 	</data>
 	<data name="showCotationsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Show cotations</value>
+    <value>Pokaż przypisy</value>
   </data>
 	<data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
     <value>groupBox1</value>
   </data>
 	<data name="impositionToolStripMenuItem.Text" xml:space="preserve">
-    <value>Show nested layout</value>
+    <value>Pokaż układ wstawiony</value>
   </data>
 	<data name="&gt;&gt;showCotationsToolStripMenuItem.Name" xml:space="preserve">
     <value>showCotationsToolStripMenuItem</value>
@@ -238,7 +238,7 @@
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 	<data name="fitViewToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Fit view</value>
+    <value>Dopasuj widok</value>
   </data>
 	<data name="PluginViewCtrl.Panel1.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
 		<value />

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
 	<!-- 
     Microsoft ResX Schema 
@@ -122,18 +122,18 @@
 		<value>..\Resources\CursorPan.cur;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</data>
 	<data name="STR_CLOSE" xml:space="preserve">
-    <value>Close</value>
+    <value>Zamknij</value>
   </data>
 	<data name="STR_PROFILE" xml:space="preserve">
-    <value>Profile</value>
+    <value>Profil</value>
   </data>
 	<data name="STR_THICKNESS" xml:space="preserve">
-    <value>Thickness</value>
+    <value>Grubość</value>
   </data>
 	<data name="STR_TOL" xml:space="preserve">
-    <value>Tol...</value>
+    <value>Wzrost</value>
   </data>
 	<data name="STR_VALIDATE" xml:space="preserve">
-    <value>Validate</value>
+    <value>Legalizacja</value>
   </data>
 </root>

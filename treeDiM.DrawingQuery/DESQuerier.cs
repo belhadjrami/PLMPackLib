@@ -131,7 +131,6 @@ namespace treeDiM.DrawingQuery
                         }
                     }
                 }
-
                 return res;
             }
         }

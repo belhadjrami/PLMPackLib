@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
 	<!-- 
     Microsoft ResX Schema 
@@ -241,5 +241,14 @@
         NkIIIYSQxkPBRgghhBDSeCjYCCGEEEIaDwUbIYQQQkjjoWAjhBBCCGk8FGyEEEIIIU0nhP8HE7FFwo+0
         TKcAAAAASUVORK5CYII=
 </value>
+	</data>
+	<data name="$this.Text" xml:space="preserve">
+		<value>Ekran powitalny</value>
+	</data>
+	<data name="lbBrand.Text" xml:space="preserve">
+		<value>Program treeDiM</value>
+	</data>
+	<data name="lblVersion.Text" xml:space="preserve">
+		<value>Wersja</value>
 	</data>
 </root>

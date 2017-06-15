@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
 	<!-- 
     Microsoft ResX Schema 
@@ -131,7 +131,7 @@
 		<value>219, 26</value>
 	</data>
 	<data name="cancelButton.Text" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Anuluj</value>
   </data>
 	<data name="cancelButton.Size" type="System.Drawing.Size, System.Drawing">
 		<value>92, 26</value>
@@ -147,7 +147,7 @@
 		<value>2</value>
 	</data>
 	<data name="label.Text" xml:space="preserve">
-    <value>Starting operation...</value>
+    <value>Rozpocznij operację</value>
   </data>
 	<data name="progressBar.TabIndex" type="System.Int32, mscorlib">
 		<value>1</value>
@@ -195,7 +195,7 @@
     <value>$this</value>
   </data>
 	<data name="$this.Text" xml:space="preserve">
-    <value>ProgressWindow</value>
+    <value>Progresswindow</value>
   </data>
 	<data name="&gt;&gt;cancelButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

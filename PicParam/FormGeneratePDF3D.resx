@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
 	<!-- 
     Microsoft ResX Schema 
@@ -121,7 +121,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 	<data name="&gt;&gt;fileSelectOutput.Type" xml:space="preserve">
-    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.18.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.19.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 	<data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormGeneratePDF3D</value>
@@ -249,7 +249,7 @@
 		<value>85, 12</value>
 	</data>
 	<data name="&gt;&gt;fileSelectPdfTemplate.Type" xml:space="preserve">
-    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.18.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>TreeDim.UserControls.FileSelect, TreeDim.UserControls, Version=8.0.19.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 	<data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
 	<!-- 
     Microsoft ResX Schema 
@@ -181,97 +181,97 @@
 </value>
 	</data>
 	<data name="ID_ABOUT" xml:space="preserve">
-    <value>About {0}...</value>
+    <value>O  {0}…</value>
   </data>
 	<data name="ID_APPLICATIONEXITING" xml:space="preserve">
-    <value>{0} will now exit...</value>
+    <value>{0} Wyjdź teraz..</value>
   </data>
 	<data name="ID_APPLICATIONMUSTRESTART" xml:space="preserve">
-    <value>{0} will need to be restarted. Now closing...</value>
+    <value>{0} Będziesz musiał zrestartować.teraz zamykanie..</value>
   </data>
 	<data name="ID_CANCELTOOLONG" xml:space="preserve">
     <value>This model constains more than {0} segments. Processing will require too much time.  To increase maximum number of segments, use Tools&gt;Options&gt;Computing options...</value>
   </data>
 	<data name="ID_CLEARDATABASEWARNING" xml:space="preserve">
-    <value>You are about to clear the database content. Are you sure?</value>
+    <value>Chcesz usunąć zawartość bazy danych. Jesteś pewien?</value>
   </data>
 	<data name="ID_DATABASENOTFOUND" xml:space="preserve">
-    <value>Database file could not be found at the following path: {0}\n Would you like to restore a database archive?</value>
+    <value>Baza danych nie została znaleziona w tym pliku: {0}\n Czy chcesz odszukać w archiwum?</value>
   </data>
 	<data name="ID_DATABASEOVERWRITE" xml:space="preserve">
-    <value>Documents sharing the same position in the tree than those available in the library will be overwritten.\nAny modifications will be lost. Continue?</value>
+    <value>Dokumenty które mają tę samą pozycję w drzewie inne niż te, które są dostępne w bibliotece,zostaną zastąpione.\nModyfikacje zostaną utracone,kontynuować?</value>
   </data>
 	<data name="ID_EDITCOMPONENT" xml:space="preserve">
-    <value>Edit component {0}...</value>
+    <value>Edytuj elementy {0}..</value>
   </data>
 	<data name="ID_FILENOTFOUND_DEFAULTIMAGE" xml:space="preserve">
-    <value>Default image file could not be found at the following path: {0}</value>
+    <value>Nie można znaleźć domyślnego pliku obrazu w następującej ścieżce: {0}</value>
   </data>
 	<data name="ID_FILENOTFOUND_PDFTHUMBNAILIMAGE" xml:space="preserve">
-    <value>Pdf thumb image file could not be found at the following path: {0}</value>
+    <value>Nie można znaleźć pliku obrazu miniatur pdf w następującej ścieżce: {0}</value>
   </data>
 	<data name="ID_INFO_RUNASADMIN" xml:space="preserve">
-    <value>To perform this operation, the application must be run as administrator.</value>
+    <value>Aby wykonać tę operację aplikacja musi być uruchomiona jako administrator</value>
   </data>
 	<data name="ID_MERGEFAILURE" xml:space="preserve">
-    <value>Failed to merge database for the following reason: {0}</value>
+    <value>Nie udało się połaczenie bazy danych z następującego powodu: {0}</value>
   </data>
 	<data name="ID_RESTOREFAILURE" xml:space="preserve">
-    <value>Failed to restore database for the following reason: {0}</value>
+    <value>Nie udało się przywrócić bazy danych z następującego powodu: {0}</value>
   </data>
 	<data name="ID_RESTOREWARNING" xml:space="preserve">
-    <value>Please, be aware that this operation will overwrite your current database. Continue?</value>
+    <value>Proszę pamiętać, że ta operacja spowoduje zastąpienie bieżącej bazy danych. Kontynuować?</value>
   </data>
 	<data name="ID_TREEMENUBACKUP" xml:space="preserve">
-    <value>Backup branch {0}</value>
+    <value>Kopia zapasowa {0}</value>
   </data>
 	<data name="ID_TREEMENUCOPY" xml:space="preserve">
-    <value>Duplicate document</value>
+    <value>Duplikowany dokument</value>
   </data>
 	<data name="ID_TREEMENUDELETE" xml:space="preserve">
-    <value>Delete</value>
+    <value>Usuń</value>
   </data>
 	<data name="ID_TREEMENUNEWBRANCH" xml:space="preserve">
-    <value>New branch...</value>
+    <value>Nowe odgałęzienie ..</value>
   </data>
 	<data name="ID_TREEMENUNEWDOCUMENT" xml:space="preserve">
-    <value>New document...</value>
+    <value>Nowy dokument..</value>
   </data>
 	<data name="ID_TREEMENURENAME" xml:space="preserve">
-    <value>Rename...</value>
+    <value>Zmień nazwę..</value>
   </data>
 	<data name="ID_TREEMENUSELECTINEXPLORER" xml:space="preserve">
-    <value>Open containing folder</value>
+    <value>Otwórz plik, który zawiera</value>
   </data>
 	<data name="ID_TREEMENUSENDPATHTOCLIPBOARD" xml:space="preserve">
-    <value>Send actual document path to clipboard</value>
+    <value>Wyślij aktualna ścieżkę do schowka</value>
   </data>
 	<data name="ID_TREEMENUSETNEWGUID" xml:space="preserve">
-    <value>Set new GUID for component...</value>
+    <value>Ustaw nowy GUID dla składnika..</value>
   </data>
 	<data name="ID_TREENODEDOWNLOAD" xml:space="preserve">
-    <value>Download</value>
+    <value>Załaduj</value>
   </data>
 	<data name="ID_TREENODEROOT" xml:space="preserve">
     <value>Root</value>
   </data>
 	<data name="ID_TREENODESTARTPAGE" xml:space="preserve">
-    <value>Start page</value>
+    <value>Strona startowa</value>
   </data>
 	<data name="ID_TREEWARNING_CANNOTMOVENODE" xml:space="preserve">
-    <value>Node {0} can not be moved under node {1} as this last one is a child.  </value>
+    <value>Węzeł {0} nie może być przeniesiony do węzła {1} ponieważ ten ostatni jest jego potomkiem</value>
   </data>
 	<data name="ID_TREEWARNING_DELETEBRANCH" xml:space="preserve">
-    <value>Delete branch {0}?</value>
+    <value>Usuń oddział {0} ?</value>
   </data>
 	<data name="ID_TREEWARNING_DELETEDOCUMENT" xml:space="preserve">
-    <value>Delete document {0}?</value>
+    <value>Usuń dokument {0} ?</value>
   </data>
 	<data name="ID_TREEWARNING_MOVENODE" xml:space="preserve">
-    <value>Do you really want to move node "{0}" under node "{1}"?</value>
+    <value>Czy naprawdę chcesz przenieść węzeł "{0}" w węzeł "{1}"?</value>
   </data>
 	<data name="ID_VERSION" xml:space="preserve">
-    <value>Version {0}</value>
+    <value>Wersja {0}</value>
   </data>
 	<data name="OPENFOLD" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
 		<value>

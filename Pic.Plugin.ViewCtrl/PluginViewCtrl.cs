@@ -136,13 +136,10 @@ namespace Pic.Plugin.ViewCtrl
 
             // event global cotation properties notification
             PicGlobalCotationProperties.Modified += new PicGlobalCotationProperties.OnGlobalCotationPropertiesModified(PicGlobalCotationProperties_Modified);
-
-
             // context menu
             this.showCotationsToolStripMenuItem.Checked = _showCotationAuto;
             this.reflectionXToolStripMenuItem.Checked = _reflectionX;
             this.reflectionYToolStripMenuItem.Checked = _reflectionY;
-
             // splitter
             this.SplitterWidth = 1;
         }

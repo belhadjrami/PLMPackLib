@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
 	<!-- 
     Microsoft ResX Schema 
@@ -196,7 +196,7 @@
 		<value>8</value>
 	</data>
 	<data name="CatHeader.Text" xml:space="preserve">
-    <value>Categories:</value>
+    <value>Kategorie:</value>
   </data>
 	<data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>OptionsForm</value>
@@ -686,7 +686,7 @@
 		<value>Arial, 8.25pt, style=Bold</value>
 	</data>
 	<data name="CatDescr.AccessibleDescription" xml:space="preserve">
-    <value>This box shows a description for each Category in the tree.</value>
+    <value>To pudełko pokazuje opis dla każdej kategorii w formie drzewka</value>
   </data>
 	<data name="&gt;&gt;OptionsFormSplit.Panel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -731,10 +731,10 @@
 		<value>186, 347</value>
 	</data>
 	<data name="CatHeader.AccessibleDescription" xml:space="preserve">
-    <value>Categories tree Header.</value>
+    <value>Nagłowki w formie drzewka</value>
   </data>
 	<data name="AppRestartLabel.AccessibleDescription" xml:space="preserve">
-    <value>This box indicates that the application must restart in order for changes to take effect.</value>
+    <value>To pole wskazuje, że aplikacja musi zostać uruchomiona ponownnie,aby zmiany zaczęły obowiązywać</value>
   </data>
 	<data name="&gt;&gt;CatHeader.Name" xml:space="preserve">
     <value>CatHeader</value>
@@ -794,7 +794,7 @@
 		<value>Microsoft Sans Serif, 8.25pt</value>
 	</data>
 	<data name="OKBtn.Text" xml:space="preserve">
-    <value>&amp;OK</value>
+    <value>Ok</value>
   </data>
 	<data name="&gt;&gt;DescriptionPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -806,10 +806,10 @@
 		<value>0, 0, 0, 0</value>
 	</data>
 	<data name="CancelBtn.AccessibleDescription" xml:space="preserve">
-    <value>Cancel changes and close options form.</value>
+    <value>Anuluj zmiany i zamknij formularz opcji</value>
   </data>
 	<data name="OptionsPanelPath.Text" xml:space="preserve">
-    <value>Options » Path</value>
+    <value>Opcje » ścieżki</value>
   </data>
 	<data name="&gt;&gt;CatDescrPanel.Name" xml:space="preserve">
     <value>CatDescrPanel</value>
@@ -827,13 +827,13 @@
 		<value>CenterParent</value>
 	</data>
 	<data name="CatTree.AccessibleDescription" xml:space="preserve">
-    <value>Options Categories.</value>
+    <value>Opcje kategorie</value>
   </data>
 	<data name="DescriptionPanel.Size" type="System.Drawing.Size, System.Drawing">
 		<value>340, 69</value>
 	</data>
 	<data name="CatDescr.Text" xml:space="preserve">
-    <value>Description.</value>
+    <value>Opis.</value>
   </data>
 	<data name="&gt;&gt;CatHeaderPanel.Name" xml:space="preserve">
     <value>CatHeaderPanel</value>
@@ -929,7 +929,7 @@
 		<value>2</value>
 	</data>
 	<data name="OptionsPanelPath.AccessibleDescription" xml:space="preserve">
-    <value>This box shows the options path for the current options panel.</value>
+    <value>To pole przedstawia ścieżkę opcji dla bieżącego panelu opcji</value>
   </data>
 	<data name="&gt;&gt;AppRestartLabel.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -956,7 +956,7 @@
     <value>CatHeaderPanel</value>
   </data>
 	<data name="OptionDescrLabel.AccessibleDescription" xml:space="preserve">
-    <value>This box shows a short description for each control.</value>
+    <value>To pole przedstawia krótki opis każdej kontrolki</value>
   </data>
 	<data name="&gt;&gt;OKBtn.Parent" xml:space="preserve">
     <value>OptionsFormSplit.Panel2</value>
@@ -983,13 +983,13 @@
     <value>OptionsFormSplit</value>
   </data>
 	<data name="ApplyBtn.Text" xml:space="preserve">
-    <value>A&amp;pply</value>
+    <value>Zastosuj</value>
   </data>
 	<data name="&gt;&gt;CatDescr.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 	<data name="$this.Text" xml:space="preserve">
-    <value>Options</value>
+    <value>Opcje</value>
   </data>
 	<data name="&gt;&gt;ApplyBtn.Parent" xml:space="preserve">
     <value>OptionsFormSplit.Panel2</value>
@@ -1007,7 +1007,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 	<data name="CancelBtn.Text" xml:space="preserve">
-    <value>&amp;Cancel</value>
+    <value>Anuluj</value>
   </data>
 	<data name="CancelBtn.Location" type="System.Drawing.Point, System.Drawing">
 		<value>267, 347</value>
@@ -1022,7 +1022,7 @@
 		<value>75, 23</value>
 	</data>
 	<data name="OptionDescrLabel.Text" xml:space="preserve">
-    <value>Description.</value>
+    <value>Opis.</value>
   </data>
 	<data name="&gt;&gt;OptionsSplitContainer.Panel2.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -1070,7 +1070,7 @@
     <value>label2</value>
   </data>
 	<data name="ApplyBtn.AccessibleDescription" xml:space="preserve">
-    <value>Apply changes.</value>
+    <value>Zastosuj zmiany</value>
   </data>
 	<data name="CatHeader.Location" type="System.Drawing.Point, System.Drawing">
 		<value>0, 0</value>
@@ -1079,7 +1079,7 @@
 		<value>119, 32</value>
 	</data>
 	<data name="AppRestartLabel.Text" xml:space="preserve">
-    <value>Application must restart for changes to take effect.</value>
+    <value>Aplikacja musi być zrestartowana by zmiany zostały zapisane</value>
   </data>
 	<data name="label2.Location" type="System.Drawing.Point, System.Drawing">
 		<value>3, 339</value>
@@ -1157,7 +1157,7 @@
     <value>0</value>
   </data>
 	<data name="OKBtn.AccessibleDescription" xml:space="preserve">
-    <value>Apply changes and close the options form.</value>
+    <value>Zastosuj zmiany i zamknij formularz opcji</value>
   </data>
 	<data name="&gt;&gt;ApplyBtn.ZOrder" xml:space="preserve">
     <value>3</value>

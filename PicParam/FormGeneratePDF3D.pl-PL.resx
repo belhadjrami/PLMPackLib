@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
 	<!-- 
     Microsoft ResX Schema 
@@ -120,5 +120,23 @@
 	<assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
 	<data name="labelFileOutput.Size" type="System.Drawing.Size, System.Drawing">
 		<value>26, 13</value>
+	</data>
+	<data name="bnGenerate.Text" xml:space="preserve">
+		<value>Generować</value>
+	</data>
+	<data name="bnCancel.Text" xml:space="preserve">
+		<value>Wyjście</value>
+	</data>
+	<data name="labelFileOutput.Text" xml:space="preserve">
+		<value>Plik</value>
+	</data>
+	<data name="chkbOpenFile.Text" xml:space="preserve">
+		<value>Otwórz wygenerowany plik w aar</value>
+	</data>
+	<data name="label2.Text" xml:space="preserve">
+		<value>Szablon pdf</value>
+	</data>
+	<data name="$this.Text" xml:space="preserve">
+		<value>Wygeneruj pdf w 3d</value>
 	</data>
 </root>

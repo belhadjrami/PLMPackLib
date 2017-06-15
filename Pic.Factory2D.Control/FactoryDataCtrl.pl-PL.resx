@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
 	<!-- 
     Microsoft ResX Schema 
@@ -122,6 +122,54 @@
 		<value>34, 13</value>
 	</data>
 	<data name="lblNameTotal.Text" xml:space="preserve">
-    <value>Total </value>
+    <value>Całkowity</value>
   </data>
+	<data name="lblAreaValue.Text" xml:space="preserve">
+		<value>: 0.0 m²</value>
+	</data>
+	<data name="lblNameArea.Text" xml:space="preserve">
+		<value>Obszar</value>
+	</data>
+	<data name="lblNameEfficiency.Text" xml:space="preserve">
+		<value>Wydajność</value>
+	</data>
+	<data name="lblNameWidth.Text" xml:space="preserve">
+		<value>Szerokość</value>
+	</data>
+	<data name="lblValueLengthTotal.Text" xml:space="preserve">
+		<value>: 0.0 m</value>
+	</data>
+	<data name="lblValueLength.Text" xml:space="preserve">
+		<value>: 0.0 m</value>
+	</data>
+	<data name="tabArea.Text" xml:space="preserve">
+		<value>Obszar</value>
+	</data>
+	<data name="lblValueWidth.Text" xml:space="preserve">
+		<value>: 0.0 m</value>
+	</data>
+	<data name="lblValueLengthFold.Text" xml:space="preserve">
+		<value>: 0.0 m</value>
+	</data>
+	<data name="lblValueLengthCut.Text" xml:space="preserve">
+		<value>: 0.0 m</value>
+	</data>
+	<data name="lblNameLength.Text" xml:space="preserve">
+		<value>Długość</value>
+	</data>
+	<data name="lblValueEfficiency.Text" xml:space="preserve">
+		<value>: 0.0%</value>
+	</data>
+	<data name="lblValueFormat.Text" xml:space="preserve">
+		<value>: 0.0 * 0.0</value>
+	</data>
+	<data name="tabBoundingBox.Text" xml:space="preserve">
+		<value>Odbite pudełko</value>
+	</data>
+	<data name="lblNameFormat.Text" xml:space="preserve">
+		<value>Format</value>
+	</data>
+	<data name="tabLength.Text" xml:space="preserve">
+		<value>Długości</value>
+	</data>
 </root>

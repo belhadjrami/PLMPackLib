@@ -96,8 +96,8 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="TreeDim.StackBuilder.GUIExtension">
-      <HintPath>..\..\StackBuilder\TreeDim.StackBuilder.GUIExtension\bin\Release\TreeDim.StackBuilder.GUIExtension.dll</HintPath>
+    <Reference Include="treeDiM.StackBuilder.GUIExtension">
+      <HintPath>..\ThirdPartyComponents\treeDiM.StackBuilder.GUIExtension.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -588,6 +588,9 @@
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.pl-PL.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.ssy.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPluginEditor.es-ES.resx">

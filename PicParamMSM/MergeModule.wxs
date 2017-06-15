@@ -190,6 +190,19 @@
       </Component>
     </DirectoryRef>
     <!-- End french resources -->
+    <!-- Spanish resources-->
+    <DirectoryRef Id ="es_ES">
+      <Component Id="resources_es" Guid="{6381530D-CA5C-4EA1-B3EE-4306E3B7E060}">
+        <File Source="..\PicParam\bin\x86\Release\es-ES\PLMPackLib.resources.dll" KeyPath="yes" Checksum="yes" />
+        <File Source="..\PicParam\bin\x86\Release\es-ES\Pic.Factory2D.Control.resources.dll" />
+        <File Source="..\PicParam\bin\x86\Release\es-ES\OptionsLib.resources.dll" />
+        <File Source="..\PicParam\bin\x86\Release\es-ES\TreeDim.UserControls.resources.dll" />
+        <File Source="..\PicParam\bin\x86\Release\es-ES\Pic.Plugin.ViewCtrl.resources.dll" />
+        <File Source="..\PicParam\bin\x86\Release\es-ES\Pic.DAL.resources.dll" />
+      </Component>
+    </DirectoryRef>
+    <!-- End Spanish resources-->
+    <!-- Italian resources -->
     <DirectoryRef Id="it_IT">
       <Component Id="resources_it" Guid="{CC8BFEFC-229C-47A2-B974-ADE9FAD56B58}">
         <File Id="PLMPackLib.resources_it.dll" Source="..\PicParam\bin\x86\Release\it-IT\PLMPackLib.resources.dll" KeyPath="yes" Checksum="yes" />
@@ -200,7 +213,8 @@
         <File Id="Pic.DAL.resources_it.dll" Source="..\PicParam\bin\x86\Release\it-IT\Pic.DAL.resources.dll" />
         <Condition>Installed OR NETFRAMEWORK40FULL</Condition>
       </Component>
-    </DirectoryRef>    
+    </DirectoryRef>
+    <!-- End Italian reources -->
     <!-- Japanese resources-->
     <DirectoryRef Id="ja_JP">
       <Component Id="resources_jp" Guid="{5832F6A8-4532-4CB6-A0BD-C0CC12A02E14}">

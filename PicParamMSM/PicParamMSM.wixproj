@@ -22,6 +22,7 @@
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
     <SuppressSpecificWarnings>1072;1076</SuppressSpecificWarnings>
     <DefineConstants>DatabaseEmbedded=True;</DefineConstants>
+    <WixVariables>NUMBER_OF_PROCESSORS=8</WixVariables>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="asm_fragment.wxs" />

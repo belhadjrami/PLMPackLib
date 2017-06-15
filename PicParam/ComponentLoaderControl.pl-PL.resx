@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
 	<!-- 
     Microsoft ResX Schema 
@@ -217,7 +217,7 @@
     <value>0</value>
   </data>
 	<data name="groupBoxMajorations.Text" xml:space="preserve">
-    <value>Majorations</value>
+    <value>Wzrost</value>
   </data>
 	<data name="pluginViewCtrl.Size" type="System.Drawing.Size, System.Drawing">
 		<value>491, 263</value>
@@ -244,7 +244,7 @@
 		<value>None</value>
 	</data>
 	<data name="lblProfile.Text" xml:space="preserve">
-    <value>Profile</value>
+    <value>Profil</value>
   </data>
 	<data name="&gt;&gt;pluginViewCtrl.Panel1.Parent" xml:space="preserve">
     <value>pluginViewCtrl</value>

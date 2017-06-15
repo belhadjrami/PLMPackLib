@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
 	<!-- 
     Microsoft ResX Schema 
@@ -118,24 +118,24 @@
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
 	<data name="COMPONENTDEFAULTPARAMETERVALUES" xml:space="preserve">
-    <value>Default parameter values: {0}</value>
+    <value>Domyślne wartości parametrów: {0}</value>
   </data>
 	<data name="FAILEDTOEXTRACTFILE" xml:space="preserve">
-    <value>Failed to extract file {0}.</value>
+    <value>Nie udało się wyodrębnić plików {0}</value>
   </data>
 	<data name="FILENOTFOUND" xml:space="preserve">
-    <value>File {0} could not be found.</value>
+    <value>Plik {0} nie został odnaleziony</value>
   </data>
 	<data name="INSERTEDCOMPONENT" xml:space="preserve">
-    <value>Inserted component {0}</value>
+    <value>Wstawiony dodatek  {0}</value>
   </data>
 	<data name="INSERTEDDOCUMENT" xml:space="preserve">
-    <value>Inserted document {0}</value>
+    <value>Wstawiony dokument {0}</value>
   </data>
 	<data name="INSERTEDNODE" xml:space="preserve">
-    <value>Inserted node {0}</value>
+    <value>Wstawiony punkt  {0}</value>
   </data>
 	<data name="NODEALREADYINSERTED" xml:space="preserve">
-    <value>Node {0} already exists. Skipping...</value>
+    <value>Punkt {0} już ustnieje. Pomiń go…</value>
   </data>
 </root>
